@@ -1,0 +1,510 @@
+@charset 'UTF-8';
+/* 共用樣式 */
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexbox.inline {
+    display: inline-flex;
+}
+.flexbox.halign-center {
+    justify-content: center;
+}
+.flexbox.halign-left {
+    justify-content: flex-start;
+}
+.flexbox.halign-right {
+    justify-content: flex-end;
+}
+.flexbox.halign-around {
+    justify-content: space-around;
+}
+.flexbox.halign-between {
+    justify-content: space-between;
+}
+.flexbox.valign-top {
+    align-items: flex-start;
+}
+.flexbox.valign-bottom {
+    align-items: flex-end;
+}
+.flexbox.valign-center {
+    align-items: center;
+}
+.flexbox.valign-full {
+    align-items: stretch;
+}
+.flexbox.valign-base {
+    align-items: baseline;
+}
+.flexbox.multi-align-top {
+    align-content: flex-start;
+}
+.flexbox.multi-align-bottom {
+    align-content: flex-end;
+}
+.flexbox.multi-align-center {
+    align-content: center;
+}
+.flexbox.multi-align-full {
+    align-content: stretch;
+}
+.flexbox.multi-align-around {
+    justify-content: space-around;
+}
+.flexbox.multi-align-between {
+    justify-content: space-between;
+}
+/*.wrapper1040 {
+    width: 94%;
+    max-width: 1040px;
+    margin: 0 auto;
+}*/
+.bn {
+    display: inline-block;
+    width: 175px;
+    font-size: 20px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    text-align: center;
+}
+.bn.size2 {
+    width: 130px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+}
+.bn.bn-blue {
+    background-color: #4f6ea2;
+}
+.bn.bn-blue:hover {
+    background-color: #2d5392;
+}
+.bn.bn-red {
+    background-color: #b61e1a;
+}
+.bn.bn-red:hover {
+    background-color: #c63e2b;
+}
+.require-star {
+    color: #ff007f;
+}
+/*.fa.fa-exclamation-circle.error {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    font-size: 24px;
+    color: #d76050;
+}*/
+.fa.fa-lock.complete {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    font-size: 24px;
+    color: #6dd900;
+}
+/* END 共用樣式 */
+
+/* 查看評論-未訂購-查看 */
+.reward_cmt main._noOrder .section01._isOrderBox,
+.reward_cmt main:not(._noOrder) .section01._noOrderBox {
+	display: none;
+}
+.reward_cmt .section01 {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 40px;
+}
+.reward_cmt .section01._isOrderBox {
+	display: block;
+}
+.bookList {
+	margin-bottom: 0;
+}
+.bookList .bookTitle ._right .cancel a {
+	color: #4f6ea2;
+    padding-left: 5px;
+}
+.bookList .bookTitle ._right .cancel a:hover {
+	text-decoration: underline;
+}
+.reward_cmt .section01 .comment-left,
+.reward_cmt .section01 .comment-right {
+    width: 50%;
+}
+.reward_cmt .section01 .comment-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.reward_cmt .section01 .comment-left .logo {
+    margin-right: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+.reward_cmt .section01 .comment-left .logo img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.reward_cmt .section01 .comment-left .title {
+    display: inline-flex;
+    width: 300px;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 20px;
+}
+.reward_cmt .section01 .comment-left .title .star b {
+	font-weight: normal;
+	font-size: 15px;
+}
+.reward_cmt .section01 .comment-left .title h1 {
+    background-color: transparent;
+    font-size: 21px;
+    line-height: normal;
+    color: #4e5059;
+    text-align: left;
+    margin-bottom: 9px;
+    padding: 0;
+}
+.reward_cmt .section01 .comment-right {
+    background-color: #efeff0;
+    padding: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 5px;
+}
+.reward_cmt .section01 .comment-right .photo-img {
+    width: auto;
+    max-width: 120px;
+    margin-right: 20px;
+}
+.reward_cmt .section01 .comment-right img {
+    border-radius: 5px;
+}
+.reward_cmt .section01 .comment-right .place-name {
+	width: calc(100% - 195px);
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    font-size: 21px;
+    line-height: normal;
+    color: #4e5059;
+}
+.reward_cmt .section02 {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+.reward_cmt .section02>div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+.reward_cmt .section02>div .photo-icon {
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.reward_cmt .section02>div .photo-icon img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.reward_cmt .section02>div .items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: calc(100% - 255px);
+    min-width: 200px;
+    color: #4e5059;
+    letter-spacing: .1em;
+}
+.reward_cmt .section02>div .items .nick-name {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 42px;
+}
+.reward_cmt .section02>div .items .date {
+    font-size: 15px;
+}
+.reward_cmt .section02>div .evalute {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 22px;
+    color: #f7d43e;
+}
+.reward_cmt .section02>div .evalute i {
+    margin-right: 12px;
+    line-height: 60px;
+}
+.reward_cmt .section02>div .evalute i.star0 {
+    color: #d5d7d4;
+}
+.reward_cmt .section02 .words {
+    padding-left: 90px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: .09em;
+}
+.reward_cmt .edit-eval-bn {
+    margin: 40px 0;
+    text-align: center;
+}
+main._doEdit .edit-eval-bn._edit {
+	display: none;
+}
+/* end-查看評論-未訂購-查看 */
+/* 查看評論-未訂購-編輯 */
+main:not(._doEdit) .lightbox .section03 {
+	display: none;
+}
+.reward_cmt .lightbox .section03 h1 {
+    background-color: transparent;
+    color: #4e5059;
+}
+.reward_cmt .lightbox .section03 h2 {
+    margin-bottom: 9px;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: normal;
+    text-align: left;
+}
+.reward_cmt .lightbox .section03 h2 span {
+    font-size: 15px;
+    line-height: normal;
+}
+.reward_cmt .lightbox .section03 textarea {
+	padding: 9px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.reward_cmt .edit-eval-bn input[disabled="disabled"] {
+    background-color: #83848a;
+    color: #fff;
+    cursor: default;
+}
+/* end-查看評論-未訂購-編輯 */
+
+main {
+	margin: 0;
+}
+.content._boxStyle {
+    width: 90%;
+}
+.lightbox h1 {
+    width: 100%;
+    font-size: 21px;
+    line-height: normal;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+    background-color: #4f6ea1;
+}
+.section02 div span.pic {
+	display: block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-image: url(../../images/avator.jpg);
+    float: left;
+    background-size: contain;
+}
+#wrapper .comment .comment-list {
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+#wrapper .comment .comment-list ul {
+    width: 100%;
+}
+#wrapper .comment .comment-list li {
+	margin: 0;
+}
+#wrapper .comment .comment-list li .other span.star {
+    width: calc(100% - 62px);
+    font-weight: normal;
+    color: #d5d6d4;
+    text-decoration: none;
+    text-align: right;
+    border: none;
+    float: left;
+    font-size: 15px;
+    line-height: normal;
+}
+
+._choiceStar {
+    display: flex;
+    align-items: center;
+ 	margin-bottom: 20px;
+}
+._choiceStar .eval-star {
+    display: inline-block;
+    font-size: 21px;
+    color: #f9d53e;
+}
+._choiceStar .eval-star i {
+    cursor: pointer;
+}
+._choiceStar .eval-star i:last-child {
+    margin-right: 0;
+}
+._choiceStar[data-hover='1'] .eval-star i:nth-child(1):before,
+._choiceStar[data-hover='2'] .eval-star i:nth-child(1):before,
+._choiceStar[data-hover='2'] .eval-star i:nth-child(2):before,
+._choiceStar[data-hover='3'] .eval-star i:nth-child(1):before,
+._choiceStar[data-hover='3'] .eval-star i:nth-child(2):before,
+._choiceStar[data-hover='3'] .eval-star i:nth-child(3):before,
+._choiceStar[data-hover='4'] .eval-star i:nth-child(1):before,
+._choiceStar[data-hover='4'] .eval-star i:nth-child(2):before,
+._choiceStar[data-hover='4'] .eval-star i:nth-child(3):before,
+._choiceStar[data-hover='4'] .eval-star i:nth-child(4):before,
+._choiceStar[data-hover='5'] .eval-star i:nth-child(1):before,
+._choiceStar[data-hover='5'] .eval-star i:nth-child(2):before,
+._choiceStar[data-hover='5'] .eval-star i:nth-child(3):before,
+._choiceStar[data-hover='5'] .eval-star i:nth-child(4):before,
+._choiceStar[data-hover='5'] .eval-star i:nth-child(5):before,
+._choiceStar[data-star='1']:not(._hover) .eval-star i:nth-child(1):before,
+._choiceStar[data-star='2']:not(._hover) .eval-star i:nth-child(1):before,
+._choiceStar[data-star='2']:not(._hover) .eval-star i:nth-child(2):before,
+._choiceStar[data-star='3']:not(._hover) .eval-star i:nth-child(1):before,
+._choiceStar[data-star='3']:not(._hover) .eval-star i:nth-child(2):before,
+._choiceStar[data-star='3']:not(._hover) .eval-star i:nth-child(3):before,
+._choiceStar[data-star='4']:not(._hover) .eval-star i:nth-child(1):before,
+._choiceStar[data-star='4']:not(._hover) .eval-star i:nth-child(2):before,
+._choiceStar[data-star='4']:not(._hover) .eval-star i:nth-child(3):before,
+._choiceStar[data-star='4']:not(._hover) .eval-star i:nth-child(4):before,
+._choiceStar[data-star='5']:not(._hover) .eval-star i:nth-child(1):before,
+._choiceStar[data-star='5']:not(._hover) .eval-star i:nth-child(2):before,
+._choiceStar[data-star='5']:not(._hover) .eval-star i:nth-child(3):before,
+._choiceStar[data-star='5']:not(._hover) .eval-star i:nth-child(4):before,
+._choiceStar[data-star='5']:not(._hover) .eval-star i:nth-child(5):before {
+    content: "\f005";
+}
+._choiceStar .remtxt {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 23px;
+    padding: 3px 0;
+    background-color: #4f6da2;
+    font-size: 13px;
+    line-height: normal;
+    color: #fff;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+._choiceStar .remtxt:before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: calc(50% - 5px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 5px 0;
+    border-color: transparent #4f6da2 transparent transparent;
+}
+._choiceStar .remtxt {
+    opacity: .7;
+}
+._choiceStar:not([data-hover='0']) .remtxt,
+._choiceStar:not([data-star='0']) .remtxt {
+    opacity: 1;
+}
+._choiceStar[data-hover='0'] .remtxt:after,
+._choiceStar[data-star='0'] .remtxt:after {
+    content: "評論";
+}
+._choiceStar[data-hover='1'] .remtxt:after,
+._choiceStar[data-star='1'] .remtxt:after {
+    content: "糟透了";
+}
+._choiceStar[data-hover='2'] .remtxt:after,
+._choiceStar[data-star='2'] .remtxt:after {
+    content: "差";
+}
+._choiceStar[data-hover='3'] .remtxt:after,
+._choiceStar[data-star='3'] .remtxt:after {
+    content: "一般";
+}
+._choiceStar[data-hover='4'] .remtxt:after,
+._choiceStar[data-star='4'] .remtxt:after {
+    content: "好";
+}
+._choiceStar[data-hover='5'] .remtxt:after,
+._choiceStar[data-star='5'] .remtxt:after {
+    content: "很棒";
+}
+.reward_cmt .section03 {
+	padding-top: 20px;
+}
+
+
+
+@media (max-width: 980px) {
+    .reward_cmt .section01 .comment-left,
+    .reward_cmt .section01 .comment-right {
+	    width: 100%;
+	}
+	.reward_cmt .section01 .comment-left {
+	    margin-bottom: 20px;
+	}
+	.reward_cmt .section01 .comment-left .logo {
+		margin: 0 auto;
+	}
+    .reward_cmt .section01 .comment-left .title {
+	    width: 100%;
+	    margin: 9px 0;
+	}
+	.reward_cmt .section01 .comment-left .title h1 {
+	    text-align: center;
+	}
+	.reward_cmt .section01 .comment-left .title .star {
+		margin: 0 auto;
+	}
+	.reward_cmt .section01 .comment-right {
+		justify-content: center;
+	}
+	.reward_cmt .section01 .comment-right .photo-img {
+	    width: 140px;
+	    margin-right: 0;
+	}
+	.reward_cmt .section01 .comment-right img {
+	    margin-right: 15px;
+	    margin-bottom: 9px;
+	}
+	.reward_cmt .section01 .comment-right .place-name {
+	    width: 100%;
+	    font-size: 15px;
+	    align-items: center;
+	}
+    .reward_cmt .section02 .words {
+	    padding-left: 0;
+	}
+	.reward_cmt .edit-eval-bn {
+	    text-align: center;
+	}
+	.reward_cmt .edit-eval-bn input {
+		height: unset;
+	}
+	.comment .comment-list li .other span.left,
+	#wrapper .comment .comment-list li .other span.star {
+	    width: 50%;
+	}
+	.bookList .bookTitle ._right .cancel a {
+		padding-left: 0;
+	}
+}

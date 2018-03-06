@@ -1,0 +1,1295 @@
+@charset 'UTF-8';
+/** BEGIN Space **/
+.meeting .banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.meeting .banner .banner-box {
+    width: 100%;
+    height: 435px;
+    overflow: hidden;
+    position: relative;
+}
+.meeting .banner .banner-box .panorama {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.meeting .banner .banner-box .panorama a {
+    display: block;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%
+}
+.meeting .banner .banner-box .panorama a img {
+    width: 100%;
+    height: auto;
+}
+.meeting .banner .banner-box .panorama iframe {
+    width: 100%;
+    height: 435px;
+}
+.meeting .banner .banner-box .pic {
+    display: none;
+    width: 100%;
+    height: 100%
+}
+.meeting .banner .banner-box .pic .picBg {
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.meeting .banner .banner-box .pic .picBg .picBox {
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+.meeting .banner .banner-box .pic .picBg .picBox .banner_show {
+    width: 100%;
+    z-index: 2;
+    padding: 5px 0;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slider-for {
+    width: 100%;
+    max-height: 374px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slider-for .slick-list {
+    width: 100%;
+    max-width: 834px;
+    margin: 0 auto;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slider-for .slick-slide {
+    height: 435px;
+    padding-bottom: 5%
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slider-nav {
+    width: 100%;
+    max-width: 835px;
+    height: 50px;
+    overflow: hidden;
+    margin: auto;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slider-nav .item {
+    width: 88px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slider-nav .item:last-child {
+    margin-right: 0;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slider-nav .item img {
+    width: 100%;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slider-nav .slick-current.slick-active {
+    border: 2px solid #000;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slider-nav .slick-track {
+    width: auto;
+    height: 50px;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slick-arrow {
+    position: absolute;
+    top: 60%;
+    z-index: 1;
+    margin-top: -12px;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slick-prev,
+.meeting .banner .banner-box .pic .picBg .picBox .slick-next {
+    display: block;
+    width: 19px;
+    height: 34px;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slick-prev {
+    background: url(../../images/banner_arrw.png) top left no-repeat;
+    left: 20px;
+}
+.meeting .banner .banner-box .pic .picBg .picBox .slick-next {
+    right: 20px;
+    background: url(../../images/banner_arrw.png) top right no-repeat;
+}
+.meeting .banner .banner-box .video {
+    display: none;
+    width: 100%;
+    height: 100%
+}
+.meeting .banner .banner-box .video iframe {
+    width: 100%;
+    height: 435px;
+}
+.meeting .banner .banner-box .panorama,
+.meeting .banner .banner-box .pic,
+.meeting .banner .banner-box .video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+.meeting .banner .banner-nav {
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    background: #222;
+}
+.meeting .banner .banner-nav div {
+    margin: 0 auto;
+    display: inline-flex;
+}
+.meeting .banner .banner-nav a {
+    display: block;
+    padding: 37px 20px 7px;
+    font-size: 12px;
+    color: #d65f4f;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 35px auto;
+    background-position: center top;
+    float: left;
+}
+.meeting .banner .banner-nav a:hover,
+.meeting .banner .banner-nav a.this {
+    color: #fff;
+    background-color: rgba(215, 96, 80, .9);
+}
+.meeting .banner .banner-nav a.panorama {
+    background-image: url("../../images/icon_meeting01.png");
+}
+.meeting .banner .banner-nav a.panorama:hover {
+    background-image: url("../../images/icon_meeting01_ro.png");
+}
+.meeting .banner .banner-nav a.panorama.this {
+    background-image: url("../../images/icon_meeting01_ro.png");
+}
+.meeting .banner .banner-nav a.pic {
+    background-image: url("../../images/icon_meeting02.png");
+}
+.meeting .banner .banner-nav a.pic:hover {
+    background-image: url("../../images/icon_meeting02_ro.png");
+}
+.meeting .banner .banner-nav a.pic.this {
+    background-image: url("../../images/icon_meeting02_ro.png");
+}
+.meeting .banner .banner-nav a.video {
+    background-image: url("../../images/icon_meeting03.png");
+}
+.meeting .banner .banner-nav a.video:hover {
+    background-image: url("../../images/icon_meeting03_ro.png");
+}
+.meeting .banner .banner-nav a.video.this {
+    background-image: url("../../images/icon_meeting03_ro.png");
+}
+
+
+
+
+.meeting .anchor {
+    width: 100%;
+    background: #fff;
+    height: 57px;
+    position: absolute;
+    z-index: 9;
+}
+.meeting .anchor .nav {
+    width: 100%;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #ddd;
+    z-index: 9;
+}
+.meeting .anchor .nav ul > li {
+    float: left;
+    margin-left: 9px;
+    position: relative;
+    display: inline-flex;
+}
+.meeting .anchor .nav ul > li:first-child {
+    margin-left: 0;
+}
+.meeting .anchor .nav ul > li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(78, 80, 89, .7);
+    line-height: 1.3;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 21px 15px;
+    border-bottom: 2px solid #f3f3f3;
+}
+.meeting .anchor .nav ul > li a:hover,
+.meeting .anchor .nav ul > li a.this {
+    border-bottom-color: #4e5059;
+    color: #4e5059;
+}
+.meeting .anchor .content {
+    width: 80%;
+    max-width: unset;
+    position: relative;
+    margin: 0 auto;
+}
+.meeting .anchor .day-plan {
+    width: 310px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    *zoom: 1;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    z-index: 9;
+}
+.meeting .anchor._slipeaway .day-plan {
+    z-index: 8;
+}
+.meeting .anchor .day-plan p.price {
+    height: 52px;
+    overflow: hidden;
+    padding: 0 15px;
+    background-color: #ddd;
+    font-size: 15px;
+    font-weight: normal;
+    color: #4e5059;
+    line-height: 52px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.meeting .anchor._fixed .day-plan {
+    padding-bottom: 20px;
+}
+.meeting .anchor._fixed .day-plan p.price {
+    height: 54px;
+    line-height: 54px;
+}
+.meeting .anchor .day-plan p.price b {
+    font-size: 25px;
+}
+.meeting .anchor .day-plan p.name {
+    padding: 15px;
+    font-size: 17px;
+    font-weight: normal;
+    background: #fff;
+    color: #000;
+    line-height: normal;
+    text-decoration: none;
+}
+.meeting .anchor._fixed .day-plan {
+    border-top: 0;
+}
+.meeting .anchor .day-plan a.next {
+    display: table;
+    margin: 20px auto;
+    padding: 0;
+    background-color: #fff;
+}
+.meeting .anchor .day-plan a.next i {
+    margin-left: 9px;
+}
+.meeting .anchor .day-plan ._others {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+/*.meeting .anchor .day-plan ._others a {
+    margin: 0;
+    font-size: 15px;
+    background-size: 15px;
+    padding-left: 20px;
+}*/
+.meeting .outline .link > div,
+.meeting .anchor .day-plan ._others > div {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+#wrapper .content-720 i.heart,
+#wrapper .content-720 i.add,
+#wrapper .day-plan  i.heart,
+#wrapper .day-plan  i.add {
+    color: #4e5059;
+    border-color: #4e5059;
+    border-width: 3px;
+    transform: scale(.5);
+    -ms-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -o-transform: scale(.5);
+    margin-left: -5px;
+    margin-right: -3px;
+}
+#wrapper.meeting .anchor .day-plan ._others > div:hover i,
+#wrapper.meeting .outline .link > div:hover i,
+.meeting .anchor .day-plan ._others > div:hover span,
+.meeting .outline .link > div:hover span,
+#wrapper.meeting .anchor .day-plan ._others > div.this i,
+#wrapper.meeting .outline .link > div.this i,
+.meeting .anchor .day-plan ._others > div.this i + span,
+.meeting .outline .link > div.this i + span {
+    color: #d76050;
+    border-color: #d76050;
+}
+.meeting .outline.content {
+    overflow: hidden;
+    margin-top: 60px;
+}
+.meeting .outline.content,
+.meeting .about.content,
+.meeting .device.content,
+.meeting .repast.content,
+.meeting .price-plan .content,
+.meeting .array.content,
+.meeting .clause .content,
+.meeting .comment.content {
+    width: 50%;
+    max-width: unset;
+    margin-left: 10%;
+}
+.meeting .content-720 {
+    width: 100%;
+    max-width: 720px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.meeting .outline span.brand {
+    min-height: 85px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-content: center;
+    margin-bottom: 20px;
+}
+.meeting .outline span.brand ._spaceAvator {
+    width: 12%;
+    min-width: 100px;
+    max-width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meeting .outline span.brand ._spaceAvator a {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+.meeting .outline span.brand ._spaceAvator img {
+    width: 100%;
+    height: auto;
+}
+.meeting .outline span.brand ._spaceCall {
+    margin-left: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.meeting .outline span.brand p {
+    overflow: hidden;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none;
+    float: right;
+}
+.meeting .outline span.brand p.name,
+.meeting .outline span.brand p.title {
+    width: 100%;
+}
+.meeting .outline span.brand p.name {
+    font-size: 13px;
+    color: rgba(78, 80, 89, .5);
+}
+.meeting .outline span.brand p.name a {
+    color: inherit;
+}
+.meeting .outline span.brand p.title {
+    font-size: 30px;
+}
+.meeting .outline p.no {
+    color: rgba(78, 80, 89, .5);
+    text-align: left;
+    font-size: 13px;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.meeting .outline .star,
+.meeting .outline .three span {
+    padding-right: 7px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: normal;
+    overflow: hidden;
+    font-weight: normal;
+    color: #4e5059;
+}
+.meeting .outline .star {
+    overflow: hidden;
+    width: 100%;
+    font-weight: normal;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.meeting .outline .star b {
+    color: #4e5059;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+.meeting .outline .three {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.meeting .outline .three span {
+    max-width: calc(100% / 3 - 4px);
+}
+.meeting .outline .three span:last-child {
+    padding-right: 0;
+}
+.meeting .outline .three span i {
+    margin-right: 2px;
+}
+.meeting .outline .three ._area b {
+    margin-top: -5px;
+}
+.meeting .outline .share {
+    display: flex;
+    align-items: center;
+}
+.meeting .outline .share a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100% auto;
+    border-radius: 5px;
+}
+.meeting .outline .share a:first-child {
+    margin-right: 5px;
+}
+.meeting .outline .share a.fb {
+    background-image: url(../../images/icon_fb03.png);
+}
+.meeting .outline .share a.line {
+    background-image: url(../../images/icon_line03.png);
+}
+.meeting .content-720 .title-box {
+    width: 20%;
+    font-size: 15px;
+    overflow: hidden;
+    font-weight: bold;
+    color: #4e5059;
+    line-height: normal;
+    text-decoration: none;
+    float: left;
+}
+
+.meeting .content-720 .box {
+    overflow: hidden;
+    font-weight: normal;
+    color: #4e5059;
+    text-decoration: none;
+    float: right;
+    width: 80%;
+    padding: 0 0 5px 20px;
+    font-size: 15px;
+    line-height: normal;
+}
+.meeting .content-720 .box .add {
+    height: 4.3em;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.meeting .device .content-720,
+.meeting .about .content-720,
+.meeting .comment .star > p,
+.meeting .comment .comment-list li {
+    border-bottom: 1px solid #ddd;
+}
+.meeting .device {
+    overflow: hidden;
+}
+.meeting .device li {
+    margin-bottom: 9px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #4e5059;
+    text-decoration: none;
+    width: calc(100% / 4);
+    height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    background-image: url(../../images/icon_device.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    float: left;
+}
+.meeting .device .content-720 .box span {
+    display: block;
+    margin-bottom: 9px;
+}
+.meeting .device .content-720 .box span:before {
+    content: "(";
+}
+.meeting .device .content-720 .box span:after {
+    content: ")";
+}
+.meeting .price-plan,
+.meeting .clause {
+    background: #fff;
+    border-bottom: 0;
+    overflow: hidden;
+}
+.meeting .clause {
+    overflow: hidden;
+}
+.meeting .clause .title-box i {
+    display: none;
+}
+
+
+
+
+.meeting .price-plan ul {
+    overflow: hidden;
+}
+.meeting .price-plan ul p.name {
+    margin: 20px 0 9px;
+    padding-left: 10px;
+    border-left: 5px #4e6e9d solid;
+    font-size: 15px;
+    font-weight: normal;
+    color: #4e6e9d;
+    line-height: normal;
+    text-decoration: none;
+}
+.meeting .price-plan ul:first-child p.name {
+    margin-top: 0;
+}
+.meeting .price-plan ul li {
+    overflow: hidden;
+    padding-left: 20px;
+    margin-bottom: 9px;
+    position: relative;
+}
+.meeting .price-plan ul li div {
+    overflow: hidden;
+}
+.meeting .price-plan ul li div p.program,
+.meeting .price-plan ul li div p.price {
+    cursor: pointer;
+}
+.meeting .price-plan ul li div p.program {
+    width: 40%;
+    font-size: 15px;
+    line-height: normal;
+    float: left;
+}
+.meeting .price-plan ul li div p.program i {
+    margin-left: 5px;
+    color: #d65f4f;
+    cursor: pointer;
+}
+.meeting .price-plan ul li div p.price {
+    width: 40%;
+    font-size: 12px;
+    font-weight: normal;
+    color: #4e5059;
+    line-height: 1.3;
+    text-decoration: none;
+    text-align: right;
+    float: left;
+}
+.meeting .price-plan ul li div p.price b {
+    color: #d65f4f;
+    margin-right: 1px;
+}
+.meeting .price-plan ul li div p.price b b {
+    font-size: 21px;
+}
+.meeting .price-plan ul li div a.select {
+    min-width: 65px;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    float: right;
+}
+.meeting .price-plan ul li.active div a.select {
+    background: gray !important;
+    cursor: default;
+}
+.meeting .price-plan ul li div a.select:before {
+    content: "選擇";
+}
+.meeting .price-plan ul li.active div a.select:before {
+    content: "已選擇";
+}
+.meeting .price-plan ul li .text {
+    display: none;
+    overflow: hidden;
+    padding: 5px 9px;
+    font-size: 13px;
+    line-height: normal;
+    border-radius: 5px;
+    background: #f3f3f3;
+    margin: 3px 0 9px;
+}
+.meeting .mobile-plan .plan-box .scroll li .text a,
+.meeting .price-plan ul li .text a {
+    display: block;
+    margin-top: 5px;
+    color: #4f6ea2;
+}
+.meeting .price-plan ul li .text a:hover {
+    text-decoration: underline;
+}
+.meeting .price-plan ul li ._pp-info {
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** BEGIN array **/
+.meeting .array {
+    overflow: hidden;
+}
+.meeting .array .content-720 {
+    padding-bottom: 20px;
+}
+.meeting .array ul li {
+    width: calc(100% / 4);
+    padding: 15px 0;
+    cursor: pointer;
+    float: left;
+    border-radius: 5px;
+}
+.meeting .array ul li:hover {
+    background-color: #f3f3f3;
+}
+.meeting .array ul li img {
+    display: block;
+    margin: 0 auto 9px;
+    width: 50px;
+    height: 50px;
+}
+.meeting .array ul li p {
+    font-weight: normal;
+    color: #4e5059;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+}
+/** END array **/
+
+/** BEGIN comment **/
+#cboxWrapper {
+    border-radius: 5px;
+}
+.meeting .comment {
+    overflow: hidden;
+}
+.meeting .comment.content .content-720 {
+    border-bottom: 0;
+}
+.meeting .comment .star {
+    overflow: hidden;
+}
+.meeting .comment .star > p {
+    border-bottom: 0;
+    font-weight: bold;
+    color: #4e5059;
+    line-height: normal;
+    text-decoration: none;
+}
+.meeting .comment .star ul {
+    overflow: hidden;
+}
+.meeting .comment .star li {
+    padding-left: 89px;
+    width: calc(100% / 2);
+    margin-bottom: 9px;
+    float: left;
+    text-align: left;
+}
+.meeting .comment .star li:nth-last-child(1),
+.meeting .comment .star li:nth-last-child(2) {
+    margin-bottom: 0;
+}
+.meeting .comment .star li p {
+    display: inline-block;
+    font-weight: normal;
+    color: #4e5059;
+    line-height: normal;
+    text-decoration: none;
+    font-size: 15px;
+    width: 30%;
+    text-align: left;
+    margin-right: 9px;
+}
+.meeting .comment .something {
+    width: 100%;
+    float: unset;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.meeting .comment .something p {
+    font-weight: normal;
+    color: #d65f4f;
+    line-height: normal;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 9px;
+}
+.meeting .comment .something a.next {
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+}
+.meeting .comment .pagebox {
+    width: 100%;
+    text-align: center;
+    float: unset;
+    margin-top: 20px;
+}
+/** END comment **/
+
+
+/** BEGIN position **/
+.meeting .position {
+    padding: 40px 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+.meeting .position .content {
+    width: 80%;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 auto;
+    z-index: 1;
+}
+.meeting .position p {
+    font-size: 15px;
+    color: #4e5059;
+    line-height: normal;
+    text-decoration: none;
+}
+.meeting .position p.title {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+.meeting .position iframe {
+    width: 100%;
+    margin-top: 9px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.meeting h2 {
+    font-size: 21px;
+    text-align: center;
+}
+.meeting .site-list a.more {
+    display: none;
+}
+/** END laydate **/
+
+/** BEGIN laydate **/
+.meeting .layui-laydate-header {
+    border: none;
+    margin-bottom: 5px;
+}
+.meeting .laydate-set-ym {
+    font-size: 17px;
+    font-weight: bold;
+}
+.meeting .laydate-set-ym span:first-child {
+    padding-right: 0;
+}
+.meeting .layui-laydate-main {
+    width: 100%
+}
+.meeting .layui-inline {
+    text-align: center;
+    position: relative;
+}
+.meeting .layui-inline .detaMark {
+    width: 100%;
+    height: 241px;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    z-index: 8;
+}
+.meeting .layui-laydate,
+.meeting .layui-laydate-hint {
+    border: none;
+    box-shadow: none;
+}
+.meeting .layui-laydate-static {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.meeting .layui-laydate .laydate-disabled {
+    background: #efefef !important;
+}
+.meeting .layui-laydate-content {
+    padding: 0;
+}
+.meeting .layui-laydate-content table {
+    width: 100%
+}
+.meeting .layui-laydate-content th {
+    color: #909090;
+    font-size: 15px;
+}
+.meeting .layui-laydate-content td {
+    font-size: 17px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #efefef;
+}
+/** END laydate **/
+
+
+@media only screen and (max-width: 980px) {
+    .meeting .outline.content,
+    .meeting .about.content,
+    .meeting .device.content,
+    .meeting .repast.content,
+    .meeting .price-plan .content,
+    .meeting .array.content,
+    .meeting .clause .content,
+    .meeting .comment.content {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+    .meeting .price-plan {
+        display: none;
+    }
+    .meeting .outline p.no {
+        margin-bottom: 5px;
+    }
+    .meeting .outline .star,
+    .meeting .outline .three span {
+        margin-bottom: 5px;
+        height: unset;
+        padding: 0;
+        font-size: 15px;
+        width: 100%;
+    }
+    .meeting .outline .star {
+    }
+    .meeting .outline .three {
+        width: 100%;
+        margin-bottom: 9px;
+    }
+    .meeting .outline .three span {
+    }
+    .meeting .outline .share {
+        width: 100%;
+        margin-bottom: 9px;
+        float: none;
+        text-align: left;
+    }
+    .meeting .outline .share a {
+        width: 30px;
+        height: 30px;
+    }
+    .meeting .outline .link {
+        overflow: hidden;
+    }
+    .meeting .outline .link > div,
+    .meeting .anchor .day-plan ._others > div {
+        font-size: 15px;
+    }
+    .meeting .outline span.brand {
+        margin: 11px 0;
+    }
+    .meeting .outline span.brand p.title {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .meeting .outline span.brand ._spaceAvator {
+        min-width: 70px;
+        max-width: 70px;
+    }
+    .meeting .outline span.brand ._spaceAvator a {
+        width: 60px;
+        height: 60px;
+    }
+    .meeting .outline span.brand ._spaceCall {
+        margin-left: 9px;
+    }
+    .meeting .outline.content {
+        margin-top: 41px;
+    }
+    .meeting .anchor {
+        height: 41px;
+    }
+    .meeting .anchor-mobile .nav {
+        height: auto;
+        overflow: hidden;
+    }
+    .meeting .anchor-mobile .nav ul > li {
+        padding-right: 15px;
+    }
+
+    .meeting .banner .banner-box,
+    .meeting .banner .banner-box .video iframe,
+    .meeting .banner .banner-box .panorama iframe {
+        height: 300px;
+    }
+    .meeting .banner .banner-box .panorama a {
+        width: 60px;
+        height: 60px;
+    }
+    .meeting .banner .banner-nav {
+        /*padding: 15px;*/
+    }
+    .meeting .banner .banner-nav div {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .meeting .banner .banner-nav a {
+        display: block;
+        width: calc(100% / 3);
+        padding: 0;
+        padding: 37px 9px 11px;
+        border-right: 1px #4e5059 solid;
+        font-size: 12px;
+    }
+    .meeting .outline .three {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .meeting .outline .content-720 {
+        padding: 9px 0;
+    }
+    .meeting .anchor .nav {
+        padding: 0 5%;
+    }
+    .meeting .anchor .nav ul>li a {
+        /*font-size: 15px;*/
+        padding: 9px;
+    }
+    .meeting .device .content-720,
+    .meeting .about .content-720,
+    .meeting .comment .star > p,
+    .meeting .comment .comment-list li,
+    .meeting .repast .content-720,
+    .meeting .array .content-720,
+    .meeting .clause .content-720,
+    .meeting .comment.content .content-720 {
+        padding-top: 0;
+    }
+    .meeting .content-720 .box {
+        border-left: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .meeting .content-720 .title-box {
+        width: 100%;
+        margin-bottom: 9px;
+    }
+    .meeting .content-720 .box a.more {
+        margin-top: 9px;
+    }
+    .meeting .device li {
+        font-size: 15px;
+        line-height: normal;
+        width: calc(100% / 3);
+        height: 22px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    /** END position **/
+    .meeting .position {
+        padding: 40px 0 0;
+    }
+    .meeting .position p {
+        padding: 0 5%;
+    }
+    .meeting .position .content {
+        width: 100%;
+    }
+    .meeting .position iframe {
+        height: 300px;
+        border-radius: 0;
+    }
+    /** END position **/
+
+    /** BEGIN mobile-plan **/
+    .meeting .mobile-plan {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        box-shadow: unset;
+        z-index: 11;
+    }
+    .meeting .mobile-plan a {
+        z-index: 9;
+    }
+    .meeting .mobile-plan a.first {
+        overflow: hidden;
+        background-color: #fff;
+        font-weight: normal;
+        color: #4e5059;
+        line-height: normal;
+        text-decoration: none;
+        padding: 9px 5%;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .meeting .mobile-plan a.first div {
+        width: 75%;
+    }
+    .meeting .mobile-plan a.first div p {
+        width: 100%;
+        height: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        line-height: normal;
+        font-size: 13px;
+    }
+    .meeting .mobile-plan a.first i {
+        width: 25%;
+    }
+    .meeting .mobile-plan a.reservation {
+        font-weight: normal;
+        color: #fff;
+        line-height: normal;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+        padding: 0;
+        background: #fff;
+    }
+    .meeting .mobile-plan a.reservation span.btn {
+        width: 100%;
+        border-radius: 0 !important;
+        padding: 9px !important;
+    }
+    .meeting .mobile-plan a.reservation span.btn i {
+        margin-left: 9px;
+    }
+    .meeting .mobile-plan .plan-box {
+        display: none;
+        width: 100%;
+        background-color: #fff;
+    }
+    .meeting .mobile-plan .plan-box p.title {
+        padding: 9px 0;
+        background-color: #4e5059;
+        font-weight: normal;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        line-height: normal;
+    }
+    .meeting .mobile-plan .plan-box .scroll {
+        overflow: hidden;
+        overflow-y: scroll;
+        padding: 5% 5% 150px;
+        height: 100vh;
+    }
+    .meeting .mobile-plan ._planBtn {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        border-top: 1px solid #ddd;
+    }
+    .meeting .mobile-plan .plan-box .scroll ul {
+        overflow: hidden;
+    }
+    .meeting .mobile-plan .plan-box .scroll ul p.name {
+        margin-bottom: 9px;
+        font-weight: normal;
+        color: #4e6e9d;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: normal;
+    }
+    .meeting .mobile-plan .plan-box .scroll li {
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .meeting .mobile-plan .plan-box .scroll li div {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .meeting .mobile-plan .plan-box .scroll li div label {
+        width: 50%;
+        display: inline-flex;
+        align-items: center;
+    }
+    .meeting .mobile-plan .plan-box .scroll li div input {
+        display: inline-block;
+        height: 20px;
+        float: left;
+    }
+    .meeting .mobile-plan .plan-box .scroll li div p.price {
+        font-weight: normal;
+        color: #4e5059;
+        line-height: normal;
+        text-decoration: none;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        width: 43%;
+        font-size: 15px;
+    }
+    .meeting .mobile-plan .plan-box .scroll li div p.price b {
+        font-weight: normal;
+        color: #d65f4f;
+    }
+    .meeting .mobile-plan .plan-box .scroll li div p.program {
+        color: #4e5059;
+        text-decoration: none;
+        height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        font-size: 15px;
+        font-weight: normal;
+        width: 100%;
+        line-height: normal;
+    }
+    .meeting .mobile-plan .plan-box .scroll li div i {
+        font-weight: normal;
+        color: #d65f4f;
+        text-decoration: none;
+        line-height: normal;
+        width: 7%;
+        font-size: 15px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .meeting .mobile-plan .plan-box .scroll li .text {
+        display: none;
+        width: 100%;
+        font-weight: normal;
+        color: #4e5059;
+        text-decoration: none;
+        padding: 5px 9px;
+        font-size: 15px;
+        line-height: normal;
+        border-radius: 5px;
+        background: #f3f3f3;
+        border: 1px solid #ddd;
+        margin: 3px 0 9px;
+    }
+    /** BEGIN mobile-plan **/
+
+    .meeting .layui-laydate-static {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .meeting .banner .banner-box .pic .picBg,
+    .meeting .banner .banner-box .pic .picBg .picBox {
+        background: none !important;
+    }
+
+    /** BEGIN array **/
+    .meeting .array ul li img {
+        width: 40px;
+        height: 40px;
+    }
+    /** END array **/
+
+    /** BEGIN comment **/
+    .meeting .comment .star > p a.more {
+        display: table;
+        font-weight: normal;
+        color: #4e6e9d;
+        line-height: normal;
+        text-decoration: none;
+        cursor: pointer;
+        float: right;
+    }
+    .meeting .comment .star > p a.more i {
+        margin-left: 5px;
+    }
+    .meeting .comment .something {
+        flex-direction: column;
+    }
+    .meeting .comment .something p {
+        margin-right: 0;
+        margin-bottom: 9px;
+        font-size: 13px;
+    }
+    .meeting .comment .pagebox {
+        margin-top: 40px;
+    }
+    /** END comment **/
+
+    .meeting .banner .banner-box .pic .picBg .picBox .slider-for .slick-slide {
+        padding-bottom: 0;
+        height: 300px;
+        background-size: contain !important;
+    }
+    .meeting .banner .banner-box .pic .picBg .picBox .banner_show {
+        display: none;
+        position: relative;
+        background: none;
+    }
+    .meeting .banner .banner-box .pic .picBg .picBox .slider-nav {
+        display: none;
+    }
+}
+/** END Space **/

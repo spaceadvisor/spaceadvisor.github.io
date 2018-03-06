@@ -1,0 +1,279 @@
+@charset 'UTF-8';
+/** BEGIN careers **/
+.recruitingBox .ma_banner .ba_txt {
+    text-shadow: none;
+}
+.pc_banner {
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+.ma_banner img {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 5px;
+}
+.create,
+.team,
+.vacancylist,
+.membership {
+    text-align: center;
+}
+.create ul {
+	display: flex;
+}
+.create li {
+	width: 100%;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 240px;
+    padding: 20px 9px;
+}
+.create li:last-child {
+    margin-right: 0;
+}
+.create li img {
+    margin: 0 auto 20px auto;
+}
+.create li h3 {
+    font-weight: bold;
+	font-size: 21px;
+    color: #4e5059;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.create li p {
+    font-size: 15px;
+    line-height: normal;
+}
+.team {
+	
+}
+.team li {
+    width: 50%;
+    float: left;
+}
+.team h2 {
+	font-weight: bold;
+	font-size: 30px;
+    color: #4e5059;
+}
+.team p {
+    font-size: 15px;
+    line-height: 24px;
+    width: 80%;
+    margin: 0 auto;
+    color: #4e5059;
+}
+.team .teamPhoto {
+    width: 100%;
+    clear: both;
+    margin: 43px 0 72px 0;
+}
+.team .teamPhoto img {
+    width: 100%
+}
+.team .teamPhoto .mo_photo {
+    display: none;
+}
+.vacancylist {
+	border-top: 1px solid #ddd;
+}
+.vacancylist li {
+    text-align: left;
+}
+.vacancylist li:first-child {
+    margin-top: 0;
+}
+.vacancylist .vacTitle {
+    cursor: pointer;
+    line-height: normal;
+    background: url(../../images/recruiting/list_arrw_1.png) #eee right center no-repeat;
+}
+
+.vacancylist .vacTitle span {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 1px solid #999;
+	font-size: 17px;
+    padding: 20px 0;
+    border-color: #ddd;
+}
+.vacancylist li:hover .vacTitle {
+    color: #fff;
+    background: url(../../images/recruiting/list_arrw_1.png) #aaa right center no-repeat;
+}
+.vacancylist li:hover .vacTitle span {
+	border-color: transparent;
+}
+.vacancylist ul {
+	border-radius: 5px;
+    overflow: hidden;
+}
+.vacancylist li:not(.active):hover .vacTitle {
+	background-color: rgba(78, 80, 89, .35);
+}
+.vacancylist li.active .vacTitle {
+    color: #fff;
+    background: url(../../images/recruiting/list_arrw_2.png) #4f6ea2 right center no-repeat;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.vacancylist li.active .vacTitle span {
+    border: none;
+}
+.vacancylist li:first-child:hover .vacTitle span {
+    border-top: none;
+}
+.vacancylist li.active .vacContent {
+	border: 1px solid #4f6ea2;
+}
+.vacancylist li:last-child .vacTitle span {
+    border: none;
+}
+.vacancylist li.active:last-child .vacContent {
+	border-radius: 0 0 5px 5px;
+}
+.vacancylist .vacContent {
+    display: none;
+    padding: 20px;
+    text-align: left;
+    line-height: normal;
+}
+.vacancylist .vacContent ul > li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    background: none;
+}
+.vacancylist .vacContent ul > li.active {
+    background: none;
+}
+.vacancylist .vacContent div {
+    margin-bottom: 20px;
+}
+.vacancylist .vacContent ul > li:last-child {
+    border: none;
+    margin-bottom: 0;
+}
+.vacancylist .vacContent ul > li:last-child div {
+    margin-bottom: 0;
+}
+.vacancylist .vacContent h4,
+.vacancylist .vacContent span {
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+.vacancylist .vacContent h4 {
+    width: 17%;
+    max-width: 165px;
+}
+.vacancylist .vacContent span {
+    width: 81%
+}
+.membership {
+    background: #f3f3f3;
+    /*border: 1px solid #ddd;*/
+}
+.membership h2 {
+	font-weight: bold;
+	color: #4e5059;
+    margin-bottom: 40px;
+}
+.membership .membershipList {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.membership .membershipList .custodyBtn {
+    margin: 40px 0 0;
+}
+.membership .membershipList .custodyBtn a {
+    background: transparent;
+    padding: 0;
+    font-size: unset
+}
+.membership .membershipList ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10%
+}
+.membership .membershipList ul:nth-child(3) {
+    margin-right: 0;
+}
+.membership .membershipList ul li {
+	font-weight: normal;
+	margin-bottom: 20px;
+    font-size: 15px;
+}
+.membership .membershipList ul li:last-child {
+    margin-bottom: 0;
+}
+.team li h2 {
+	margin-bottom: 20px;
+}
+@media only screen and (max-width: 980px) {
+    .create {
+        padding: 0;
+    }
+    .create ul {
+        flex-direction: column;
+    }
+    .team h2,
+    .membership h2 {
+        font-size: 30px;
+    }
+    .membership .membershipList ul {
+        margin-bottom: 0;
+    }
+    .membership .membershipList ul li,
+    .membership .membershipList ul li:last-child {
+        margin-bottom: 15px;
+    }
+    .team {
+        padding: 20px 0 0;
+    }
+    .team li {
+        width: 100%;
+        float: none;
+        margin-bottom: 50px;
+    }
+    .team p {
+        width: 100%;
+    }
+    .team .teamPhoto {
+        margin: 40px 0;
+    }
+    .team .teamPhoto .pc_photo {
+        display: none;
+    }
+    .team .teamPhoto .mo_photo {
+        display: block;
+    }
+    .create li {
+        height: 180px;
+        padding: 20px 9px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .create li img {
+        width: 60px;
+        margin-bottom: 9px;
+    }
+    .create li h3 {
+        margin-bottom: 9px;
+    }
+    .vacancylist .vacContent h4,
+    .vacancylist .vacContent span {
+        display: block;
+        width: 100%;
+        max-width: unset;
+    }
+    .vacancylist .vacTitle span {
+        width: 90%;
+    }
+}
+/** END careers **/

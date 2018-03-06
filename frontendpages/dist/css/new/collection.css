@@ -1,0 +1,64 @@
+@charset 'UTF-8';
+.collectionBox .termsLink {
+	margin-top: 20px;
+}
+#wrapper i.heart,
+#wrapper i.add {
+	right: 15px;
+}
+.collectionBox .placeBox._boxStyle {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+    margin-top: 44px;
+    padding-top: 40px;
+}
+.collectionBox .placeBox > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.collectionBox .placeBox .site-list {
+	padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.collectionBox .placeBox .site-list .site {
+	margin-bottom: 20px;
+	padding-right: 9px;
+	width: calc(100% / 3);
+}
+.collectionBox .placeBox .site-list .site a {
+	width: 100%;
+}
+
+.collectionBox .pageList {
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 980px) {
+	.collectionBox .termsLink {
+	    margin-top: 44px;
+    	padding-top: 20px;
+	}
+	.termsLink a {
+		width: 100%;
+	}
+	.collectionBox .placeBox._boxStyle {
+	    width: 90%;
+	    padding-top: 20px;
+	}
+	.collectionBox .placeBox .site-list {
+		flex-direction: column;
+	}
+	.collectionBox .placeBox .site-list .site {
+		width: 100%;
+		padding-right: 0;
+	}
+	#wrapper .nav-tabs > li a {
+		font-size: 17px;
+	}
+}

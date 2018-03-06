@@ -1,0 +1,2594 @@
+@charset 'UTF-8';
+/** BEGIN all_order **/
+
+.writeInput.part4 .col .assess input[type=radio]+label:before,
+.writeInput.part4 .col .assess input[type=checkbox]+label:before,
+.writeInput.part5 .col .assess input[type=radio]+label:before,
+.writeInput.part5 .col .assess input[type=checkbox]+label:before {
+    border: 1px solid #d76050;
+}
+.writeInput.part4 .col .assess input[type=radio]+label:after,
+.writeInput.part4 .col .assess input[type=checkbox]+label:after,
+.writeInput.part5 .col .assess input[type=radio]+label:after,
+.writeInput.part5 .col .assess input[type=checkbox]+label:after {
+    width: 12px;
+    height: 12px;
+    background: #d76050;
+    top: 8px;
+    left: 4px;
+}
+.writeInput.part3 li i {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+.writeInput.part3 .correct i:before {
+    content: "\f058";
+    color: #4cc176;
+}
+.writeInput.part3 .error i:before {
+    content: "\f057";
+    color: #ec0e22;
+}
+
+/** BEGIN writeContent **/
+.writeContent {
+    position: relative;
+}
+.writeContent select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../../images/lanrrw.png") no-repeat scroll right center transparent;
+}
+.writeContent .custodyBtn a,
+.writeContent .custodyBtn span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.writeContent .custodyBtn span b {
+    color: #d76050;
+    font-weight: normal;
+}
+.writeContent .custodyBtn span a {
+    color: #4f6ea2;
+    vertical-align: initial;
+}
+.writeContent .custodyBtn span a:hover {
+    text-decoration: underline;
+}
+
+.writeContent .writeContainer {
+    width: 68%;
+    max-width: 693px;
+    float: left;
+}
+/** END writeContent **/
+
+/** BEGIN appointment_Result **/
+.appointment_Result {
+    float: right;
+    width: 100%;
+    max-width: 295px;
+}
+.appointment_Result .demand h4,
+.appointment_Result .demand .deTxt,
+.appointment_Result .demand li {
+    width: 100%;
+    font-size: 15px;
+}
+/** END appointment_Result **/
+
+/** BEGIN appointment_detail **/
+.appointment_detail time,
+.appointment_detail span {
+    display: inline-block;
+    vertical-align: top;
+}
+.appointment_detail .program b {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: normal;
+}
+.appointment_detail .program .formula {
+    float: right;
+    width: 45%;
+    text-align: right;
+}
+.appointment_detail .program .formula i {
+    cursor: pointer;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: #b9babd;
+    display: none;
+}
+.appointment_detail .program .formula i:before {
+    content: "\f059"
+}
+/** END appointment_detail **/
+
+.orderstep._boxStyle {
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.orderstep b {
+    font-weight: normal;
+}
+.orderstep .stepPhotoInside {
+    width: 30%;
+    max-width: 270px;
+    display: inline-flex;
+    align-items: center;
+    max-height: 51px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #b81814;
+    padding: 0 9px;
+    margin-right: 3px;
+}
+.orderstep .stepPhotoInside img {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.orderstep ul {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 1px;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+}
+.orderstep ul li {
+    text-align: center;
+    float: left;
+    width: 33.33333%;
+    border-right: 1px solid #ddd;
+    padding: 11px;
+    font-size: 21px;
+    line-height: normal;
+    color: #4f6da2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .55;
+    border-radius: 2px;
+}
+.orderstep ul li:last-child {
+    border: none;
+}
+.orderstep ul li.active {
+    background: #4f6ea2;
+    color: #fff;
+    opacity: 1;
+    border: 0;
+}
+.orderstep ul li b {
+    margin-right: 3px;
+}
+.orderstep ul li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.orderstep ul li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+.stepPhoto._boxStyle {
+    clear: both;
+    background: #b61d1a;
+    text-align: center;
+    height: 70px;
+    width: 42%;
+    margin-top: 0;
+    padding: 5px;
+    overflow: hidden;
+}
+.stepPhoto._boxStyle img {
+    width: 90%;
+    height: auto;
+}
+#wrapper .stepPhoto._boxStyle {
+    display: none;
+}
+
+/** BEGIN order_time **/
+.order_time .orderContainer {
+    width: 68%;
+    max-width: 693px;
+    float: left;
+}
+.order_time .orderContainer h2 {
+    text-align: left;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #d76050;
+    font-size: 21px;
+    color: #d76050;
+    border-bottom-color: #d76050;
+    display: flex;
+    align-items: center;
+    padding: 5px 9px;
+    background: unset;
+}
+.order_time .orderContainer h2:before {
+    content: "\f274";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 21px;
+}
+.order_time .orderContainer .oder_mo {
+    display: none;
+}
+
+/** BEGIN calendar **/
+.order_time .orderContainer .calendar {
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 0 20px;
+}
+.order_time .orderContainer .calendar .monweek {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px 5px 0 0;
+}
+.order_time .orderContainer .calendar .month {
+    padding: 15px 15px;
+    font-weight: bold;
+    color: #4e5059;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+.order_time .orderContainer .calendar .month p {
+    display: inline-block;
+    text-align: center;
+    font-weight: normal;
+}
+.order_time .orderContainer .calendar .month a {
+    display: inline-block;
+    color: #4e5059;
+    float: left;
+}
+.order_time .orderContainer .calendar .month a:last-child {
+    float: right;
+}
+.order_time .orderContainer .calendar .month a:hover {
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, .14);
+    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, .14);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .14);
+    transition: all .5s;
+}
+.order_time .orderContainer .calendar li {
+    width: calc(100% / 7);
+    text-align: center;
+    float: left;
+}
+.order_time .orderContainer .calendar ul.week li {
+    color: #979797;
+    line-height: 2;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 15px;
+}
+.order_time .orderContainer .calendar ul.day {
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+}
+.order_time .orderContainer .calendar ul.day li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px #e6e6e6 solid;
+    border-right: 1px #e6e6e6 solid;
+    font-weight: bold;
+    color: #4e5059;
+    text-decoration: none;
+    position: relative;
+    text-align: left;
+    font-size: 15px;
+    line-height: normal;
+    height: 60px;
+    padding: 5px;
+}
+.order_time .orderContainer .calendar ul.day li.no {
+    color: #dce0e0;
+    background-color: #f3f3f3;
+}
+.order_time .orderContainer .calendar ul.day li.active {
+    background: #4f6ea2;
+    color: #fff;
+}
+.order_time .orderContainer .calendar ul.day li.active .money {
+    color: #fff;
+}
+.order_time .orderContainer .calendar ul.day li.general,
+.order_time .orderContainer .calendar ul.day li.fold {
+    cursor: pointer;
+}
+.order_time .orderContainer .calendar ul.day li .money {
+    font-size: 15px;
+    margin-top: 9px;
+    font-weight: normal;
+}
+.order_time .orderContainer .calendar ul.day li.fold .money {
+    color: #d76050;
+}
+.order_time .orderContainer .calendar ul.day li.fold span {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    right: 5px;
+    background: #d76050;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: normal;
+    padding: 0 5px;
+    opacity: .8;
+    text-align: center;
+}
+.order_time .orderContainer .calendar ul.day li .lightning:before {
+    content: "\f0e7";
+    color: #ffde00;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 15px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-left: 5px;
+}
+.order_time .orderContainer .calendar ul.day li:nth-child(36),
+.order_time .orderContainer .calendar ul.day li:nth-child(37),
+.order_time .orderContainer .calendar ul.day li:nth-child(38),
+.order_time .orderContainer .calendar ul.day li:nth-child(39),
+.order_time .orderContainer .calendar ul.day li:nth-child(40),
+.order_time .orderContainer .calendar ul.day li:nth-child(41),
+.order_time .orderContainer .calendar ul.day li:nth-child(42),
+.order_time .orderContainer .calendar ul.day li:nth-child(43) {
+    border-bottom: none;
+}
+/** END calendar **/
+
+.order_time .orderContainer .calendar ul.day li.general:hover,
+.order_time .orderContainer .calendar ul.day li.fold:hover,
+.order_time .order_tiemBox .order_timeContent .choose a:hover,
+.order_time .order_tiemBox .order_timeContent .allowance a:hover {
+    background: rgba(79, 110, 162, .2);
+}
+.order_time .instant-tip {
+    padding: 9px;
+    background-color: #f3f3f3;
+    font-size: 15px;
+    line-height: normal;
+    border-radius: 5px;
+}
+.order_time .instant-tip h1 {
+    font-weight: bold;
+    /*margin-bottom: 5px;*/
+}
+.order_time .instant-tip h1 i {
+    color: #ffde00;
+    font-size: 17px;
+    margin-left: 5px;
+}
+.order_time .instant-tip p {
+    font-size: 13px;
+}
+.order_time .orderInformation1,
+.order_time .orderInformation2,
+.order_time .orderInformation3,
+.order_time .orderInformation4,
+.order_time .orderInformation5,
+#wrapper.order_time .custodyBtn {
+    margin-bottom: 40px;
+}
+.order_time .orderInformation2 h2:before {
+    content: "\f017";
+}
+.order_time .orderInformation3 h2:before {
+    content: "\f07a";
+}
+#wrapper.order_time .bonus li {
+    width: 100%;
+    padding-right: 0;
+}
+#wrapper.order_time .bonus .col {
+    width: 100%;
+}
+#wrapper.order_time .bonus span {
+    max-width: unset;
+    margin-left: 0;
+    width: 100%;
+}
+#wrapper.order_time .bonus .assess {
+    max-width: unset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#wrapper.order_time .bonus .assess label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#wrapper.order_time .order_tiemBox .assess input[type=checkbox] {
+    display: inline-block;
+    width: unset;
+    height: unset;
+    /*display: none;*/
+    margin: 0;
+    margin-right: 9px;
+}
+.period_content li .assess input[type=checkbox]+label {
+    width: 100%;
+    /*display: inline-flex;*/
+    /*align-items: center;*/
+    line-height: normal;
+}
+#wrapper.order_time .assess input[type=checkbox]+label:before,
+#wrapper.order_time .assess input[type=checkbox]+label:after {
+    /*content: unset;*/
+    /*top: 0;*/
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    border-radius: 3px;
+    display: none;/** checkbox style hidden **/
+}
+#wrapper.order_time .assess input[type=checkbox]+label:after {
+    content: "\f00c";
+    position: absolute;
+    top: 25px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-family: FontAwesome;
+    text-align: center;
+    color: #fff;
+    transition: 0s;
+    font-weight: normal;
+    display: none;/** checkbox style hidden **/
+}
+#wrapper.order_time.order_time_period .assess input[type=checkbox]+label:after {
+    top: 7px;
+    font-size: 17px;
+    padding-left: 1px;
+}
+#wrapper.order_time.order_time_period li._item._havePlan2 .assess input[type=checkbox]+label:after {
+    top: 24px;
+}
+
+/** BEGIN equipment **/
+.order_time .equipment {
+    width: 100%;
+}
+.order_time .equipment .col {
+    margin-top: 0;
+}
+.order_time .equipment .col .assess .number select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../../images/down-arrow.png) no-repeat scroll right -18px transparent;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    color: #4e5059;
+    font-size: 15px;
+    height: 30px;
+    width: 90px;
+    padding: 0 30px 0 10px;
+}
+.order_time .equipment .col .assess .number select[disabled] {
+    border-color: #ddd;
+    background-color: #ddd;
+    cursor: default;
+    opacity: .7;
+}
+#wrapper.order_time .equipment .assess input[type=checkbox] {
+    display: inline-block;
+    width: unset;
+    height: unset;
+}
+#wrapper.order_time .equipment .col .assess input[type=checkbox]+label {
+    display: flex;
+    align-items: center;
+}
+.order_time .equipment .col .assess i {
+    margin: 0 9px;
+    display: inline-flex;
+}
+.order_time .orderInformation3 .equipment .box .add {
+    height: calc(39px * 6);
+    overflow: hidden;
+}
+/** END equipment **/
+
+/** BEGIN orderInformation4 **/
+.order_time .orderInformation4 {
+    width: 100%;
+}
+.order_time .orderInformation4 .col {
+    margin-top: 0;
+}
+#wrapper.order_time .orderInformation4 .assess input[type=checkbox] {
+    display: block;
+    width: auto;
+}
+#wrapper.order_time .orderInformation4 .assess input[type=checkbox]+label:after {
+    color: #4e5059;
+    top: 4px;
+}
+.order_time .orderInformation4 > p {
+    font-size: 15px;
+    line-height: normal;
+    margin-bottom: 9px;
+    width: 100%;
+}
+.order_time .orderInformation4 a {
+    color: #4f6ea2;
+}
+.order_time .orderInformation4 a:hover {
+    text-decoration: underline;
+}
+.order_time .orderInformation4 .col .assess {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.order_time .orderInformation4 .col .assess input[type=checkbox]+label {
+    font-size: 15px;
+    color: #4e5059;
+}
+/** END orderInformation4 **/
+
+/** BEGIN orderInformation5 **/
+.order_time .orderInformation5 h2:before {
+    content: "\f274";
+}
+.order_time .orderInformation5 > p {
+    font-size: 15px;
+    line-height: normal;
+    margin-bottom: 9px;
+    width: 100%;
+}
+#wrapper.order_time .orderInformation5 textarea {
+    padding: 10px 8px;
+    background: #f3f3f3;
+    font-size: 1rem;
+    color: #4e5059;
+    width: 100%;
+    height: 67px;
+    border: none;
+    border-radius: 5px;
+}
+/** END orderInformation5 **/
+
+.order_time .order_tiemBox {
+    width: 100%;
+    margin-top: 9px;
+    display: flex;
+    justify-content: space-between;
+}
+.order_time .order_tiemBox .order_timeContent {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: unset;
+    margin-right: 20px;
+    float: left;
+}
+.order_time .order_tiemBox .order_timeContent:last-child {
+    margin-right: 0;
+}
+.order_time .order_tiemBox .order_timeContent .allowance .order_money span {
+    top: 3px;
+    right: 3px;
+    background: #d76050;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: normal;
+    padding: 0 5px;
+    opacity: .8;
+}
+.order_time .order_timeList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.order_time .order_timeList.ord_mo li {
+    margin-right: 3px;
+}
+.order_time .order_timeList.ord_mo li:last-child {
+    margin-right: 0;
+}
+.order_time .orderInformation2._none .order_timeList li,
+.order_time .orderInformation2._none .order_tiemBox {
+    display: none;
+}
+.order_time .orderInformation2._none .order_timeList:before {
+    content: "請選擇日期";
+}
+.order_time .order_timeList li {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 15px;
+}
+.order_time .order_timeList li a {
+    color: #4e5059;
+}
+.order_time .order_tiemBox .order_timeContent li {
+    border-bottom: 1px solid #ddd;
+    padding: 9px 0;
+    font-size: 15px;
+    line-height: normal;
+    letter-spacing: 0;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.order_time .order_tiemBox .order_timeContent li:not(._disable):hover {
+    background: rgba(79, 110, 162, .2);
+}
+.order_time .order_tiemBox .order_timeContent li._active {
+    background: #4f6ea2;
+    color: #fff;
+}
+.order_time .order_tiemBox .order_timeContent li._haveDiscount:after {
+    content: attr(data-discount);
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background: #d76050;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: normal;
+    padding: 0 5px;
+    opacity: .8;
+    display: inline-block;
+}
+.order_tiemBox .order_timeContent li._disable {
+    background: #f3f3f3;
+    cursor: not-allowed;
+    color: #ddd;
+}
+.order_time .order_tiemBox .order_timeContent li:last-child {
+    border-bottom: 0;
+}
+.order_time .order_tiemBox .order_timeContent li time {
+    font-size: 17px;
+}
+.order_time .order_tiemBox .order_timeContent li._onlineb time:before {
+    content: "\f0e7";
+    color: #ffde00;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 15px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
+.order_time .order_tiemBox .order_timeContent li .order_money {
+    font-size: 15px;
+    margin-top: 5px;
+}
+.order_time .order_tiemBox .order_timeContent li._haveDiscount .order_money {
+    color: #d76050;
+}
+/*#wrapper.order_time ._outerBox1 {
+    position: relative;
+    width: 100%;
+}*/
+#wrapper.order_time ._outerBox {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+#wrapper.order_time .appointment_Result {
+    position: relative;
+}
+#wrapper.order_time .appointment_Result._active {
+    position: fixed;
+    top: 65px;
+}
+#wrapper.order_time .appointment_Result .custodyBtn {
+    display: flex;
+    flex-direction: column;
+}
+#wrapper.order_time .writeContent .custodyBtn > span {
+    background: #f3f3f3;
+    padding: 9px;
+    border-radius: 5px;
+}
+#wrapper.order_time .appointment_Result .custodyBtn > span {
+    margin: 9px 0;
+}
+/************************************/
+
+.order_time.order_time_period .order_timeList li:nth-child(2) {
+    padding-left: 9px;
+}
+.order_time.order_time_period .order_timeList li:nth-child(3) {
+    padding-left: 18px;
+}
+.order_time_period .caseSelect {
+    margin-bottom: 55px;
+}
+.order_time_period .caseSelect .flexbox {
+    display: flex;
+     flex-wrap: wrap;
+}
+.order_time_period .caseSelect .flexbox .caseList {
+    width: 58.7%;
+}
+.order_time_period .caseSelect .flexbox .caseList ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.order_time_period .caseSelect .flexbox .caseList ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    margin: 0 4px 5px 0;
+    padding: 0 9px;
+    width: calc((100% - 15px) / 4);
+    height: 58px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    line-height: normal;
+}
+.order_time_period .caseSelect .flexbox .caseList ul li:nth-child(4n+4) {
+    margin-right: 0;
+}
+.order_time_period .caseSelect .flexbox .caseList ul li.active,
+.order_time_period .caseSelect .flexbox .caseList ul li:hover{
+    background-color: #4f6ea2;
+    color: #fff;
+}
+.order_time_period .caseSelect .flexbox .caseRem {
+    width: 38.56%;
+    margin-left: 2.74%;
+    background-color: #f3f3f3;
+    font-size: 15px;
+    line-height: normal;
+    color: #4e5059;
+    padding: 9px;
+    height: 121px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+.order_time_period .caseSelect .flexbox .caseRem ul li:not(.active){
+    display: none;
+}
+.order_time_period .caseSelect .flexbox .caseRem a{
+    color: #4f6ea2;
+}
+.order_time_period .caseSelect .flexbox .caseRem a:hover{
+    text-decoration: underline;
+}
+
+
+
+.order_time_period li._item .col .assess {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.order_time_period li._item._havePlan2 .col .assess .plan > .planSelect._s1 .planSelect._s2 {
+    margin-top: 9px;
+}
+.order_time_period li._item._havePlan3 .col .assess .plan > .planSelect._s1 .planSelect._s2 {
+    display: flex;
+    align-items: center;
+}
+.order_time_period li._item._havePlan3 .col .assess .plan > .planSelect._s1 .planSelect._s2 .plan3 {
+    margin-left: 5px;
+}
+.order_time_period li._item .col .assess .plan select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../../images/down-arrow.png) no-repeat scroll right 6px transparent;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    color: #4e5059;
+    font-size: 15px;
+    height: 30px;
+    width: 100%;
+    padding: 0 30px 0 10px;
+    margin: 0;
+}
+.order_time_period li._item .col .assess .plan select[disabled] {
+    border-color: #ddd;
+    background-color: #ddd;
+    cursor: default;
+    opacity: .7;
+}
+.order_time_period li._item._onlineb .col .assess .preiodBox time:after {
+    content: "\f0e7";
+    color: #ffde00;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 15px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-left: 5px;
+}
+
+.period_content {
+    margin-top: 5px;
+    width: 100%
+}
+.period_content li {
+    border-bottom: 1px solid #e1e1e0;
+}
+.period_content li:hover {
+    background: #f3f3f3;
+}
+.period_content li:hover.not_choose {
+    background: none;
+}
+.period_content li.not_choose .col {
+    opacity: .35;
+}
+.period_content li .col {
+    padding: 9px 0 9px 9px;
+    margin: 0;
+}
+.period_content .prices {
+    padding-left: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+}
+.period_content .rebates .prices span {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+}
+.period_content .rebates .prices .rebate {
+    background: #d76050;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: normal;
+    padding: 0 5px;
+    opacity: .8;
+    top: 0;
+    right: 0;
+    margin-right: 9px;
+}
+.period_content .rebates:not(._haveDiscount) .prices .rebate {
+    display: none;
+}
+.period_content .rebates .prices .price {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    font-size: 15px;
+    margin-left: 38px;
+    color: #4e5059;
+}
+.period_content .rebates._haveDiscount .prices .price {
+    color: #d76050;
+    margin-left: 0;
+}
+.period_content .rebates .prices b {
+    font-size: 15px;
+    font-weight: normal;
+}
+.period_content .preiodBox {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 0;
+    width: calc(100% - 38px);
+}
+.period_content .preiodBox h4 {
+    display: none;
+}
+.period_content .preiodBox time {
+    position: relative;
+    width: 26%;
+    color: #4e5059;
+}
+.period_content .preiodBox .plan {
+    padding-left: 0;
+    margin: 0 20px;
+    width: 36%;
+}
+.period_content .preiodBox .prices {
+    padding-left: 5px;
+}
+.order_time.order_time_period .order_timeList li:nth-child(2) {
+    margin-left: 20px;
+}
+.order_time.order_time_period .order_timeList li:nth-child(3) {
+    padding-left: 60px
+}
+
+.period_content li select{margin-left:-10px;}
+.period_content .rebates .sub{ background-color:#fff; padding:5px 0; border-top:1px solid #d2d2d2;}
+
+.period_content li:not(._active) .sub,
+.period_content li._disable .sub,
+.period_content li._noSub .sub {
+    display: none;
+}
+.period_content .rebates .sub li{
+    border-bottom:0;
+    padding: 9px 0;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+.period_content .rebates .sub label{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.period_content .rebates .sub label div:nth-child(1){
+    width: 26%;
+    position: relative;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.period_content .rebates .sub label div:nth-child(1) b {
+    font-weight:normal;
+    font-size: 15px;
+}
+.period_content .rebates .sub label div:nth-child(1) b:before{
+    content:"";
+    position:absolute;
+    top:2px;
+    left:63px;
+    display:inline-block;
+    width: 18px;
+    height: 18px;
+    border:1px solid #4e5059;
+    background-color:#4e5059;
+    border-radius: 5px;
+
+    display: none;/** checkbox style hidden **/
+}
+.period_content .rebates .sub label div:nth-child(1) b:after {
+    content: "\f00c";
+    position: absolute;
+    top: 2px;
+    left: 63px;
+    display: inline-block;
+    font-family: FontAwesome;
+    text-align: center;
+    color: #fff;
+    transition: .2s;
+    opacity: 0;
+    font-weight: normal;
+
+    display: none;/** checkbox style hidden **/
+}
+.period_content .rebates .sub label div:nth-child(1) input[type="checkbox"]:checked+b:after{
+    opacity: 1;
+    padding: 1px 0 0 2px;
+
+    display: none;/** checkbox style hidden **/
+}
+.period_content .rebates .sub label div:nth-child(2){
+    width: 36%;
+    font-size: 15px;
+    margin-left: 40px;
+}
+.period_content .rebates .sub label div input[type="checkbox"]{
+    border: 0;
+    width: unset;
+    height: unset;
+    display: inline-block;
+    /*display: none;*/
+    margin: 0;
+    margin-right: 9px;
+}
+.period_content .rebates .sub label div:nth-child(3){
+    font-size: 15px;
+    margin-left: 30px;
+}
+.order_time_period .notice_txt{
+    font-size: 15px;
+    line-height: normal;
+    color: #d76050;
+}
+.order_time_period .notice_txt ul{
+    margin-top: 9px;
+}
+.order_time_period .notice_txt ul li{
+    position: relative;
+    margin: 9px 0;
+}
+.order_time_period .notice_txt ul li i.error{
+    color: #d76050;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.order_time_period .notice_txt ul li a{
+    color: #4f6ea2;
+    text-decoration: underline;
+}
+/** END order_time **/
+
+/** BEGIN order_cart **/
+.buyContent._boxStyle {
+    padding-top: 20px;
+}
+.buyContent .bookList .custodyBtn {
+    text-align: right;
+}
+.buyContent .title {
+    margin: 20px 0;
+    width: 100%;
+}
+.buyContent .title h2 {
+    text-align: left;
+    font-weight: normal;
+    margin: 0 0 9px 0;
+    padding: 5px 9px;
+    font-size: 21px;
+    color: #4e5059;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+.buyContent .title h2 i {
+    margin-right: 9px;
+}
+.buyContent .title .titTxt {
+    width: 100%;
+    line-height: normal;
+    font-size: 13px;
+    text-align: right;
+    padding: 0 9px;
+    margin: 0 auto;
+}
+.buyContent .title .titTxt i {
+    margin-right: 3px;
+}
+.buyContent .title .titTxt b,
+.buyContent .title .titTxt .fa-shopping-cart:before {
+    color: #d76050;
+}
+.buyContent .title .titTxt a {
+    font-size: 15px;
+    color: #4e5059;
+}
+.buyContent .title .titTxt a:hover {
+    text-decoration: underline;
+}
+.buyContent .noproduct {
+    display: none;
+    text-align: center;
+    font-size: 21px;
+    color: #ccc;
+    padding: 50px 0;
+}
+/** END order_cart **/
+
+/** BEGIN order_form **/
+.stepBox.fill_box .writeContent .writeInput li .col {
+    margin: 0;
+}
+.stepBox.fill_box .writeContent .writeContainer h2 {
+    font-size: 21px;
+    color: #4f6ea2;
+    border-bottom: 1px solid #4f6ea2;
+    display: flex;
+    align-items: center;
+    padding: 5px 9px;
+    margin: 0 0 20px 0;
+    text-align: left;
+    font-weight: normal;
+}
+.stepBox.fill_box .writeContent .writeContainer h2:before {
+    content: unset;
+}
+.stepBox.fill_box .writeContent .writeContainer h2 i {
+    margin-right: 9px;
+    font-size: 17px;
+}
+.stepBox.fill_box .writeContent .writeInformation1,
+.stepBox.fill_box .writeContent .writeInformation2,
+.stepBox.fill_box .writeContent .writeInformation3,
+.stepBox.fill_box .writeContent .writeInformation4,
+.stepBox.fill_box .writeContent .writeInformation5 {
+    clear: both;
+    margin-bottom: 40px;
+}
+.stepBox.fill_box .writeContent .writeInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.stepBox.fill_box .writeContent .writeInput li {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.stepBox.fill_box .writeContent .writeInput li.warning_error h4 {
+    margin-bottom: 5px;
+}
+.stepBox.fill_box .writeContent .writeInput li.warning_error h4:before {
+    content: "\f06a";
+    color: #d76050;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-right: 5px;
+    width: 25px;
+}
+.stepBox.fill_box .writeContent .writeInformation1 .writeInput li,
+.stepBox.fill_box .writeContent .writeInformation2 .writeInput li {
+    margin-right: 9px;
+}
+.stepBox.fill_box .writeContent .writeInformation1 .writeInput li:last-child,
+.stepBox.fill_box .writeContent .writeInformation2 .writeInput li:last-child {
+    margin-right: 0;
+}
+.stepBox.fill_box .writeContent .writeInput li h4 {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+.stepBox.fill_box .writeContent .writeInput small {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #4e5059;
+    top: 0;
+}
+.stepBox.fill_box .writeContent .col .assess input[type=radio]+label:before,
+.stepBox.fill_box .writeContent .col .assess input[type=checkbox]+label:before,
+.stepBox.fill_box .writeContent .col .assess input[type=checkbox]+label:after {
+    margin-right: 0;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .staging .col {
+    margin-bottom: 9px;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .staging .col:last-child {
+    margin-bottom: 0;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .col .assess > input[type=radio]+label:before,
+.stepBox.fill_box .writeContent .writeInput.part4 .col .assess > input[type=checkbox]+label:before,
+.stepBox.fill_box .writeContent .writeInput.part5 .col .assess > input[type=radio]+label:before,
+.stepBox.fill_box .writeContent .writeInput.part5 .col .assess > input[type=checkbox]+label:before {
+    top: 2px;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .staging .col .assess > input[type=radio]+label:before,
+.stepBox.fill_box .writeContent .writeInput.part4 .staging .col .assess > input[type=checkbox]+label:before,
+.stepBox.fill_box .writeContent .writeInput.part5 .staging .col .assess > input[type=radio]+label:before,
+.stepBox.fill_box .writeContent .writeInput.part5 .staging .col .assess > input[type=checkbox]+label:before {
+    top: 3px;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .staging .instalment,
+.stepBox.fill_box .writeContent .writeInput.part5 .staging .instalment {
+    margin-left: 9px;
+}
+.stepBox.fill_box .writeContent .writeInput .info {
+    margin-top: 3px;
+    font-size: 13px;
+    line-height: normal;
+}
+.stepBox.fill_box .writeContent .writeInput .info p {
+    width: 100%;
+}
+.stepBox.fill_box .writeContent .writeInformation1 .writeInput:last-child,
+.stepBox.fill_box .writeContent .writeInformation2 .writeInput:last-child {
+    margin-bottom: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation1 .writeInput:last-child li:last-child .col {
+    margin-top: 30px;
+}
+.stepBox.fill_box .writeContent .writeInformation1 .writeInput li:nth-child(2) .assess {
+    margin: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation1 .writeInput li:nth-child(2) .assess label {
+    display: flex;
+    align-items: center;
+}
+.stepBox.fill_box .writeContent .writeInformation1 .writeInput li:nth-child(2) .assess label:before {
+    top: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation1 .writeInput li:nth-child(2) .assess label span {
+    line-height: normal;
+    margin-left: 5px;
+}
+.stepBox.fill_box .writeContent input,
+.stepBox.fill_box .writeContent select,
+.stepBox.fill_box .writeContent textarea,
+.stepBox.fill_box .writeContent .writeInput.part3 li input,
+.stepBox.fill_box .writeContent .writeInput.part3 li select {
+    color: #4e5059;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 9px;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    font-weight: normal;
+}
+.stepBox.fill_box .writeContent .writeInput li.warning_error input,
+.stepBox.fill_box .writeContent .writeInput li.warning_error select {
+    background-color: #f7dfdc;
+}
+.stepBox.fill_box .writeContent .writeInput.part3 li input,
+.stepBox.fill_box .writeContent .writeInput.part3 li select {
+    height: 30px;
+    padding: 0 9px;
+}
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput {
+    flex-direction: column;
+    border-radius: 5px;
+    background: #f3f3f3;
+    padding: 9px;
+    margin: 9px 0;
+}
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    margin-bottom: 9px;
+    padding: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li:last-child {
+    margin-bottom: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li h4 {
+    margin: 0 9px;
+}
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 .amount_input,
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 .amount_select {
+    position: relative;
+    width: 100%;
+    max-width: 156px;
+    border-radius: 5px;
+    background: #fff;
+}
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 .amount_select {
+    margin: 0 9px;
+}
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li h4,
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li .amount_input,
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li .amount_select,
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li .amount_money {
+    display: flex;
+    align-items: center;
+}
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li i {
+    top: unset;
+    padding: 0 5px;
+    margin-right: 3px;
+    height: 80%;
+    align-items: center;
+    display: flex;
+    background: #fff;
+}
+.stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li .amount_money {
+    background: #d76050;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 13px;
+    border: 1px solid #fff;
+}
+.stepBox.fill_box .writeContent .increase {
+    font-size: 15px;
+    padding: 0;
+    font-weight: normal;
+    background: #fff;
+    color: #4f6ea2;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 3px 20px;
+    border: 1px solid #4f6ea2;
+}
+.stepBox.fill_box .writeContent .increase:after {
+    content: unset;
+    background-image: unset;
+}
+.stepBox.fill_box .writeContent .increase i {
+    margin-left: 5px;
+    color: #4f6ea2;
+}
+.stepBox.fill_box .writeContent .increase:hover,
+.stepBox.fill_box .writeContent .increase:hover i {
+    background: #4f6ea2;;
+    color: #fff;
+}
+.stepBox.fill_box .writeContent .writeInformation4 .writeInput {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation4 .writeInput li,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li {
+    margin-bottom: 20px;
+}
+.stepBox.fill_box .writeContent .writeInformation4 .writeInput li:last-child,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li:last-child {
+    margin-bottom: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation4 .writeInput li .col .assess,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li .col .assess {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.stepBox.fill_box .writeContent .writeInformation4 .writeInput li .col .staging {
+    margin: 15px 0 0 30px;
+}
+
+.stepBox.fill_box .writeContent .writeInformation4 .writeInput li .col .assess label,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li .col .assess label {
+    display: flex;
+}
+.stepBox.fill_box .writeContent .writeInformation4 .writeInput li .col .assess .col_content,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li .col .assess .col_content {
+    margin-left: 9px;
+    line-height: normal;
+}
+.stepBox.fill_box .writeContent .writeInformation4 .writeInput li .col .assess .col_content > div,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li .col .assess .col_content > div {
+    display: flex;
+    align-content: center;
+    padding: 0;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .col_content,
+.stepBox.fill_box .writeContent .writeInput.part5 .col_content {
+    width: 97%;
+    display: inline-block;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .col_content h4,
+.stepBox.fill_box .writeContent .writeInput.part5 .col_content h4 {
+    line-height: normal;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .col_content img,
+.stepBox.fill_box .writeContent .writeInput.part5 .col_content img {
+    position: relative;
+    margin-left: 5px;
+    max-height: 22px;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .col_content p,
+.stepBox.fill_box .writeContent .writeInput.part5 .col_content p {
+    line-height: normal;
+    font-size: 13px;
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    padding: 3px 9px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .col_content b {
+    display: block;
+    color: #d76050;
+    font-weight: normal;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .col .assess input[type=radio]+label:after,
+.stepBox.fill_box .writeContent .writeInput.part4 .col .assess input[type=checkbox]+label:after,
+.stepBox.fill_box .writeContent .writeInput.part5 .col .assess input[type=radio]+label:after,
+.stepBox.fill_box .writeContent .writeInput.part5 .col .assess input[type=checkbox]+label:after {
+    top: 5px;
+    left: 3px;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput {
+    flex-direction: column;
+}
+.stepBox.fill_box .writeContent .writeInput.part4 .staging .assess input[type=radio]+label:after,
+.stepBox.fill_box .writeContent .writeInput.part4 .staging .assess input[type=checkbox]+label:after,
+.stepBox.fill_box .writeContent .writeInput.part5 .staging .assess input[type=radio]+label:after,
+.stepBox.fill_box .writeContent .writeInput.part5 .staging .assess input[type=checkbox]+label:after {
+    top: 6px;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField {
+    border-radius: 5px;
+    font-size: 15px;
+    left: 27px;
+    width: calc(100% - 27px);
+    margin: 5px 0 0 0;
+    padding: 9px 20px;
+    background: #f3f3f3;
+    position: relative;
+    display: none;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField b {
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col {
+    display: flex;
+    margin-bottom: 9px;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col:last-child {
+    margin-bottom: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col b {
+    line-height: normal;
+    margin-left: 9px;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col label input {
+    display: block;
+    width: 100%;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col .assess input[type=radio]+label:before,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col .assess input[type=checkbox]+label:before {
+    top: 2px;
+    border: 1px solid #4f6ea2;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col .assess input[type=radio]+label:after,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col .assess input[type=checkbox]+label:after {
+    top: 5px;
+    background: #4f6ea2;
+}
+.stepBox.fill_box .writeContent .writeInformation1 .writeInput li:nth-child(2) .assess label:before,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col .assess input[type=checkbox]+label:before {
+    border-radius: 5px;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col .assess input[type=checkbox]+label:after {
+    background: transparent;
+    top: 3px;
+    left: 2px;
+}
+
+/** BEGIN paper **/
+.writeContent .writeInput li .col.paper {
+    display: none !important;
+}
+.writeContent .writeInput li .col.paper .assess {
+    flex-direction: column;
+}
+.writeContent .writeInput li .col.paper .assess > div {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.writeContent .writeInput li .col.paper .assess input[type=radio]+label:before {
+    top: 2px;
+    margin-right: 9px;
+}
+.writeContent .writeInput li .col.paper .exact_input {
+    width: 30%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.writeContent .writeInput li .col.paper .exact_input input {
+    padding: 0;
+    height: auto;
+    padding: 3px;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.writeContent .writeInput li .col.paper .exact_input span {
+    margin-right: 5px;
+    position: relative;
+}
+.writeContent .writeInput li .col.paper .add_input {
+    width: 100%;
+}
+.writeContent .writeInput li .col.paper .add_input input {
+    margin-top: 0;
+}
+/** END paper **/
+
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li .col input,
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li .lnvoiceField input {
+    margin-top: 5px;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li .ground {
+    margin-bottom: 9px;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li .ground:last-child {
+    margin-bottom: 0;
+}
+.stepBox.fill_box .writeContent .writeInformation5 .writeInput li .lnvoiceField .insele {
+    border: 0;
+    width: 100%;
+}
+.stepBox.fill_box .writeContent .custodyBtn {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0;
+}
+.stepBox.fill_box .writeContent .custodyBtn:last-child {
+    margin-bottom: 0;
+}
+.stepBox.fill_box .writeContent .custodyBtn a {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+.stepBox.fill_box .writeContent .custodyBtn > span {
+    font-size: 13px;
+    line-height: normal;
+    width: unset;
+    margin-left: 9px;
+}
+.stepBox.fill_box .writeContent .custodyBtn > span a {
+    font-size: 13px;
+    padding: 0 3px;
+}
+.appointment_Result.result_pc .appointment_Content {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0;
+    background: #f3f3f3;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 100%;
+}
+/*.order_time main._chooseNo .appointment_detail
+.order_time main._chooseNo .demand,
+.order_time main._chooseNo .mobile-plan-stecla.mobile .demands,
+.order_time main._chooseNo .priceBox {
+    display: none;
+}*/
+.order_time main._chooseNo .appointment_Content .appointment_detail:before {
+    content: '尚未選擇時間';
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0;
+    font-size: 15px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin: 0 9px;
+}
+.appointment_Result.result_pc .appointment_Content > div {
+
+}
+.appointment_Content .appointment_photo {
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #f3f3f3;
+}
+.appointment_Content .appointment_photo .app_pic {
+    margin-right: 9px;
+    width: 38%;
+    max-width: 90px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1px;
+}
+.appointment_Content .appointment_photo .app_pic img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+.appointment_Content .appointment_photo .app_text {
+    font-size: 21px;
+    line-height: normal;
+    width: 100%;
+    letter-spacing: 0;
+}
+.appointment_detail {
+    padding: 9px;
+}
+.appointment_detail .appointment_item {
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 9px;
+}
+.appointment_detail .appointment_item:last-child {
+    margin-bottom: 0;
+}
+.appointment_detail .appointment_deta {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 9px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.appointment_detail .appointment_deta i {
+    margin-right: 9px;
+    font-size: 15px;
+}
+.appointment_detail .deta_boxs {
+    padding: 9px;
+}
+.appointment_detail .deta_boxs .deta_box._haveSub > .deta_content {
+    margin-bottom: 5px;
+}
+.appointment_detail .deta_boxs._sub {
+    padding: 5px 0 0 9px;
+    border-left: 1px solid #DDD;
+    margin: 0 0 0 9px;
+}
+.appointment_detail .deta_boxs._sub:last-child {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.appointment_detail .deta_boxs .deta_box {
+    padding: 9px 0;
+    border-bottom: 1px solid #ddd;
+}
+.appointment_detail .deta_boxs .deta_box:first-child {
+    padding-top: 0;
+}
+
+.appointment_detail .deta_boxs .deta_box:last-child {
+    border: 0;
+    padding-bottom: 0;
+}
+.appointment_detail .deta_boxs .deta_box .deta_content {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    line-height: normal;
+    font-size: 15px;
+}
+.appointment_detail .deta_boxs .deta_box .program {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.appointment_detail .deta_boxs .deta_box .program .time time {
+    line-height: 18px;
+}
+.appointment_detail .deta_boxs .deta_box .program .name span {
+    width: unset;
+    font-size: 12px;
+}
+.appointment_detail .deta_boxs .deta_box .program .name span b {
+    font-size: 12px;
+    margin-left: 5px;
+}
+.appointment_detail .deta_boxs .deta_box ._prices {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.appointment_detail .deta_boxs .deta_box .deta_boxs._sub .deta_content .rebate {
+    display: none;
+}
+.appointment_detail .deta_content {
+    font-size: 15px;
+}
+.appointment_detail .deta_content ._prices > div {
+    display: flex;
+    justify-content: flex-end;
+}
+.appointment_detail .deta_content ._prices > div span {
+    width: auto;
+    text-align: unset;
+}
+.appointment_detail .deta_box > .deta_content .discount {
+    text-decoration: line-through;
+    color: #ccc;
+    float: right;
+}
+.appointment_detail .deta_box:not(._haveDiscount) .deta_content .discount {
+    text-decoration: none;
+    color: #4e5059;
+}
+.appointment_detail .deta_content .rebate {
+    width: 100%;
+    text-align: right;
+    color: #4e5059;
+}
+.appointment_detail .deta_content .sarebate span {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #d76050;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 9px;
+    font-size: 12px;
+    line-height: normal;
+    padding: 0 5px;
+    margin-right: 0;
+    opacity: .8;
+}
+.appointment_detail .deta_box:not(._haveDiscount) .deta_content .rebate,
+.appointment_detail .deta_box:not(._haveDiscount) .deta_content .sarebate,
+.appointment_detail .deta_box:not(._haveDiscount) .program .sarebate {
+    display: none;
+}
+.appointment_Result .appointment_Content .demand {
+    margin: 0;
+    padding: 9px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    line-height: normal;
+}
+#wrapper._isAdditional .appointment_Result .appointment_Content .demand,
+#wrapper._isAdditional.stepBox.fill_box .mobile-plan-stecla.mobile .demands,
+.order_time main._noEquip .appointment_Result .appointment_Content .demand,
+.order_time main._noEquip .mobile-plan-stecla.mobile .demands {
+    display: none;
+}
+.appointment_Result .appointment_Content .demand h4 {
+    margin: 0;
+    font-weight: bold;
+    line-height: normal;
+}
+.appointment_Result .appointment_Content .demand .deTxt {
+    line-height: normal;
+}
+.appointment_Result .appointment_Content .demand .deTxt li {
+    margin-bottom: 3px;
+}
+.appointment_Result .appointment_Content .demand .deTxt li span {
+    width: 100%;
+}
+.appointment_Result .appointment_Content .priceBox {
+    line-height: normal;
+    border-top: 1px solid #ddd;
+}
+.appointment_Result .appointment_Content .priceBox b,
+.appointment_Result .appointment_Content .priceBox span {
+    font-size: 15px;
+}
+.stepBox.fill_box .appointment_Result .price {
+    width: 100%;
+    background: #fff;
+    font-size: 15px;
+}
+.appointment_Result.result_pc .instant {
+    margin-top: 20px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 13px;
+    line-height: normal;
+}
+.appointment_Result.result_pc .instant h3 {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.appointment_Result.result_pc .instant h3:after {
+    content: unset;
+}
+.appointment_Result.result_pc .instant h3 i {
+    font-size: 15px;
+    margin-left: 9px;
+    color: #ffde00;
+}
+.appointment_Result.result_pc .instant p {
+    line-height: normal;
+}
+
+.stepBox.fill_box .price li,
+.stepBox.fill_box .price .total {
+    padding: 0 18px;
+}
+.stepBox.fill_box .price li:nth-last-child(2) {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #ddd;
+}
+.stepBox.fill_box .price .total {
+    padding: 0 9px;
+    background: unset;
+}
+.stepBox.fill_box .price .total .valuaBox {
+    background: rgba(79, 110, 162, .3);
+    color: #4f6ea2;
+    border-radius: 5px;
+    padding: 9px;
+}
+.stepBox.fill_box .price li {
+    margin-bottom: 9px;
+}
+.stepBox.fill_box .price li:first-child {
+    margin-top: 9px;
+}
+.stepBox.fill_box .price li .valuaBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.stepBox.fill_box .price li .valuaBox > b {
+    width: 55%;
+}
+.stepBox.fill_box .price li .valuaBox > div {
+    width: 45%;
+    text-align: right;
+}
+.stepBox.fill_box .price li .valuaBox span {
+    width: unset;
+}
+/** END order_form **/
+
+/** BEGIN order_complete **/
+.stepContent {
+    width: 100%;
+}
+.stepContainer._boxStyle {
+}
+.stepContainer .stepConTxt {
+    background-image: unset;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.stepContainer .stepConTxt > div {
+    width: 100%;
+}
+.stepContainer .stepConTxt i {
+    font-size: 50px;
+    color: #4baf4f;
+    margin-right: 9px;
+}
+.stepContainer .stepConTxt h2 {
+    color: #4e5059;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+.stepContainer .stepConTxt .number {
+    font-size: 17px;
+    display: inline-block;
+    color: #d76050;
+    margin-top: 9px;
+}
+.stepContainer .stepConTxt .number span {
+    font-weight: bold;
+    border-bottom: 1px solid #d76050;
+}
+.paymentInformation {
+    background: #f3f3f3;
+    margin-bottom: 40px;
+}
+.paymentInformation h3 {
+    font-size: 15px;
+    background: #ddd;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 9px;
+    line-height: normal;
+}
+.paymentInformation {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 15px;
+}
+.paymentInformation ul {
+    margin: 20px 0;
+}
+.paymentInformation li {
+    display: flex;
+    align-items: center;
+    color: #4e5059;
+}
+.paymentInformation h4 {
+    margin-right: 0;
+    border-right: 1px solid #ddd;
+    padding: 5px 0;
+    width: 15%;
+    max-width: 150px;
+    line-height: normal;
+}
+.paymentInformation p {
+    width: 85%;
+    margin-left: 20px;
+    font-weight: bold;
+    line-height: normal;
+}
+.paymentInformation .wutuv {
+    line-height: normal;
+    color: gray;
+    font-size: 13px;
+}
+.paymentInformation .cutoff b {
+    color: #d76050;
+    font-size: 15px;
+    margin-left: 9px;
+    text-decoration: underline;
+}
+.detailTable-left .detailTable-inner .detailTable-row.detailTable-heading {
+    background: #f3f3f3;
+}
+.order_complete .stepContainer > .custodyBtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.order_complete .stepContainer > .custodyBtn a {
+    letter-spacing: 0;
+    padding: 0;
+    background: unset;
+}
+.order_complete .stepContainer > .custodyBtn a:first-child {
+    margin-right: 9px;
+}
+/** END order_complete **/
+
+/** BEGIN order_cancel **/
+#wrapper:not(._isAdditional) .part_item.cart_part {
+    display: none;
+}
+._isAdditional .part_item.cart_part {
+    margin-top: 20px;
+}
+/** END order_cancel **/
+
+
+@media only screen and (max-width: 980px) {
+    .writeContent .writeContainer {
+        width: 100%;
+        max-width: 100%
+    }
+    .result_pc {
+        display: none;
+    }
+
+    .demands h4 {
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    .orderstep ul li {
+        font-size: 13px;
+        padding: 9px 5px;
+        border-bottom: 0;
+        text-align: center;
+    }
+    .orderstep li:last-child {
+        border-bottom: 0;
+    }
+    .orderstep ul li:nth-child(1) {
+        width: 36%;
+    }
+    .orderstep ul li:nth-child(2) {
+        width: 34%;
+    }
+    .orderstep ul li:nth-child(3) {
+        width: 30%;
+    }
+    .orderstep span:nth-child(3) {
+        margin-left: 0;
+    }
+    .orderstep ul li span {
+        text-align: left;
+    }
+    .stepPhoto {
+        display: none;
+    }
+
+    /** BEGIN order_time **/
+    .orderstep._boxStyle {
+        flex-direction: column;
+    }
+    .orderstep .stepPhotoInside {
+        width: 100%;
+        max-width: unset;
+        padding: 5px 80px;
+        margin-right: 0;
+        margin-bottom: 3px;
+    }
+
+    /** BEGIN calendar **/
+    .order_time .orderContainer {
+        width: 100%;
+        max-width: 100%
+    }
+    .order_time .orderContainer .calendar ul.day li {
+        height: 70px;
+        padding: 3px;
+    }
+    .order_time .orderContainer .calendar ul.day li.fold span {
+        position: relative;
+        top: 5px;
+        left: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .order_time .orderContainer .calendar ul.day li .money {
+        display: none;
+    }
+    .order_timeList span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #f3f3f3;
+        border-radius: 5px 5px 0 0;
+        padding: 9px;
+        overflow: hidden;
+    }
+    .order_time .orderContainer .oder_mo {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .order_time .orderContainer li.active .oder_mo+span {
+        background: #fff;
+        border: 1px solid #959595;
+        border-bottom: none;
+        position: relative;
+        top: 1px;
+        font-weight: bold;
+    }
+    .order_time .order_tiemBox {
+        margin-top: 0;
+        border-radius: 0 0 5px 5px;
+        overflow: hidden;
+        border: 1px solid #959595;
+    }
+    .order_time.order_time_period .order_tiemBox {
+        border-radius: 5px;
+    }
+    .order_time .order_tiemBox .order_timeContent {
+        margin-right: 0;
+        border: 0;
+        border-radius: 0;
+        max-width: 100%;
+        display: none;
+    }
+    .order_time .order_tiemBox .order_timeContent.active {
+        display: block;
+    }
+    #wrapper.order_time .bonus .assess {
+        flex-direction: column;
+    }
+    .order_time .order_timeList li a {
+        width: 100%;
+        display: block;
+    }
+
+    /** BEGIN equipment **/
+    .order_time .equipment .col .assess .number,
+    .order_time .equipment .col .assess .number select {
+        width: 100%;
+    }
+    .order_time .equipment .col .assess .number {
+        margin: 3px 0 9px;
+    }
+    .order_time .orderInformation3 .equipment .box .add {
+        height: calc(68px * 6);
+    }
+    /** END equipment **/
+
+    #wrapper.order_time .writeContent .custodyBtn > span {
+        width: 100%;
+    }
+    .order_time_period .col .assess .plan select[disabled] {
+        margin: 0;
+    }
+    .order_time_period .period_content {
+        margin-top: 0;
+    }
+    .order_time_period .period_content time,
+    .order_time_period .period_content .prices {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 9px 0;
+    }
+    .order_time_period .period_content .prices {
+        margin: 0 20px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .order_time_period .period_content .preiodBox {
+        float: right;
+        border-left: 1px solid #ddd;
+        display: inline-block;
+    }
+    .order_time_period .period_content label {
+        text-align: center;
+    }
+    .order_time_period .period_content .preiodBox h4 {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 6px 0;
+        background: #e5e5e5;
+        color: #4e5059;
+    }
+    .order_time_period .period_content .preiodBox .plan {
+        display: block;
+        text-align: center;
+        padding: 9px 0;
+        margin: 0 20px;
+        width: auto;
+    }
+    .period_content .rebates .prices .price {
+        margin-left: 0;
+    }
+    .order_time_period .period_content .rebates .sub label div:nth-child(1),
+    .order_time_period .period_content .rebates .sub label div:nth-child(2),
+    .order_time_period .period_content .rebates .sub label div:nth-child(3) {
+        width: 100%;
+        text-align: left;
+        padding-left: 80px;
+        font-size: 15px;
+    }
+    .order_time_period ul.period_content li {
+        border: 0;
+        border-bottom: 1px solid #959595;
+        font-size: 15px;
+        background: #f3f3f3;
+    }
+    .order_time_period ul.period_content li:last-child{
+        border-bottom: 0;
+    }
+    .order_time_period ul.period_content li .col {
+        padding: 0;
+    }
+    .order_time_period .period_content .rebates .sub label div:nth-child(2),
+    .order_time_period .period_content .rebates .sub label div:nth-child(3) {
+        margin-left: 22px;
+        font-size: 13px;
+    }
+    .order_time_period .period_content .rebates .sub{padding:9px 0; background: #f3f3f3;}
+    .order_time_period .period_content .rebates .sub label div:nth-child(1) b:before,
+    .order_time_period .period_content .rebates .sub label div:nth-child(1) b:after{left:50px;}
+    .order_time_period .period_content .rebates .sub li {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 9px;
+    }
+    #wrapper.order_time.order_time_period .assess input[type=checkbox]+label:after {
+        top: 117px;
+    }
+    #wrapper.order_time.order_time_period li._item._havePlan2 .assess input[type=checkbox]+label:after {
+        top: 134px;
+    }
+    .order_time_period .period_content .rebates .sub li:last-child {
+        margin-bottom: 0;
+    }
+    .order_time_period .order_timeList li{width:calc(100% / 3);}
+    .order_time_period .order_timeList li:last-child{width:calc(100% / 3);}
+
+    .order_time_period .caseSelect .flexbox {
+        flex-direction: column;
+    }
+    .order_time_period .caseSelect .flexbox .caseList{width:100%;}
+    .order_time_period .caseSelect .flexbox .caseRem{width:calc(100%); margin-left:0;}
+    .order_time_period .caseSelect .flexbox .caseList ul li {
+        font-size: 13px;
+    }
+    .order_time.order_time_period .order_timeList li {
+        display: none;
+    }
+    .order_time main._chooseNo .appointment_Content .appointment_detail:before {
+        border-top: 0;
+        margin: 0;
+    }
+    .order_time .appointment_detail .deta_boxs .deta_box._haveDiscount .deta_content {
+        display: block;
+    }
+    .order_time .appointment_detail .deta_boxs .deta_box .deta_content time {
+        width: 50%;
+    }
+    .order_time_period li._item .col .assess {
+        justify-content: space-between;
+    }
+    #wrapper.order_time .order_tiemBox .assess input[type=checkbox] {
+        margin: 0 -15px 0 20px;
+    }
+    /** BEGIN order_time **/
+
+    /** BEGIN order_cart **/
+    .buyBox .buyContent._boxStyle {
+        padding-bottom: 0;
+    }
+    .buyContent .title {
+        margin-top: 0;
+    }
+    .buyBox .bookList .detailTable,
+    .buyBox .bookList .demand,
+    .buyBox .bookList .custodyBtn {
+        width: 100%
+    }
+    .buyBox .detailTable-heading .detailTable-cell {
+        display: none;
+    }
+    .buyBox .detailTable-heading .detailTable-cell.reciprocal {
+        display: block;
+    }
+    .buyBox .detailTable-left .detailTable-cell.recipBox h4 {
+        display: block !important;
+    }
+    .buyBox .detailTable-row.detailTable-content .detailTable-cell:last-child {
+        text-align: center;
+    }
+    .buyBox .bookList .demand h4 {
+        width: 100%
+    }
+    /** END order_cart **/
+
+    /** BEGIN order_form **/
+    .stepBox.fill_box .writeContent._boxStyle {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .stepBox.fill_box .writeContent .writeInput {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .stepBox.fill_box .writeContent .writeInformation1 .writeInput li,
+    .stepBox.fill_box .writeContent .writeInformation2 .writeInput li {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .stepBox.fill_box .writeContent .writeInput li h4 {
+        margin-bottom: 5px;
+    }
+    .stepBox.fill_box .writeContent .writeInformation1 .writeInput li .col {
+        margin-top: 0;
+    }
+    .stepBox.fill_box .writeContent .writeInformation1 .writeInput:last-child li:last-child,
+    .stepBox.fill_box .writeContent .writeInformation2 .writeInput:last-child li:last-child {
+        margin-bottom: 0;
+    }
+    .stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li{
+        flex-direction: column;
+    }
+    .stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li h4 {
+        margin: 0;
+        width: 100%;
+        padding: 3px 0;
+    }
+    .stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li .amount_input,
+    .stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li .amount_select,
+    .stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li .amount_money {
+        width: 100%;
+        max-width: 100%
+    }
+    .stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li .amount_select {
+        margin-top: 5px;
+    }
+    .stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li .amount_money {
+        font-size: 15px;
+        padding: 5px 9px;
+        margin-top: 5px;
+    }
+    .stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField {
+        padding: 9px;
+    }
+
+    /** BEGIN paper **/
+    .writeContent .writeInput li .col.paper .assess > div {
+        flex-direction: column;
+    }
+    .writeContent .writeInput li .col.paper .exact_input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .writeContent .writeInput li .col.paper .add_input {
+        margin-left: 0;
+    }
+    /** END paper**/
+
+    .stepBox.fill_box .writeContent .writeInput.part4 .col_content, .stepBox.fill_box .writeContent .writeInput.part5 .col_content {
+        width: 93%;
+    }
+    .stepBox.fill_box .writeContent .custodyBtn {
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+    }
+    .stepBox.fill_box .writeContent .custodyBtn.onlineBtn {
+        text-align: center;
+        margin: 40px 0 0 0;
+    }
+    .stepBox.fill_box .writeContent .custodyBtn a {
+        display: none;
+    }
+
+
+    .mobile-plan-stecla {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 12;
+    }
+    .mobile-plan-stecla .plan-box {
+        display: none;
+        width: 100%;
+        background-color: #fff;
+    }
+    .mobile-plan-stecla .plan-box .scroll {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .mobile-plan-stecla .plan-box .scroll ul {
+        overflow: hidden;
+    }
+    .mobile-plan-stecla .plan-box .scroll li {
+        overflow: hidden;
+        margin-bottom: 9px;
+        font-size: 15px;
+    }
+    .mobile-plan-stecla .plan-box p.title {
+        padding: 9px 0;
+        background-color: #4e5059;
+        font-size: 1em;
+        font-weight: normal;
+        color: #fff;
+        line-height: normal;
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        top: 6px;
+    }
+    .mobile-plan-stecla a.first {
+        overflow: hidden;
+        background-color: #fff;
+        font-weight: normal;
+        line-height: normal;
+        text-decoration: none;
+        padding: 9px 5%;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        border-top: 1px solid #ddd;
+    }
+    .mobile-plan-stecla a.first div {
+        width: 75%;
+        padding: 0;
+    }
+    .mobile-plan-stecla a.first div p {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        height: auto;
+        line-height: normal;
+        font-size: 13px;
+    }
+    .mobile-plan-stecla a.first i,
+    .mobile-plan-stecla a.first i:hover {
+        border: 1px #4f6ea2 solid;
+        position: relative;
+        background: #fff !important;
+        color: #4f6ea2 !important;
+        width: 25%;
+        top: 0;
+        right: 0;
+        font-weight: normal;
+    }
+    .mobile-plan-stecla a.first.this i {
+        border: 0;
+        background: #4f6ea2 !important;
+        color: #fff !important;
+    }
+    .mobile-plan-stecla a.reservation {
+        font-weight: normal;
+        line-height: normal;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+        padding: 0;
+    }
+    .mobile-plan-stecla a.reservation span {
+        width: 100%;
+        border-radius: 0 !important;
+        padding: 9px !important;
+    }
+    .mobile-plan-stecla a.reservation span i {
+        margin-left: 9px;
+    }
+    .stepBox.fill_box .writeContent .custodyBtn > span {
+        margin-left: 0;
+        font-size: 15px;
+        text-align: left;
+    }
+    .stepBox.fill_box .writeContent .custodyBtn > span a {
+        font-size: 15px;
+    }
+    .stepBox.fill_box .writeContent .custodyBtn > span p {
+        margin-bottom: 9px;
+    }
+    .stepBox.fill_box .writeContent .custodyBtn > span p:last-child {
+        margin-bottom: 0;
+    }
+    .stepBox.fill_box .appointment_Content {
+        padding-top: 9px;
+        background: none;
+    }
+    .stepBox.fill_box .appointment_detail .appointment_deta {
+        background: #f3f3f3;
+    }
+    .stepBox.fill_box .appointment_detail .deta_box {
+        margin: 5px 9px;
+    }
+    .stepBox.fill_box .appointment_detail .program {
+        display: block;
+    }
+    .stepBox.fill_box .appointment_detail .deta_box._haveSub > .program {
+        margin-bottom: 5px;
+    }
+    .appointment_detail .program .sarebate {
+        background: #d76050;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 12px;
+        line-height: normal;
+        padding: 0 5px;
+        opacity: .8;
+    }
+    .appointment_detail hr {
+        display: block;
+        width: 100%;
+        border: none;
+        background: #cacacc;
+        height: 1px;
+        margin: 9px;
+    }
+    .stepBox.fill_box .priceBox,
+    .stepBox.fill_box .instant,
+    .stepBox.fill_box .demands {
+        padding: 9px 18px;
+        border-top: 1px solid #ddd;
+        margin-top: 0;
+    }
+    .fill_box .mobile-plan-stecla .plan-box .scroll {
+        border: none;
+    }
+    .stepBox.fill_box .priceBox .valuation {
+        margin-bottom: 9px;
+    }
+    .stepBox.fill_box .priceBox .valuation div {
+        float: right;
+    }
+    .stepBox.fill_box .mobile-plan-stecla .plan-box .scroll li:last-child,
+    .stepBox.fill_box .priceBox .valuation:last-child {
+        margin-bottom: 0;
+    }
+    .stepBox.fill_box .demands {
+        border-top: 1px solid #ddd;
+    }
+    /** END order_form **/
+
+    /** BEGIN order_complete **/
+    .stepContainer._boxStyle {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .stepContainer .stepConTxt {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .stepContainer .stepConTxt i {
+        font-size: 80px;
+        margin-right: 0;
+        margin-bottom: 9px;
+    }
+    .stepContainer .stepConTxt h2 {
+        font-size: 17px;
+    }
+    .paymentInformation {
+        padding: 9px;
+    }
+    .paymentInformation li {
+        margin-bottom: 0;
+    }
+    .paymentInformation h4 {
+        width: 30%;
+        padding: 9px 0;
+    }
+    .paymentInformation p {
+        width: 90%;
+        margin-left: 15px;
+    }
+    .paymentInformation .cutoff p {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .paymentInformation .cutoff b {
+        margin-left: 0;
+        font-size: 13px;
+    }
+    /** END order_complete **/
+
+    /*.stepBox.fill_box .writeContent .writeInput.part4 .staging .col .assess > input[type=radio]+label:before,
+    .stepBox.fill_box .writeContent .writeInput.part4 .staging .col .assess > input[type=checkbox]+label:before,
+    .stepBox.fill_box .writeContent .writeInput.part5 .staging .col .assess > input[type=radio]+label:before,
+    .stepBox.fill_box .writeContent .writeInput.part5 .staging .col .assess > input[type=checkbox]+label:before {
+        top: 8px;
+    }
+    .stepBox.fill_box .writeContent .writeInput.part4 .staging .assess input[type=radio]+label:after,
+    .stepBox.fill_box .writeContent .writeInput.part4 .staging .assess input[type=checkbox]+label:after,
+    .stepBox.fill_box .writeContent .writeInput.part5 .staging .assess input[type=radio]+label:after,
+    .stepBox.fill_box .writeContent .writeInput.part5 .staging .assess input[type=checkbox]+label:after {
+        top: 11px;
+    }*/
+
+    .mobile-plan-stecla.mobile .appointment_detail .deta_content {
+        display: flex;
+        justify-content: space-between;
+    }
+    /*.appointment_detail .deta_content span {
+        float: right;
+    }*/
+    .mobile-plan-stecla.mobile .appointment_detail .deta_box .deta_content time {
+        max-width: 200px;
+        line-height: normal;
+    }
+}
+/** END all_order **/

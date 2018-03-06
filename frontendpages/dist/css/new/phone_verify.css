@@ -1,0 +1,292 @@
+@charset 'UTF-8';
+/* 共用樣式 */
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexbox.inline {
+    display: inline-flex;
+}
+.flexbox.halign-center {
+    justify-content: center;
+}
+.flexbox.halign-left {
+    justify-content: flex-start;
+}
+.flexbox.halign-right {
+    justify-content: flex-end;
+}
+.flexbox.halign-around {
+    justify-content: space-around;
+}
+.flexbox.halign-between {
+    justify-content: space-between;
+}
+.flexbox.valign-top {
+    align-items: flex-start;
+}
+.flexbox.valign-bottom {
+    align-items: flex-end;
+}
+.flexbox.valign-center {
+    align-items: center;
+}
+.flexbox.valign-full {
+    align-items: stretch;
+}
+.flexbox.valign-base {
+    align-items: baseline;
+}
+.flexbox.multi-align-top {
+    align-content: flex-start;
+}
+.flexbox.multi-align-bottom {
+    align-content: flex-end;
+}
+.flexbox.multi-align-center {
+    align-content: center;
+}
+.flexbox.multi-align-full {
+    align-content: stretch;
+}
+.flexbox.multi-align-around {
+    justify-content: space-around;
+}
+.flexbox.multi-align-between {
+    justify-content: space-between;
+}
+.bn {
+    display: inline-block;
+    width: 175px;
+    font-size: 20px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    text-align: center;
+}
+.bn.size2 {
+    width: 130px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+}
+.bn.bn-blue {
+    background-color: #4f6ea2;
+}
+.bn.bn-blue:hover {
+    background-color: #2d5392;
+}
+.bn.bn-red {
+    background-color: #b61e1a;
+}
+.bn.bn-red:hover {
+    background-color: #c63e2b;
+}
+.require-star {
+    color: #ff007f;
+}
+/*.fa.fa-exclamation-circle.error {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    font-size: 24px;
+    color: #d76050;
+}*/
+.fa.fa-lock.complete {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    font-size: 24px;
+    color: #6dd900;
+}
+/* END 共用樣式 */
+
+/* 會員資料管理-驗證手機 */
+.verify {
+    width: 100%;
+    max-width: 424px;
+}
+.verify ._content {
+    margin: 24px 60px;
+    width: auto;
+}
+.verify ._content > div {
+    /*margin-bottom: 7px;*/
+}
+
+.verify ._content > div.veri-logo img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.verify .veri-logo {
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.verify h1 {
+    font-size: 18px;
+    line-height: 54px;
+    color: #68696d;
+}
+.verify .veri-mobile {
+
+}
+.verify .veri-mobile > span {
+    border: 1px solid #dfe0df;
+    border-radius: 5px;
+}
+.verify .veri-mobile span.country_code {
+    margin-right: 9px;
+    display: inline-flex;
+}
+.verify .veri-mobile span.country_code select {
+    width: 65px;
+    background-color: #f4f4f4;
+}
+.verify .veri-mobile span.country_code input {
+    width: 47px;
+}
+.verify .veri-mobile span.country_code > input {
+    width: 67px;
+    padding: 0;
+    padding-left: 9px;
+    font-size: 15px;
+}
+.verify .veri-mobile span.phone-number {
+    flex: 1;
+}
+.verify .veri-mobile span.phone-number input {
+    width: 100%;
+}
+.verify .veri-buttons button {
+    background-color: #fff;
+    width: 100%;
+    padding: 9px 0;
+    border-radius: 5px;
+    font-size: 21px;
+    line-height: normal;
+    border: 1px solid #b41f21;
+    color: #b41f21;
+}
+.verify .veri-buttons button.countdown {
+    border: 1px solid #838489;
+    color: #838489;
+}
+.verify ._content .veri-buttons ._send:hover {
+    border-color: #c63e2b;
+    color: #c63e2b;
+}
+.verify ._content._doSend .veri-buttons ._send,
+.verify ._content:not(._doSend) .veri-buttons .countdown,
+.verify ._content:not(._doSend) .veri-buttons .veri-input,
+.verify ._content:not(._doSend) .veri-ok {
+    display: none;
+}
+.verify .veri-buttons .veri-input {
+    border: 1px solid #dfe0df;
+    border-radius: 5px;
+}
+.verify .veri-buttons .veri-input input {
+    flex: auto;
+    width: calc(100% - 55px);
+}
+.verify .veri-buttons .veri-input i {
+    width: 20px;
+}
+.verify .veri-buttons .veri-input i.fa.fa-check-circle {
+    font-size: 20px;
+    line-height: 40px;
+    color: #4dbe83;
+}
+.verify .veri-buttons .veri-input i.fa.fa-times-circle {
+    font-size: 20px;
+    line-height: 40px;
+    color: #ed1b2e;
+    margin: 0 10px 0 5px;
+}
+.verify .veri-ok button {
+    width: 100%;
+}
+.verify .veri-tips {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: normal;
+    color: #68696d;
+}
+.verify .veri-tips a {
+    padding: 0 3px;
+}
+.verify .veri-tips a:hover {
+    text-decoration: underline;
+}
+._occupation {
+    display: flex;
+    align-items: center;
+}
+._occupation.warning_error {
+    margin-left: 30px;
+}
+._occupation select {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+._occupation.warning_error select {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    background: #f7dfdc;
+}
+@media (max-width: 400px) {
+    .verify ._content {
+        margin: 20px 30px;
+    }
+}
+@media (max-width: 325px) {
+    .verify ._content {
+        margin: 10px 20px;
+    }
+    /*.verify .veri-mobile span.phone-number {
+        margin: 10px 0;
+        width: 100%;
+    }*/
+}
+/* end-會員資料管理-驗證手機 */
+
+main {
+    margin: 0 auto;
+}
+.phone_verify .veri-input,
+.phone_verify .veri-mobile,
+.phone_verify .veri-buttons button,
+.phone_verify .veri-ok {
+    margin-bottom: 9px;
+}
+.warning_error i {
+    display: inline-block;
+}
+.warning_error i:before {
+    color: #d76050;
+    content: "\f06a";
+    display: inline-block !important;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    margin-left: -24px;
+}
+li input {
+    border: 1px solid #ddd;
+    height: 44px;
+    margin-bottom: 0;
+    width: 100%;
+}
+.warning_error input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    background: #f7dfdc;
+}
+.verify .veri-mobile span.phone-number.warning_error {
+    margin-left: 32px;
+}

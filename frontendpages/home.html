@@ -1,0 +1,995 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content=" " />
+		<meta name="description" content=" ">
+		<meta name="author" content="SpaceAdvisor">
+		<meta name="copyright" content="本網頁著作SpaceAdvisor所有">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link href="dist/images/icon.ico" type="image/x-icon" rel="shortcut icon"/>
+		<title>首頁</title>
+		<link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/main.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/banner.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/jquery.mmenu.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/slick.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/slick-theme.css" rel="stylesheet" type="text/css" media=""/>
+
+		<!-- STYLES -->
+		<link href="dist/css/new/basic.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/new/basic_template.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/new/home.css" rel="stylesheet" type="text/css" media=""/>
+	</head>
+	<body class="isLogin"><!-- isLogin 為登入 -->
+		<div id="wrapper" class="index">
+			<header class="cf">
+				<div class="content cf">
+					<a href="home.html" class="logo">
+						<img src="dist/svg/logo.svg">
+					</a>
+					<section class="__pc">
+						<a href="" class="activity">找活動</a>
+						<section class="_notLogin ">
+							<div class="login_info">
+								<a class="signup" href="signup.html">註冊</a>/<a class="signin" href="signin.html">登入</a>
+							</div>
+						</section>
+						<section class="_isLogin">
+							<div class="memberClick">
+								<a href="" class="member" style="background-image:url(dist/images/avator.jpg)"></a>
+								<div class="memberMenu">
+									<ul>
+										<li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
+										<li class="collect"><a href="javascript:;">收藏清單</a></li>
+										<li class="compare"><a href="javascript:;">比較清單<b>2</b></a></li>
+										<li class="orders"><a href="javascript:;">訂單管理</a></li>
+										<li class="points"><a href="javascript:;">點數管理</a></li>
+										<li class="faq"><a href="faq.html">常見問題</a></li>
+										<li class="logout"><a href="javascript:;">登出</a></li>
+									</ul>
+								</div>
+							</div>
+							<a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>收件夾<b>1</b></a>
+							<a href="" class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>購物車(<b>0</b>)</a>
+						</section>
+						<nav>
+							<ul>
+								<li class="about_us"><a href="about_us.html">關於我們</a></li>
+								<li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+								<li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+							</ul>
+						</nav>
+						<select name="select" id="select">
+							<option>中文</option>
+							<option>English</option>
+						</select>
+					</section>
+					<section class="__mb">
+						<a href="#menu" data-ajax="false" class="menu-mobile"><i class="fa fa-bars" aria-hidden="true"></i></a>
+						<div class="search">
+							<i id="search" class="fa fa-search" aria-hidden="true"></i>
+							<div class="search-box"><input type="text" name="textfield" id="textfield" placeholder="請輸入關鍵字" /><a href="javscript:;"><span class="btn btn-c-3 btn-sm">搜尋</span></a></div>
+						</div>
+					</section>
+				</div>
+				<section class="__mb">
+					<nav id="menu">
+						<ul>
+							<section class="_notLogin">
+								<li class="member">
+									<a class="signup" href="signup.html">註冊</a><a class="signin" href="signin.html">登入</a>
+								</li>
+								<li class="faq"><a href="faq.html">常見問題</a></li>
+								<li class="about_us"><a href="about_us.html">關於我們</a></li>
+								<li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+								<li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+								<li class="language">
+									<select name="select" id="select">
+										<option>中文</option>
+										<option>English</option>
+									</select>
+								</li>
+								<li class="activity"><a href="">找活動</a></li>
+							</section>
+							<section class="_isLogin">
+								<li class="member">
+									<a href="" class="pic" style="background-image:url(dist/images/avator.jpg)"></a><p>Hyun</p>
+									<a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i><b>1</b></a>
+								</li>
+								<li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
+								<li class="collect"><a href="javascript:;">收藏清單</a></li>
+								<li class="compare"><a href="javascript:;">比較清單 <b>2</b></a></li>
+								<li class="orders"><a href="javascript:;">訂單管理</a></li>
+								<li class="points"><a href="javascript:;">點數管理</a></li>
+								<li class="faq"><a href="faq.html">常見問題</a></li>
+								<li class="about_us"><a href="about_us.html">關於我們</a></li>
+								<li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+								<li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+								<li class="logout"><a href="">登出</a></li>
+								<li class="language">
+									<select name="select" id="select">
+										<option>中文</option>
+										<option>English</option>
+									</select>
+								</li>
+								<li class="activity"><a href="">找活動</a></li>
+							</section>
+						</ul>
+					</nav>
+				</section>
+			</header>
+
+
+			<!--main-->
+			<main>
+				<!-- banner -->
+				<div class="flexslider">
+					<p>輕鬆找到一個完美的場地</br>最高獨享40%優惠</p>
+					<ul class="slides">
+						<li style="background-image:url(dist/images/desk_banner_01.jpg)"><a href="#"></a></li>
+						<li style="background-image:url(dist/images/desk_banner_02.jpg)"><a href="#"></a></li>
+						<li style="background-image:url(dist/images/desk_banner_03.jpg)"><a href="#"></a></li>
+					</ul>
+					<div class="search _boxStyle">
+						<div class="content">
+							<div class="search-box desk">
+								<div class="search_item">
+									<div class="search_item_name" id="meeting">想辦什麼活動或會議</div>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</div>
+								<div id="search_nature" class="search_item_detail desk">
+									<div class="search_item_open"></div>
+									<div class="search_item_area event">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td width="50%" valign="top">
+													<p class="title">活動類</p>
+													<span><label><input type="checkbox" name="meeting[]" value="一般會議"/>一般會議</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="企業培訓"/>企業培訓</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="視訊會議"/>視訊會議</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="課程講座"/>課程講座</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="國際會議"/>國際會議</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="記者會"/>記者會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="說明會"/>說明會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="發表會"/>發表會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="董事會"/>董事會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="體育活動"/>體育活動</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="表演活動"/>表演活動</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="團隊建立"/>團隊建立</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="音樂活動"/>音樂活動</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="靜態展覽"/>靜態展覽</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="拍攝攝影"/>拍攝攝影</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="戶外活動"/>戶外活動</label></span>
+												</td>
+												<td width="50%" valign="top">
+													<p class="title">宴會類</p>
+													<span><label><input type="checkbox" name="meeting[]" value="一般會議"/>一般宴會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="尾牙"/>尾牙</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="春酒"/>春酒</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="婚禮"/>婚禮</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="主題派對"/>主題派對</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="謝師宴"/>謝師宴</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="晚會"/>晚會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="家庭聚餐"/>家庭聚餐</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="企業聚餐"/>企業聚餐</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="朋友聚餐"/>朋友聚餐</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="生日聚會"/>生日聚會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="烹飪活動"/>烹飪活動</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="商務宴客"/>商務宴客</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="戶外用餐"/>戶外用餐</label></span>
+												</td>
+											</tr>
+											<!-- 超過兩類請用tr區分 -->
+											<!-- <tr>
+												<td width="50%" valign="top">
+													<p class="title">活動類</p>
+													<span><label><input type="checkbox" name="meeting[]" value="一般會議"/>一般會議</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="企業培訓"/>企業培訓</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="視訊會議"/>視訊會議</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="課程講座"/>課程講座</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="國際會議"/>國際會議</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="記者會"/>記者會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="說明會"/>說明會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="發表會"/>發表會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="董事會"/>董事會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="體育活動"/>體育活動</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="表演活動"/>表演活動</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="團隊建立"/>團隊建立</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="音樂活動"/>音樂活動</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="靜態展覽"/>靜態展覽</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="拍攝攝影"/>拍攝攝影</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="戶外活動"/>戶外活動</label></span>
+												</td>
+												<td width="50%" valign="top">
+													<p class="title">宴會類</p>
+													<span><label><input type="checkbox" name="meeting[]" value="一般會議"/>一般宴會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="尾牙"/>尾牙</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="春酒"/>春酒</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="婚禮"/>婚禮</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="主題派對"/>主題派對</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="謝師宴"/>謝師宴</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="晚會"/>晚會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="家庭聚餐"/>家庭聚餐</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="企業聚餐"/>企業聚餐</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="朋友聚餐"/>朋友聚餐</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="生日聚會"/>生日聚會</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="烹飪活動"/>烹飪活動</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="商務宴客"/>商務宴客</label></span>
+													<span><label><input type="checkbox" name="meeting[]" value="戶外用餐"/>戶外用餐</label></span>
+												</td>
+											</tr> -->
+										</table>
+									</div>
+									<!-- /search_item_area -->
+								</div>
+								<!-- /search_item_detail -->
+							</div>
+							<div class="search-box desk">
+								<div class="search_item short">
+									<div class="search_item_name" id="area">縣市</div>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</div>
+								<div id="search_county" class="search_item_detail">
+									<div class="search_item_open short"></div>
+									<div class="search_item_area address">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td width="100%" valign="top">
+													<span><label><input type="checkbox" name="area[]" value="台北市"/>台北市</label></span>
+													<span><label><input type="checkbox" name="area[]" value="新北市"/>新北市</label></span>
+													<span><label><input type="checkbox" name="area[]" value="桃園市"/>桃園市</label></span>
+													<span><label><input type="checkbox" name="area[]" value="新竹市"/>新竹市</label></span>
+													<span><label><input type="checkbox" name="area[]" value="新竹縣"/>新竹縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="基隆市"/>基隆市</label></span>
+													<span><label><input type="checkbox" name="area[]" value="台中市"/>台中市</label></span>
+													<span><label><input type="checkbox" name="area[]" value="彰化縣"/>彰化縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="南投縣"/>南投縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="雲林縣"/>雲林縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="高雄市"/>高雄市</label></span>
+													<span><label><input type="checkbox" name="area[]" value="台南市"/>台南市</label></span>
+													<span><label><input type="checkbox" name="area[]" value="嘉義市"/>嘉義市</label></span>
+													<span><label><input type="checkbox" name="area[]" value="嘉義縣"/>嘉義縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="屏東縣"/>屏東縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="宜蘭縣"/>宜蘭縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="花蓮縣"/>花蓮縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="台東縣"/>台東縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="澎湖縣"/>澎湖縣</label></span>
+													<span><label><input type="checkbox" name="area[]" value="金門縣"/>金門縣</label></span>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<!-- /search_item_detail -->
+							</div>
+							<select name="select-people" id="select-people" class="_select">
+								<option value="0">容納人數</option>
+								<option>不限</option>
+								<option>1-10人</option>
+								<option>10-20人</option>
+								<option>20-30人</option>
+								<option>30-40人</option>
+								<option>40-60人</option>
+								<option>60-80人</option>
+								<option>80-100人</option>
+								<option>100人以上</option>
+							</select>
+							<div class="search-box desk">
+								<div class="search_item day">
+									<input type="text" class="layui-input" id="test6"  placeholder="日期" lay-key="7"  readonly>
+								</div>
+							</div>
+							<input type="text" name="textfield" id="textfield" placeholder="輸入關鍵字(例:六福皇宮 )" class="input" />
+							<a href="javascript:;" class="next"><span class="btn btn-c-3 btn-m">搜尋</span></a>
+							<div class="other">
+								<a href="search_map.html" class="map desk"><i class="fa fa-map-marker" aria-hidden="true"></i>地圖搜尋</a>
+								<a href="search.html" class="advanced"><i class="fa fa-filter" aria-hidden="true"></i>進階搜尋</a>
+							</div>
+						</div>
+					</div>
+					<!-- /search -->
+				</div>
+				<!-- /flexslider -->
+				<!-- 立即登入 -->
+				<div class="login-box desk _boxStyle">
+					<div class="content">
+						<p><b>18,437,449</b> 人透過我們預訂空間，分享了 <b>326,924</b> 則評論，全亞洲共有 <b>7,804</b> 家場地任你挑選<br>留下評論立即累積點數！<a href="">立即登入</a></p>
+					</div>
+				</div>
+				<!--/login-box -->
+				<!-- 四個快速選項 -->
+				<div class="fast-select content desk _boxStyle">
+					<ul>
+						<li><a href="">快速選擇</a></li>
+						<li><a href="">安全預訂</a></li>
+						<li><a href="">免費取消</a></li>
+						<li><a href="">專人服務</a></li>
+					</ul>
+				</div>
+				<!-- /fast-select -->
+				<!-- 類型分類 -->
+				<div class="style _boxStyle">
+					<ul class="first">
+						<li><a href=""><img src="dist/images/icon_index05.png" alt="" title="" class="mouseout"><img src="dist/images/icon_index05_ro.png" alt="" title="" class="mouseover"><span>企業培訓</span>共<b>100</b>家</a></li>
+						<li><a href=""><img src="dist/images/icon_index06.png" alt="" title="" class="mouseout"><img src="dist/images/icon_index06_ro.png" alt="" title="" class="mouseover"><span>視訊會議</span>共<b>100</b>家</a></li>
+						<li><a href=""><img src="dist/images/icon_index07.png" alt="" title="" class="mouseout"><img src="dist/images/icon_index07_ro.png" alt="" title="" class="mouseover"><span>課程講座</span>共<b>100</b>家</a></li>
+						<li><a href=""><img src="dist/images/icon_index08.png" alt="" title="" class="mouseout"><img src="dist/images/icon_index08_ro.png" alt="" title="" class="mouseover"><span>尾牙</span>共<b>100</b>家</a></li>
+						<li><a href=""><img src="dist/images/icon_index09.png" alt="" title="" class="mouseout"><img src="dist/images/icon_index09_ro.png" alt="" title="" class="mouseover"><span>婚禮</span>共<b>100</b>家</a></li>
+						<li><a href=""><img src="dist/images/icon_index10.png" alt="" title="" class="mouseout"><img src="dist/images/icon_index10_ro.png" alt="" title="" class="mouseover"><span>謝師宴</span>共<b>100</b>家</a></li>
+						<li id="style-open"><a><i>30</i><span>全部類型</span>點擊展開</a></li>
+						<div class="style-other">
+							<ul>
+								<p>活動類<i></i></p>
+								<li><a href=""><span>一般會議</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>企業培訓</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>視訊會議</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>課程講座</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>國際會議</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>記者會</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>說明會</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>發表會</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>董事會</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>體育活動</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>表演活動</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>團隊建立</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>音樂活動</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>靜態展覽</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>拍攝攝影</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>戶外活動</span>共<b>100</b>家</a></li>
+							</ul>
+							<ul>
+								<p>宴會類<i></i></p>
+								<li><a href=""><span>一般宴會</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>尾牙</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>春酒</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>婚禮</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>主題派對</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>謝師宴</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>晚會</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>家庭聚餐</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>企業聚餐</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>朋友聚餐</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>生日聚會</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>烹飪活動</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>商務宴客</span>共<b>100</b>家</a></li>
+								<li><a href=""><span>戶外用餐</span>共<b>100</b>家</a></li>
+							</ul>
+						</div>
+					</ul>
+				</div>
+				<!-- /style -->
+				<!-- 精選場地 -->
+				<div class="site-list content _boxStyle">
+					<h2>精選場地</h2>
+					<div class="site-box slider">
+						<div class="site">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)1</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)1</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)1</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)1</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)1</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)1</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+					</div>
+					<!-- /site-box -->
+					<a href="" class="more">更多精選場地<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+				</div>
+				<!-- /site-list -->
+				<!-- 限時優惠 -->
+				<div class="time-limit cf _boxStyle">
+					<h2>限時優惠</h2>
+					<ul class="content">
+						<li>
+							<a href="">
+								<span class="mark"></span>
+								<div>
+									<i class="icon"><img src="dist/images/icon_time_limit02.png" alt="" title=""></i>
+									<span class="text">
+										<p class="title">Early Bird</p>
+										<i></i>
+										<p>超過100家超值優惠！</p>
+									</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="mark"></span>
+								<div>
+									<i class="icon"><img src="dist/images/icon_time_limit.png" alt="" title=""></i>
+									<span class="text">
+										<p class="title">Last Minute</p>
+										<i></i>
+										<p>超過100家超值優惠！</p>
+									</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /time-limit -->
+				<!-- 主題頻道 -->
+				<div class="theme-list cf _boxStyle">
+					<h2>主題頻道</h2>
+					<ul class="content">
+						<li>
+							<a href="">
+								<span class="pic"><img src="dist/images/theme_list_pic01.png" alt="" title=""></span>
+								<i class="mark"></i>
+								<p class="title">商務會議方案</p>
+								<p class="text">完善硬體設施，彈性方案組合，助您舉辦完美商務會議的理想場地。</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="pic"><img src="dist/images/theme_list_pic01.png" alt="" title=""></span>
+								<i class="mark"></i>
+								<p class="title">會議假期方案</p>
+								<p class="text">別出心裁的會議假期方案，搭配輕鬆自在的渡假環境，讓您一收會議假期之活力成效。</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="pic"><img src="dist/images/theme_list_pic01.png" alt="" title=""></span>
+								<i class="mark"></i>
+								<p class="title">餐會方案</p>
+								<p class="text">多元特價餐飲優惠、促銷方案及活動專案，在溫馨優雅的用餐氛圍中品嘗美食。</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="pic"><img src="dist/images/theme_list_pic01.png" alt="" title=""></span>
+								<i class="mark"></i>
+								<p class="title">星級飯店專區</p>
+								<p class="text">星級飯店專業設備與頂級服務，成就完美的國際會議與研討活動。</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="pic"><img src="dist/images/theme_list_pic01.png" alt="" title=""></span>
+								<i class="mark"></i>
+								<p class="title">獎勵會議專區</p>
+								<p class="text">精心策劃您的獎勵會議旅遊，犒賞傑出優秀人才。</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="pic"><img src="dist/images/theme_list_pic01.png" alt="" title=""></span>
+								<i class="mark"></i>
+								<p class="title">發表會專區</p>
+								<p class="text">舉辦一場有聲有色的發表會，讓您的產品大放異彩。</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="pic"><img src="dist/images/theme_list_pic01.png" alt="" title=""></span>
+								<i class="mark"></i>
+								<p class="title">戶外場地專區</p>
+								<p class="text">彈性的開放式場地運用，滿足各種活動的需求。</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="pic"><img src="dist/images/theme_list_pic01.png" alt="" title=""></span>
+								<i class="mark"></i>
+								<p class="title">派對假期專區</p>
+								<p class="text">玩樂無界限，和與三五好友的狂歡派對，盡情沉醉於美食和音樂之中。</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /theme-list -->
+				<!-- banner-pic -->
+				<div class="banner-anment">
+					<div class="animentBox">
+						<div class="bannerTitle">
+							<h2>留下您的評價，立即獲得點數！</h2>
+							<h3>集滿25點即可兌換知名美式連鎖咖啡店大杯那堤乙杯！</h3>
+							<a href="#" class="btn btn-c-3 btn-l">前往評論<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+						</div>
+						<div class="bannerAnmate">
+							<div class="bannerAnmateBox">
+								<div class="ba_icon1"><img src="dist/images/index/b_icon1.png"></div>
+								<div class="ba_icon2"><img src="dist/images/index/b_icon2.png"></div>
+								<div class="ba_icon3"><img src="dist/images/index/b_icon3.png"></div>
+								<div class="ba_icon4"><img src="dist/images/index/b_icon4.png"></div>
+								<div class="ba_icon5"><img src="dist/images/index/b_icon5.png"></div>
+								<div class="ba_icon6"><img src="dist/images/index/b_icon6.png"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 三大保證 -->
+				<div class="assure _boxStyle">
+					<h2>三大保證</h2>
+					<ul class="content">
+						<li>
+							<a href="">
+								<i><img src="dist/images/icon_assure01.png" alt="" title=""></i>
+								<p class="title">最齊全場地</p>
+								<p class="text">這裡可以放簡短文案這裡可以放簡短文案這裡可以放簡短文案小時喔</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i><img src="dist/images/icon_assure02.png" alt="" title=""></i>
+								<p class="title">最完整資訊</p>
+								<p class="text">這裡可以放簡短文案這裡可以放簡短文案這裡可以放簡短文案小時喔</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i><img src="dist/images/icon_assure03.png" alt="" title=""></i>
+								<p class="title">最豐富優惠</p>
+								<p class="text">這裡可以放簡短文案這裡可以放簡短文案這裡可以放簡短文案小時喔</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /assure -->
+				<!-- 熱門情報 -->
+				<div class="information-list _boxStyle">
+					<h2>最新專欄</h2>
+					<div class="content">
+						<div class="information-box slider">
+							<div class="information">
+								<a href="">
+									<span class="pic">
+										<i></i><img src="dist/images/information_pic01.png" alt="" title="">
+										<p>Computex展前預告：參觀資訊、各展館展出重點懶人包</p>
+									</span>
+									<div class="text">
+										<p>機場快線是連接香港國際機場及香港商業中心區的快捷交通工具，亦是全球其中一條最優質的機場鐵路的快捷交通工具，最優質的機場鐵路的快捷交通工具，最優質的機場鐵路</p>
+									</div>
+								</a>
+							</div>
+							<div class="information">
+								<a href="">
+									<span class="pic">
+										<i></i><img src="dist/images/information_pic01.png" alt="" title="">
+										<p>Computex Taipei 台北國際電腦展起跑</p>
+									</span>
+									<div class="text">
+										<p>機場快線是連接香港國際機場及香港商業中心區的快捷交通工具，亦是全球其中一條最優質的機場鐵路的快捷交通工具，最優質的機場鐵路的快捷交通工具，最優質的機場鐵路</p>
+									</div>
+								</a>
+							</div>
+							<div class="information">
+								<a href="">
+									<span class="pic">
+										<i></i><img src="dist/images/information_pic01.png" alt="" title="">
+										<p>企業安排培訓課，花大錢又沒有用？</p>
+									</span>
+									<div class="text">
+										<p>機場快線是連接香港國際機場及香港商業中心區的快捷交通工具，亦是全球其中一條最優質的機場鐵路的快捷交通工具，最優質的機場鐵路的快捷交通工具，最優質的機場鐵路</p>
+									</div>
+								</a>
+							</div>
+							<div class="information">
+								<a href="">
+									<span class="pic">
+										<i></i><img src="dist/images/information_pic01.png" alt="" title="">
+										<p>為什麼別人的發表會總是特別成功？</p>
+									</span>
+									<div class="text">
+										<p>機場快線是連接香港國際機場及香港商業中心區的快捷交通工具，亦是全球其中一條最優質的機場鐵路的快捷交通工具，最優質的機場鐵路的快捷交通工具，最優質的機場鐵路</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- /information-box -->
+						<a href="" class="more">更多最新專欄<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+					</div>
+					<!-- /content -->
+				</div>
+				<!-- /information -->
+				<!-- 精選品牌 -->
+				<div class="brand-list _boxStyle">
+					<h2>精選品牌</h2>
+					<div class="content">
+						<div class="brand-box slider">
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo.png" alt="" title=""></a>
+							</div>
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo.png" alt="" title=""></a>
+							</div>
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo.png" alt="" title=""></a>
+							</div>
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo.png" alt="" title=""></a>
+							</div>
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo.png" alt="" title=""></a>
+							</div>
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo-nobg.png" alt="" title=""></a>
+							</div>
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo-nobg.png" alt="" title=""></a>
+							</div>
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo-nobg.png" alt="" title=""></a>
+							</div>
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo-nobg.png" alt="" title=""></a>
+							</div>
+							<div class="brand">
+								<a href=""><img src="dist/images/aloft-hotel-logo-nobg.png" alt="" title=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /brand-list -->
+			</main>
+			<!--/main-->
+
+
+			<!-- top -->
+			<a href="javascript:;" class="gotop"></a>
+			<footer class="cf search-mobile-hide">
+				<div class="top desk">
+					<ul>
+						<li>
+							<p>SpaceAdvisor</p>
+							<a href="">關於我們</a>
+							<a href="">平台優勢</a>
+							<a href="">使用說明</a>
+							<a href="">人才招募</a>
+						</li>
+						<li>
+							<p>客服中心</p>
+							<a href="">常見問題</a>
+							<a href="">聯絡我們</a>
+							<a href="">服務政策</a>
+							<a href="">隱私權條款</a>
+						</li>
+						<li>
+							<p>活動類型</p>
+							<a href="">企業培訓</a>
+							<a href="">記者會 發表會</a>
+							<a href="">商務宴客</a>
+							<a href="">企業聚餐</a>
+							<a href="">主題派對</a>
+							<a href="">婚禮 春酒 晚會</a>
+						</li>
+						<li>
+							<p>場地類型</p>
+							<a href="">星級飯店</a>
+							<a href="">藝文場地</a>
+							<a href="">會議中心</a>
+							<a href="">展覽中心</a>
+							<a href="">餐飲空間</a>
+							<a href="">公家機構</a>
+							<a href="">戶外場地</a>
+						</li>
+						<li>
+							<p>合作夥伴</p>
+							<a href="">合作優勢</a>
+							<a href="">立即刊登場地</a>
+							<a href="">企業合作</a>
+							<a href="">經銷商計畫</a>
+						</li>
+					</ul>
+				</div>
+				<div class="bottom">
+					<ul>
+						<li>
+							<p>台北市信義區信義路5段7號24F D1 (101大樓)</p>
+							<p>© SpaceAdvisor 2017 All Rights Reserved</p>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="dist/images/icon_fb.png" alt="" title=""></a>
+							<a href="" target="_blank"><img src="dist/images/icon_line.png" alt="" title=""></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<!-- /#wrapper -->
+
+
+		<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="dist/js/main.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript" src="dist/js/slick.js"></script>
+		<script type="text/javascript">
+			//精選場地
+			$(function(){
+				$('.site-box').slick({
+					dots: true,
+					// infinite: false,
+					speed: 300,
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					autoplay: false,
+					autoplaySpeed: 5000,
+					responsive: [
+						{
+							breakpoint: 1250,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 2
+							}
+						},
+						{
+							breakpoint: 880,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+			});
+			//熱門情報
+			$(function(){
+				$('.information-box').slick({
+					// dots: true,
+					// infinite: false,
+					speed: 300,
+					slidesToShow: 4,
+					slidesToScroll: 2,
+					responsive: [
+						{
+							breakpoint: 1250,
+							settings: {
+								slidesToShow: 3,
+								slidesToScroll: 1
+							}
+						},
+						{
+							breakpoint: 980,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 1
+							}
+						},
+						{
+							breakpoint: 880,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+			});
+			//精選品牌
+			$(function(){
+				$('.brand-box').slick({
+					// dots: true,
+					// infinite: false,
+					speed: 300,
+					slidesToShow: 5,
+					slidesToScroll: 5,
+					responsive: [
+						{
+							breakpoint: 980,
+							settings: {
+								slidesToShow: 3,
+								slidesToScroll: 3
+							}
+						},
+						{
+							breakpoint: 480,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+			});
+		</script>
+		<script type="text/javascript" src="dist/js/laydate/laydate.js"></script>
+		<!-- 11/21 animate -->
+		<script type="text/javascript" src="dist/js/index.js"></script>
+		<script src="dist/js/lib/greensock/TweenMax.js"></script>
+		<script src="dist/js/scrollmagic/ScrollMagic.js"></script>
+		<script src="dist/js/scrollmagic/plugins/debug.addIndicators.js"></script>
+		<script type="text/javascript">
+			//input框++
+			var div_array = [];
+			$(".search_item_name").each(function(){
+				var this_id = $(this).attr("id");
+				div_array[this_id] = $(this).html();
+			});
+			$(':input').on('click',function(){
+			if($(this).attr("type") == "checkbox"){
+				var search_item = $(this).parents('.search-box').children('.search_item');
+				var search_item_detail = $(this).parents('.search_item_detail');
+				search_item.addClass('have');
+				search_item_detail.addClass('have');
+				var checkbox_name = $(this).attr("name");
+				var div_name = checkbox_name.replace("[]","");
+				var checkbox_value = "";
+				var i = 0;
+					$("input[name='"+ checkbox_name +"']").each(function(){
+						if($(this).prop("checked") == true){
+							if(i == 0) checkbox_value = $(this).val();
+							i++;
+						}
+					});
+					if(i > 1) checkbox_value = checkbox_value + "+";
+					if(i == 0){
+						$("#" + div_name).html(div_array[div_name]);
+					search_item.removeClass('have');
+					search_item_detail.removeClass('have');
+					}else $("#" + div_name).html(checkbox_value);
+				}
+			});
+			</script>
+			<script type="text/javascript">
+			//日期切換
+			lay('#version').html('-v'+ laydate.v);
+			//日歷
+			laydate.render({
+				elem: '#test6'
+				,range: true
+				,done: function(value, date, endDate){
+					if(value != ""){
+						$(".day").addClass("have");
+					}else{
+						$(".day").removeClass('have');
+					}
+				}
+			});
+			$("body").click(function(event){
+				if($(event.target).parents(".search-box").length == 0  ){
+					$(".search_item_detail").removeClass('open');
+					$(".search_item").find('i').attr("class", "fa fa-angle-down");
+				}
+			});//點擊其他地方關閉
+		</script>
+		<script type="text/javascript">
+			// allen
+			$('select._select').on('change', function(){
+				if($(this).val() != '0') {
+					$(this).addClass('have');
+				} else {
+					$(this).removeClass('have');
+				}
+			});
+		</script>
+	</body>
+</html>

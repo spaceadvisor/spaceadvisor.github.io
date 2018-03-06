@@ -1,0 +1,151 @@
+.liquid1, .liquid2{
+	clear: right;
+}
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+.liquid1 .previous, .liquid2 .previous {
+	display:block;
+	height:65px;
+	width:65px;
+	background-image:url('../images/previous.png');
+	background-size: 65px;
+	float:left;
+	margin:0;
+	padding:0;
+	margin-top: 90px;
+	cursor: pointer;
+}
+.liquid1 .next, .liquid2 .next {
+	display:block;
+	height:65px;
+	width:65px;
+	background-image:url('../images/next.png');
+	background-size: 65px;
+	float:right;
+	margin:0;
+	padding:0;
+	margin-top: 90px;
+	cursor: pointer;
+}
+.liquid1 ul li{
+	width:330px;
+	background-color: #fff;
+	/*transition: all 0.5s;*/
+}
+.liquid1 ul li a{
+	display: block;
+}
+.liquid1 ul li a:hover{
+	opacity: 0.7;
+	transition: all 0.5s;
+}
+.liquid2 ul li{
+	width: 250px;
+	/*transition: all 0.5s;*/
+}
+.liquid2 ul li a{
+	display: block;
+}
+.liquid2 ul li a:hover{
+	opacity: 0.7;
+	transition: all 0.5s;
+}
+
+
+
+@media screen and (max-width: 480px){
+.liquid1 ul li, .liquid2 ul li{
+	width:210px;
+}
+.liquid1 .previous, .liquid2 .previous {
+	display:block;
+	height:30px;
+	width:30px;
+	background-image:url('../images/previous.png');
+	background-size: 30px;
+	float:left;
+	margin:0;
+	padding:0;
+	margin-top: 90px;
+	cursor: pointer;
+}
+.liquid1 .next, .liquid2 .next {
+	display:block;
+	height:30px;
+	width:30px;
+	background-image:url('../images/next.png');
+	background-size: 30px;
+	float:right;
+	margin:0;
+	padding:0;
+	margin-top: 90px;
+	cursor: pointer;
+}
+}
+
+@media only screen and (max-width: 375px){
+.liquid1 ul li, .liquid2 ul li{
+	width:210px;
+}
+.liquid1 .previous, .liquid2 .previous, {
+	display:block;
+	height:30px;
+	width:30px;
+	background-image:url('../images/previous.png');
+	background-size: 30px;
+	float:left;
+	margin:0;
+	padding:0;
+	margin-top: 90px;
+	cursor: pointer;
+}
+.liquid1.next, .liquid2.next {
+	display:block;
+	height:30px;
+	width:30px;
+	background-image:url('../images/next.png');
+	background-size: 30px;
+	float:right;
+	margin:0;
+	padding:0;
+	margin-top: 90px;
+	cursor: pointer;
+}
+}
+
+@media only screen and (max-width: 320px){
+.liquid1 ul li, .liquid2 ul li{
+	width:200px;
+}
+.liquid1 .previous, .liquid2 .previous {
+	display:block;
+	height:30px;
+	width:30px;
+	background-image:url('../images/previous.png');
+	background-size: 30px;
+	float:left;
+	margin:0;
+	padding:0;
+	margin-top: 90px;
+	cursor: pointer;
+}
+.liquid1 .next, .liquid2 .next {
+	display:block;
+	height:30px;
+	width:30px;
+	background-image:url('../images/next.png');
+	background-size: 30px;
+	float:right;
+	margin:0;
+	padding:0;
+	margin-top: 90px;
+	cursor: pointer;
+}
+}
+
+
+
+
+

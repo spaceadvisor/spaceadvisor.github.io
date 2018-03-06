@@ -1,0 +1,162 @@
+@charset 'UTF-8';
+.site-management._boxStyle {
+	padding-bottom: 0;
+}
+.site-cancel-title {
+    border-bottom: 1px #d65f4f solid;
+	margin-bottom: 9px;
+}
+.site-cancel-title h2 {
+	color: #d65f4f;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.site-cancel-title h2 i {
+	margin-right: 9px;
+}
+.site-cancel-contect {
+    font-size: 15px;
+    color: #4e5059;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.site-cancel-contect a {
+    color: #d65f4f;
+}
+.site-cancel-contect a:hover {
+    text-decoration: underline;
+}
+.site_remark .site_remark-description {
+	font-size: 15px;
+    color: #d65f4f;
+    margin-bottom: 0;
+    line-height: normal;
+}
+.site_remark .site_remark-description i {
+	margin-right: 5px;
+}
+.site_remark .site_remark-description b {
+	color: #4f6ea1;
+}
+.site_remark-main {
+    background: #f3f3f3;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    line-height: normal;
+    font-size: 15px;
+}
+.site_remark-main p {
+	line-height: normal;
+}
+.site_remark-main p:first-child {
+    color: #b61e1a;
+    margin-bottom: 5px;
+}
+.site_remark-main b,
+.site_remark-main span {
+	font-weight: normal;
+	color: #d76050;
+	padding: 0 5px;
+}
+.site_remark-main b {
+	text-decoration: underline;
+}
+.site_confirm {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.site_confirm label {
+    display: flex;
+    align-items: center;
+}
+.site_confirm label input {
+	margin: 0 5px 0 0 ;
+	height: unset;
+}
+.site_button {
+	text-align: center;
+}
+
+/** BEGIN booklist **/
+.bookList .detailTable-cell .tableTxt.buyIcon > div {
+	display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+.bookList .detailTable-content:not(._havePartChange) .detailTable-cell .tableTxt.buyIcon ._part {
+	display: none;
+}
+.bookList .detailTable-cell .tableTxt.buyIcon > div:last-child {
+	margin-bottom: 0;
+}
+.bookList .detailTable-content._havePartChange .detailTable-cell .tableTxt.buyIcon ._part {
+    align-items: flex-start;
+}
+.bookList .detailTable-content._doDelete {
+	background: rgba(214, 95, 79, .1);
+}
+.bookList .detailTable-content._doDelete .detailTable-cell:last-child {
+	/*background: #fff;*/
+	/*background: rgba(214, 95, 79, .1);*/
+}
+.bookList .detailTable-cell .tableTxt.buyIcon > div label {
+	margin-left: 3px;
+	margin-top: -2px;
+	padding-left: 5px;
+}
+.bookList .detailTable-cell .tableTxt.buyIcon > div label:before {
+	content: attr(data-text);
+}
+.bookList .detailTable-cell .tableTxt.buyIcon > div input[type="checkbox"] {
+	margin: 0 0 0 15px;
+	height: unset;
+}
+.bookList .detailTable-cell .tableTxt.buyIcon ._part label {
+	text-align: left;
+	display: inline-flex;
+	flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -3px;
+}
+.bookList .detailTable-content._doDelete .detailTable-cell .tableTxt.buyIcon input[type="checkbox"]:checked + label {
+	color: #d65f4f;
+}
+.bookList .detailTable-cell .tableTxt.buyIcon ._part label input[type="number"] {
+	display: none;
+	height: 30px;
+    margin-top: 3px;
+    padding: 3px 9px;
+    width: 60px;
+    line-height: normal;
+    border: 1px solid #ccc;
+}
+.bookList .detailTable-cell .tableTxt.buyIcon ._part input[type="checkbox"]:checked + label input[type="number"] {
+	display: block;
+}
+/** END booklist **/
+
+@media screen and (max-width:980px) {
+	.site-management._boxStyle {
+		padding-top: 20px;
+	}
+	.bookList .detailTable-row.detailTable-content .detailTable-cell:last-child {
+		padding: 20px 0;
+	}
+	.bookList .detailTable-cell .tableTxt.buyIcon > div {
+		margin-bottom: 0;
+		justify-content: center;
+		font-size: 15px;
+	}
+	.bookList .detailTable-cell .tableTxt.buyIcon > div label {
+		margin-top: 0;
+	}
+	.bookList .detailTable-cell .tableTxt.buyIcon > div input[type="checkbox"] {
+		margin-left: 0;
+	}
+	.site_remark-main {
+		padding: 9px;
+	}
+}
