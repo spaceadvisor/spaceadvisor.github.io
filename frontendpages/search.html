@@ -1201,26 +1201,26 @@
 												<table width="100%" border="0" cellspacing="0" cellpadding="0">
 													<tr>
 														<td width="100%" valign="top">
-															<span><label><input type="checkbox" name="area[]" value="台北市"/>台北市</label></span>
-															<span><label><input type="checkbox" name="area[]" value="新北市"/>新北市</label></span>
-															<span><label><input type="checkbox" name="area[]" value="桃園市"/>桃園市</label></span>
-															<span><label><input type="checkbox" name="area[]" value="新竹市"/>新竹市</label></span>
-															<span><label><input type="checkbox" name="area[]" value="新竹縣"/>新竹縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="基隆市"/>基隆市</label></span>
-															<span><label><input type="checkbox" name="area[]" value="台中市"/>台中市</label></span>
-															<span><label><input type="checkbox" name="area[]" value="彰化縣"/>彰化縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="南投縣"/>南投縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="雲林縣"/>雲林縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="高雄市"/>高雄市</label></span>
-															<span><label><input type="checkbox" name="area[]" value="台南市"/>台南市</label></span>
-															<span><label><input type="checkbox" name="area[]" value="嘉義市"/>嘉義市</label></span>
-															<span><label><input type="checkbox" name="area[]" value="嘉義縣"/>嘉義縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="屏東縣"/>屏東縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="宜蘭縣"/>宜蘭縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="花蓮縣"/>花蓮縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="台東縣"/>台東縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="澎湖縣"/>澎湖縣</label></span>
-															<span><label><input type="checkbox" name="area[]" value="金門縣"/>金門縣</label></span>
+															<span><label><input type="radio" name="area[]" value="台北市"/>台北市</label></span>
+															<span><label><input type="radio" name="area[]" value="新北市"/>新北市</label></span>
+															<span><label><input type="radio" name="area[]" value="桃園市"/>桃園市</label></span>
+															<span><label><input type="radio" name="area[]" value="新竹市"/>新竹市</label></span>
+															<span><label><input type="radio" name="area[]" value="新竹縣"/>新竹縣</label></span>
+															<span><label><input type="radio" name="area[]" value="基隆市"/>基隆市</label></span>
+															<span><label><input type="radio" name="area[]" value="台中市"/>台中市</label></span>
+															<span><label><input type="radio" name="area[]" value="彰化縣"/>彰化縣</label></span>
+															<span><label><input type="radio" name="area[]" value="南投縣"/>南投縣</label></span>
+															<span><label><input type="radio" name="area[]" value="雲林縣"/>雲林縣</label></span>
+															<span><label><input type="radio" name="area[]" value="高雄市"/>高雄市</label></span>
+															<span><label><input type="radio" name="area[]" value="台南市"/>台南市</label></span>
+															<span><label><input type="radio" name="area[]" value="嘉義市"/>嘉義市</label></span>
+															<span><label><input type="radio" name="area[]" value="嘉義縣"/>嘉義縣</label></span>
+															<span><label><input type="radio" name="area[]" value="屏東縣"/>屏東縣</label></span>
+															<span><label><input type="radio" name="area[]" value="宜蘭縣"/>宜蘭縣</label></span>
+															<span><label><input type="radio" name="area[]" value="花蓮縣"/>花蓮縣</label></span>
+															<span><label><input type="radio" name="area[]" value="台東縣"/>台東縣</label></span>
+															<span><label><input type="radio" name="area[]" value="澎湖縣"/>澎湖縣</label></span>
+															<span><label><input type="radio" name="area[]" value="金門縣"/>金門縣</label></span>
 														</td>
 													</tr>
 												</table>
@@ -2404,7 +2404,7 @@
 				div_array[this_id] = $(this).html();
 			});
 			$('.search-box.desk input').on('click',function(){
-				if ($(this).attr("type") == "checkbox") {
+				if (($(this).attr("type") == "checkbox") || ($(this).attr("type") == "radio")) {
 					var search_item = $(this).parents('.search_off').children('.search_item');
 					var search_item_detail = $(this).parents('.search_item_detail');
 					search_item.addClass('have');

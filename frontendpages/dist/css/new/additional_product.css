@@ -105,6 +105,7 @@
 }
 .additional_product .purchase_value-add .value-add-list {
     border: 1px solid #ddd;
+	border-bottom: none;
     background: #f3f3f3;
     border-radius: 0 0 5px 5px;
     overflow: hidden;
@@ -144,12 +145,12 @@
 	line-height: normal;
 	border-bottom: 1px solid #ccc;
 }
-.additional_product .accordion dl:last-child dd {
+.additional_product .accordion .opt-time dl:last-child dd {
 	border-bottom: 0;
 }
 .additional_product .accordionTitle:before,
 .additional_product .accordion__Heading:before {
-	content: "\f106";
+	content: "\f107";
 	float: right;
     display: inline-block;
     font-family: FontAwesome;
@@ -158,7 +159,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     position: absolute;
-    right: 20px;
+    right: 0;
 }
 .additional_product .accordionTitleActive:before,
 .additional_product .accordionTitle.is-expanded:before {
@@ -254,7 +255,13 @@
 /** BEGIN 時間加價購 **/
 .additional_product .purchase_program .purchase_time-right {
 	float: right;
-	width: 350px;
+	width: 188px;
+}
+.additional_product .purchase_program .purchase_time-right:last-child {
+	margin-left: 6px;
+}
+.additional_product .purchase_program .purchase_time-right.disabled {
+	width: 382px;
 }
 .purchase_program-main .increase {
     font-size: 15px;
@@ -374,7 +381,7 @@
 }
 .purchase_value-add-wrapper .ia-wrapper {
 	display: inline-flex;
-	width: 80%;
+	width: 83%;
 }
 .purchase_value-add-background {
 	background-color: #4f6ea1;
@@ -389,14 +396,21 @@
 }
 .value-add-cart .item {
     display: inline-block;
-    width: 300px;
+    width: 70%;
     padding-right: 9px;
 }
 .value-add-cart .amount {
     display: flex;
     align-items: center;
-    width: calc(100% - 300px);
+    width: 10%;
     padding-right: 9px;
+	line-height: normal;
+}
+.value-add-cart .fee-percent {
+	display: flex;
+    align-items: center;
+    width: 20%;
+	line-height: normal;
 }
 .value-add-cart .valist .amount:not(._notCount):before {
     content: "x";
@@ -404,10 +418,19 @@
 }
 .value-add-cart .price {
     display: inline-flex;
-    width: 20%;
+    width: 17%;
 }
 .value-add-cart .valist {
     /*line-height: normal;*/
+}
+.value-add-cart .valist h3 {
+	padding: 9px 20px;
+	font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+.value-add-cart .valist h3 span {
+	display: inline-block;
 }
 .value-add-cart .valist .wrapper {
     display: block;
@@ -431,16 +454,18 @@
     display: flex;
     align-items: center;
     padding: 3px 0;
+	border-top: 1px dotted;
 }
 .value-add-cart .valist ul li:first-child {
     padding-top: 0;
+	border-top: none;
 }
 .value-add-cart .valist ul li:last-child {
     padding-bottom: 0;
 }
 .value-add-cart .valist ul li div.ia-wrapper {
     display: flex;
-    width: 80%;
+    width: 83%;
 }
 .value-add-cart .valist ul li div.ia-wrapper .item {
 	line-height: normal;
@@ -987,17 +1012,44 @@
 }
 /** END additional_product_history **/
 
+/*!
+ * 20180314 針對場地、時段、服務費做調整
+ * 一場地對應一加購單
+ * (1)最上方顯示場地；
+ * (2)設備/餐飲/其他部分，先選擇時段，再作加購動作；
+ * (3)超值加購項目，每項加上服務費欄位
+ */
+.additional_product .purchase_value-add h2 {
+    margin: 0 0 5px;
+    text-align: left;
+}
 
-
+/** BEGIN opt-time **/
+.opt-time .opt-time-desc {
+	background-color: #1f4178;
+	padding: 15px 20px 10px;
+	color: #ffffff;	
+}
+.opt-time dd.opt-time-terms {
+	background-color: #1f4178;
+	line-height: inherit;
+}
+.opt-time .opt-time-terms > .site_optionsBox {
+	padding: 6px 15px;
+}
+.opt-time .opt-time-terms > .site_optionsBox .optionsBox-title {
+	color: #ffffff;
+}
+/** END opt-time **/
 
 @media (max-width:980px) {
 	.purchase_value-add._boxStyle,
 	.writeContent._boxStyle {
 		padding: 20px 0 0;
 	}
-	.additional_product .purchase_value-add h1 {
+	/*.additional_product .purchase_value-add h1 {
 		padding: 15px 9px;
-	}
+	}*/
 	.accordionTitle,
     .accordion__Heading {
 		margin: 0 9px;
@@ -1027,7 +1079,7 @@
 	.additional_product .purchase_program .purchase_program-right,
 	.additional_product .purchase_program .purchase_time-right {
 	    max-width: 100%;
-    	width: 100%;
+    	width: 100% !important;
     	margin-top: 5px;
 	}
 	.wd_form select {
@@ -1081,6 +1133,7 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.value-add-cart .valist h3,
 	.value-add-cart .valist ul.purchase_value-add-wrapper {
 		padding: 9px;
 	}
@@ -1093,7 +1146,7 @@
 	.value-add-cart .valist ul li div span:nth-child(2) {
 		text-align: left;
 	}
-	.value-add-cart .amount {
+	.value-add-cart .amount, .value-add-cart .fee-percent {
 		width: 100%;
 	}
 	.value-add-cart .purchase_vasum .wrapper {
@@ -1160,4 +1213,19 @@
         border: 1px solid #ddd;
         margin-bottom: 3px;
     }
+	.additional_product .purchase_program .purchase_time-right:last-child {
+    	margin-left: 0;
+	}
+	/** BEGIN opt-time **/
+	.opt-time .opt-time-terms > .site_optionsBox {
+		padding: 6px 20px;
+	}
+	.opt-time .opt-time-terms > .site_optionsBox ul {
+		padding: 0;
+	}
+	/** END opt-time **/
+	.value-add-cart .valist h3 span {
+		width: 100%;
+		margin-top: 9px;
+	}
 }
