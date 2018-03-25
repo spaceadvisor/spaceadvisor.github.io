@@ -3,7 +3,7 @@
 body {
 	font-family: Microsoft JhengHei;
 	background-color: #ffffff;
-	overflow-x: hidden;
+	word-wrap: break-word;
 }
 ul {
 	margin: 0;
