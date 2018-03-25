@@ -3,6 +3,7 @@
 body {
 	font-family: Microsoft JhengHei;
 	background-color: #ffffff;
+	overflow-x: hidden;
 }
 ul {
 	margin: 0;
