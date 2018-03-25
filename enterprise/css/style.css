@@ -9,6 +9,9 @@ ul {
 	padding: 0;
 	list-style: none;
 }
+a:hover {
+	text-decoration: none;
+}
 /****** Navigation ******/
 .navbar {
 	float: left;
@@ -90,7 +93,6 @@ header .intro-text strong span {
 }
 .about p {
 	color: #000000;
-	font-family: Adobe Fan Heiti Std;
 	font-size: 16px;
 	line-height: 36px;
 	margin-top: 36px;
@@ -105,7 +107,6 @@ header .intro-text strong span {
 }
 .member h2 {
 	color: #000000;
-	font-family: Adobe Fan Heiti Std;
 	font-size: 36px;
 	font-weight: bold;
 	margin-bottom: 50px;
@@ -113,20 +114,101 @@ header .intro-text strong span {
 .member .col-lg-2 {
 	margin-bottom: 50px;
 }
-.member i {
-	line-height: 102px;
+.member a {
+	display: block;
+}
+.member .icon {
+	display: block;
+}
+.member .icon:before {
+	display: block;
+    content: "";
+    width: 100%;
+    height: 102px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.member .icon.icon-1:before {
+	background-image: url(../images/icon-member-01.png);
+}
+.member .icon.icon-2:before {
+	background-image: url(../images/icon-member-02.png);
+}
+.member .icon.icon-3:before {
+	background-image: url(../images/icon-member-03.png);
+}
+.member .icon.icon-4:before {
+	background-image: url(../images/icon-member-04.png);
+}
+.member .icon.icon-5:before {
+	background-image: url(../images/icon-member-05.png);
+}
+.member .icon.icon-6:before {
+	background-image: url(../images/icon-member-06.png);
+}
+.member .icon.icon-7:before {
+	background-image: url(../images/icon-member-07.png);
+}
+.member .icon.icon-8:before {
+	background-image: url(../images/icon-member-08.png);
+}
+.member .icon.icon-9:before {
+	background-image: url(../images/icon-member-09.png);
+}
+.member .icon.icon-10:before {
+	background-image: url(../images/icon-member-10.png);
+}
+.member .icon.icon-11:before {
+	background-image: url(../images/icon-member-11.png);
+}
+.member .icon.icon-12:before {
+	background-image: url(../images/icon-member-12.png);
+}
+.member a:hover .icon.icon-1:before {
+	background-image: url(../images/icon-member-01-hover.png);
+}
+.member a:hover .icon.icon-2:before {
+	background-image: url(../images/icon-member-02-hover.png);
+}
+.member a:hover .icon.icon-3:before {
+	background-image: url(../images/icon-member-03-hover.png);
+}
+.member a:hover .icon.icon-4:before {
+	background-image: url(../images/icon-member-04-hover.png);
+}
+.member a:hover .icon.icon-5:before {
+	background-image: url(../images/icon-member-05-hover.png);
+}
+.member a:hover .icon.icon-6:before {
+	background-image: url(../images/icon-member-06-hover.png);
+}
+.member a:hover .icon.icon-7:before {
+	background-image: url(../images/icon-member-07-hover.png);
+}
+.member a:hover .icon.icon-8:before {
+	background-image: url(../images/icon-member-08-hover.png);
+}
+.member a:hover .icon.icon-9:before {
+	background-image: url(../images/icon-member-09-hover.png);
+}
+.member a:hover .icon.icon-10:before {
+	background-image: url(../images/icon-member-10-hover.png);
+}
+.member a:hover .icon.icon-11:before {
+	background-image: url(../images/icon-member-11-hover.png);
+}
+.member a:hover .icon.icon-12:before {
+	background-image: url(../images/icon-member-12-hover.png);
 }
 .member h4 {
 	margin: 9px 0;
 	color: #a31908;
-	font-family: Adobe Fan Heiti Std;
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 36px;
 }
 .member p {
 	color: #4e5059;
-	font-family: Adobe Fan Heiti Std;
 	font-size: 14px;
 	line-height: 18px;
 	margin-bottom: 0;
@@ -201,10 +283,7 @@ header .intro-text strong span {
 	width: 100%;
 	max-width: 1110px;
 	height: 782px;
-	padding: 26px 9px 34px;
-	background: url(../images/screen.png) no-repeat;
-	background-size: 100% 100%;
-	;
+	border: 5px solid #212121;
 }
 
 /****** Contrast ******/
@@ -324,6 +403,11 @@ header .intro-text strong span {
 }
 .ad-join .btn:hover, .ad-join .btn:focus {
 	background-image: url(../images/btn-join-02-active.png);
+}
+.ad-join.ad-1 p strong {
+	color: #fed136;
+	font-size: 20px;
+	text-decoration: underline;
 }
 .ad-join.ad-2 {
 	background: url(../images/bg-ad-01.png) no-repeat center center;
@@ -463,6 +547,14 @@ footer .info-social a {
 }
 .about .pl-42 {
 	padding-left: 42px;
+}
+.member p {
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease;
+}
+.member a:hover p, .member a:focus p {
+    height: 72px;
 }
 }
 
