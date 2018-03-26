@@ -411,6 +411,11 @@
 .order_time .orderInformation3 h2:before {
     content: "\f07a";
 }
+.order_time .orderInformation3 .equipment .box .add h3 {
+	margin-bottom: 9px;
+    font-weight: bold;
+    line-height: 30px;
+}
 #wrapper.order_time .bonus li {
     width: 100%;
     padding-right: 0;
