@@ -58,12 +58,15 @@ $(function(){
 	$('.search_item').click(function(){
 		if($(this).siblings().hasClass('open')){
 			 $(this).siblings().removeClass('open');
-			 $(this).find('i').attr("class", "fa fa-angle-down");
+			//20180327 
+			//$(this).find('i').attr("class", "fa fa-angle-down");
 		}else{
 			 $('.search_item_detail').removeClass('open');
-			$('.search_item').find('i').attr("class", "fa fa-angle-down");
+			//20180327
+			//$('.search_item').find('i').attr("class", "fa fa-angle-down");
 			$(this).siblings().toggleClass('open');
-			$(this).find('i').attr("class", "fa fa-angle-up");
+			//20180327
+			//$(this).find('i').attr("class", "fa fa-angle-up");
 		}
 	});//搜尋bar縮合
 

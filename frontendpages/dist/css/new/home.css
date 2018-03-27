@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 /** BEGIN Home **/
 .index h2 {
-    margin-bottom: 9px;
+    margin-bottom: 20px;
     font-size: 21px;
 }
 .index .content:not(.site-list, .information-list) {
@@ -13,7 +13,7 @@
 /** BEGIN 限時優惠 **/
 .index .time-limit {
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 30px 0 40px;
     background-color: #f3f3f3;
 }
 .index .time-limit ul {
@@ -32,27 +32,18 @@
     height: 290px;
     border-radius: 5px;
     border: 1px solid #ddd;
+	margin: 0 12.5px;
 }
 .index .time-limit li:first-child {
-    margin-right: 9px;
     background-image: url(../../images/time_limit_pic01.png);
-    background-size: 100%;
     transition: all .4s;
 }
 .index .time-limit li:last-child {
     background-image: url(../../images/time_limit_pic01.png);
-    background-size: 100%;
     transition: all .4s;
 }
 .index .time-limit li:last-child span.mark {
     background-color: rgba(215, 95, 79, .8);
-}
-.index .time-limit li:hover {
-    background-size: 107%;
-    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
-    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
-    transition: all .4s;
 }
 .index .time-limit li:hover span.mark {
     width: 100%;
@@ -74,8 +65,8 @@
 }
 .index .time-limit li span.mark {
     display: block;
-    width: 60%;
-    height: 45%;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     background-color: rgba(78, 110, 157, .8);
     position: absolute;
@@ -83,10 +74,6 @@
     right: 0;
     border-radius: 5px;
     transition: all .4s;
-}
-.index .time-limit li:hover span.mark {
-    width: 60%;
-    height: 45%;
 }
 .index .time-limit li div {
     width: 230px;
@@ -132,8 +119,8 @@
     padding: 45px 0;
 }
 .index .theme-list li {
-    width: calc(100% / 4 - 10px);
-    margin: 0 5px 15px;
+	width: calc(100% / 4 - 25px);
+    margin: 0 12.5px 15px;
     overflow: hidden;
     position: relative;
     float: left;
@@ -141,16 +128,22 @@
 }
 .index .theme-list li span.pic {
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 275px;
+    height: 275px;
     background-color: #ccc;
 }
 .index .theme-list li span.pic img {
     display: block;
-    width: auto;
-    height: 100%;
-    margin-left: -12px;
-    transition: all .8s;
+	width: 100%;
+    height: auto;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
 }
 .index .theme-list li a:before {
     opacity: 1;
@@ -224,8 +217,10 @@
     transition: all .4s;
 }
 .index .theme-list li:hover span.pic img {
-    margin-left: 0;
-    transition: all .8s;
+	-moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .index .theme-list li:hover i.mark {
     background-color: rgba(0, 0, 0, .5);
@@ -350,7 +345,8 @@
 /** BEGIN flexslider **/
 
 .index .flexslider .slides > li {
-    height: 450px;
+    /*height: 550px;
+	height: calc(100vw * 450 / 1280);*/
 }
 .index .flexslider .slides > li:before {
     content: "";
@@ -449,7 +445,7 @@
 }
 .index .flexslider .search .search-box .search_item > i {
     position: absolute;
-    top: 11px;
+    top: 12px;
     right: 8px;
 }
 .index .flexslider .search .search-box .search_item input {
@@ -603,8 +599,8 @@
 
 /** BEGIN 統計與立即登入 **/
 .index .login-box {
-    padding: 0 0 20px;
-    background: transparent;
+	padding: 20px 0;
+    background-color: #f3f3f3;
     font-size: 15px;
     font-weight: normal;
     color: #4e5059;
@@ -616,7 +612,6 @@
     border: 0;
     border-bottom: 1px solid #ddd;
     border-radius: 0;
-    margin: 20px auto;
 }
 .index .login-box b {
     color: #4e6e9d;
@@ -881,21 +876,21 @@
 
 .index .information-list .content,
 .index .brand-list .content {
-    width: unset;
-    max-width: unset;
+    /*width: unset;
+    max-width: unset;*/
 }
 .index .information-list .content .information-box,
 .index .brand-list .content .brand-box {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 .index .information-list .information-box .slick-prev,
 .index .brand-list .content .brand-box .slick-prev {
-    left: -8%;
+    left: 0;
 }
 .index .information-list .information-box .slick-next,
 .index .brand-list .content .brand-box .slick-next {
-    right: -8%;
+    right: 0;
 }
 
 
@@ -936,10 +931,10 @@
     background-repeat: no-repeat;
 }
 .index .information-list .information-box .slick-prev {
-    left: -3%;
+    left: 0;
 }
 .index .information-list .information-box .slick-next {
-    right: -3%;
+    right: 0;
     background-position: right top;
 }
 .index .information-list .information {
@@ -950,8 +945,8 @@
 }
 .index .information-list .information span.pic {
     display: block;
-    width: 230px;
-    height: 230px;
+    width: 275px;
+    height: 275px;
     overflow: hidden;
     margin: 0 auto;
     background-color: #f3f3f3;
@@ -1009,7 +1004,7 @@
     bottom: 0%
 }
 .index .information-list .information .text {
-    width: 230px;
+    width: 275px;
     margin: 0 auto;
     padding: 9px;
     margin-bottom: 9px;
@@ -1076,7 +1071,7 @@
 
 /** BEGIN 精選品牌 **/
 .index .brand-list {
-    width: 80%;
+    width: 100%;
     overflow: visible;
     margin: 0 auto;
     padding: 45px 0 0;
@@ -1120,39 +1115,23 @@
 .index .brand-list .brand a {
     display: inline-block;
     width: 130px;
-    height: 130px;
+    /*height: 130px;*/
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 50%;
 }
 .index .brand-list .brand a:hover {
     width: 130px;
-    height: 130px;
-    border-radius: 50%
+    /*height: 130px;*/
 }
 .index .brand-list .brand a img {
-    transition: all .4s;
-    border-radius: 50%;
     width: 100%;
     height: auto;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    opacity: .6;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.index .brand-list .brand a:hover img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-    opacity: 1;
 }
 /** END 精選品牌 **/
 
 @media only screen and (max-width: 980px) {
     .index .content {
-        width: 100%;
+        width: 92%;
         max-width: unset;
     }
 
@@ -1262,12 +1241,6 @@
     .index .time-limit li:last-child {
         background-size: cover;
     }
-    .index .time-limit li span.mark,
-    .index .time-limit li:last-child span.mark {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, .4);
-    }
     .index .time-limit li a {
         display: block;
         width: 100%;
@@ -1318,7 +1291,7 @@
         padding: 30px 0;
     }
     .index .theme-list li {
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2 - 25px);
     }
     .index .theme-list li span.pic {
         width: 100%;
@@ -1395,12 +1368,12 @@
     .index .information-list {
         padding: 30px 0;
     }
-    .index .information-list .information-box .slick-prev {
+    /*.index .information-list .information-box .slick-prev {
         left: -10px;
     }
     .index .information-list .information-box .slick-next {
         right: -10px;
-    }
+    }*/
     .index .information-list .information span.pic,
     .index .information-list .information .text {
         width: 85%;
@@ -1436,12 +1409,12 @@
     }
     .index .brand-list .brand a {
         width: 120px;
-        height: 120px;
+        /*height: 120px;*/
         margin: 20px 0;
     }
     .index .brand-list .brand a:hover {
         width: 120px;
-        height: 120px;
+        /*height: 120px;*/
     }
     .index .brand-list .brand a img {
         padding: 5px;

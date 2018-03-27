@@ -113,10 +113,10 @@
     opacity: 1;
 }
 .site-list .site-box .slick-prev {
-    left: -5%;
+    left: 0;
 }
 .site-list .site-box .slick-next {
-    right: -5%;
+    right: 0;
     background-position: right top;
 }
 .site-list .site-box .slick-dots {
@@ -164,6 +164,8 @@
 .site-list .site .all {
     position: relative;
     max-width: 350px;
+	/* 20180327 */
+	margin: 0 auto;
 }
 .site-list .site span.pic {
     display: block;
@@ -1654,10 +1656,10 @@
     /* END Nav tabs */
 
     /** BEGIN site-list **/
-    .site-list .site-box {
+    /*.site-list .site-box {
         width: 90%;
         margin: 0 auto;
-    }
+    }*/
     .site-list .site a {
         width: 90%;
     }
@@ -2322,4 +2324,8 @@
     .detailTable-mid {
         height: 100%
     }
+}
+.site-list .slick-list, .brand-list .slick-list {
+	width: 92%;
+	margin: 0 auto;
 }
