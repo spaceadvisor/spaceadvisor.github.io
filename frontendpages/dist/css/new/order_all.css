@@ -1991,6 +1991,7 @@
 
 .order_complete_rfp .recstate {
 	display: inline-block;
+	margin-left: 5px;
     border: 1px solid #d76050;
     border-radius: 5px;
     color: #d76050;
