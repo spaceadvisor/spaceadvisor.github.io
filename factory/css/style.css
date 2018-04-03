@@ -219,7 +219,7 @@ header .btn.btn-join {
 	font-weight: bold;
 }
 .preference article ul li span:last-of-type {
-	width: calc(99.999999% - 64px - 16.38px);
+	width: calc(99.999999% - 64px - 16.42px);
 }
 .preference article:hover {
 	background-color: #2c69a3;
