@@ -1,0 +1,294 @@
+@charset 'UTF-8';
+.meberContent {
+    color: #4e5059;
+    background: #fff;
+    width: unset;
+    max-width: 450px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    border-radius: 5px;
+}
+.meberlogo {
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto 20px;
+}
+.meberBox .meberDetail h3 {
+    width: 100%;
+    display: block;
+	font-size: 21px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding: 9px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: normal;
+}
+.meberInput {
+    width: 100%;
+}
+.meberInput input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0 9px;
+	border: 1px solid #ddd;
+    height: 44px;
+}
+.meberBtn a {
+    background: unset;
+    font-size: unset;
+    display: block;
+    width: 100%;
+    padding: 0;
+    height: unset;
+    line-height: normal;
+}
+.meberBtn .rebBtn {
+}
+.meberBtn a span {
+	width: 100%;
+}
+.meberyet {
+    width: 100%;
+    text-align: center;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 20px;
+}
+.meberyet a {
+    color: #4f6ea2;
+}
+.meberyet a:hover {
+    color: #2d5392;
+    text-decoration: underline;
+}
+.meberInput li {
+	display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 9px;
+}
+.meberInput .warning_error i {
+	display: inline-block;
+}
+.meberInput .warning_error i:before {
+    color: #d76050;
+    content: "\f06a";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    margin-left: -24px;
+}
+.meberInput .warning_error input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    background: #f7dfdc;
+}
+.forget_password a {
+	color: #4f6ea2;
+}
+.meberDetail .meberBtn {
+    margin: 40px 0;
+}
+.meberDetail p {
+    width: 100%;
+    display: block;
+	font-size: 15px;
+    line-height: normal;
+    margin-bottom: 9px;
+}
+.or {
+    text-align: center;
+    width: 100%;
+    display: block;
+	margin: 20px 0;
+	font-size: 13px;
+}
+.meberBtn .fbBtn {
+    color: #fff;
+}
+.meberBtn .fbBtn span {
+	background: #3b5998;
+}
+.meberBtn .fbBtn:hover span {
+	background: #21438a;
+}
+.meberBtn .fbBtn span i {
+    width: unset;
+    height: unset;
+    background: unset;
+    vertical-align: unset;
+    margin-top: unset;
+    margin-right: 9px;
+}
+.meberDetail .sendAgainInfo {
+	display: none;
+	width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.forget_password .col {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+.forget_password .col label p {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0;
+    position: relative;
+}
+.forget_password .col .assess input[type=checkbox]+label:before {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    margin-right: 0;
+    background: url(../../images/etick_icon_1.png) 0 0 no-repeat;
+}
+.forget_password .col .assess input[type=checkbox]+label:after {
+    display: inline-block;
+    vertical-align: top;
+    top: 1px;
+    content: no-close-quote;
+    margin-right: 0;
+    background: url(../../images/etick_icon_2.png) 0 0 no-repeat;
+}
+.forget_password a:hover {
+    text-decoration: underline;
+}
+
+/** BEGIN signup **/
+.signup .col .assess {
+	display: flex;
+	width: 100%;
+}
+.signup .forget_password .col {
+}
+.signup .forget_password .col label p {
+    width: 90%;
+    top: 0;
+    font-size: 13px;
+    color: #4e5059;
+    margin-left: 5px;
+}
+.signup .forget_password .col label p a {
+	padding: 0 3px;
+	font-size: 13px;
+}
+/** END signup **/
+
+/** BEGIN signup **/
+.meberBox .meberDetail h3 i {
+	margin-left: 9px;
+	color: #4baf4f;
+}
+.signup_ok .success {
+    margin: 0 0 40px 0;
+    font-size: 15px;
+    color: gray;
+}
+.signup_ok .success p {
+    font-size: 15px;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.signup_send .email_Name {
+    width: 100%;
+    text-align: center;
+ 	font-size: 21px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    padding: 9px;
+    margin-bottom: 9px;
+    line-height: normal;
+}
+.signup_send .or {
+	margin: 40px 0;
+}
+/** END signup **/
+
+/** BEGIN signin **/
+.signin .forget_password {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+}
+.signin .forget_password a {
+	font-size: 13px;
+	padding-right: 3px;
+}
+.signin .forget_password .col {
+    width: 75%;
+    top: 4px;
+	padding-left: 3px;
+}
+.signin .forget_password .col label p {
+    color: #4e5059;
+    font-size: 13px;
+    top: unset;
+    line-height: normal;
+    margin-top: -2px;
+    margin-left: 3px;
+    width: 55%
+}
+.signin .forget_password .col .assess {
+    width: 50%;
+    display: inline-block;
+}
+.signin .forget_password .col .assess input[type=checkbox]+label {
+    width: 100%
+	line-height: normal;
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+}
+.signin .forget_password .col .assess input[type=checkbox]+label:before {
+    top: 0;
+    display: flex;
+}
+.signin .forget_password .col .assess input[type=checkbox]+label:after {
+	top: -3px;
+}
+/** END signin **/
+
+/** BEGIN find-pwd **/
+.find_pwd_send .email_Name {
+ 	font-size: 21px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    padding: 9px;
+    margin-bottom: 9px;
+    line-height: normal;
+    text-align: center;
+}
+.find_pwd_send .or {
+	margin: 40px 0;
+}
+/** END find-pwd **/
+
+
+@media only screen and (max-width: 980px) {
+	.meberContent {
+		margin: 0 auto;
+		border: 0;
+		border-radius: 0;
+	}
+	.meberInput input {
+		font-size: 15px;
+	}
+	.meberInput .warning_error i:before {
+		margin-left: 0;
+		margin-right: 9px;
+	}
+}

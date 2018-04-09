@@ -1,0 +1,480 @@
+@charset 'UTF-8';
+/* 共用樣式 */
+/*.subject-title {
+    background: url(../images/site-title-icon.png) no-repeat left center;
+    font-size: 30px;
+    line-height: 55px;
+    color: #4f6ea2;
+    border-bottom: 1px solid #4e6da1;
+    padding: 0 0 0 38px;
+    letter-spacing: 2px;
+}*/
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexbox.inline {
+    display: inline-flex;
+}
+.flexbox.halign-center {
+    justify-content: center;
+}
+.flexbox.halign-left {
+    justify-content: flex-start;
+}
+.flexbox.halign-right {
+    justify-content: flex-end;
+}
+.flexbox.halign-around {
+    justify-content: space-around;
+}
+.flexbox.halign-between {
+    justify-content: space-between;
+}
+.flexbox.valign-top {
+    align-items: flex-start;
+}
+.flexbox.valign-bottom {
+    align-items: flex-end;
+}
+.flexbox.valign-center {
+    align-items: center;
+}
+.flexbox.valign-full {
+    align-items: stretch;
+}
+.flexbox.valign-base {
+    align-items: baseline;
+}
+.flexbox.multi-align-top {
+    align-content: flex-start;
+}
+.flexbox.multi-align-bottom {
+    align-content: flex-end;
+}
+.flexbox.multi-align-center {
+    align-content: center;
+    width: 60%;
+}
+.flexbox.multi-align-full {
+    align-content: stretch;
+}
+.flexbox.multi-align-around {
+    justify-content: space-around;
+}
+.flexbox.multi-align-between {
+    justify-content: space-between;
+}
+/*.wrapper1040 {
+    width: 94%;
+    max-width: 1040px;
+    margin: 0 auto;
+}*/
+.bn {
+    display: inline-block;
+    width: 175px;
+    font-size: 20px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    text-align: center;
+}
+.bn.size2 {
+    width: 130px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+}
+.bn.bn-blue {
+    background-color: #4f6ea2;
+}
+.bn.bn-blue:hover {
+    background-color: #2d5392;
+}
+.bn.bn-red {
+    background-color: #b61e1a;
+}
+.bn.bn-red:hover {
+    background-color: #c63e2b;
+}
+.require-star {
+    color: #ff007f;
+}
+/*.fa.fa-exclamation-circle.error {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    font-size: 24px;
+    color: #d76050;
+}*/
+.fa.fa-lock.complete {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    font-size: 24px;
+    color: #6dd900;
+}
+/* END 共用樣式 */
+
+
+/* 場地管理 */
+.site-title {
+	font-weight: bold;
+	font-size: 21px;
+	color: #4f6ea2;
+	border-bottom: 1px #4e6da1 solid;
+	padding: 9px;
+	margin: 40px 0 20px;
+}
+.site-title:first-child {
+	margin-top: 0;
+}
+.site-title i {
+	margin-right: 5px;
+}
+.bookList {
+	margin-bottom: 9px;
+}
+.bookList .bookTitle ._right .cancel a {
+    color: #4f6ea2;
+    padding-left: 5px;
+}
+.bookList .bookTitle ._right .cancel a:hover {
+	text-decoration: underline;
+}
+.site-description {
+	margin: 0 auto;
+	background: #f3f3f3;
+	color: #4e5059;
+	font-size: 15px;
+	padding: 9px 20px;
+    line-height: normal;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    /*margin-bottom: 20px;*/
+}
+.site-description i {
+    display: inline-block;
+    padding-right: 9px;
+    color: #d76050;
+    font-size: 15px;
+}
+.site-description a:hover {
+	text-decoration: underline;
+}
+
+/* 收件匣-填寫訊息 */
+.inbox-fill {
+    margin-top: 44px;
+}
+.inbox-fill .orderrec {
+    margin: 0 25px 70px;
+}
+.inbox-fill .orderrec .note {
+    margin: 10px 0 5px;
+}
+.inbox-fill .orderrec .add-note {
+    font-size: 16px;
+    color: #d65f4f;
+}
+.inbox-fill .orderrec .add-note a {
+    color: #4f6ea2;
+}
+/* end-收件匣-填寫訊息 */
+
+/* 問答記錄 */
+.site-owner-reminder {
+    flex-wrap: nowrap;
+    background-color: #f3f3f3;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: normal;
+}
+.site-owner-reminder .s-photo {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.site-owner-reminder .s-photo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.site-owner-reminder .s-info .info-01 {
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+}
+.site-owner-reminder .s-info .info-01 .verified {
+    margin-right: 5px;
+}
+.site-owner-reminder .s-info .info-02 ._avgComment span {
+	padding: 0 5px;
+}
+.site-owner-reminder .s-info .info-02 {
+    flex-wrap: nowrap;
+}
+.site-owner-reminder .s-suggest {
+}
+.site-owner-reminder .s-suggest b {
+    color: #bf3835;
+    padding: 0 5px;
+}
+.site-owner-reminder .s-info .info-01 div,
+.site-owner-reminder .s-info .info-02 div {
+    margin-right: 20px;
+}
+.site-owner-reminder .s-info span {
+    display: inline-block;
+    white-space: nowrap;
+}
+@media (max-width: 960px) {
+    .site-owner-reminder {
+        flex-wrap: wrap;
+    }
+    .site-owner-reminder .s-info {
+        margin-right: 0;
+        width: calc(100% - 105px);
+    }
+    .site-owner-reminder .s-info .info-01, .site-owner-reminder .s-info .info-02 {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .site-owner-reminder .s-suggest {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* end-問答記錄 */
+
+/* 問答記錄-發送訊息 */
+.send-message {
+    margin: 40px 97px 100px;
+    line-height: normal;
+    color: #4e5059;
+}
+.send-message span {
+	display: inline-block;
+	font-size: 17px;
+	margin-bottom: 9px;
+}
+.dialog {
+    position: relative;
+    margin-bottom: 40px;
+}
+.dialog .d-photo {
+    top: -20px;
+    display: block;
+    width: 65px;
+    height: 65px;
+}
+.dialog .d-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 33px;
+}
+.dialog .d-box {
+    position: relative;
+    padding: 9px;
+    border: 1px solid gray;
+    font-size: 15px;
+    line-height: normal;
+}
+.dialog.question .d-box {
+    border-radius: 5px 0 5px 5px;
+}
+.dialog.answer .d-box {
+    border-radius: 0 5px 5px 5px;
+}
+.dialog .d-box textarea {
+    width: 100%;
+    height: 108px;
+    padding-left: 0;
+}
+.dialog .d-box .head {
+	padding: 9px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4e5059;
+}
+.dialog .d-box .nickname {
+	font-weight: bold;
+}
+.dialog .d-box .datetime {
+    color: gray;
+}
+.dialog .d-box .body {
+    padding: 9px 0;
+    line-height: normal;
+    color: #4e5059;
+}
+.message-list {
+    margin: 0;
+}
+.message-list .dialog.question {
+	margin: 0 96px 25px;
+}
+.message-list .dialog.answer {
+	margin: 0 96px 60px;
+}
+.dialog.question .d-photo {
+    position: absolute;
+    right: -96px;
+}
+.dialog.question .d-box:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: gray transparent transparent transparent;
+}
+.dialog.question .d-box:after {
+    content: "";
+    position: absolute;
+    right: -18px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: #fff transparent transparent transparent;
+}
+@media (max-width: 640px) {
+    .dialog.question .d-box:before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: #5f6169 transparent transparent transparent;
+}
+.dialog.question .d-box:after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: #fff transparent transparent transparent;
+}
+}
+.dialog.answer .d-photo {
+    position: absolute;
+    left: -96px;
+}
+.dialog.answer .d-box:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #5f6169 transparent transparent;
+}
+.dialog.answer .d-box:after {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #fff transparent transparent;
+}
+@media (max-width: 640px) {
+    .dialog.answer .d-box:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #5f6169 transparent transparent;
+}
+.dialog.answer .d-box:after {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+}
+}
+.send-message .text-right {
+    margin: 20px 0;
+}
+@media (max-width:980px) {
+    .send-message {
+	    margin: 40px 60px 40px 0;
+	}
+	.dialog .d-photo {
+	    width: 50px;
+	    height: 50px;
+	}
+	.inbox-fill._boxStyle {
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+	.message-list {
+	    /*margin: 0 60px 118px;*/
+	}
+	.message-list .dialog.question {
+		margin-right: 60px;
+		margin-left: 0;
+	}
+	.message-list .dialog.answer {
+		margin-right: 0;
+		margin-left: 60px;
+	}
+    .message-list .message_item:last-child .dialog.answer {
+        margin-bottom: 0;
+    }
+	.dialog.question .d-photo {
+	    right: -60px;
+	}
+	.dialog.answer .d-photo {
+	    left: -60px;
+	}
+	.bookList .bookTitle ._right .cancel a {
+		padding-left: 0;
+	}
+}
+
+/* end-問答記錄-發送訊息 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 980px) {
+
+}

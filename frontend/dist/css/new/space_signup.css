@@ -1,0 +1,507 @@
+@charset 'UTF-8';
+/** BEGIN space_signup **/
+.applicationStep {
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 40px auto 0;
+    max-width: unset;
+    padding-bottom: 20px;
+}
+.applicationStep ul {
+    text-align: center;
+    width: 100%;
+    border-radius: 9px;
+    background: #f3f3f3;
+    padding: 20px;
+}
+.applicationStep li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+	font-size: 17px;
+    width: 100px;
+    font-weight: normal;
+}
+.applicationStep li img {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 9px;
+}
+.applicationStep span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 40px;
+    position: relative;
+    top: -13px;
+}
+.appAdvantage {
+	background: #f3f3f3;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+.addAdvaContent {
+    width: 90%;
+    margin: 0 auto;
+    line-height: normal;
+    color: #4e5059;
+}
+.addAdvaContent .addadImg {
+    width: 70px;
+    margin: 9px auto;
+}
+.addAdvaContent .addadImg img {
+	width: 100%;
+}
+.addAdvaContent ul {
+	display: flex;
+}
+.addAdvaContent li {
+	width: 25%;
+    margin-right: 5%;
+    text-align: center;
+}
+.addAdvaContent li:last-child {
+	margin-right: 0;
+}
+.addAdvaContent .addadTxt {
+    text-align: left;
+}
+.addAdvaContent .addadTxt h3 {
+	text-align: center;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 15px;
+}
+.addAdvaContent .addadTxt p {
+    font-size: 15px;
+    line-height: normal;
+    text-align: justify;
+}
+.addAdvaVenue {
+    text-align: center;
+    line-height: normal;
+    color: #4e5059;
+}
+.addAdvaVenue._boxStyle {
+	padding-top: 0;
+}
+.addAdvaVenue .custodyBtn {
+    margin: 0 0 60px 0;
+}
+.addAdvaVenue .addvaLine {
+    margin-bottom: 45px;
+    background: url(../../images/application/or_line.jpg) left center repeat-x;
+}
+.addAdvaVenue .addvaLine div {
+    display: inline-block;
+    vertical-align: top;
+    background: #fff;
+    padding: 0 15px;
+    color: #a6a7ac;
+    font-size: 20px;
+    font-weight: bold;
+}
+.addAdvaVenue h3 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 9px;
+}
+.addAdvaVenue p {
+	font-size: 15px;
+    letter-spacing: 0;
+}
+.addAdvaVenue p a {
+    color: #4f6ea2;
+}
+.addAdvaVenue p a:hover {
+    text-decoration: underline;
+}
+.addvaBrand {
+    background: #f3f3f3;
+}
+.addvaBrand .addvaBrandList {
+    text-align: center;
+    width: 90%;
+	margin: 0 auto;
+}
+.addvaBrand .addvaBrandList ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.addvaBrand .addvaBrandList li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 4%;
+    padding: 20px 0;
+}
+.addvaBrand .addvaBrandList li img {
+	width: 100%;
+}
+.addvaBrand .addvaBrandList li:nth-child(5n) {
+    margin-right: 0;
+}
+.appSynopsis {
+    height: 180px;
+    position: relative;
+}
+.appSynopsis .appSynopsisTxt {
+    width: 90%;
+    max-width: 609px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	line-height: normal;
+}
+.appSynopsis .appSynopsisTxt h3 {
+	font-size: 30px;
+	font-weight: bold;
+    margin-bottom: 9px;
+    line-height: normal;
+}
+.appSynopsis .appSynopsisTxt p{
+	font-size: 17px;
+	line-height: normal;
+}
+.sumber > li .sumTitle span,
+.sumber > li .sumContent span {
+	font-weight: normal;
+}
+.applicationBox main h2 {
+    font-size: 21px;
+    line-height: normal;
+}
+.app_stepBox li {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.app_stepBox li:last-child {
+	margin-bottom: 0;
+}
+.app_stepBox .appInput {
+    width: 100%
+}
+.app_stepBox li.apInput input,
+.app_stepBox li.apInput select,
+.app_stepBox li.apInput textarea {
+	width: 100%;
+	color: #4e5059;
+	font-size: 15px;
+    border: 1px solid #ddd;
+}
+.app_stepBox li.apInput section {
+	flex: 1;
+	max-width: 300px;
+}
+.applicationBox .apInput input {
+	width: 100%;
+}
+.applicationBox .twzipcode {
+	display: flex;
+    margin: 9px 0;
+}
+.applicationBox .twzipcode select {
+	margin-right: 5px;
+}
+.app_stepBox {
+	/*padding: 0;*/
+}
+.app_stepBox select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 25px;
+    background: url(../../images/selce_arrw02.png) no-repeat scroll right center transparent;
+    background-position: center right 8px;
+}
+.app_stepBox h2 {
+    color: #4f6ea2;
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #4f6ea2;
+}
+.app_stepBox .warning_error input,
+.app_stepBox .warning_error select {
+    background-color: #f7dfdc;
+}
+.app_stepBox .warning_error:before {
+	content: unset;
+}
+.app_stepBox .warning_error h4:before {
+    content: "\f06a";
+    color: #d76050;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-right: 5px;
+    width: 25px;
+}
+.app_stepBox li.apInput {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-flow: wrap;
+}
+.app_stepBox li.apInput h4 {
+	font-size: 15px;
+    line-height: normal;
+    width: 150px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.app_stepBox li.apInput._companyTel section,
+.app_stepBox li.apInput._tel section,
+.app_stepBox li.apInput._mobile section {
+	display: flex;
+	align-items: center;
+}
+.app_stepBox li.apInput section ._cCodes {
+	width: 100px;
+	margin-right: 5px;
+	flex: 1;
+}
+.app_stepBox li.apInput._companyAddress h4 {
+	width: 100%;
+	margin-right: 0;
+}
+.app_stepBox li.apInput._companyAddress section {
+	max-width: unset;
+}
+.app_stepBox li.apInput._contact section {
+	display: flex;
+	align-items: center;
+}
+.app_stepBox li.apInput._contact section input {
+	width: 100%;
+	margin-right: 5px;
+}
+.app_stepBox li.apInput._contact section input:last-child {
+	margin-right: 0;
+}
+.app_stepBox li.apInput._tel section {
+
+}
+.app_stepBox li.apInput._tel section ._aCodes,
+.app_stepBox li.apInput._tel section ._ext {
+	width: 50px;
+}
+.app_stepBox li.apInput._tel section ._phone {
+	margin: 0 5px;
+}
+
+
+.app_step1 .custodyBtn a,
+.app_step2 .custodyBtn a {
+    letter-spacing: 0;
+    font-size: unset;
+    padding: 0;
+    background: unset;
+    border-radius: unset;
+}
+.app_step2 .application_explanation {
+    margin: 0 auto;
+    letter-spacing: 0;
+	padding: 20px;
+	line-height: normal;
+	font-size: 15px;
+	width: 100%;
+}
+.app_step2 .custodyBtn {
+    margin: 40px auto 0;
+    text-align: center;
+}
+.app_stepItem1,
+.app_stepItem2,
+.app_stepItem3,
+.app_stepItem4,
+.app_stepItem5 {
+	margin-bottom: 40px;
+	color: #4e5059;
+}
+.app_stepItem5 .aqlink {
+	display: inline-block;
+}
+.app_stepItem5 a {
+    color: #4f6ea2;
+}
+.app_stepItem5 a:hover {
+    text-decoration: underline;
+}
+.app_stepItem5 .col {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+    font-size: 1rem;
+}
+.app_stepItem5 .col .assess input[type=radio]+label:after,
+.app_stepItem5 .col .assess input[type=checkbox]+label:after {
+    background: #4f6ea2;
+}
+
+.application_sent {
+    text-align: center;
+    font-size: 25px;
+    line-height: normal;
+}
+.application_sent b {
+    color: #4f6ea2;
+    margin: 0 3px;
+}
+
+.application_explanation {
+    background: #f3f3f3;
+    color: #6f6f6f;
+    padding: 20px;
+    line-height: normal;
+}
+.application_explanation a {
+    color: #4e6da1;
+}
+.application_explanation a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 980px) {
+	.appAdvantage {
+		padding: 20px 0;
+	}
+	.applicationStep {
+	    margin: 20px auto 0;
+	    padding: 0;
+	    width: 90%;
+	}
+	.applicationStep li {
+	    font-size: 15px;
+	    line-height: normal;
+	    width: 47px;
+	}
+	.applicationStep li img {
+		padding: unset;
+	}
+	.applicationStep span {
+	    top: -25px;
+        width: 3%;
+        margin: 0 6%;
+    }
+    .applicationStep span img {
+        width: 100%
+    }
+	.app_stepBox._boxStyle {
+		padding: 20px 0 0;
+	}
+	.addAdvaContent ul {
+		flex-direction: column;
+	}
+	.addAdvaContent li {
+		width: 100%;
+	    border-bottom: 1px solid #ddd;
+	    padding-bottom: 20px;
+	    margin-bottom: 20px;
+	}
+	.addAdvaContent li:last-child {
+		border: 0;
+		padding-bottom: 0;
+	}
+	.appSynopsis {
+		width: 100%;
+	    border-radius: 0;
+	    border: 0;
+	}
+	.appSynopsis .appSynopsisTxt h3 {
+	    font-size: 25px;
+	}
+	.appSynopsis .appSynopsisTxt p {
+		font-size: 15px;
+	    line-height: 25px;
+	}
+	.application_explanation {
+		padding: 20px;
+	}
+	.application_sent {
+		font-size: 21px;
+    	padding: 40px 0;
+	}
+	.applicationStep ul {
+		padding: 20px;
+	}
+    .app_stepBox li.apInput h4,
+    .app_stepBox li.apInput._tel section ._aCodes,
+    .app_stepBox li.apInput._tel section ._ext {
+        display: block;
+        width: 100%;
+    }
+	.app_stepBox li.apInput {
+		margin-bottom: 0;
+		flex-direction: column;
+		flex-flow: wrap;
+		margin-bottom: 9px;
+	}
+	.app_stepBox li.apInput h4 {
+		margin-bottom: 3px;
+	    margin-right: 0;
+	    text-align: left;
+	}
+	.app_stepBox li.apInput section {
+		max-width: unset;
+	}
+	.applicationBox .apInput input,
+	.applicationBox .apInput select,
+	.applicationBox .apInput textarea,
+	.app_stepBox li.apInput._tel section ._phone {
+		margin-bottom: 9px;
+	}
+	.app_stepBox li.apInput:last-child,
+	.applicationBox .apInput input:last-child,
+	.applicationBox .apInput select:last-child,
+	.applicationBox .apInput textarea:last-child {
+		margin-bottom: 0;
+	}
+	.app_stepBox li.apInput._companyTel section,
+	.app_stepBox li.apInput._tel section,
+	.app_stepBox li.apInput._mobile section,
+	.app_stepBox li.apInput._contact section {
+		display: block;
+	}
+	.app_stepBox li.apInput section ._cCodes {
+		width: 100%;
+		margin-right: 0;
+	}
+	.app_stepBox li.apInput._tel section ._phone,
+	.app_stepBox li.apInput._tel section ._ext {
+		margin-left: 0;
+	}
+	.applicationBox .twzipcode {
+		flex-direction: column;
+		margin-top: 0;
+	}
+	.applicationBox .twzipcode._app1,
+	.applicationBox .twzipcode._app2,
+	.app_stepItem5 li {
+		flex-direction: column;
+	    margin-left: 0;
+	    width: 100%;
+	    margin-top: 0;
+	}
+	.app_stepBox .app_stepItem5 li > div {
+		width: 100%;
+	}
+	.app_step2 .application_explanation {
+		padding: 20px;
+	}
+}
+/** END space_signup **/

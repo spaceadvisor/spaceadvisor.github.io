@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+/* 訂單管理 */
+main.order {
+    margin-top: 88px;
+}
+
+.bookList .bookTitle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 15px;
+    line-height: normal;
+    color: gray;
+}
+.bookList .bookTitle span {
+    padding-left: 5px;
+}
+.bookList .bookTitle ._left,
+.bookList .bookTitle ._right {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.bookList .bookTitle ._left .recstate span {
+    margin-left: 9px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #ccc;
+    font-size: 13px;
+    padding: 0 5px;
+}
+.bookList[data-stat="checking"] .bookTitle ._left .recstate span,
+.bookList[data-stat="notyetpay"] .bookTitle ._left .recstate span {
+    color: #b61e1a;
+    border-color: #b61e1a;
+}
+.bookList[data-stat="paid"] .bookTitle ._left .recstate span {
+    color: #4baf4f;
+    border-color: #4baf4f;
+}
+.bookList[data-stat="done"] .bookTitle ._left .recstate span {
+    color: #4e5059;
+    border-color: #4e5059;
+}
+.bookList[data-stat="reject"] .bookTitle ._left .recstate span,
+.bookList[data-stat="expired"] .bookTitle ._left .recstate span,
+.bookList[data-stat="cancel"] .bookTitle ._left .recstate span, {
+    color: #ccc;
+    border-color: #ccc;
+}
+.bookList .bookTitle ._right {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+
+@media screen and (max-width:980px) {
+	
+}

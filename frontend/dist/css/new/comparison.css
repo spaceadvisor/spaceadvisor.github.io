@@ -1,0 +1,357 @@
+@charset 'UTF-8';
+/* 共用樣式 */
+/*.subject-title {
+    background: url(../images/site-title-icon.png) no-repeat left center;
+    font-size: 30px;
+    line-height: 55px;
+    color: #4f6ea2;
+    border-bottom: 1px solid #4e6da1;
+    padding: 0 0 0 38px;
+    letter-spacing: 2px;
+}*/
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexbox.inline {
+    display: inline-flex;
+}
+.flexbox.halign-center {
+    justify-content: center;
+}
+.flexbox.halign-left {
+    justify-content: flex-start;
+}
+.flexbox.halign-right {
+    justify-content: flex-end;
+}
+.flexbox.halign-around {
+    justify-content: space-around;
+}
+.flexbox.halign-between {
+    justify-content: space-between;
+}
+.flexbox.valign-top {
+    align-items: flex-start;
+}
+.flexbox.valign-bottom {
+    align-items: flex-end;
+}
+.flexbox.valign-center {
+    align-items: center;
+}
+.flexbox.valign-full {
+    align-items: stretch;
+}
+.flexbox.valign-base {
+    align-items: baseline;
+}
+.flexbox.multi-align-top {
+    align-content: flex-start;
+}
+.flexbox.multi-align-bottom {
+    align-content: flex-end;
+}
+.flexbox.multi-align-center {
+    align-content: center;
+}
+.flexbox.multi-align-full {
+    align-content: stretch;
+}
+.flexbox.multi-align-around {
+    justify-content: space-around;
+}
+.flexbox.multi-align-between {
+    justify-content: space-between;
+}
+/*.wrapper1040 {
+    width: 94%;
+    max-width: 1040px;
+    margin: 0 auto;
+}*/
+.bn {
+    display: inline-block;
+    width: 175px;
+    font-size: 20px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    text-align: center;
+}
+.bn.size2 {
+    width: 130px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+}
+.bn.bn-blue {
+    background-color: #4f6ea2;
+}
+.bn.bn-blue:hover {
+    background-color: #2d5392;
+}
+.bn.bn-red {
+    background-color: #b61e1a;
+}
+.bn.bn-red:hover {
+    background-color: #c63e2b;
+}
+.require-star {
+    color: #ff007f;
+}
+/*.fa.fa-exclamation-circle.error {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    font-size: 24px;
+    color: #d76050;
+}*/
+.fa.fa-lock.complete {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    font-size: 24px;
+    color: #6dd900;
+}
+/* END 共用樣式 */
+
+
+.compare ._content .tab-title {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.compare ._content .tab-title .tools ul {
+	display: inline-flex;
+}
+.compare ._content .tab-title .tools ul li {
+	margin-right: 20px;
+}
+.compare ._content .tab-title .tools ul li:last-child {
+	margin-right: 0;
+}
+.compare ._content .tab-title .tools ul li a img {
+	margin-right: 9px;
+    opacity: .9;
+}
+.compare ._content .tab-title .tools ul li a:hover img {
+    opacity: 1;
+}
+
+#wrapper .nav-tabs {
+    margin-bottom: 0;
+}
+
+/* 比較清單 */
+.compare {
+    position: relative;
+    margin-top: 0;
+}
+.compare ._content {
+	margin-top: 88px;
+	position: relative;
+}
+.compare .cs-list .aside {
+    width: 240px;
+    flex-shrink: 0;
+}
+.compare .cs-list .cs-rec {
+    position: relative;
+    width: 180px;
+    flex-shrink: 0;
+}
+.compare .cs-list .aside .cs-rec {
+    width: 240px;
+}
+.compare .cs-list .cs-rec .cs-head p {
+    margin: 0;
+    font-size: 15px;
+    padding: 20px 15px;
+}
+.compare .cs-list .cs-rec>div>div {
+    display: block;
+    padding: 12px 9px;
+    line-height: 22px;
+    color: #4e5059;
+    border-right: 1px solid #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+.compare .cs-list .cs-rec>div>div:last-child {
+    border-color: transparent;
+}
+.compare .cs-list .cs-rec>div.cs-head>div {
+    margin: 10px 0 0;
+    padding: 0;
+    border-top: 1px solid #ddd;
+}
+.compare .cs-list .aside .cs-rec > div.cs-head>div {
+	border-left: 1px solid #ddd;
+	border-radius: 5px 0 0 0;
+}
+.compare .cs-list .cs-rec .cs-body {
+    font-size: 15px;
+}
+.compare .cs-list .main {
+    flex-wrap: nowrap;
+    width: calc(100% - 240px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.compare .cs-list .main .cs-rec .cs-body > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compare .cs-list .main .cs-rec .cs-body > div._doMore {
+    flex-direction: column;
+}
+.compare .cs-list .main .cs-rec .cs-body > div._doMore._show ._part {
+    display: none;
+}
+.compare .cs-list .main .cs-rec .cs-body > div._doMore:not(._show) ._more {
+    visibility: hidden;
+    height: 0;
+}
+.compare .cs-list .main .cs-rec .cs-body > div._doMore ._btn {
+    font-size: 13px;
+    color: #4e6e9d;
+}
+.compare .cs-list .main .cs-rec .cs-body > div._doMore ._btn i {
+    margin-left: 5px;
+}
+.compare .cs-list .main .cs-rec .cs-body > div._doMore._show ._btn i:before {
+    content: "\f0d8";
+}
+.compare .cs-list .main .cs-rec .cs-body > div._doMore ._btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.compare .cs-list .main .cs-rec .cs-body > div._doMore ._btn:hover i {
+    text-decoration: none;
+}
+.compare .cs-list .cs-rec.item .cs-body {
+    font-size: 15px;
+}
+.compare .cs-list .cs-rec.item .cs-body select {
+    font-size: 13px;
+    line-height: normal;
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../../images/lanrrw.png) no-repeat scroll right center transparent;
+    background-color: #f3f3f3;
+}
+.compare .cs-list .cs-rec.item .cs-body .ui-controlgroup {
+    display: block;
+}
+.compare .cs-list .cs-rec.item .cs-body .ui-selectmenu-button.ui-button {
+    display: block;
+    margin-top: 10px;
+    padding: 0 10px;
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 29px;
+    border: 0;
+}
+.compare .cs-list .cs-rec.item .cs-body .ui-selectmenu-button.ui-button .ui-icon {
+    display: block;
+    width: 11px;
+    height: 10px;
+    background: url(../images/arrow.png) no-repeat 0 0;
+    margin-top: 10px;
+}
+.compare .cs-list .cs-rec.item .cs-body .ui-selectmenu-text {
+    font: 14px/29px PingFang TC,Heiti TC,Noto Sans,Source Han Sans,Verdana,Helvetica,Microsoft YaHei,Microsoft JhengHei,sans-serif;
+}
+.ui-menu .ui-menu-item-wrapper {
+    font: 14px/29px PingFang TC,Heiti TC,Noto Sans,Source Han Sans,Verdana,Helvetica,Microsoft YaHei,Microsoft JhengHei,sans-serif;
+}
+.ui-state-default {
+    border: none;
+    background-color: transparent;
+}
+.ui-sortable-helper {
+    box-shadow: 3px 3px 5px #666;
+}
+.compare .cs-list .cs-rec .cs-body .cs-title {
+    background-color: #a6a7ac;
+    font-size: 17px;
+    color: #fff;
+}
+.compare .cs-list .cs-body .bn.size2.bn-red {
+    margin: 13px 0 69px;
+}
+.compare .cs-list .aside .cs-head>div {
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+.compare .cs-list .aside .cs-body>div {
+    border-left: 1px solid #eee;
+}
+.compare .cs-list .aside .cs-body>div:nth-last-child(2) {
+	border-radius: 0 0 0 5px;
+}
+.compare .cs-list .main .cs-rec {
+    cursor: all-scroll;
+}
+.compare .cs-list .main .cs-rec:hover .cs-head,
+.main .cs-rec:hover .cs-body {
+    background-color: #eee;
+}
+.compare .cs-list .main .cs-rec>div>div {
+    text-align: center;
+}
+.compare .cs-list .main .cs-rec .cs-body>div:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compare .cs-list .main .cs-rec>div>div .fa.fa-star {
+    font-size: 16px;
+    letter-spacing: 10px;
+}
+.compare .cs-list .cs-rec .bn-delete {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    display: block;
+    width: 23px;
+    height: 23px;
+    font-size: 20px;
+    line-height: 23px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 2;
+}
+#wrapper .nav-tabs > li.active a {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 980px) {
+	._content._boxStyle {
+		padding-top: 20px;
+        padding-bottom: 0;
+	}
+	.compare ._content .tab-title {
+		flex-direction: column;
+	}
+	.compare ._content .tab-title .tools {
+		margin-top: 20px;
+	}
+
+    .compare .cs-list .aside {
+        width: 150px;
+    }
+    .compare .cs-list .aside .cs-rec {
+        width: 150px;
+    }
+    .compare .cs-list .main {
+        width: calc(100% - 150px);
+    }
+    #wrapper .nav-tabs > li a {
+        font-size: 17px;
+    }
+}
+
+/* end-比較清單 */

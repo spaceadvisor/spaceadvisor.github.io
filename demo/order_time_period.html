@@ -1,0 +1,1614 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content=" " />
+<meta name="description" content=" ">
+<meta name="author" content="SpaceAdvisor">
+<meta name="copyright" content="本網頁著作SpaceAdvisor所有">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="dist/images/icon.ico" type="image/x-icon" rel="shortcut icon" />
+<title>訂購-選擇時間-時段</title>
+<link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="" />
+<link href="dist/css/main.css" rel="stylesheet" type="text/css" media="" />
+<link href="dist/css/jquery.mmenu.css" rel="stylesheet" type="text/css" media="" />
+
+<!-- BEGIN Tip 套件 -->
+<link rel="stylesheet" type="text/css" href="dist/js/tip/tip-twitter/tip-twitter.css" />
+<!-- END Tip 套件 -->
+
+<!-- STYLES -->
+<link href="dist/css/new/basic.css" rel="stylesheet" type="text/css" media="" />
+<link href="dist/css/new/basic_template.css" rel="stylesheet" type="text/css" media="" />
+<link href="dist/css/new/order_all.css" rel="stylesheet" type="text/css" media="" />
+</head>
+<body>
+<div id="wrapper" class="stepBox fill_box order_time order_time_period">
+<header class="cf">
+  <div class="content cf"> <a href="home.html" class="logo"> <img src="dist/svg/logo.svg"> </a>
+    <section class="__pc"> <a href="" class="activity">找活動</a>
+      <section class="_notLogin ">
+        <div class="login_info"> <a class="signup" href="signup.html">註冊</a>/<a class="signin" href="signin.html">登入</a> </div>
+      </section>
+      <section class="_isLogin">
+        <div class="memberClick"> <a href="" class="member" style="background-image:url(dist/images/avator.jpg)"></a>
+          <div class="memberMenu">
+            <ul>
+              <li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
+              <li class="collect"><a href="javascript:;">收藏清單</a></li>
+              <li class="compare"><a href="javascript:;">比較清單<b>2</b></a></li>
+              <li class="orders"><a href="javascript:;">訂單管理</a></li>
+              <li class="points"><a href="javascript:;">點數管理</a></li>
+              <li class="faq"><a href="faq.html">常見問題</a></li>
+              <li class="logout"><a href="javascript:;">登出</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>收件夾<b>1</b></a> <a href="" class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>購物車(<b>0</b>)</a> </section>
+      <nav>
+        <ul>
+          <li class="about_us"><a href="about_us.html">關於我們</a></li>
+          <li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+          <li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+        </ul>
+      </nav>
+      <select name="select" id="select">
+        <option>中文</option>
+        <option>English</option>
+      </select>
+    </section>
+    <section class="__mb"> <a href="#menu" data-ajax="false" class="menu-mobile"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <div class="search"> <i id="search" class="fa fa-search" aria-hidden="true"></i>
+        <div class="search-box">
+          <input type="text" name="textfield" id="textfield" placeholder="請輸入關鍵字" />
+          <a href="javscript:;"><span class="btn btn-c-3 btn-sm">搜尋</span></a></div>
+      </div>
+    </section>
+  </div>
+  <section class="__mb">
+    <nav id="menu">
+      <ul>
+        <section class="_notLogin">
+          <li class="member"> <a class="signup" href="signup.html">註冊</a><a class="signin" href="signin.html">登入</a> </li>
+          <li class="faq"><a href="faq.html">常見問題</a></li>
+          <li class="about_us"><a href="about_us.html">關於我們</a></li>
+          <li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+          <li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+          <li class="language">
+            <select name="select" id="select">
+              <option>中文</option>
+              <option>English</option>
+            </select>
+          </li>
+          <li class="activity"><a href="">找活動</a></li>
+        </section>
+        <section class="_isLogin">
+          <li class="member"> <a href="" class="pic" style="background-image:url(dist/images/avator.jpg)"></a>
+            <p>Hyun</p>
+            <a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i><b>1</b></a> </li>
+          <li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
+          <li class="collect"><a href="javascript:;">收藏清單</a></li>
+          <li class="compare"><a href="javascript:;">比較清單 <b>2</b></a></li>
+          <li class="orders"><a href="javascript:;">訂單管理</a></li>
+          <li class="points"><a href="javascript:;">點數管理</a></li>
+          <li class="faq"><a href="faq.html">常見問題</a></li>
+          <li class="about_us"><a href="about_us.html">關於我們</a></li>
+          <li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+          <li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+          <li class="logout"><a href="">登出</a></li>
+          <li class="language">
+            <select name="select" id="select">
+              <option>中文</option>
+              <option>English</option>
+            </select>
+          </li>
+          <li class="activity"><a href="">找活動</a></li>
+        </section>
+      </ul>
+    </nav>
+  </section>
+</header>
+
+<!--main-->
+<main class="_chooseNo _noEquip">
+<!-- breadcrumb -->
+<div class="breadcrumb">
+  <ul>
+    <li><a href="">首頁</a></li>
+    <li><a href="">會議室一覽</a></li>
+    <li><a href="">會議室資訊</a></li>
+    <li><a href="">場地預訂</a></li>
+  </ul>
+</div>
+<!--step步驟 -->
+<div class="orderstep _boxStyle">
+  <div class="stepPhotoInside"> <img src="dist/images/step_pic_1.png" title="" alt=""> </div>
+  <ul>
+    <li class="active"><b>1.</b><span>選擇/確認時間</span></li>
+    <li><b>2.</b><span>填寫付款資訊</span></li>
+    <li><b>3.</b><span>預定完成</span></li>
+  </ul>
+</div>
+<!-- step圖 --> 
+<!-- <div class="stepPhoto _boxStyle">
+	                <img src="dist/images/step_pic.jpg" title="" alt="">
+	            </div> -->
+
+<div class="writeContent _boxStyle">
+<!-- 左邊 -->
+<div class="orderContainer">
+<div class="caseSelect">
+<h2>選擇方案</h2>
+<div class="flexbox">
+<div class="caseList">
+  <ul>
+    <li class="active">場地租金</li>
+    <li>全日會議 <br>
+      專案</li>
+    <li>半日會議 <br>
+      專案</li>
+    <li>餐飲低消</li>
+    <li>婚宴</li>
+    <li>尾牙春酒</li>
+    <li>謝師宴</li>
+    <li>生日派對</li>
+  </ul>
+</div>
+<div class="caseRem">
+<ul>
+<li class="active">
+  <p>備註： <br>
+    以租金計算費用 <a href="spacer_plan.html" target="_blank">&lt;詳細內容&gt;</a> <br>
+    場地租金 </p>
+</li>
+<li>
+  <p>備註： <br>
+    以租金計算費用 <a href="spacer_plan.html" target="_blank">&lt;詳細內容&gt;</a> <br>
+    全日會議專案 </p>
+</li>
+<li>
+  <p>備註： <br>
+    以租金計算費用 <a href="spacer_plan.html" target="_blank">&lt;詳細內容&gt;</a> <br>
+    半日會議專案 </p>
+</li>
+<li>
+  <p>備註： <br>
+    以租金計算費用 <a href="spacer_plan.html" target="_blank">&lt;詳細內容&gt;</a> <br>
+    餐飲低消 </p>
+</li>
+<li>
+  <p>備註： <br>
+    以租金計算費用 <a href="spacer_plan.html" target="_blank">&lt;詳細內容&gt;</a> <br>
+    婚宴 </p>
+</li>
+<li>
+  <p>備註： <br>
+    以租金計算費用 <a href="spacer_plan.html" target="_blank">&lt;詳細內容&gt;</a> <br>
+    尾牙春酒 </p>
+</li>
+<li>
+  <p>備註： <br>
+    以租金計算費用 <a href="spacer_plan.html" target="_blank">&lt;詳細內容&gt;</a> <br>
+    謝師宴 </p>
+</li>
+<li>
+  <p>備註： <br>
+    以租金計算費用 <a href="spacer_plan.html" target="_blank">&lt;詳細內容&gt;</a> <br>
+    生日派對 </p>
+</li>
+</div>
+</div>
+</div>
+<div id="sec1" class="orderInformation1">
+  <h2>選擇日期</h2>
+  <div class="calendar"></div>
+  <!-- /calendar -->
+  
+  <div class="instant-tip">
+    <h1>即時預訂<i class="fa fa-bolt" aria-hidden="true"></i></h1>
+    <p>如果該場地已開啟即時預訂功能，那麼您不需要獲得場地主的批准就可以預訂。 <br>
+      一旦訂單送出並完成付款，即代表已預定成功。 <br>
+      訂單成立後，您可以在收件匣的問答通知與場地主討論活動相關事宜。 </p>
+  </div>
+</div>
+<div id="sec2" class="orderInformation2 _none">
+  <h2>選擇時段</h2>
+  <ul class="order_timeList">
+    <li><span>時段計費</span></li>
+    <li><span>價格方案</span></li>
+    <li><span>價格</span></li>
+  </ul>
+  <!-- <mn ajx_event_obj></mn> -->
+  <div class="order_tiemBox" data-pid=""></div>
+  <div class="notice_txt">
+    <ul>
+      <li><i class="fa fa-exclamation-circle error" aria-hidden="true"></i>請注意！您所選擇的兩個時段方案不同，中間可能有換場佈所需的時間，請於訂單成立後與場地主再次確認。</li>
+    </ul>
+  </div>
+</div>
+<div class="orderInformation3">
+  <h2>設備需求(免費提供)</h2>
+  <div class="equipment">
+    <div class="box needmore">
+      <div class="add">
+        <h3>08:00-12:00&nbsp;&nbsp;場地租金方案A</h3>
+        <ul class="bonus">
+          <li data-price="10" data-name="投影機與螢幕 (TWD 10/組)">
+            <div class="col"> <span class="assess">
+              <label for="d1">
+                <input type="checkbox" id="d1">
+                <i><img src="dist/images/equipment_icon1.jpg"></i> <span>投影機與螢幕 (TWD 10/組)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+          <li data-price="10" data-name="無線麥克風 (TWD 0/支)">
+            <div class="col"> <span class="assess">
+              <label for="d2">
+                <input type="checkbox" id="d2">
+                <i><img src="dist/images/equipment_icon2.jpg"></i> <span>無線麥克風 (TWD 0/支)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+          <li data-price="0" data-name="有線麥克風 (TWD 0/支)">
+            <div class="col"> <span class="assess">
+              <label for="d3">
+                <input type="checkbox" id="d3">
+                <i><img src="dist/images/equipment_icon3.jpg"></i> <span>有線麥克風 (TWD 0/支)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+          <li data-price="0" data-name="耳掛式麥克風A (TWD 0/支)">
+            <div class="col"> <span class="assess">
+              <label for="d4">
+                <input type="checkbox" id="d4">
+                <i><img src="dist/images/equipment_icon1.jpg"></i> <span>耳掛式麥克風A (TWD 0/支)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+          <li data-price="0" data-name="耳掛式麥克風B (TWD 0/支)">
+            <div class="col"> <span class="assess">
+              <label for="d5">
+                <input type="checkbox" id="d5">
+                <i><img src="dist/images/equipment_icon2.jpg"></i> <span>耳掛式麥克風B (TWD 0/支)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+        </ul>
+        <hr>
+        <h3>18:00-22:00&nbsp;&nbsp;場地租金方案BB</h3>
+        <ul class="bonus">
+          <li data-price="0" data-name="投影機與螢幕 (TWD 0/組)">
+            <div class="col"> <span class="assess">
+              <label for="d6">
+                <input type="checkbox" id="d6">
+                <i><img src="dist/images/equipment_icon1.jpg"></i> <span>投影機與螢幕 (TWD 0/組)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+          <li data-price="0" data-name="無線麥克風 (TWD 0/支)">
+            <div class="col"> <span class="assess">
+              <label for="d7">
+                <input type="checkbox" id="d7">
+                <i><img src="dist/images/equipment_icon2.jpg"></i> <span>無線麥克風 (TWD 0/支)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+          <li data-price="0" data-name="有線麥克風 (TWD 0/支)">
+            <div class="col"> <span class="assess">
+              <label for="d8">
+                <input type="checkbox" id="d8">
+                <i><img src="dist/images/equipment_icon3.jpg"></i> <span>有線麥克風 (TWD 0/支)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+          <li data-price="0" data-name="耳掛式麥克風A (TWD 0/支)">
+            <div class="col"> <span class="assess">
+              <label for="d9">
+                <input type="checkbox" id="d9">
+                <i><img src="dist/images/equipment_icon1.jpg"></i> <span>耳掛式麥克風A (TWD 0/支)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+          <li data-price="0" data-name="耳掛式麥克風B (TWD 0/支)">
+            <div class="col"> <span class="assess">
+              <label for="d10">
+                <input type="checkbox" id="d10">
+                <i><img src="dist/images/equipment_icon2.jpg"></i> <span>耳掛式麥克風B (TWD 0/支)</span> </label>
+              <div class="number">
+                <select disabled="disabled">
+                  <option value="0">請選擇</option>
+                  <option value="100">100</option>
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              </span> </div>
+          </li>
+        </ul>
+      </div>
+      <a class="more">展開更多<i class="fa fa-caret-down" aria-hidden="true"></i></a> </div>
+  </div>
+</div>
+<div class="orderInformation4">
+  <h2>取消條款</h2>
+  <p>我們執行退訂政策是為了保障房客和房東雙方的利益。極嚴退訂政策適用於特殊情況，且僅限受邀房東使用。我們網站上的每個房源和預訂都會清楚說明退訂政策。透過點擊相應預訂上的「取消」按鈕來取消預訂。<a href="#">
+    <退訂政策>
+    </a></p>
+  <div class="col"> <span class="assess">
+    <input type="checkbox" id="read">
+    <label for="read">我已閱讀並且完全同意
+      <退訂政策>
+      之內容</label>
+    </span> </div>
+</div>
+<div class="orderInformation5">
+  <h2>備註內容</h2>
+  <p>詳細的場地規劃需求，可於訂單成立後，至訂單頁面進行編修及加購更多<b>超值加價購</b>，您所填寫的資料將會同步場地業主進行安排。</p>
+  <textarea placeholder="請在這裡輸入備註內容，訂單成立後會由場地主與您聯絡..."></textarea>
+</div>
+<!-- 前往購買 -->
+<div class="custodyBtn onlineBtn"> <a class="disable" href="order_cart.html"><span class="btn btn-c-3 btn-m">前往購買</span></a> <span>
+  <p>您的預訂享有7天內免費取消的保障</p>
+  <p>一個月內的預訂除外，請參閱<a href="#" target="_blank">平台取消條款</a></p>
+  </span> </div>
+<!-- 提出申請 -->
+<div class="custodyBtn rftBtn"> <a class="disable" href="order_cart.html"><span class="btn btn-c-3 btn-m">提出申請</span></a> <span>
+  <p>場地業主將於1-2工作天內回覆您的需求</p>
+  <p><b>發出需求不代表訂單成立，您暫時不會被收費！</b></p>
+  </span> </div>
+<!-- 提出申請 -->
+<div class="custodyBtn rftBtn"> <a class="disable" href="order_cart.html"><span class="btn btn-c-3 btn-m">提出申請</span></a> <span>
+  <p>您的選購中包含無法即時確認的項目，將會一起提出申請，需等待回覆。<br>
+    場地主將於1-2工作天內回覆您的需求。</p>
+  <p><b>發出需求不代表訂單成立，您暫時不會被收費！</b></p>
+  </span> </div>
+</div>
+
+<!-- 右邊 -->
+<div class="_outerBox">
+  <div class="appointment_Result result_pc">
+    <div class="appointment_Content">
+      <div class="appointment_photo">
+        <div class="app_pic"> <img src="dist/images/dsd.jpg" title="" alt=""> </div>
+        <div class="app_text">藝文推廣中心三樓會議室（一）</div>
+      </div>
+      <div class="appointment_detail"></div>
+      
+      <!-- 設備需求 -->
+      <div class="demand">
+        <h4>設備需求</h4>
+        <ul class="deTxt">
+          <mn total2></mn>
+        </ul>
+      </div>
+      <!-- 總價 -->
+      <div class="priceBox">
+        <ul class="price">
+          <li class="valuation">
+            <div class="valuaBox"> <b>小計</b>
+              <div> <span>TWD</span> <span>
+                <mn totalprice_tn>0</mn>
+                </span> </div>
+            </div>
+          </li>
+          <li class="valuation">
+            <div class="valuaBox"> <b>服務費</b>
+              <div> <span>TWD</span> <span>
+                <mn post_fee>0</mn>
+                </span> </div>
+            </div>
+          </li>
+          <li class="total allValuation">
+            <div class="valuaBox"> <b>總價</b>
+              <div> <span>TWD</span> <span>
+                <mn totalprice>0</mn>
+                </span> </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="custodyBtn rftBtn"> 
+      <!-- 前往購買 --> 
+      <a class="disable" href="javascript:;"><span class="btn btn-c-3 btn-m">前往購買</span></a> <span>
+      <p>您的預訂享有7天內免費取消的保障</p>
+      <p>一個月內的預訂除外，請參閱<a href="#" target="_blank">平台取消條款</a></p>
+      </span> </div>
+    <div class="custodyBtn rftBtn"> 
+      <!-- 提出申請 --> 
+      <a class="disable" href="javascript:;"><span class="btn btn-c-3 btn-m">提出申請</span></a> <span>
+      <p>場地業主將於1-2工作天內回覆您的需求</p>
+      <p><b>發出需求不代表訂單成立，您暫時不會被收費！</b></p>
+      </span> </div>
+    <div class="custodyBtn rftBtn"> 
+      <!-- 提出申請 --> 
+      <a class="disable" href="javascript:;"><span class="btn btn-c-3 btn-m">提出申請</span></a> <span>
+      <p>您的選購中包含無法即時確認的項目，將會一起提出申請，需等待回覆。場地主將於1-2工作天內回覆您的需求。</p>
+      <p><b>發出需求不代表訂單成立，您暫時不會被收費！</b></p>
+      </span> </div>
+  </div>
+</div>
+</div>
+
+<!-- 手機用價格方案 -->
+<div class="mobile-plan-stecla mobile">
+  <div class="plan-box">
+    <p class="title">明細</p>
+    <div class="scroll">
+      <div class="appointment_Content">
+        <div class="appointment_photo">
+          <div class="app_pic"> <img src="dist/images/dsd.jpg" title="" alt=""> </div>
+          <div class="app_text">藝文推廣中心三樓會議室（一）</div>
+        </div>
+        <div class="appointment_detail"></div>
+      </div>
+      <!-- 設備需求 -->
+      <div class="demands">
+        <h4>設備需求</h4>
+        <ul class="deTxt">
+          <mn total2></mn>
+        </ul>
+      </div>
+      
+      <!-- 總價 -->
+      <div class="priceBox">
+        <div class="valuation"> <b>小計</b>
+          <div> <span>TWD</span> <span>
+            <mn totalprice_tn>0</mn>
+            </span> </div>
+        </div>
+        <div class="valuation"> <b>服務費</b>
+          <div> <span>TWD</span> <span>
+            <mn post_fee>0</mn>
+            </span> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="first">
+  <div>
+    <p>總價</p>
+    <p>TWD
+      <mn totalprice>0</mn>
+    </p>
+  </div>
+  <i class="btn btn-c-2 btn-s">查看明細</i> </a> <a href="order_cart.html" class="reservation"><span class="btn btn-c-3 btn-m">確認購買<i class="fa fa-angle-right" aria-hidden="true"></i></span></a> 
+  <!-- <a href="order_cart.html" class="reservation"><span class="btn btn-c-3 btn-m">提出申請<i class="fa fa-angle-right" aria-hidden="true"></i></span></a> --> 
+</div>
+<div id="__template" style="display: none">
+  <div id="order_period_template">
+    <ul class="period_content [_CLASS]">
+      [_ITEM]
+    </ul>
+  </div>
+  <div id="order_period_item_template">
+    <li class="[_CLASS] rebates" data-cid="[_ID]" data-plan1="" data-plan2="" data-plan3="">
+      <div class="col"> <span class="assess">
+        <input type="checkbox" id="[_ID]" [_INPUT_DISABLE]>
+        <label for="[_ID]">
+        <div class="preiodBox">
+          <h4>時段計費</h4>
+          <time>[_TIME]</time>
+          <h4>價格方案</h4>
+          <div class="plan">[_SELECT]</div>
+          <h4>價格</h4>
+          <div class="prices"> <span class="rebate"></span><span class="price"></span> </div>
+        </div>
+        </label>
+        </span> </div>
+      <ul class="sub">
+        [_SUB]
+      </ul>
+    </li>
+  </div>
+  <div id="order_period_item_select_template">
+    <div class="planSelect [_DCLASS]">
+      <select class="[_SCLASS]" [_SELECT_DISABLE]>
+        [_OPTION]
+      </select>
+    </div>
+  </div>
+  <div id="order_period_item_select_option_template">
+    <option value="[_VALUE]" data-id="[_ID]" [_OPTION_DISABLE]>[_NAME]</option>
+  </div>
+  <div id="order_period_item_sub_template">
+    <li class="[_SUB_CLASS]" data-title="[_SUB_TITLE]">
+      <label>
+      <div>
+        <input type="checkbox">
+        <b>[_SUB_TITLE]</b> </div>
+      <div>[_SUB_NAME]</div>
+      <div>[_SUB_PRICE]</div>
+      </label>
+    </li>
+  </div>
+  <div id="cart_box_template">
+    <div class="appointment_item" data-pid="[_ID]">
+      <div class="appointment_deta"> <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+        <time>[_TIME]</time>
+      </div>
+      <div class="deta_boxs">
+        <mn>[_ITEM]</mn>
+      </div>
+    </div>
+  </div>
+  <div id="cart_box_pc_item_template">
+    <div class="[_CLASS]" data-cid="[_ID]">
+      <div class="deta_content">
+        <div class="program">
+          <div class="time">
+            <time>[_TIME]</time>
+          </div>
+          <div class="name"> <span>[_NAME]</span> </div>
+        </div>
+        <div class="_prices">
+          <div class="discount"> <span>[_PRICE]</span> </div>
+          <div class="rebate"> <span>[_BPRICE]</span> </div>
+          <div class="sarebate"> <span>[_DISCOUNT]</span> </div>
+        </div>
+      </div>
+      [_SUB] </div>
+  </div>
+  <div id="cart_box_mb_item_template">
+    <div class="[_CLASS]" data-cid="[_ID]">
+      <div class="deta_content">
+        <time>[_TIME]</time>
+        <span class="discount">[_PRICE]</span>
+        <div class="rebate">[_BPRICE]</div>
+      </div>
+      <div class="program"> <b>[_NAME]</b>
+        <div class="formula"> <span class="sarebate">[_DISCOUNT]</span> </div>
+      </div>
+      [_SUB] </div>
+  </div>
+  <div id="equip_item_template">
+    <li> <span>[_NAME]X[_NUM]</span> </li>
+  </div>
+</div>
+</main>
+<!--/main--> 
+
+<!-- top --> 
+<a href="javascript:;" class="gotop"></a>
+<footer class="cf search-mobile-hide">
+  <div class="top desk">
+    <ul>
+      <li>
+        <p>SpaceAdvisor</p>
+        <a href="">關於我們</a> <a href="">平台優勢</a> <a href="">使用說明</a> <a href="">人才招募</a> </li>
+      <li>
+        <p>客服中心</p>
+        <a href="">常見問題</a> <a href="">聯絡我們</a> <a href="">服務政策</a> <a href="">隱私權條款</a> </li>
+      <li>
+        <p>活動類型</p>
+        <a href="">企業培訓</a> <a href="">記者會 發表會</a> <a href="">商務宴客</a> <a href="">企業聚餐</a> <a href="">主題派對</a> <a href="">婚禮 春酒 晚會</a> </li>
+      <li>
+        <p>場地類型</p>
+        <a href="">星級飯店</a> <a href="">藝文場地</a> <a href="">會議中心</a> <a href="">展覽中心</a> <a href="">餐飲空間</a> <a href="">公家機構</a> <a href="">戶外場地</a> </li>
+      <li>
+        <p>合作夥伴</p>
+        <a href="">合作優勢</a> <a href="">立即刊登場地</a> <a href="">企業合作</a> <a href="">經銷商計畫</a> </li>
+    </ul>
+  </div>
+  <div class="bottom">
+    <ul>
+      <li>
+        <p>台北市信義區信義路5段7號24F D1 (101大樓)</p>
+        <p>© SpaceAdvisor 2017 All Rights Reserved</p>
+      </li>
+      <li> <a href="" target="_blank"><img src="dist/images/icon_fb.png" alt="" title=""></a> <a href="" target="_blank"><img src="dist/images/icon_line.png" alt="" title=""></a> </li>
+    </ul>
+  </div>
+</footer>
+</div>
+<!-- /#wrapper --> 
+
+<!-- js --> 
+<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="dist/js/main.js"></script> 
+<script type="text/javascript" src="dist/js/jquery.mmenu.min.js"></script> 
+<script type="text/javascript" src="dist/js/tip/jquery.poshytip.js"></script> 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+<script type="text/javascript" src="dist/js/jdatepicker.min_bear.js"></script> 
+<script type="text/javascript">
+	        // tip
+	        $('#demo-tip-twitter,#demo-tip-twitter2,#demo-tip-twitter3,#demo-tip-twitter4,#demo-tip-twitter5,#demo-tip-twitter6').poshytip({
+	            className: 'tip-twitter',
+	            showTimeout: 1,
+	            alignTo: 'target',
+	            alignX: 'center',
+	            offsetY: 5,
+	            allowTipHover: false,
+	            fade: false,
+	            slide: false
+	        });
+	    </script> 
+<script>
+	        // 選擇方案
+	        $(function() {
+	            $(".caseList ul li").click(function() {
+	                var n = $(this).index() + 1;
+	                $(".caseList ul li.active").removeClass("active");
+	                $(".caseList ul li:nth-child(" + n + ")").addClass("active");
+	                $(".caseRem ul li.active").removeClass("active");
+	                $(".caseRem ul li:nth-child(" + n + ")").addClass("active");
+	            });
+	        });
+	    </script> 
+<script>
+	        $('.calendar').Jdatepicker({
+	            default_date:'2018-01-19',//預設起始日期(會執行起始日期點擊事件)
+	            defalut_click_event: function(e) {}, //預設每日點擊事件
+	            old_no_work: true, //預設日期之前不作用
+	            disabled_date:['2018-01-18','2018-01-23~2018-01-24','2018-01-25~2999-01-28'],	//關閉作用日期
+	            event_date: { //日期事件資料
+	                '2018-01-19': { //日期
+	                    discount: '6折', //顯示折價
+	                    price: '$2,800', //價格
+	                    order: true, //是否有閃電符號
+	                    click_event: function(e) {
+	                    	doShowDetail('2018-01-19');
+                        } //點擊處理事件
+	                },
+	                '2018-01-20': {
+	                    discount: '7折',
+	                    price: '$3,000',
+	                    order: true,
+	                    click_event: function(e) {
+	                    	doShowDetail('2018-01-20');
+	                    }
+	                },
+	                '2018-01-21': {
+	                    discount: '8折',
+	                    price: '$3,500',
+	                    order: true,
+	                    click_event: function(e) {
+	                    	doShowDetail('2018-01-21');
+	                    }
+	                },
+	                '2018-01-22': {
+	                	discount: '',
+	                    price: '$3,000',
+	                    order: true,
+	                    click_event: function(e) {
+	                    	doShowDetail('2018-01-22');
+	                    }
+	                },
+	            }
+	        });
+
+	        var cart_array = []; // cart total info
+	        var equip_array = []; // cart equipment total info
+	        var cart_price = 0; // cart total price
+	        var equip_price = 0; // equip total price
+
+	        var _all_period_array = {
+				'08:00-12:00' : {
+					'time' : '08:00-12:00',
+					'disable' : false,
+					'selects' : {
+						'場地租金方案A' : {
+							'name' : '場地租金方案A',
+							'value' : '1',
+							'disable' : false,
+							'discount' : '1折',
+							'onlineb' : false,
+							'price' : '10,000',
+							'bprice' : '1,000'
+						},
+						'場地租金方案B' : {
+							'name' : '場地租金方案B',
+							'value' : '2',
+							'disable' : false,
+							'discount' : '',
+							'onlineb' : true,
+							'price' : '',
+							'bprice' : '',
+							'select2' : {
+								'桌1' : {
+									'name' : '桌1',
+									'value' : '1',
+									'disable' : false,
+									'discount' : '5折',
+									'price' : '',
+									'bprice' : '',
+									'select3' : {
+										'50人' : {
+											'name' : '50人',
+											'value' : '1',
+											'disable' : false,
+											'discount' : '5折',
+											'price' : '2,999',
+											'bprice' : '1,999'
+										},
+										'75人' : {
+											'name' : '75人',
+											'value' : '2',
+											'disable' : false,
+											'discount' : '',
+											'price' : '3,499',
+											'bprice' : '2,199'
+										},
+										'100人' : {
+											'name' : '100人',
+											'value' : '3',
+											'disable' : true,
+											'discount' : '5折',
+											'price' : '3,399',
+											'bprice' : '2,999'
+										}
+									}
+								},
+								'桌2' : {
+									'name' : '桌2',
+									'value' : '2',
+									'disable' : false,
+									'discount' : '',
+									'price' : '3,500',
+									'bprice' : '2,000'
+								},
+								'桌3' : {
+									'name' : '桌3',
+									'value' : '3',
+									'disable' : true,
+									'discount' : '5折',
+									'price' : '3,500',
+									'bprice' : '2,000'
+								}
+							},
+						},
+						'場地租金方案C' : {
+							'name' : '場地租金方案C',
+							'value' : '3',
+							'disable' : false,
+							'discount' : '9折',
+							'onlineb' : true,
+							'price' : '3,000',
+							'bprice' : '2,700'
+						},
+						'場地租金方案D' : {
+							'name' : '場地租金方案D',
+							'value' : '4',
+							'disable' : true,
+							'discount' : '',
+							'onlineb' : false,
+							'price' : '0',
+							'bprice' : '0'
+						}
+					},
+					'sub': {
+						'提前準備時間' : {
+							'title' : '提前準備時間',
+							'name' : '07:00-08:00',
+							'price' : '1,000'
+						},
+						'連接時段續用' : {
+							'title' : '連接時段續用',
+							'name' : '12:00-13:00 免費贈續用時段',
+							'price' : '0'
+						},
+						'延後使用時間' : {
+							'title' : '延後使用時間',
+							'name' : '17:00~18:00',
+							'price' : '2,000'
+						}
+					}
+				},
+				'13:00-17:00' : {
+					'time' : '08:00-12:00',
+					'disable' : true
+				},
+				'18:00-22:00' : {
+					'time' : '18:00-22:00',
+					'disable' : false,
+					'selects' : {
+						'場地租金方案AA' : {
+							'name' : '場地租金方案AA',
+							'value' : '1',
+							'disable' : false,
+							'discount' : '',
+							'onlineb' : false,
+							'price' : '5,000',
+							'bprice' : '1,000'
+						},
+						'場地租金方案BB' : {
+							'name' : '場地租金方案BB',
+							'value' : '2',
+							'disable' : false,
+							'discount' : '',
+							'onlineb' : true,
+							'price' : '3,000',
+							'bprice' : '1,000',
+							'select2' : {
+								'50人1' : {
+									'name' : '50人1',
+									'value' : '1',
+									'disable' : false,
+									'discount' : '5折',
+									'price' : '2,000',
+									'bprice' : '1,000'
+								},
+								'75人1' : {
+									'name' : '75人1',
+									'value' : '2',
+									'disable' : false,
+									'discount' : '',
+									'price' : '3,500',
+									'bprice' : '2,000'
+								},
+								'100人1' : {
+									'name' : '100人1',
+									'value' : '3',
+									'disable' : true,
+									'discount' : '5折',
+									'price' : '3,500',
+									'bprice' : '2,000'
+								}
+							},
+						},
+						'場地租金方案CC' : {
+							'name' : '場地租金方案CC',
+							'value' : '3',
+							'disable' : false,
+							'discount' : '9折',
+							'onlineb' : true,
+							'price' : '3,000',
+							'bprice' : '2,700'
+						},
+						'場地租金方案DD' : {
+							'name' : '場地租金方案DD',
+							'value' : '4',
+							'disable' : true,
+							'discount' : '',
+							'onlineb' : false,
+							'price' : '0',
+							'bprice' : '0'
+						}
+					}
+				}
+			};
+
+			function removeA(arr) {
+			    var what, a = arguments, L = a.length, ax;
+			    while (L > 1 && arr.length) {
+			        what = a[--L];
+			        while ((ax= arr.indexOf(what)) !== -1) {
+			            arr.splice(ax, 1);
+			        }
+			    }
+			    return arr;
+			}
+
+			// do comma on number
+			function formatNumber(num) {
+		        num += '';
+		        var x = num.split('.');
+		        var x1 = x[0];
+		        var x2 = x.length > 1 ? '.' + x[1] : '';
+		        var rgx = /(\d+)(\d{3})/;
+		        while (rgx.test(x1)) {
+		            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+		        }
+		        return x1 + x2;
+		    }
+
+			// switch equip number
+	    	$('.equipment').on('change', 'input:checkbox', function() {
+				var li_elem = $(this).parents('li');
+				var _name = (li_elem.attr('data-name'));
+	    		var select_elem = li_elem.find('.number').find('select');
+	    		if ($(this)[0].checked == true) {
+					select_elem.removeAttr('disabled');
+				} else {
+					select_elem.attr('disabled', 'disabled');
+					delete equip_array[_name]; // delete equip
+				}
+				li_elem.find('select').change();
+	    		var li_elem = $(this).parents('li');
+	    	});
+			$('.equipment').on('change', 'select', function() {
+	    		var val = $(this).val();
+	    		var li_elem = $(this).parents('li');
+	    		var _name = li_elem.attr('data-name');
+	    		if (!($(this).attr('disabled') == 'disabled' || val == '0')) {
+		    		var _price = li_elem.attr('data-price');
+	    			var _num = val;
+		    		equip_array[_name] = {
+		    			'name' : _name,
+		    			'price' : _price,
+		    			'num' : _num
+		    		}
+		    	} else {
+		    		delete equip_array[_name]; // delete equip
+		    	}
+	    		accessEquipList();
+	    	});
+
+			// select item
+			$('#sec2').on('click', '.order_tiemBox .period_content ._item:not(._disable) .col input', function(){
+				var li_elem = $(this).parents('._item');
+				var _id = li_elem.attr('data-cid');
+				var _stat = $(this).is(':checked');
+				if (_stat) {
+					li_elem.addClass('_active');
+
+					// var current_plan1_id = li_elem.attr('data-plan1');
+					var current_plan2_id = li_elem.attr('data-plan2');
+					var current_plan3_id = li_elem.attr('data-plan3');
+					if (current_plan2_id != '') {
+						if (current_plan3_id != '') {
+							li_elem.find('select.plan1').prop('disabled', false);
+							li_elem.find('select.plan2').prop('disabled', false);
+							li_elem.find('select.plan3').prop('disabled', false);
+							li_elem.find('select.plan3').change();
+						} else {
+							li_elem.find('select.plan1').prop('disabled', false);
+							li_elem.find('select.plan2').prop('disabled', false);
+							li_elem.find('select.plan2').change();
+						}
+					} else {
+						li_elem.find('select.plan1').prop('disabled', false);
+						li_elem.find('select.plan1').change();
+					}
+				} else {
+					li_elem.find('select.plan1').prop('disabled', true);
+					li_elem.find('select.plan2').prop('disabled', true);
+					li_elem.find('select.plan3').prop('disabled', true);
+					li_elem.removeClass('_active');
+					doCheckSelect(li_elem);
+				}
+			});
+
+			// select sub
+			$('#sec2').on('click', '.order_tiemBox .period_content ._item:not(._disable) .sub input', function(){
+				var li_elem = $(this).parents('._item');
+				var _pid = li_elem.parents('.order_tiemBox').attr('data-pid');
+				var _cid = li_elem.attr('data-cid');
+				var li_c_elem = $(this).parents('._sub_item');
+				var _sub_id = li_c_elem.attr('data-title');
+				var _stat = $(this).is(':checked');
+				if (_stat) {
+					if (typeof cart_array[_pid][_cid]['sub'] == 'undefined') {
+						cart_array[_pid][_cid]['sub'] = [];
+					}
+					cart_array[_pid][_cid]['sub'].push(_sub_id);
+				} else {
+					removeA(cart_array[_pid][_cid]['sub'], _sub_id);
+				}
+				accessCartList();
+			});
+
+			// select plan1
+			$('#sec2').on('change', '.order_tiemBox .period_content ._item select.plan1', function(){
+				var _plan1_id = $('option:selected', this).attr('data-id');
+				var li_elem = $(this).parents('._item');
+				var _cid = li_elem.attr('data-cid');
+				// remove select section for rebuild
+				if (li_elem.find('.planSelect._s2').length > 0) li_elem.find('.planSelect._s2').remove();
+
+				li_elem.attr('data-plan1', _plan1_id);
+				li_elem.attr('data-plan2', '');
+				li_elem.removeClass('_havePlan2');
+				li_elem.removeClass('_havePlan3');
+
+				// do show select2
+				var _select = _all_period_array[_cid]['selects'][_plan1_id];
+				if (typeof _select['select2'] != "undefined") {
+					var template_period_item_select = $('#__template #order_period_item_select_template').html();
+					var template_period_item_select_option = $('#__template #order_period_item_select_option_template').html();
+					var _select2 = _select['select2'];
+					var _div2_class = ' _s2';
+					var _select2_class = ' plan2';
+					var _select2_disable = '';
+					var _temp_options = '';
+
+					for(var option2 in _select2) {
+						var _template_select_option = template_period_item_select_option;
+						var _option2_id = option2;
+						var _option2_obj = _select2[option2];
+						var _option2_name = _option2_obj['name'];
+						var _option2_value = _option2_obj['value'];
+						var _option2_disable = (_option2_obj['disable'])?'disabled':'';
+
+						_template_select_option = _template_select_option.replace(/\[_ID\]/g, _option2_id);
+				  		_template_select_option = _template_select_option.replace(/\[_NAME\]/g, _option2_name);
+				  		_template_select_option = _template_select_option.replace(/\[_VALUE\]/g, _option2_value);
+				  		_template_select_option = _template_select_option.replace(/\[_option_disable\]/g, _option2_disable);
+				  		_temp_options += _template_select_option;
+					}
+
+					template_period_item_select = template_period_item_select.replace(/\[_DCLASS\]/g, _div2_class);
+					template_period_item_select = template_period_item_select.replace(/\[_SCLASS\]/g, _select2_class);
+				  	template_period_item_select = template_period_item_select.replace(/\[_OPTION\]/g, _temp_options);
+				  	template_period_item_select = template_period_item_select.replace(/\[_select_disable\]/g, _select2_disable);
+				  	li_elem.find('select.plan1').after(template_period_item_select);
+				  	li_elem.addClass('_havePlan2');
+				  	li_elem.find('select.plan2').change();
+				} else {
+					doCheckSelect(li_elem);
+				}
+			});
+			// select plan2
+			$('#sec2').on('change', '.order_tiemBox .period_content ._item select.plan2', function(){
+				var _plan2_id = $('option:selected', this).attr('data-id');
+				var li_elem = $(this).parents('._item');
+				var _cid = li_elem.attr('data-cid');
+				var current_plan1_id = li_elem.attr('data-plan1');
+
+				// remove plan3 for rebuild
+				if (li_elem.find('.plan3').length > 0) li_elem.find('.plan3').remove();
+
+				li_elem.attr('data-plan2', _plan2_id);
+				li_elem.attr('data-plan3', '');
+				li_elem.removeClass('_havePlan3');
+
+				// do show select3
+				var _select = _all_period_array[_cid]['selects'][current_plan1_id]['select2'][_plan2_id];
+				if (typeof _select['select3'] != "undefined") {
+					var template_period_item_select = $('#__template #order_period_item_select_template .planSelect').html();
+					var template_period_item_select_option = $('#__template #order_period_item_select_option_template').html();
+
+					var _select3 = _select['select3'];
+					var _select3_class = ' plan3';
+					var _select3_disable = '';
+					var _temp_options = '';
+
+					for(var option3 in _select3) {
+						var _template_select_option = template_period_item_select_option;
+						var _option3_id = option3;
+						var _option3_obj = _select3[option3];
+						var _option3_name = _option3_obj['name'];
+						var _option3_value = _option3_obj['value'];
+						var _option3_disable = (_option3_obj['disable'])?'disabled':'';
+
+						_template_select_option = _template_select_option.replace(/\[_ID\]/g, _option3_id);
+				  		_template_select_option = _template_select_option.replace(/\[_NAME\]/g, _option3_name);
+				  		_template_select_option = _template_select_option.replace(/\[_VALUE\]/g, _option3_value);
+				  		_template_select_option = _template_select_option.replace(/\[_option_disable\]/g, _option3_disable);
+				  		_temp_options += _template_select_option;
+					}
+
+					template_period_item_select = template_period_item_select.replace(/\[_SCLASS\]/g, _select3_class);
+				  	template_period_item_select = template_period_item_select.replace(/\[_OPTION\]/g, _temp_options);
+				  	template_period_item_select = template_period_item_select.replace(/\[_select_disable\]/g, _select3_disable);
+				  	li_elem.find('select.plan2').after(template_period_item_select);
+				  	li_elem.addClass('_havePlan3');
+				  	li_elem.find('select.plan3').change();
+				} else {
+					doCheckSelect(li_elem);
+				}
+			});
+			// select plan3
+			$('#sec2').on('change', '.order_tiemBox .period_content ._item select.plan3', function(){
+				var _plan3_id = $('option:selected', this).attr('data-id');
+				var li_elem = $(this).parents('._item');
+				li_elem.attr('data-plan3', _plan3_id);
+				doCheckSelect(li_elem);
+			})
+			function doCheckSelect(elem) {
+				var $elem = elem;
+				var _pid = $elem.parents('.order_tiemBox').attr('data-pid');
+				var _cid = $elem.attr('data-cid');
+
+				var _discount = '';
+				var _price = '';
+				var _onlineb = '';
+				if ($elem.hasClass('_active')) {
+					var _attrPlan1 = $elem.attr('data-plan1');
+					var _attrPlan2 = $elem.attr('data-plan2');
+					var _attrPlan3 = $elem.attr('data-plan3');
+					var _plan = _all_period_array[_cid]['selects'][_attrPlan1];
+
+					if (_attrPlan2 != '') {
+						if (_attrPlan3 != '') _plan = _plan['select2'][_attrPlan2]['select3'][_attrPlan3];
+						else _plan = _plan['select2'][_attrPlan2];
+					}
+
+					_discount = _plan['discount'];
+					_price = (_discount != '')?_plan['bprice']:_plan['price'];
+					_onlineb = _plan['onlineb'];
+
+					if (typeof cart_array[_pid] != "undefined") {
+						if (typeof cart_array[_pid][_cid] == "undefined") {
+							cart_array[_pid][_cid] = {};
+						}
+					} else {
+						cart_array[_pid] = {};
+						cart_array[_pid][_cid] = {};
+					}
+					cart_array[_pid][_cid]['plan1'] = _attrPlan1;
+					cart_array[_pid][_cid]['plan2'] = _attrPlan2;
+					cart_array[_pid][_cid]['plan3'] = _attrPlan3;
+				} else {
+					delete cart_array[_pid][_cid];
+					if (Object.keys(cart_array[_pid]).length == 0)
+						delete cart_array[_pid];
+				}
+				var _info_array = {
+					'discount' : _discount,
+					'price' : _price,
+					'onlineb' : _onlineb
+				}
+				doShowInfo($elem, _info_array);
+
+				// sort
+				for (var cart_array_obj in cart_array) {
+					if (typeof cart_array[cart_array_obj] == 'undefined') continue;
+					var keys = Object.keys(cart_array[cart_array_obj]);
+					var len = keys.length;
+					var temp_array = [];
+					keys.sort();
+
+					for (var i = 0; i < len; i++) {
+					  	k = keys[i];
+					  	temp_array[k] = cart_array[cart_array_obj][k];
+					}
+					cart_array[cart_array_obj] = temp_array;
+				}
+
+				accessCartList();
+			}
+
+			function accessCartList() {
+	        	var pc_cart_elem = $('.appointment_Result').find('.appointment_detail');
+	        	var mb_cart_elem = $('.mobile-plan-stecla.mobile').find('.appointment_detail');
+	        	var temp_cart_total = 0;
+
+				if (Object.keys(cart_array).length == 0) {
+	            	pc_cart_elem.empty();
+	            	mb_cart_elem.empty();
+	        	} else {
+	        		var pc_id_elem = $('.appointment_Result .appointment_item');
+	            	var mb_id_elem = $('.mobile-plan-stecla.mobile .appointment_item');
+	            	var template_cart_outer = $('#__template #cart_box_template').html();
+	            	var template_cart_pc_item = $('#__template #cart_box_pc_item_template').html();
+	            	var template_cart_mb_item = $('#__template #cart_box_mb_item_template').html();
+	            	var total_outer = "";
+	            	var total_outer_pc = "";
+	            	var total_outer_mb = "";
+
+	            	for (var obj in cart_array) {
+		            	var total_item_pc = "";
+		            	var total_item_mb = "";
+	            		var _template_cart_outer_pc = template_cart_outer;
+	            		var _template_cart_outer_mb = template_cart_outer;
+
+	            		var pid = obj;
+	            		var cid = cart_array[obj];
+	            		for (var obj2 in cid) {
+		            		var _template_cart_pc_item = template_cart_pc_item;
+		            		var _template_cart_mb_item = template_cart_mb_item;
+		            		var _id = obj2;
+		            		var _id_list = cid[_id];
+		            		var _plan1 = _id_list['plan1'];
+		            		var _plan2 = _id_list['plan2'];
+		            		var _plan3 = _id_list['plan3'];
+		            		var _array_plan1 = _all_period_array[_id]['selects'][_plan1]; // allen
+		            		var _array_plan2 = (_plan2 != '')?_array_plan1['select2'][_plan2]:'';
+		            		var _array_plan3 = (_plan2 != '' && _plan3 != '')?_array_plan2['select3'][_plan3]:'';
+		            		var _array_name = _all_period_array[_id]['selects'][_plan1]['name'];
+		            		var _array_time = _all_period_array[_id]['time'];
+		            		// if (_plan2 != '') {
+		            		// 	if (_plan3 != '') _array_name = _array_name+'<b>'+_plan2+_plan3+'</b>';
+			            	// 	else _array_name = _array_name+'<b>'+_plan2+'</b>';
+		            		// }
+		            		// _array_name = (_plan2 != '')?_array_name+'<b>'+_plan2+'</b>':_array_name;
+
+		            		// var _index = Object.keys(_all_period_array).indexOf(_id);
+		            		var _class = " deta_box";
+		            		var _name = _array_name;
+		            		var _time = _array_time;
+						  	var _discount = _array_plan1['discount'];
+						  	var _onlineb = _array_plan1['onlineb'];
+						  	var _currency = 'TWD';
+						  	var _price = _array_plan1['price'];
+						  	var _bprice = _array_plan1['bprice'];
+						  	var _correctPrice = 0;
+
+						  	if (_plan2 != '') {
+		            			if (_plan3 != '') {
+		            				_array_name = _array_name+'<b>'+_plan2+'/'+_plan3+'</b>';
+		            				_discount = _array_plan3['discount'];
+		            				_price = _array_plan3['price'];
+		            				_bprice = _array_plan3['bprice'];
+			            		} else {
+			            			_array_name = _array_name+'<b>'+_plan2+'</b>';
+			            			_discount = _array_plan2['discount'];
+			            			_price = _array_plan2['price'];
+			            			_bprice = _array_plan2['bprice'];
+			            		}
+			            		_name = _array_name;
+		            		}
+
+						  	if (_discount != '' && _bprice != '') {
+						  		_class += ' _haveDiscount';
+						  		_correctPrice += _bprice;
+						  	} else {
+						  		_correctPrice += _price;
+						  	}
+						  	if (_onlineb == '1') _class += ' _onlineb';
+
+
+						  	var total_sub_item_pc = '';
+						  	var total_sub_item_mb = '';
+
+						  	// sub
+						  	if (typeof _id_list['sub'] != 'undefined') {
+							  	if (_id_list['sub'].length > 0) {
+							  		_class += ' _haveSub'
+							  		var _subs = _id_list['sub'];
+							  		for (var subs in _subs) {
+					            		var _template_cart_pc_sub_item = template_cart_pc_item;
+					            		var _template_cart_mb_sub_item = template_cart_mb_item;
+							  			var _subs_id = _subs[subs];
+							  			var _subs_array = _all_period_array[_id]['sub'][_subs_id];
+							  			var _sub_class = ' deta_boxs _sub';
+							  			var _sub_id = _subs_array['title'];
+							  			var _sub_name = _subs_array['name'];
+							  			var _sub_price = _subs_array['price'];
+
+							  			// sub pc
+					            		_template_cart_pc_sub_item = _template_cart_pc_sub_item.replace(/\[_CLASS\]/g, _sub_class);
+					            		_template_cart_pc_sub_item = _template_cart_pc_sub_item.replace(/\[_ID\]/g, _sub_id);
+					            		_template_cart_pc_sub_item = _template_cart_pc_sub_item.replace(/\[_TIME\]/g, _sub_id);
+					            		_template_cart_pc_sub_item = _template_cart_pc_sub_item.replace(/\[_NAME\]/g, _sub_name);
+					            		_template_cart_pc_sub_item = _template_cart_pc_sub_item.replace(/\[_BPRICE\]/g, '');
+					            		_template_cart_pc_sub_item = _template_cart_pc_sub_item.replace(/\[_PRICE\]/g, _currency + ' ' + _sub_price);
+					            		_template_cart_pc_sub_item = _template_cart_pc_sub_item.replace(/\[_DISCOUNT\]/g, '');
+					            		_template_cart_pc_sub_item = _template_cart_pc_sub_item.replace(/\[_SUB\]/g, '');
+
+					            		// sub mb
+					            		_template_cart_mb_sub_item = _template_cart_mb_sub_item.replace(/\[_CLASS\]/g, _sub_class);
+					            		_template_cart_mb_sub_item = _template_cart_mb_sub_item.replace(/\[_ID\]/g, _sub_id);
+					            		_template_cart_mb_sub_item = _template_cart_mb_sub_item.replace(/\[_TIME\]/g, _sub_id);
+					            		_template_cart_mb_sub_item = _template_cart_mb_sub_item.replace(/\[_NAME\]/g, _sub_name);
+					            		_template_cart_mb_sub_item = _template_cart_mb_sub_item.replace(/\[_BPRICE\]/g, '');
+					            		_template_cart_mb_sub_item = _template_cart_mb_sub_item.replace(/\[_PRICE\]/g, _currency + ' ' + _sub_price);
+					            		_template_cart_mb_sub_item = _template_cart_mb_sub_item.replace(/\[_DISCOUNT\]/g, '');
+					            		_template_cart_mb_sub_item = _template_cart_mb_sub_item.replace(/\[_SUB\]/g, '');
+
+					            		total_sub_item_pc += _template_cart_pc_sub_item;
+		            					total_sub_item_mb += _template_cart_mb_sub_item;
+
+		            					temp_cart_total += parseInt(_sub_price.replace(/,/g, '')) // add to total
+							  		}
+							  	}
+							}
+
+		            		// pc
+		            		_template_cart_pc_item = _template_cart_pc_item.replace(/\[_CLASS\]/g, _class);
+		            		_template_cart_pc_item = _template_cart_pc_item.replace(/\[_ID\]/g, _id);
+		            		_template_cart_pc_item = _template_cart_pc_item.replace(/\[_TIME\]/g, _time);
+		            		_template_cart_pc_item = _template_cart_pc_item.replace(/\[_NAME\]/g, _name);
+		            		_template_cart_pc_item = _template_cart_pc_item.replace(/\[_BPRICE\]/g, _currency + ' ' + _bprice);
+		            		_template_cart_pc_item = _template_cart_pc_item.replace(/\[_PRICE\]/g, _currency + ' ' + _price);
+		            		_template_cart_pc_item = _template_cart_pc_item.replace(/\[_DISCOUNT\]/g, _discount);
+		            		_template_cart_pc_item = _template_cart_pc_item.replace(/\[_SUB\]/g, total_sub_item_pc);
+
+		            		// mb
+		            		_template_cart_mb_item = _template_cart_mb_item.replace(/\[_CLASS\]/g, _class);
+		            		_template_cart_mb_item = _template_cart_mb_item.replace(/\[_ID\]/g, _id);
+		            		_template_cart_mb_item = _template_cart_mb_item.replace(/\[_TIME\]/g, _time);
+		            		_template_cart_mb_item = _template_cart_mb_item.replace(/\[_NAME\]/g, _name);
+		            		_template_cart_mb_item = _template_cart_mb_item.replace(/\[_BPRICE\]/g, _currency + ' ' + _bprice);
+		            		_template_cart_mb_item = _template_cart_mb_item.replace(/\[_PRICE\]/g, _currency + ' ' + _price);
+		            		_template_cart_mb_item = _template_cart_mb_item.replace(/\[_DISCOUNT\]/g, _discount);
+		            		_template_cart_mb_item = _template_cart_mb_item.replace(/\[_SUB\]/g, total_sub_item_mb);
+
+		            		total_item_pc += _template_cart_pc_item;
+		            		total_item_mb += _template_cart_mb_item;
+
+		            		temp_cart_total += parseInt(_correctPrice.replace(/,/g, '')) // add to total
+		            	}
+		            	_template_cart_outer_pc = _template_cart_outer_pc.replace(/\[_ID\]/g, pid);
+		            	_template_cart_outer_pc = _template_cart_outer_pc.replace(/\[_TIME\]/g, pid);
+		            	_template_cart_outer_pc = _template_cart_outer_pc.replace(/\[_ITEM\]/g, total_item_pc);
+		            	total_outer_pc += _template_cart_outer_pc;
+
+		            	_template_cart_outer_mb = _template_cart_outer_mb.replace(/\[_ID\]/g, pid);
+		            	_template_cart_outer_mb = _template_cart_outer_mb.replace(/\[_TIME\]/g, pid);
+		            	_template_cart_outer_mb = _template_cart_outer_mb.replace(/\[_ITEM\]/g, total_item_mb);
+		            	total_outer_mb += _template_cart_outer_mb;
+	            	}
+
+	            	// pc
+	            	pc_cart_elem.html(total_outer_pc);
+	            	// mb
+	            	mb_cart_elem.html(total_outer_mb);
+	        	}
+
+            	cart_price = temp_cart_total; // add to total
+
+            	totalPrice(); // total price
+	        }
+
+	        function accessEquipList() {
+	    		var template_equip_item = $('#__template #equip_item_template').html();
+	    		var total_equip = '';
+	    		var temp_price_total = 0
+	    		for (var obj in equip_array) {
+	    			var _template_equip_item = template_equip_item;
+	    			var _array = equip_array[obj];
+		    		var _name = _array['name'];
+		    		var _price = _array['price'];
+		    		var _num = _array['num'];
+		    		_template_equip_item = _template_equip_item.replace(/\[_NAME\]/g, _name);
+		    		_template_equip_item = _template_equip_item.replace(/\[_NUM\]/g, _num);
+        			total_equip += _template_equip_item;
+        			temp_price_total += parseInt(_price.replace(/,/g, ''))*parseInt(_num);
+	    		}
+	    		$('mn[total2]').html(total_equip);
+
+	    		equip_price = temp_price_total; // add to total
+
+	    		totalPrice(); // total price
+	    	}
+
+	        function totalPrice() {
+	        	switchChooseNo();
+	        	var total_price = parseInt(cart_price + equip_price);
+	        	var total_fee_number = 10;
+	        	var total_fee = 0;
+	        	if (total_price > 0) {
+	        		total_fee = Math.round(total_price*total_fee_number/100);
+	        	}
+
+				$('[totalprice_tn]').html(formatNumber(total_price));
+				$('[post_fee]').html(formatNumber(total_fee));
+				$('[totalprice]').html(formatNumber(total_price + total_fee));
+	        }
+
+	        function switchChooseNo() {
+	    		var cart_length = Object.keys(cart_array).length;
+	    		var equip_length = Object.keys(equip_array).length;
+	    		if (cart_length == 0) {
+	    			$('main').addClass('_chooseNo');
+	    			$('.custodyBtn').find('a').addClass('disable');
+	    		} else {
+	    			$('main').removeClass('_chooseNo');
+	    			$('.custodyBtn').find('a').removeClass('disable');
+	    		}
+	    		if (equip_length == 0) {
+	    			$('main').addClass('_noEquip');
+	    		} else {
+	    			$('main').removeClass('_noEquip');
+	    		}
+	    	}
+
+
+			function doShowInfo(elem, array) {
+				var $elem = elem;
+				var _currency = 'TWD';
+				$elem.removeClass('_haveDiscount');
+				$elem.removeClass('_onlineb');
+
+				if (array['discount'] != '') {
+					$elem.addClass('_haveDiscount');
+					$elem.find('.preiodBox .prices .rebate').html(array['discount']);
+				}
+				if (array['onlineb'] != '') $elem.addClass('_onlineb');
+				if (array['price'] != '') {
+					$elem.find('.preiodBox .prices .price').html(_currency + ' ' + array['price']);
+				} else {
+					$elem.find('.preiodBox .prices .price').html('');
+				}
+			}
+
+	        function doShowDetail(__id) {
+	        	// scroll to
+        	 	var heh = $('.orderInformation2 h2').height() + 30;
+	            $('html, body').animate({ scrollTop: $(".orderInformation2").offset().top - heh }, 800);
+
+	            // check is this id
+	            var _pid = $('.order_tiemBox').attr('data-pid');
+	        	if (__id == _pid) return;
+	        	$('.order_tiemBox').attr('data-pid', __id);
+
+	            var template_period_box = $('#__template #order_period_template').html();
+	        	var template_period_item = $('#__template #order_period_item_template').html();
+	        	var template_period_item_select = $('#__template #order_period_item_select_template').html();
+	        	var total_outer = "";
+
+				var _template_outer = template_period_box;
+				var _class1 = '';
+				var total_item = '';
+
+				for (var objs in _all_period_array) {
+					var _template_item = template_period_item;
+				  	var _cid = objs;
+				  	var obj = _all_period_array[objs];
+				  	var _class2 = "_item";
+				  	var _disable = obj['disable'];
+				  	var _input_disable = '';
+				  	var _time = obj['time'];
+				  	var _currency = 'TWD';
+				  	var _temp_selects = '';
+				  	var _temp_subs = '';
+				  	var _select_disable = 'disabled';
+
+				  	if (_disable) {
+				  		_class2 += ' _disable not_choose';
+				  		_input_disable = 'disabled';
+				  	} else {
+					  	// selects
+					  	if (typeof obj['selects'] != "undefined") {
+					  		var _selects = obj['selects'];
+				        	var _template_period_item_select = template_period_item_select;
+				        	var template_period_item_select_option = $('#__template #order_period_item_select_option_template').html();
+				        	var _div_class = ' _s1';
+				        	var _select_class = ' plan1';
+				        	var _temp_options = '';
+
+						  	for (var option in _selects) {
+						  		var _template_select_option = template_period_item_select_option;
+						  		var _option_id = option;
+						  		var _option_obj = _selects[option];
+						  		var _option_name = _option_obj['name'];
+						  		var _option_value = _option_obj['value'];
+						  		var _option_disable = (_option_obj['disable'])?'disabled':'';
+
+						  		_template_select_option = _template_select_option.replace(/\[_ID\]/g, _option_id);
+						  		_template_select_option = _template_select_option.replace(/\[_NAME\]/g, _option_name);
+						  		_template_select_option = _template_select_option.replace(/\[_VALUE\]/g, _option_value);
+						  		_template_select_option = _template_select_option.replace(/\[_option_disable\]/g, _option_disable);
+						  		_temp_options += _template_select_option;
+						  	}
+
+						  	_template_period_item_select = _template_period_item_select.replace(/\[_DCLASS\]/g, _div_class);
+						  	_template_period_item_select = _template_period_item_select.replace(/\[_SCLASS\]/g, _select_class);
+						  	_template_period_item_select = _template_period_item_select.replace(/\[_OPTION\]/g, _temp_options);
+						  	_template_period_item_select = _template_period_item_select.replace(/\[_select_disable\]/g, _select_disable);
+						  	_temp_selects += _template_period_item_select;
+					  	} else {
+					  		_class2 += ' _noSelect';
+					  	}
+
+					  	// sub
+					  	if (typeof obj['sub'] != "undefined") {
+					  		var _subs = obj['sub'];
+				        	var template_period_item_sub = $('#__template #order_period_item_sub_template').html();
+				        	for (var sub in _subs) {
+				        		var _template_period_item_sub = template_period_item_sub;
+				        		var _sub_id = sub;
+				        		var _sub_obj = _subs[sub];
+				        		var _sub_class = ' _sub_item';
+				        		var _sub_title = _sub_obj['title'];
+				        		var _sub_name = _sub_obj['name'];
+				        		var _sub_price = _sub_obj['price'];
+
+				        		_template_period_item_sub = _template_period_item_sub.replace(/\[_SUB_CLASS\]/g, _sub_class);
+				        		_template_period_item_sub = _template_period_item_sub.replace(/\[_SUB_TITLE\]/g, _sub_title);
+				        		_template_period_item_sub = _template_period_item_sub.replace(/\[_SUB_NAME\]/g, _sub_name);
+				        		_template_period_item_sub = _template_period_item_sub.replace(/\[_SUB_PRICE\]/g, _currency + ' ' +_sub_price);
+				        		_temp_subs += _template_period_item_sub
+				        	}
+					  	} else {
+					  		_class2 += ' _noSub';
+					  	}
+				  	}
+
+				  	_template_item = _template_item.replace(/\[_CLASS\]/g, _class2);
+				  	_template_item = _template_item.replace(/\[_ID\]/g, _cid);
+				  	_template_item = _template_item.replace(/\[_TIME\]/g, _time);
+				  	_template_item = _template_item.replace(/\[_input_disable\]/g, _input_disable);
+				  	_template_item = _template_item.replace(/\[_SELECT\]/g, _temp_selects);
+				  	_template_item = _template_item.replace(/\[_SUB\]/g, _temp_subs);
+        			total_item += _template_item;
+				}
+
+				_template_outer = _template_outer.replace(/\[_CLASS\]/g, _class1);
+        		_template_outer = _template_outer.replace(/\[_ITEM\]/g, total_item);
+        		total_outer += _template_outer;
+				$('#sec2').find('.order_tiemBox').html(total_outer);
+				$('.orderInformation2').removeClass('_none'); // display
+	        }
+
+
+	        // scroll event
+	        var lastScrollTop = 0;
+	        var cartElem = $('.appointment_Result');
+	        var headerHeight = $('header').height();
+	        var detectFirstTop = $('.orderContainer').offset().top;
+	        var detectTop_offset = $('#sec2').offset().top;
+	        var detectTop_position = $('#sec2').position().top;
+	        $(window).on('scroll', function() {
+	        	var st = $(this).scrollTop();
+	        	var detectCount = st+headerHeight;
+	        	var cartTop = cartElem.offset().top;
+	        	if (st > lastScrollTop) {
+					// downscroll
+					// console.log("downscroll");
+
+					if (detectCount > cartTop) {
+						if (!cartElem.hasClass('_active')) {
+							cartElem.addClass('_active');
+							cartElem.css({'top' : '65px'});
+						}
+					}
+					if (detectCount >= detectTop_offset) {
+						if (cartElem.hasClass('_active')) {
+							cartElem.removeClass('_active');
+							cartElem.css({'top' : detectTop_position + 'px'});
+						}
+					}
+		     	} else {
+		          	// upscroll
+					// console.log("upscroll");
+
+					if (detectCount < detectTop_offset && !cartElem.hasClass('_active')) {
+						cartElem.addClass('_active');
+						cartElem.css({'top' : '65px'});
+					}
+					if (detectCount < detectFirstTop && cartElem.hasClass('_active')) {
+						cartElem.removeClass('_active');
+						cartElem.css({'top' : 'unset'});
+					}
+		     	}
+	        	lastScrollTop = st; // initial
+	        });
+	    </script>
+</body>
+</html>

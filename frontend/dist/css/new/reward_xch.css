@@ -1,0 +1,94 @@
+@charset 'UTF-8';
+/* 立即兌換-失敗-點數不足 */
+.lightbox h1 {
+    width: 100%;
+    font-size: 30px;
+    line-height: normal;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.lightbox._fail h1 {
+    background-color: #d75f4f;
+}
+.lightbox._fail div.content {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    font-size: 21px;
+    line-height: normal;
+    color: #4e5059;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.lightbox._success h1 {
+    background-color: #4f6ea1;
+}
+.lightbox._success .content .txt {
+    margin: 40px 0;
+    font-size: 21px;
+    color: #4e5059;
+    text-align: center;
+    line-height: normal;
+}
+.lightbox._success .content .qrcode {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+.lightbox._success .content .exchange-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+}
+.lightbox._success .content .exchange-info>div {
+    width: calc(100% - 190px);
+    padding: 15px 0;
+    font-size: 17px;
+    line-height: normal;
+    color: #4e5059;
+}
+.lightbox._success .content .exchange-info .item {
+    width: 100%;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.lightbox._success .content .exchange-info .item ._title {
+	width: 190px;
+}
+/* end-立即兌換-失敗-點數不足 */
+
+main {
+	margin: 0;
+}
+._content._noXch .content ._xchBox,
+._content:not(._noXch) .content ._noXchBox,
+._content._noPoint .content._haveP,
+._content:not(._noPoint) .content._noP {
+	display: none !important;
+}
+@media (max-width: 980px) {
+    .lightbox h1 {
+        font-size: 21px;
+        padding: 9px;
+    }
+	.lightbox._success .content .txt {
+		text-align: left;
+        font-size: 17px;
+	}
+	.lightbox._fail div.content {
+		text-align: left;
+		padding: 0 20px;
+        font-size: 17px;
+	}
+	.lightbox._success .content .exchange-info .item ._title {
+		width: 130px;
+		min-width: 130px;
+	}
+    .lightbox._success .content .exchange-info .item {
+        font-size: 15px;
+    }
+}

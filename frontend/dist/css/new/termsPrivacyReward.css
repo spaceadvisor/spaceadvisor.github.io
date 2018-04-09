@@ -1,0 +1,71 @@
+@charset 'UTF-8';
+/** BEGIN terms\privacy\reward **/
+.termsLink {
+    font-size: 0;
+}
+.termsLink a {
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    text-align: center;
+    padding: 9px 30px;
+    font-size: 17px;
+    line-height: normal;
+    font-weight: normal;
+    color: #4e5059;
+    border-bottom: 3px solid #d5d6d4;
+}
+.termsLink a:hover,
+.termsLink a.active {
+    font-weight: bold;
+    color: #4f6da2;
+    border-bottom: 3px solid #4f6da2;
+}
+
+.tremsContent {
+    font-size: 1rem;
+    line-height: 27px;
+    color: #4c5059;
+	padding: 0;
+}
+.tremsContent p,
+.tremsContent li {
+	font-size: 15px;
+}
+.tremsContent p {
+    margin-bottom: 35px;
+}
+.tremsContent p:last-child {
+    margin-bottom: 0;
+}
+.tremsContent h2,
+.tremsContent h3 {
+	font-size: 17px;
+	font-weight: bold;
+	text-align: left;
+}
+.tremsContent ol {
+    padding-left: 23px;
+    list-style: decimal;
+}
+.tremsContent li {
+    margin-bottom: 9px;
+}
+
+@media only screen and (max-width: 980px) {
+	.termsLink {
+		margin: 40px auto 0;
+		width: 90%;
+		padding: 0;
+	}
+	.termsLink a {
+		width: 33%;
+		padding: 5px 9px;
+    	font-size: 15px;
+	}
+	.tremsContent {
+		margin: 40px auto 20px auto;
+		padding: 0;
+	}
+}
+/** END terms\privacy\reward **/

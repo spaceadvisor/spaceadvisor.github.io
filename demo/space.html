@@ -1,0 +1,1202 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content=" " />
+		<meta name="description" content=" ">
+		<meta name="author" content="SpaceAdvisor">
+		<meta name="copyright" content="本網頁著作SpaceAdvisor所有">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link href="dist/images/icon.ico" type="image/x-icon" rel="shortcut icon"/>
+		<title>場地頁</title>
+		<link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/jquery.mmenu.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/slick.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/slick-theme.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/colorbox.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/main.css" rel="stylesheet" type="text/css" media=""/>
+
+		<!-- 套件 -->
+		<link rel="stylesheet" type="text/css" href="dist/js/gl/styles/glDatePicker.darkneon.css">
+		<link rel="stylesheet" type="text/css" href="dist/js/gl/styles/glDatePicker.default.css">
+		<link rel="stylesheet" type="text/css" href="dist/js/gl/styles/glDatePicker.flatwhite.css">
+
+		<!-- STYLES -->
+		<link href="dist/css/new/basic.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/new/basic_template.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/new/space.css" rel="stylesheet" type="text/css" media=""/>
+	</head>
+	<body>
+		<div id="wrapper" class="meeting space">
+			<header class="cf">
+				<div class="content cf">
+					<a href="home.html" class="logo">
+						<img src="dist/svg/logo.svg">
+					</a>
+					<section class="__pc">
+						<a href="" class="activity">找活動</a>
+						<section class="_notLogin ">
+							<div class="login_info">
+								<a class="signup" href="signup.html">註冊</a>/<a class="signin" href="signin.html">登入</a>
+							</div>
+						</section>
+						<section class="_isLogin">
+							<div class="memberClick">
+								<a href="" class="member" style="background-image:url(dist/images/avator.jpg)"></a>
+								<div class="memberMenu">
+									<ul>
+										<li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
+										<li class="collect"><a href="javascript:;">收藏清單</a></li>
+										<li class="compare"><a href="javascript:;">比較清單<b>2</b></a></li>
+										<li class="orders"><a href="javascript:;">訂單管理</a></li>
+										<li class="points"><a href="javascript:;">點數管理</a></li>
+										<li class="faq"><a href="faq.html">常見問題</a></li>
+										<li class="logout"><a href="javascript:;">登出</a></li>
+									</ul>
+								</div>
+							</div>
+							<a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>收件夾<b>1</b></a>
+							<a href="" class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>購物車(<b>0</b>)</a>
+						</section>
+						<nav>
+							<ul>
+								<li class="about_us"><a href="about_us.html">關於我們</a></li>
+								<li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+								<li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+							</ul>
+						</nav>
+						<select name="select" id="select">
+							<option>中文</option>
+							<option>English</option>
+						</select>
+					</section>
+					<section class="__mb">
+						<a href="#menu" data-ajax="false" class="menu-mobile"><i class="fa fa-bars" aria-hidden="true"></i></a>
+						<div class="search">
+							<i id="search" class="fa fa-search" aria-hidden="true"></i>
+							<div class="search-box"><input type="text" name="textfield" id="textfield" placeholder="請輸入關鍵字" /><a href="javscript:;"><span class="btn btn-c-3 btn-sm">搜尋</span></a></div>
+						</div>
+					</section>
+				</div>
+				<section class="__mb">
+					<nav id="menu">
+						<ul>
+							<section class="_notLogin">
+								<li class="member">
+									<a class="signup" href="signup.html">註冊</a><a class="signin" href="signin.html">登入</a>
+								</li>
+								<li class="faq"><a href="faq.html">常見問題</a></li>
+								<li class="about_us"><a href="about_us.html">關於我們</a></li>
+								<li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+								<li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+								<li class="language">
+									<select name="select" id="select">
+										<option>中文</option>
+										<option>English</option>
+									</select>
+								</li>
+								<li class="activity"><a href="">找活動</a></li>
+							</section>
+							<section class="_isLogin">
+								<li class="member">
+									<a href="" class="pic" style="background-image:url(dist/images/avator.jpg)"></a><p>Hyun</p>
+									<a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i><b>1</b></a>
+								</li>
+								<li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
+								<li class="collect"><a href="javascript:;">收藏清單</a></li>
+								<li class="compare"><a href="javascript:;">比較清單 <b>2</b></a></li>
+								<li class="orders"><a href="javascript:;">訂單管理</a></li>
+								<li class="points"><a href="javascript:;">點數管理</a></li>
+								<li class="faq"><a href="faq.html">常見問題</a></li>
+								<li class="about_us"><a href="about_us.html">關於我們</a></li>
+								<li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+								<li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+								<li class="logout"><a href="">登出</a></li>
+								<li class="language">
+									<select name="select" id="select">
+										<option>中文</option>
+										<option>English</option>
+									</select>
+								</li>
+								<li class="activity"><a href="">找活動</a></li>
+							</section>
+						</ul>
+					</nav>
+				</section>
+			</header>
+
+
+			<!--main-->
+			<main>
+				<!-- breadcrumb -->
+				<div class="breadcrumb">
+					<ul>
+						<li><a href="">首頁</a></li>
+						<li><a href="">場地</a></li>
+						<li><a href="">台北藝文推廣處</a></li>
+						<li><a href="">三樓會議室</a></li>
+					</ul>
+				</div>
+				<!-- banner -->
+				<div class="banner">
+					<div class="banner-box">
+						<div class="panorama" style="background-image:url(dist/images/desk_banner_01.jpg)">
+							<a href="javascript:;"><img src="dist/images/icon_meeting04.png" alt="" title=""></a>
+							<iframe data-src="http://www.3dspace.com.tw/~focus/0013-AAB0007/"></iframe>
+						</div>
+						<!-- /panorama -->
+						<div class="pic">
+							<div class="picBg" style="background-image:url(dist/images/banner03.jpg);">
+								<div class="picBox">
+									<!-- big photo -->
+									<div class="slider-for">
+										<div class="item"><img src="dist/images/banner01.jpg"/></div>
+										<div class="item"><img src="dist/images/banner02.jpg"/></div>
+										<div class="item"><img src="dist/images/banner03.jpg"/></div>
+									</div>
+									<div class="banner_show">
+										<!-- small photo -->
+										<div class="slider-nav">
+											<div class="item"><img src="dist/images/banner01.jpg"/></div>
+											<div class="item"><img src="dist/images/banner02.jpg"/></div>
+											<div class="item"><img src="dist/images/banner03.jpg"/></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /pic -->
+						<div class="video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/m5-KNWdVVc0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<!-- /video -->
+					</div>
+					<div class="banner-nav">
+						<div>
+							<a class="panorama this">720環景</a>
+							<a class="pic">更多照片</a>
+							<a class="video">活動影片</a>
+						</div>
+					</div>
+				</div>
+				<!-- /banner -->
+				<!-- 固定錨點 -->
+				<div class="anchor desk cf">
+					<div class="nav">
+						<ul class="content">
+							<li><a class="area01">概述</a></li>
+							<li><a class="area02">食宿</a></li>
+							<li><a class="area03">價格方案</a></li>
+							<li><a class="area04">評論</a></li>
+							<li><a class="area05">位置</a></li>
+						</ul>
+					</div>
+					<div class="day-plan">
+						<p id="cart" class="price"><span>TWD <b>6,900</b> / 時段</span></p>
+						<p class="name">半日會議專案</p>
+						<div class="layui-inline" id="test-n1">
+							<div class="detaMark"></div>
+						</div>
+						<a href="phone_verify.html" class="next fancybox fancybox.iframe p_verify"><!-- class中有fancybox 則會開啟手機驗證跳窗 -->
+						<!-- <a href="javascript:;" class="next"> -->
+							<span class="btn btn-c-3 btn-m">前往預約<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+						</a>
+						<div class="_others">
+							<div class="heart"><i class="heart"></i><span>加入收藏清單</span></div>
+							<div class="add"><i class="add"></i><span>比較場地</span></div>
+						</div>
+					</div>
+					<!-- /day-plan -->
+				</div>
+				<!-- /anchor -->
+				<div class="anchor anchor-mobile mobile">
+					<div class="nav">
+						<ul>
+							<li><a class="area01">概述</a></li>
+							<li><a class="area02">食宿</a></li>
+							<li><a class="area04">評論</a></li>
+							<li><a class="area05">位置</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 概述 -->
+				<div class="outline content">
+					<div class="content-720">
+						<span class="brand">
+							<div class="_spaceAvator"><a href=""><img src="dist/images/brand_pic01.png" alt="" title=""></a></div>
+							<div class="_spaceCall">
+								<p class="name"><a href="">HYATT君悅</a></p>
+								<p class="title">藝文推廣處藝文大樓 - 三樓會議室藝文推廣</p>
+							</div>
+						</span>
+						<p class="no">場地編號:#PN00798</p>
+						<div class="star">
+							<span class="_star _star_1h"></span>
+							<b>150 則評論</b>
+						</div>
+						<div class="three">
+							<span class="_people"><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+							<span class="_location"><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+							<span class="_type"><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+							<span class="_high">高度：<b>3m</b></span>
+							<span class="_area">面積：<b>40m<sup>2</sup></b></span>
+						</div>
+						<div class="share">
+							<a href="" class="fb"></a>
+							<a href="" class="line"></a>
+						</div>
+						<div class="link mobile">
+							<div class="heart"><i class="heart"></i><span>加入收藏清單</span></div>
+							<div class="add"><i class="add"></i><span>比較場地</span></div>
+						</div>
+					</div>
+				</div>
+				<!-- /outline -->
+				<!-- 簡介 -->
+				<div class="about content">
+					<div class="content-720">
+						<div class="title-box">場地簡介</div>
+						<div class="box needmore">
+							<div class="add">距離火車站自由之丘10分鐘的步行路程，田園調布距離火車站有9分鐘的步行路程，由於臉對臉的帶計數器的廚房了吧，還可以利用作為開張的酒吧和咖啡館節日的審判距離火車站自由之丘10分鐘的步行路程，田園調布距離火車站有9分鐘的步行路程，由於臉對臉的帶計數器的廚房了吧，還可以利用作為開張的酒吧和咖啡館節日的審判
+							</div>
+							<a class="more">瞭解更多<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /about -->
+				<!-- 設備 -->
+				<div class="device content">
+					<div class="content-720">
+						<div class="title-box">場地設備</div>
+						<div class="box">
+							<span>實際附贈設備需依方案內含的項目為主。</span>
+							<ul>
+								<li>設施1</li>
+								<li>設施2</li>
+								<li>設施3設施3設施3設施3</li>
+								<li>設施4</li>
+								<li>設施5</li>
+								<li>設施6</li>
+								<li>設施7</li>
+								<li>設施8</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /device -->
+				<!-- 食宿 -->
+				<div class="repast content">
+					<div class="content-720">
+						<div class="title-box">餐飲說明</div>
+						<div class="box needmore">
+							<div class="add needmore">會議所需要之任何餐飲限由本會館提供，不可攜帶外食 本會館提供商務自助餐1人, $1880 商務自助餐1人, $1880會議所需要之任何餐飲限由本會館提供，不可攜帶外食 本會館提供商務自助餐1人, $1880 商務自助餐1人, $1880會議所需要之任何餐飲限由本會館提供，不可攜帶外食 本會館提供商務自助餐1人, $1880 商務自助餐1人, $1880會議所需要之任何餐飲限由本會館提供，不可攜帶外食 本會館提供商務自助餐1人, $1880 商務自助餐1人, $1880</div>
+							<a class="more">瞭解更多<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /repast -->
+				<!-- 價格方案 -->
+				<div class="price-plan">
+					<div class="content">
+						<div class="content-720 ">
+							<div class="title-box">價格方案</div>
+							<div class="box">
+								<ul>
+									<p class="name">商務會議</p>
+									<li>
+										<div class="_pp-info">
+											<p class="program"><span>場地租金</span><i class="fa fa-angle-down" aria-hidden="true"></i></p>
+											<p class="price"><b>TWD<b>17,800</b></b>/ 時段起</p>
+											<a class="select btn btn-c-2 btn-s"></a>
+										</div>
+										<div class="text">
+											<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+											<a href="space_plan.html">查看詳情</a>
+										</div>
+									</li>
+									<li class="active">
+										<div class="_pp-info">
+											<p class="program"><span>半日會議專案</span><i class="fa fa-angle-down" aria-hidden="true"></i></p>
+											<p class="price"><b>TWD<b>17,800</b></b>/ 時段起</p>
+											<a class="select btn btn-c-2 btn-s"></a>
+										</div>
+										<div class="text">
+											<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+											<a href="space_plan.html">查看詳情</a>
+										</div>
+									</li>
+									<li>
+										<div class="_pp-info">
+											<p class="program"><span>全日會議專案</span><i class="fa fa-angle-down" aria-hidden="true"></i></p>
+											<p class="price"><b>TWD<b>17,800</b></b>/ 時段起</p>
+											<a class="select btn btn-c-2 btn-s"></a>
+										</div>
+										<div class="text">
+											<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+											<a href="space_plan.html">查看詳情</a>
+										</div>
+									</li>
+								</ul>
+								<ul>
+									<p class="name">餐飲宴會</p>
+									<li>
+										<div class="_pp-info">
+											<p class="program"><span>餐飲低消</span><i class="fa fa-angle-down" aria-hidden="true"></i></p>
+											<p class="price"><b>TWD<b>17,800</b></b>/ 時段起</p>
+											<a class="select btn btn-c-2 btn-s"></a>
+										</div>
+										<div class="text">
+											<p>濃情 婚宴方案：一桌30000，每桌10人，最低桌數30桌 125人/一桌30000，每桌10人，最低桌數30桌。每桌消費</p>
+											<a href="space_plan.html">查看詳情</a>
+										</div>
+									</li>
+									<li>
+										<div class="_pp-info">
+											<p class="program"><span>尾牙春酒方案</span><i class="fa fa-angle-down" aria-hidden="true"></i></p>
+											<p class="price"><b>TWD<b>17,800</b></b>/ 時段起</p>
+											<a class="select btn btn-c-2 btn-s"></a>
+										</div>
+										<div class="text">
+											<p>甜蜜 婚宴方案：一桌90000，每桌10人，最低桌數30桌 22人。一桌90000，每桌10人，最低桌數30桌。每桌消費</p>
+											<a href="space_plan.html">查看詳情</a>
+										</div>
+									</li>
+									<li>
+										<div class="_pp-info">
+											<p class="program"><span>尾牙春酒方案</span><i class="fa fa-angle-down" aria-hidden="true"></i></p>
+											<p class="price"><b>TWD<b>17,800</b></b>/ 時段起</p>
+											<a class="select btn btn-c-2 btn-s"></a>
+										</div>
+										<div class="text">
+											<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+											<a href="space_plan.html">查看詳情</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /price-plan -->
+				<!-- 超值加購 -->
+				<div class="purchase about content">
+					<div class="content-720">
+						<div class="title-box">超值加購</div>
+						<div class="box needmore">
+							<div class="add">超值加價購項目可於訂單成立後，至訂單頁面加購。詳細規則請參閱加價購取消規則。麥克風 x 1$1880音響/喇叭 x 1超值加價購項目可於訂單成立後，至訂單頁面加購。詳細規則請參閱加價購超值加價購項目可於訂單成立後，至訂單頁面加購。詳細規則請參閱加價購取消規則。麥克風 x 1$1880音響/喇叭 x 1超值加價購項目可於訂單成立後，至訂單頁面加購。詳細規則請參閱加價購超值加價購項目可於訂單成立後，至訂單頁面加購。詳細規則請參閱加價購取消規則。麥克風 x 1$1880音響/喇叭 x 1超值加價購項目可於訂單成立後，至訂單頁面加購。詳細規則請參閱加價購
+							</div>
+							<a class="more">瞭解更多<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /about -->
+				<!-- 場地排列規劃 -->
+				<div class="array content">
+					<div class="content-720">
+						<div class="title-box">場地排列規劃</div>
+						<div class="box">
+							<ul>
+								<li>
+									<a href="#aaa" class="sing inline">
+										<img src="dist/images/meeting_array01.png" alt="" title="顯示平面圖">
+										<p>圓桌</p>
+										<p>100人</p>
+									</a>
+								</li>
+								<li>
+									<a href="#aaa" class="sing inline">
+										<img src="dist/images/meeting_array02.png" alt="" title="顯示平面圖">
+										<p>自助餐式</p>
+										<p>100人</p>
+									</a>
+								</li>
+								<li>
+									<a href="#aaa" class="sing inline">
+										<img src="dist/images/meeting_array01.png" alt="" title="顯示平面圖">
+										<p>雞尾酒式</p>
+										<p>100人</p>
+									</a>
+								</li>
+								<li>
+									<a href="#aaa" class="sing inline">
+										<img src="dist/images/meeting_array02.png" alt="" title="顯示平面圖">
+										<p>劇院式</p>
+										<p>100人</p>
+									</a>
+								</li>
+								<li>
+									<a href="#aaa" class="sing inline">
+										<img src="dist/images/meeting_array01.png" alt="" title="顯示平面圖">
+										<p>U字型</p>
+										<p>100人</p>
+									</a>
+								</li>
+								<li>
+									<a href="#aaa" class="sing inline">
+										<img src="dist/images/meeting_array02.png" alt="" title="顯示平面圖">
+										<p>分組型</p>
+										<p>100人</p>
+									</a>
+								</li>
+								<li>
+									<a href="#aaa" class="sing inline">
+										<img src="dist/images/meeting_array01.png" alt="" title="顯示平面圖">
+										<p>教室型</p>
+										<p>100人</p>
+									</a>
+								</li>
+								<li>
+									<a href="#aaa" class="sing inline">
+										<img src="dist/images/meeting_array02.png" alt="" title="顯示平面圖">
+										<p>口字型</p>
+										<p>100人</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- This contains the hidden content for inline calls -->
+						<div style="display:none">
+							<div class="inline_content" id="aaa">
+								<img src="dist/images/meeting_array03.jpg" alt="" title="">
+							</div>
+							<!--inline_content-->
+						</div>
+						<!-- This contains the hidden content for inline calls -->
+					</div>
+				</div>
+				<!-- /array -->
+				<!-- 取消條款 -->
+				<div class="clause">
+					<div class="content">
+						<div class="content-720">
+							<div class="title-box">取消條款<i>(會議室)</i></div>
+							<div class="box needmore">
+								<div class="add">若非保證住房，於入住日的 11天之前取消訂房、更改飯店或更改日期，均收取手續費NT$500，餘額可全額退還。飯店異動後，若有任何價差，須補足價差；已開立住宿券或於入住前的十天內取消訂房、更改飯店或更改日期，一律收取第一日房價的100%，剩餘的金額可全額退還；旺季或展覽全改本公司客服人員。
+								</div>
+								<a class="more">瞭解更多<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /clause -->
+				<!-- 評論 -->
+				<div class="comment content">
+					<div class="content-720">
+						<div class="star">
+							<p>15 則評論<span class="_star _star_3h"></span>
+								<a class="more mobile">詳細評論<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							</p>
+							<ul>
+								<li>
+									<p>交通便利</p>
+									<span class="_star _star_3h"></span>
+								</li>
+								<li>
+									<p>餐飲品質</p>
+									<span class="_star _star_3h"></span>
+								</li>
+								<li>
+									<p>硬體設施</p>
+									<span class="_star _star_3h"></span>
+								</li>
+								<li>
+									<p>住宿品質</p>
+									<span class="_star _star_3h"></span>
+								</li>
+								<li>
+									<p>整體空間</p>
+									<span class="_star _star_3h"></span>
+								</li>
+								<li>
+									<p>CP值</p>
+									<span class="_star _star_3h"></span>
+								</li>
+							</ul>
+						</div>
+						<!-- /star -->
+						<div class="comment-list">
+							<ul>
+								<li>
+									<span class="pic"><img src="dist/images/avator.jpg" alt="" title=""></span>
+									<div class="other">
+										<span class="left">
+											<p>Hyun</p>
+											<time>2017年2月</time>
+										</span>
+										<span class="star"><span class="_star _star_3h"></span></span>
+									</div>
+									<!-- /other -->
+									<p class="text">感謝您這段時間，我會借給槌之子空間！一個非常美麗的地方可能是設施，我們能夠花沒有任何不便舒適。我們被教導，如精心如何使用人對老闆很溫柔。我想用的產品，當你有機會。再次，非常感謝你。</p>
+								</li>
+								<li>
+									<span class="pic"></span>
+									<div class="other">
+										<span class="left">
+											<p>Hyun</p>
+											<time>2017年2月</time>
+										</span>
+										<span class="star"><span class="_star _star_3h"></span></span>
+									</div>
+									<!-- /other -->
+									<p class="text">感謝您這段時間，我會借給槌之子空間！一個非常美麗的地方可能是設施，我們能夠花沒有任何不便舒適。我們被教導，如精心如何使用人對老闆很溫柔。我想用的產品，當你有機會。再次，非常感謝你。</p>
+								</li>
+								<li>
+									<span class="pic"></span>
+									<div class="other">
+										<span class="left">
+											<p>Hyun</p>
+											<time>2017年2月</time>
+										</span>
+										<span class="star"><span class="_star _star_3h"></span></span>
+									</div>
+									<!-- /other -->
+									<p class="text">感謝您這段時間，我會借給槌之子空間！一個非常美麗的地方可能是設施，我們能夠花沒有任何不便舒適。我們被教導，如精心如何使用人對老闆很溫柔。我想用的產品，當你有機會。再次，非常感謝你。</p>
+								</li>
+								<li>
+									<span class="pic"></span>
+									<div class="other">
+										<span class="left">
+											<p>Hyun</p>
+											<time>2017年2月</time>
+										</span>
+										<span class="star"><span class="_star _star_3h"></span></span>
+									</div>
+									<!-- /other -->
+									<p class="text">感謝您這段時間，我會借給槌之子空間！一個非常美麗的地方可能是設施，我們能夠花沒有任何不便舒適。我們被教導，如精心如何使用人對老闆很溫柔。我想用的產品，當你有機會。再次，非常感謝你。</p>
+								</li>
+							</ul>
+						</div>
+						<!-- /comment-list -->
+						<div class="something">
+							<p>留下您的評論，立即賺取星巴克大杯那堤兌換點數！</p>
+							<a href="" class="next btn btn-c-3 btn-m">評論</a>
+						</div>
+						<div class="pagebox">
+							<dl class="page">
+								<dt><a href="#" class="no"> < </a></dt>
+								<dd><a href="#" class="mark">1</a></dd>
+								<dd><a href="#">2</a></dd>
+								<dd><a href="#">3</a></dd>
+								<dd><a href="#">4</a></dd>
+								<dd><a href="#">5</a></dd>
+								<dt><a href="#"> > </a></dt>
+							</dl>
+						</div>
+						<!-- /pagebox -->
+					</div>
+					<!-- /content-720 -->
+				</div>
+				<!-- /comment -->
+				<!-- 位置 -->
+				<div class="position" id="mapPosition">
+					<div class="content">
+						<p class="title">位置</p>
+						<p>10554臺北市八德路三段25號</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14455.293863047751!2d121.51987149999998!3d25.07397185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a96a2f4261a1%3A0x64e39f190506b4b3!2z6Ie65YyX5biC5a2U5buf!5e0!3m2!1szh-TW!2stw!4v1510546297500" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<!-- /position -->
+				<!-- 類似場地 -->
+				<div class="site-list content _boxStyle">
+					<h2>類似場地</h2>
+					<div class="site-box slider">
+						<div class="site _noFlag">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)1</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site _noFlag">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)2</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site _noFlag">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)3</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site _noFlag">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)4</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site _noFlag">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)5</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+						<div class="site _noFlag">
+							<div class="all">
+								<a href="">
+									<span class="pic">
+										<img src="dist/images/site_list_pic01.png" alt="" title="">
+										<img src="dist/images/icon_ranking.png" class="flag">
+									</span>
+									<div class="text">
+										<p class="title">藝文推廣處-藝文大樓三樓(五)6</p>
+										<div class="info_1">
+											<span><i class="fa fa-user" aria-hidden="true"></i>8000人</span>
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i>台北市信義區</span>
+											<span><i class="fa fa-comment" aria-hidden="true"></i>政府機關</span>
+										</div>
+										<div class="info_2">
+											<span class="star"><span class="_star _star_3h"></span><b>150 則評價</b></span>
+											<span class="price">TWD <b>30,000</b>/小時</span>
+										</div>
+									</div>
+								</a>
+								<i class="heart"></i>
+								<i class="add"></i>
+							</div>
+						</div>
+					</div>
+					<!-- /site-box -->
+					<a href="" class="more">更多精選場地<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+				</div>
+				<!-- /site-list -->
+				<!-- 手機用價格方案 -->
+				<div class="mobile-plan mobile">
+					<div class="plan-box">
+						<p class="title">價格方案</p>
+						<div class="scroll">
+							<ul>
+								<p class="name">商務會議</p>
+								<li>
+									<div>
+										<label>
+											<input type="radio" name="radio" id="radio" value="radio" />
+											<p class="program">場地租金</p>
+										</label>
+										<p class="price"><b>WD<b>17,800</b></b>/ 時段起</p>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</div>
+									<div class="text">
+										<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+										<a href="space_plan.html">查看詳情</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<label>
+											<input type="radio" name="radio" id="radio" value="radio" />
+											<p class="program">場地租金2</p>
+										</label>
+										<p class="price"><b>WD<b>17,800</b></b>/ 時段起</p>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</div>
+									<div class="text">
+										<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+										<a href="space_plan.html">查看詳情</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<label>
+											<input type="radio" name="radio" id="radio" value="radio" />
+											<p class="program">全日會議專案</p>
+										</label>
+										<p class="price"><b>WD<b>17,800</b></b>/ 時段起</p>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</div>
+									<div class="text">
+										<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+										<a href="space_plan.html">查看詳情</a>
+									</div>
+								</li>
+							</ul>
+							<ul>
+								<p class="name">餐飲宴會</p>
+								<li>
+									<div>
+										<label>
+											<input type="radio" name="radio" id="radio" value="radio" />
+											<p class="program">場地租金</p>
+										</label>
+										<p class="price"><b>WD<b>17,800</b></b>/ 時段起</p>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</div>
+									<div class="text">
+										<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+										<a href="space_plan.html">查看詳情</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<label>
+											<input type="radio" name="radio" id="radio" value="radio" />
+											<p class="program">場地租金2</p>
+										</label>
+										<p class="price"><b>WD<b>17,800</b></b>/ 時段起</p>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</div>
+									<div class="text">
+										<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+										<a href="space_plan.html">查看詳情</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<label>
+											<input type="radio" name="radio" id="radio" value="radio" />
+											<p class="program">全日會議專案</p>
+										</label>
+										<p class="price"><b>WD<b>17,800</b></b>/ 時段起</p>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</div>
+									<div class="text">
+										<p>提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。提供茶點，投影機。</p>
+										<a href="space_plan.html">查看詳情</a>
+									</div>
+								</li>
+							</ul>
+							<div class="layui-inline" id="test-n2">
+								<div class="detaMark"></div>
+							</div>
+						</div>
+						<!-- /scroll -->
+					</div>
+					<!-- /plan-box -->
+					<div class="_planBtn">
+						<a class="first">
+							<div>
+								<p>方案</p>
+								<p>TWD 0 / 時段</p>
+							</div>
+							<i class="btn btn-c-2 btn-s">選擇方案</i>
+						</a>
+						<a href="phone_verify.html" class="reservation fancybox fancybox.iframe p_verify"><!-- class中有fancybox 則會開啟手機驗證跳窗 -->
+						<!-- <a href="javascript:;" class="reservation"> -->
+							<span class="btn btn-c-3 btn-m">前往預約<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+						</a>
+					</div>
+				</div>
+				<!-- mobile-plan -->
+			</main>
+			<!--/main-->
+
+
+			<!-- top -->
+			<a href="javascript:;" class="gotop"></a>
+			<footer class="cf search-mobile-hide">
+				<div class="top desk">
+					<ul>
+						<li>
+							<p>SpaceAdvisor</p>
+							<a href="">關於我們</a>
+							<a href="">平台優勢</a>
+							<a href="">使用說明</a>
+							<a href="">人才招募</a>
+						</li>
+						<li>
+							<p>客服中心</p>
+							<a href="">常見問題</a>
+							<a href="">聯絡我們</a>
+							<a href="">服務政策</a>
+							<a href="">隱私權條款</a>
+						</li>
+						<li>
+							<p>活動類型</p>
+							<a href="">企業培訓</a>
+							<a href="">記者會 發表會</a>
+							<a href="">商務宴客</a>
+							<a href="">企業聚餐</a>
+							<a href="">主題派對</a>
+							<a href="">婚禮 春酒 晚會</a>
+						</li>
+						<li>
+							<p>場地類型</p>
+							<a href="">星級飯店</a>
+							<a href="">藝文場地</a>
+							<a href="">會議中心</a>
+							<a href="">展覽中心</a>
+							<a href="">餐飲空間</a>
+							<a href="">公家機構</a>
+							<a href="">戶外場地</a>
+						</li>
+						<li>
+							<p>合作夥伴</p>
+							<a href="">合作優勢</a>
+							<a href="">立即刊登場地</a>
+							<a href="">企業合作</a>
+							<a href="">經銷商計畫</a>
+						</li>
+					</ul>
+				</div>
+				<div class="bottom">
+					<ul>
+						<li>
+							<p>台北市信義區信義路5段7號24F D1 (101大樓)</p>
+							<p>© SpaceAdvisor 2017 All Rights Reserved</p>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="dist/images/icon_fb.png" alt="" title=""></a>
+							<a href="" target="_blank"><img src="dist/images/icon_line.png" alt="" title=""></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<!-- /#wrapper -->
+
+		<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="dist/js/main.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript" src="dist/js/colorbox.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.colorbox.js"></script>
+		<script type="text/javascript" src="dist/js/imgLiquid.js"></script>
+		<script type="text/javascript" src="dist/js/slick.js"></script>
+		<script type="text/javascript">
+			//精選場地
+			$(function(){
+				$('.site-box').slick({
+					dots: true,
+					// infinite: false,
+					speed: 300,
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					autoplay: true,
+					autoplaySpeed: 50000,
+					responsive: [
+						{
+							breakpoint: 1250,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 2
+							}
+						},
+						{
+							breakpoint: 880,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+			});
+			$('.slider-for').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				fade: true,
+				asNavFor: '.slider-nav',
+				autoplay: false
+			});
+			$('.slider-nav').slick({
+				arrows: false,
+				slidesToShow:9,
+				slidesToScroll: 1,
+				asNavFor: '.slider-for',
+				dots: false,
+				focusOnSelect: true,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 1,
+						}
+					}
+				]
+			});
+			$('.slider-nav .item,.slider-for .item').imgLiquid();
+		</script>
+		<script type="text/javascript">
+			function isThis(el) {
+				for (var i = 1; i <= 5; i++){
+					$('.anchor > .content > ul.dot > li > a.area0'+i).removeClass('this');
+				}
+				$(el).addClass('this');
+			}
+			$(function(){
+				$('.area01').click(function(){
+					$('html,body').animate({scrollTop:$('.outline').offset().top - 85 + 'px'}, 600);
+					isThis(this);
+				});
+				$('.area02').click(function(){
+					$('html,body').animate({scrollTop:$('.repast').offset().top - 85 + 'px'}, 600);
+					isThis(this);
+				});
+				$('.area03').click(function(){
+					$('html,body').animate({scrollTop:$('.price-plan').offset().top - 120 + 'px'}, 600);
+					isThis(this);
+				});
+				$('.area04').click(function(){
+					$('html,body').animate({scrollTop:$('.comment').offset().top - 110 + 'px'}, 600);
+					isThis(this);
+				});
+				$('.area05').click(function(){
+					$('html,body').animate({scrollTop:$('.position').offset().top - 80 + 'px'}, 600);
+					isThis(this);
+				});
+			})
+		</script>
+		<script src="dist/js/scrollmagic/ScrollMagic.js"></script>
+		<script src="dist/js/scrollmagic/plugins/debug.addIndicators.js"></script>
+		<script type="text/javascript" src="dist/js/laydate/laydate.js"></script>
+		<script>
+			//pc版小日曆
+			laydate.render({
+				elem: '#test-n1'
+				,position: 'static'
+					//日期有效範圍限定在：過去一周
+				,min: '2017-12-4'
+				,max: '2017-12-26'
+				,showBottom: false
+			});
+
+			//mobile版小日曆
+			laydate.render({
+				elem: '#test-n2'
+				,position: 'static'
+				,min: '2017-12-4'
+				,max: '2017-12-26'
+				,showBottom: false
+			});
+
+			//720環景show
+			$('.panorama a').on('click',function(){
+				var panoramaElem = $(this).parents('.panorama');
+				panoramaElem.find('iframe').attr('src', panoramaElem.find('iframe').attr('data-src'))
+				panoramaElem.css('background-image', 'none');
+				$(this).hide();
+			});
+
+			$(function() {
+				/*----------------------------------------------------------------------------*\
+						scrollmagic
+				\*----------------------------------------------------------------------------*/
+				var controller = new ScrollMagic.Controller({globalSceneOptions:{triggerHook: "0.16"}});
+				sec1H = $(".outline").outerHeight();
+				sec2H = $(".about").outerHeight();
+				sec3H = $(".device").outerHeight();
+				sec4H = $(".repast").outerHeight();
+				sec5H = $(".price-plan").outerHeight();
+				sec6H = $(".purchase").outerHeight();
+				sec7H = $(".array").outerHeight();
+				sec8H = $(".clause").outerHeight();
+				sec9H = $(".comment").outerHeight();
+				sec10H = $(".position").outerHeight();
+
+				new ScrollMagic.Scene({triggerElement: ".outline", duration: sec1H})
+								.setClassToggle(".area01", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)//顯示區域數據
+								.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: ".about", duration: sec2H})
+								.setClassToggle(".area01", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)//顯示區域數據
+								.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: ".device", duration: sec3H})
+								.setClassToggle(".area01", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)//顯示區域數據
+								.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: ".repast", duration: sec4H})
+								.setClassToggle(".area02", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)
+								.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: ".price-plan", duration: sec5H})
+								.setClassToggle(".area03", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)
+								.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: ".purchase", duration: sec6H})
+								.setClassToggle(".area03", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)//顯示區域數據
+								.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: ".array", duration: sec7H})
+								.setClassToggle(".area03", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)//顯示區域數據
+								.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: ".clause", duration: sec8H})
+								.setClassToggle(".area03", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)//顯示區域數據
+								.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: ".comment", duration: sec9H})
+								.setClassToggle(".area04", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)
+								.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: ".position", duration: sec10H})
+								.setClassToggle(".area05", "this") // add class toggle
+								// .addIndicators() // add indicators (requires plugin)
+								.addTo(controller);
+			});
+		</script>
+		<script>
+			var _headerH, _breadcrumbH, _bannerH = 0;
+			_headerH = $('header.cf').outerHeight();
+			_breadcrumbH = $('main .breadcrumb').outerHeight();
+			_bannerH = $('.banner').outerHeight();
+			var _allH = parseInt(_headerH+_breadcrumbH+_bannerH);
+
+			$(function(){
+				// 先取得 #cart 及其 top 值
+				var $cart = $('.anchor'),
+					_top = $cart.offset().top;
+				var mapPosition = document.getElementById('mapPosition').offsetTop - 710; //頭部高度+月曆高度
+				// var mapPosition = document.getElementById('mapPosition').offsetTop - _allH+500; //頭部高度+月曆高度
+				var $calendar = $('.day-plan');
+				var $nav = $('.nav');
+
+				// console.log(mapPosition);
+				// 當網頁捲軸捲動時
+				var $win = $(window).scroll(function(){
+					// 如果現在的 scrollTop 大於原本 #cart 的 top 時
+					if($win.scrollTop() >= _top && $win.scrollTop() <= mapPosition){
+						// 如果 $cart 的座標系統不是 fixed 的話
+						if($cart.css('position')!='fixed'){
+							// 設定 #cart 的座標系統為 fixed
+							$cart.addClass('_fixed');
+							$cart.removeClass('_slipeaway');
+							$cart.css({
+								position: 'fixed',
+								top: _headerH
+							});
+						}
+					}
+					else if ($win.scrollTop() >= mapPosition){
+						$cart.addClass('_slipeaway');
+						$cart.css({
+							position: 'absolute',
+							top: mapPosition
+							// top: _top + mapPosition - 690
+						});
+						$nav.css({
+							position: 'fixed',
+							top: _headerH
+						});
+					}
+					else{
+						$cart.removeClass('_fixed');
+						// 還原 #cart 的座標系統為 absolute
+						$('.day-plan, .nav, .anchor').removeAttr( 'style' );
+					}
+				});
+			});//桌機用
+
+			$(function(){
+				var $cart = $('.anchor-mobile'),
+					_top = $cart.offset().top;
+				var $win = $(window).scroll(function(){
+					if($win.scrollTop() >= _top){
+						if($cart.css('position')!='fixed'){
+							$cart.css({
+								position: 'fixed',
+								top: _headerH
+							});
+						}
+					}else{
+						$cart.css({
+							position: 'absolute',
+							top: _top
+						});
+						$('.day-plan,.nav,.anchor').removeAttr( 'style' );
+					}
+				});
+			});//手機用
+		</script>
+		<script type="text/javascript" src="dist/js/jquery.mousewheel.pack_bear.js?v=3.1.3"></script>
+		<script type="text/javascript" src="dist/js/jquery.fancybox.pack_bear.js?v=2.1.5"></script>
+		<link rel="stylesheet" type="text/css" href="dist/css/jquery.fancybox_bear.css?v=2.1.5" media="screen" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.fancybox.p_verify').fancybox({
+					width: 423,
+					height: 460
+				});
+			});
+		</script>
+	</body>
+</html>

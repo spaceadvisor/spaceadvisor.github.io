@@ -1,0 +1,245 @@
+@charset 'UTF-8';
+/** BEGIN how_it_works **/
+.instructionsBox .ma_banner .ba_txt {
+    right: 5%;
+    width: 38%;
+    max-width: 486px;
+    line-height: 42px;
+    font-weight: normal;
+}
+.instructionsBox .btximg {
+    text-align: left;
+    text-shadow: none;
+    font-size: 21px
+}
+.instructionsBox .btximg img {
+    max-width: 80%;
+}
+.instructionsBox .btximg .btx {
+	line-height: normal;
+	letter-spacing: 0;
+}
+.instructionsBox .qaBox{
+	margin: 80px auto;
+}
+.instructionFlow {
+	margin: 40px auto;
+    background: #f3f3f3;
+    line-height: normal;
+}
+.instructionFlow_Box {
+    width: 88%;
+    margin: 0 auto;
+}
+.instructionFlow_Box > ul {
+    display: flex;
+}
+.instructionFlow_Box > ul > li {
+	width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.instructionFlow_Box .infoarrw {
+	margin: 0 5px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 25px;
+}
+.instructionFlow_Box .instrPhoto {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    width: 90px;
+    max-height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+.instructionFlow_Box .initem2 .instrPhoto {
+	width: 170px;
+}
+.instructionFlow_Box .instrPhoto img {
+	width: 100%;
+}
+.instructionFlow_Box .instrTxt {
+    color: #4e5059;
+}
+.instructionFlow_Box .instrTxt h3 {
+	text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+}
+.instructionFlow_Box .instrTxt li {
+	margin-bottom: 9px;
+	font-size: 15px;
+	padding-left: 19px;
+	background: url(../../images/instructions/flow_tick.png) left 0 no-repeat;
+}
+.instructionStep {
+    position: relative;
+    max-width: 800px;
+    line-height: normal;
+}
+.instructionStep ul {
+	display: flex;
+    z-index: 1;
+    position: relative;
+}
+.instructionStep li {
+    float: left;
+    width: 33%;
+	margin: 0 5% 0 0;
+}
+.instructionStep li:last-child {
+    margin-right: 0;
+}
+.instructionStep li:nth-child(3) {
+	width: 33%;
+}
+.instructionStep li:nth-child(3) .instopTxt p {
+    text-align: center;
+}
+.instructionStep li img {
+    text-align: center;
+    width: 100%
+}
+.instructionStep .insLine {
+    left: 50%;
+    top: 35%;
+    width: 100%;
+    max-width: 600px;
+    height: 9px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #4c6a9b;
+    z-index: 0;
+}
+.instructionStep .in_iconImg {
+    max-width: 109px;
+    display: block;
+    margin: 0 auto 44px auto;
+}
+.instructionStep h3 {
+    font-size: 21px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.instructionsBox main h3,
+.instructionStep h3 b {
+	font-weight: bold;
+}
+.instructionStep h3 b {
+	margin-right: 9px;
+    color: #898989;
+    font-size: 70px;
+}
+.instructionsBox .qaLink a {
+	font-size: 15px;
+}
+.pc_banner img {
+	border-radius: 5px;
+	overflow: hidden;
+}
+.ab_item4 {
+    background: #f3f3f3;
+}
+.ab_item4 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.ab_item4 .abContent {
+    width: 90%;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ab_item4 .custodyBtn {
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+@media only screen and (max-width: 980px) {
+	.instructionsBox main h2,
+	.instructionsBox main h3 {
+		font-size: 21px;
+	}
+	.instructionStep {
+		padding: 0;
+	}
+	.instructionStep h3 b {
+		margin-right: 3px;
+		font-size: 55px;
+	}
+	.instructionsBox .qaBox,
+	.applicationBox .qaBox {
+		margin: 60px auto;
+	}
+	.instructionStep .in_iconImg {
+		max-width: 80px;
+        margin: 0 auto 30px auto;
+    }
+    .instructionFlow_Box {
+        width: 95%;
+        text-align: center;
+    }
+	.instructionFlow_Box .instrPhoto {
+	    width: 50px;
+		max-height: 48px;
+		margin-bottom: 9px;
+	}
+	.instructionFlow_Box .initem2 .instrPhoto {
+		width: 87px;
+	}
+	.instructionStep .instopTxt p,
+    .instructionFlow_Box .instrTxt ul {
+        display: none;
+    }
+	.instructionFlow_Box .instrTxt h3 {
+		font-size: 15px;
+	}
+	.instructionFlow_Box > ul {
+		height: 80px;
+	}
+	.instructionFlow_Box .infoarrw {
+    	width: 25px;
+    	height: 50px;
+    	top: 16px;
+	}
+	.instructionFlow_Box .infoarrw img {
+		width: 100%;
+	}
+	.instructionFlow_Box .infoarrw:nth-child(2) {
+		left: -10px;
+	}
+	.instructionFlow_Box .infoarrw:nth-child(4) {
+		left: 10px;
+	}
+	.instructionStep .insLine {
+		top: 40%;
+		width: 75%;
+		height: 5px;
+	}
+	.initem3 .instrPhoto {
+		left: 7px;
+	}
+	.ab_item4 .abContent {
+	    padding: 9px 0;
+	}
+    .instructionsBox .btximg {
+        font-size: 17px;
+    }
+    .instructionsBox .btximg img {
+        margin-bottom: 14px;
+    }
+    .instructionsBox .ma_banner .ba_txt {
+        line-height: 25px;
+        width: 60%;
+    }
+    .instructionsBox .ma_banner .ba_txt img {
+        width: 90%;
+        max-width: unset;
+    }
+}
+/** END how_it_works **/

@@ -1,0 +1,627 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content=" " />
+		<meta name="description" content=" ">
+		<meta name="author" content="SpaceAdvisor">
+		<meta name="copyright" content="本網頁著作SpaceAdvisor所有">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link href="dist/images/icon.ico" type="image/x-icon" rel="shortcut icon" />
+		<title>點數管理-問卷</title>
+		<link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/jquery.mmenu.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/jquery-ui.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/bootstrap_bear.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/main.css" rel="stylesheet" type="text/css" media=""/>
+
+		<!-- STYLES -->
+		<link href="dist/css/new/basic.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/new/basic_template.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/new/member_reward_q.css" rel="stylesheet" type="text/css" media=""/>
+	</head>
+	<body>
+		<div id="wrapper" class="member_reward_q">
+			<!--main-->
+			<main class="bonus-quest">
+				<div class="_content _boxStyle">
+					<div class="section01">
+						<div>填寫以下資料後即可獲得大杯那堤一杯</div>
+						<div>資料僅需第一次兌換時填寫，為保障您的兌換權益，請填寫真實資訊</div>
+					</div>
+					<div class="section02">
+						<div class="mbr_information">
+							<div class="required-fill">
+								<div class="main-content flexbox halign-between">
+									<ul>
+										<!-- 錯誤時請加上 class warning_error -->
+										<li class="apInput1 _name1 warning_error">
+											<h4>名字：</h4>
+											<section>
+												<input type="text" placeholder="請填寫真實姓名">
+											</section>
+										</li>
+										<li class="apInput2 _name2">
+											<h4>姓氏：</h4>
+											<section>
+												<input type="text" placeholder="輸入姓氏">
+											</section>
+										</li>
+										<li class="apInput3 _email _isVerify">
+											<div class="_email1">
+												<h4>電子郵件：</h4>
+												<section>
+													<input type="text" value="name@gmail.com" disabled="disabled">
+												</section>
+											</div>
+											<div class="_email2">
+												<div class="_checkVerify _verifyEmail">
+													<span class="unverified">
+														<i class="fa fa-exclamation-circle" aria-hidden="true"></i><span>未驗證</span>
+														<a class="_verifyEmailBtn" href="javascript:;">點此驗證Email</a>
+													</span>
+												</div>
+												<div class="_checkVerify _editEmail">
+													<span class="verified">
+														<i class="fa fa-lock" aria-hidden="true"></i><span>已驗證</span>
+														<a class="_editEmailBtn" href="javascript:;">編輯</a>
+													</span>
+												</div>
+											</div>
+										</li>
+										<li class="apInput4 _bir">
+											<h4>生日：</h4>
+											<section>
+												<input type="text" placeholder="DD/MM/YYYY">
+											</section>
+										</li>
+										<li class="apInput5 _phone"><!-- 驗證成功class加上 _isVerify -->
+											<div class="_phone1">
+												<h4>行動電話：</h4>
+												<section>
+													<input type="text" value="0987654321" disabled="disabled">
+												</section>
+											</div>
+											<div class="_phone2">
+												<div class="_checkVerify _verifyPhone">
+													<span class="unverified">
+														<i class="fa fa-exclamation-circle" aria-hidden="true"></i><span>未驗證</span>
+														<a class="_verifyPhoneBtn fancybox fancybox.iframe p_verify" href="phone_verify.html">點此驗證行動電話</a>
+													</span>
+												</div>
+												<div class="_checkVerify _editPhone">
+													<span class="verified">
+														<i class="fa fa-lock" aria-hidden="true"></i><span>已驗證</span>
+														<a class="_editPhoneBtn fancybox fancybox.iframe p_verify" href="phone_verify.html">編輯</a>
+													</span>
+												</div>
+											</div>
+										</li>
+										<li class="apInput6 _gender">
+											<h4>性別：</h4>
+											<section>
+												<div class="_gender1 wd_form blue">
+													<label>
+														<input name="gender" type="radio" value="1">
+														<span>男</span>
+													</label>
+													<label>
+														<input name="gender" type="radio" value="0">
+														<span>女</span>
+													</label>
+												</div>
+											</section>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="optional-fill">
+								<div class="main-content flexbox halign-between">
+									<ul>
+										<li class="apInput7 _address">
+											<div class="_address1">
+												<h4>通訊地址：</h4>
+												<div class="twzipcode _app">
+													<select>
+														<option>台灣</option>
+													</select>
+												</div>
+											</div>
+											<div class="_address2">
+												<input type="text" placeholder="完整地址">
+											</div>
+										</li>
+										<li class="apInput8 _occupation">
+											<h4>職業：</h4>
+											<section>
+												<select>
+													<option value="0">請選擇</option>
+													<option>金融/保險/傳銷</option>
+													<option>娛樂/出版/服務</option>
+													<option>流通/百貨零售</option>
+													<option>製造/供應商/貿易</option>
+													<option>建築/營造/房地產</option>
+													<option>交通/運輸</option>
+													<option>旅遊/餐飲</option>
+													<option>傳播/公共關係/廣告/行銷</option>
+													<option>醫療/保健</option>
+													<option>政府機關/軍公教</option>
+													<option>宗教/非營利組織</option>
+													<option>藝術人文/設計</option>
+													<option>漁農牧</option>
+													<option>教育/教師</option>
+													<option>資訊科技</option>
+													<option>學生</option>
+													<option>部落客/YouTuber/網紅</option>
+													<option>其他</option>
+												</select>
+											</section>
+										</li>
+										<li class="apInput9 _occupationTitle">
+											<h4>職稱：</h4>
+											<section>
+												<select>
+													<option value="0">請選擇</option>
+													<option>經營者</option>
+													<option>高階主管</option>
+													<option>中階主管</option>
+													<option>基層主管</option>
+													<option>秘書</option>
+													<option>一般職員</option>
+													<option>企劃人員</option>
+													<option>總務人員</option>
+													<option>行政人員</option>
+													<option>實習生</option>
+													<option>其他</option>
+												</select>
+											</section>
+										</li>
+										<li class="apInput10 _occupationTitle">
+											<h4>公司名：</h4>
+											<section>
+												<input type="text" placeholder="輸入公司名">
+											</section>
+										</li>
+										<li class="apInput11 _education">
+											<h4>學歷：</h4>
+											<section>
+												<select>
+													<option value="0">請選擇</option>
+													<option>小學</option>
+													<option>國中</option>
+													<option>高中/高職</option>
+													<option>大學/大專</option>
+													<option>碩士</option>
+													<option>博士</option>
+													<option>其他</option>
+												</select>
+											</section>
+										</li>
+										<li class="apInput12 _imHost">
+											<h4>我是活動舉辦者：</h4>
+											<section>
+												<div class="_imHost1 wd_form blue">
+													<label>
+														<input name="imHost" type="radio" value="1">
+														<span>是</span>
+													</label>
+													<label>
+														<input name="imHost" type="radio" value="0">
+														<span>否</span>
+													</label>
+												</div>
+											</section>
+										</li>
+										<li class="apInput13 _actType _multiSelect">
+											<h4>經常舉辦活動類型：<br>(可複選)</h4>
+											<section>
+												<div class="col-right flexbox">
+													<div class="wd_form">
+														<label>
+															<input type="checkbox"><b>一般會議</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>企業培訓</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>視訊會議</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>課程講座</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>國際會議</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>記者會</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>說明會</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>發表會</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>董事會</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>體育活動</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>表演活動</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>團隊建立</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>音樂活動</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>靜態展覽</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>拍攝攝影</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>戶外活動</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>一般宴會</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>尾牙</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>春酒</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>婚禮</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>主題派對</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>謝師宴</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>晚會</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>家庭聚餐</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>企業聚餐</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>朋友聚餐</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>生日聚會</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>烹飪活動</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>商務宴客</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>戶外用餐</b>
+														</label>
+													</div>
+												</div>
+											</section>
+										</li>
+										<li class="apInput14 _actGoal _multiSelect">
+											<h4>舉辦活動目的：<br>(可複選)</h4>
+											<section>
+												<div class="col-right flexbox">
+													<div class="wd_form">
+														<label>
+															<input type="checkbox"><b>交流</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>銷售</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>教學</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>表演</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>聯繫情誼</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>行銷</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>其他<input type="text" placeholder="請說明"></b>
+														</label>
+													</div>
+												</div>
+											</section>
+										</li>
+										<li class="apInput15 _actPosition _multiSelect">
+											<h4>經常舉辦地點：<br>(可複選)</h4>
+											<section>
+												<div class="col-right flexbox">
+													<div class="wd_form">
+														<label>
+															<input type="checkbox"><b>台灣北部</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>台灣中部</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>台灣南部</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>台灣東部</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>台灣離島</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>香港</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>澳門</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>日本</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>韓國</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>中國</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>新加坡</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>泰國</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>越南</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>菲律賓</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>印度</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>東南亞</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>美國</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>加拿大</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>中東地區</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>歐洲地區</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>非洲地區</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>中南美洲地區</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>大洋洲地區</b>
+														</label>
+													</div>
+												</div>
+											</section>
+										</li>
+										<li class="apInput16 _actTimes">
+											<h4>需求場地的頻率：</h4>
+											<section>
+												<select>
+													<option value="0">請選擇</option>
+													<option>三天1次以上</option>
+													<option>一週1次以上</option>
+													<option>兩週1次以上</option>
+													<option>一月1次以上</option>
+													<option>三個月1次以上</option>
+													<option>六個月1次以上</option>
+													<option>一年1次以上</option>
+													<option>偶爾舉辦</option>
+													<option>其他</option>
+												</select>
+											</section>
+										</li>
+										<li class="apInput17 _actHobby _multiSelect">
+											<h4>主要興趣：<br>(可複選)</h4>
+											<section>
+												<div class="col-right flexbox">
+													<div class="wd_form">
+														<label>
+															<input type="checkbox"><b>台灣北部</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>台灣中部</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>台灣南部</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>台灣東部</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>台灣離島</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>香港</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>澳門</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>日本</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>韓國</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>中國</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>新加坡</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>泰國</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>越南</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>菲律賓</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>印度</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>東南亞</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>美國</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>加拿大</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>中東地區</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>歐洲地區</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>非洲地區</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>中南美洲地區</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>大洋洲地區</b>
+														</label>
+													</div>
+												</div>
+											</section>
+										</li>
+										<li class="apInput18 _howToKnowUs _multiSelect">
+											<h4>如何得知我們：</h4>
+											<section>
+												<div class="col-right flexbox">
+													<div class="wd_form">
+														<label>
+															<input type="checkbox"><b>網路廣告</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>手機廣告</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>FB廣告</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>部落客/網路紅人</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>臉書粉絲團</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>網路關鍵字</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>其他網路平台</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>Youtube廣告影片</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>電視廣告影片</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>戶外廣告</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>公車捷運廣告</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>雜誌/報紙廣告</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>網路文章介紹</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>廣播</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>實體活動</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>親友推薦</b>
+														</label>
+														<label>
+															<input type="checkbox"><b>其他<input type="text" placeholder="請說明"></b>
+														</label>
+													</div>
+												</div>
+											</section>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<input type="button" value="立即兌換" class="btn btn-c-3 btn-m">
+					</div>
+				</div>
+			</main>
+			<!--/main-->
+		</div>
+		<!-- /#wrapper -->
+		<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="dist/js/jquery-ui.js"></script>
+		<script type="text/javascript" src="dist/js/bootstrap_bear.js"></script>
+		<script type="text/javascript" src="dist/js/main.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mousewheel.pack_bear.js?v=3.1.3"></script>
+		<script type="text/javascript" src="dist/js/jquery.fancybox.pack_bear.js?v=2.1.5"></script>
+		<link rel="stylesheet" type="text/css" href="dist/css/jquery.fancybox_bear.css?v=2.1.5" media="screen" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.fancybox').fancybox();
+				$('.fancybox.p_verify').fancybox({
+					width: 423,
+					height: 460
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			// allen
+			$('._editEmailBtn').on('click', function(){
+				$(this).parents('._email').removeClass('_isVerify');
+				$(this).parents('._email').find('._email1 input').prop('disabled', false).select();
+			});
+			$('._verifyEmailBtn').on('click', function(){
+				alert('已發送驗證碼');
+				$(this).parents('._email').addClass('_isVerify');
+				$(this).parents('._email').find('._email1 input').prop('disabled', true);
+			});
+		</script>
+		<script type="text/javascript" src="dist/js/twzipcode/jquery.twzipcode.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.twzipcode._app').twzipcode();
+			});
+		</script>
+	</body>
+</html>

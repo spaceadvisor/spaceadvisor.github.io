@@ -1,0 +1,142 @@
+@charset 'UTF-8';
+/** BEGIN why_spaceadvisor **/
+.advantageBox .ma_banner .ba_txt {
+    text-shadow: none;
+}
+.ma_banner .pc_banner img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+.advantageTag {
+    display: inline-block;
+    margin: 0 auto;
+    background: rgba(78, 80, 89, .5);
+    border-radius: 9px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: unset;
+}
+.advantageTag .adtagImg {
+	width: 60px;
+    margin: 9px auto;
+}
+.advantageTag ul li {
+    cursor: pointer;
+    padding: 24px;
+    color: #fff;
+    text-align: center;
+    width: 25%;
+    float: left;
+}
+.advantageTag ul li img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.advantageTag ul li:hover {
+    background: url(../../images/advantage/arrw.png) #4f6ea2 bottom center no-repeat;
+}
+.advantageTag ul li.active {
+    background: url(../../images/advantage/arrw.png) #4f6ea2 bottom center no-repeat;
+}
+.advantageTag ul li.active:first-child,
+.advantageTag ul li:hover:first-child {
+	border-radius: 9px 0 0 9px;
+}
+.advantageTag ul li.active:last-child,
+.advantageTag ul li:hover:last-child {
+	border-radius: 0 9px 9px 0;
+}
+.advantageContent {
+	margin: 40px auto;
+    text-align: center;
+    display: none;
+}
+.advantageContent.active {
+    display: block;
+}
+.advantageContent ul {
+    width: 77%;
+    min-height: 110px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.advantageContent li {
+	font-size: 17px;
+    margin-right: 9px;
+    display: inline-block;
+    vertical-align: top;
+    color: #4e5059;
+}
+.advantageContent li:last-child {
+    margin-right: 0;
+}
+.advantageContent li .adContentImg {
+    margin-bottom: 20px;
+}
+.ab_item4 {
+    background: #f3f3f3;
+}
+.ab_item4 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.ab_item4 .abContent {
+    width: 90%;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ab_item4 .custodyBtn {
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+    .appAdvantage {
+        margin: 40px auto;
+    }
+    .advantageTag {
+        width: 90%;
+    }
+    .advantageTag .adtagImg {
+        width: 40px;
+    }
+    .advantageTag ul li {
+        padding: 13px 15px 19px;
+    }
+    .adtagImg {
+        margin: 0;
+    }
+    .adtagTxt {
+        font-size: 13px;
+    }
+    .adtagTxt span {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .advantageContent {
+        margin: 40px auto;
+        padding: 0;
+    }
+    .advantageContent ul {
+        width: 90%;
+    }
+    .advantageContent li {
+        width: 40%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:320px) {
+    .advantageTag ul {
+        font-size: 13px;
+    }
+}
+/** END why_spaceadvisor **/
