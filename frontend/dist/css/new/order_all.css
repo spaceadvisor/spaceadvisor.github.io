@@ -6,6 +6,7 @@
 .writeInput.part5 .col .assess input[type=radio]+label:before,
 .writeInput.part5 .col .assess input[type=checkbox]+label:before {
     border: 1px solid #d76050;
+	position: absolute;
 }
 .writeInput.part4 .col .assess input[type=radio]+label:after,
 .writeInput.part4 .col .assess input[type=checkbox]+label:after,
@@ -1227,7 +1228,7 @@
 }
 .stepBox.fill_box .writeContent .writeInput.part4 .staging .instalment,
 .stepBox.fill_box .writeContent .writeInput.part5 .staging .instalment {
-    margin-left: 9px;
+    margin-left: 27px;
 }
 .stepBox.fill_box .writeContent .writeInput .info {
     margin-top: 3px;
@@ -1323,7 +1324,7 @@
     align-items: center;
 }
 .stepBox.fill_box .writeContent .writeInformation3 .writeInput.part3 li i {
-    top: unset;
+    top: 3px;
     padding: 0 5px;
     margin-right: 3px;
     height: 80%;
@@ -1391,7 +1392,7 @@
 }
 .stepBox.fill_box .writeContent .writeInformation4 .writeInput li .col .assess .col_content,
 .stepBox.fill_box .writeContent .writeInformation5 .writeInput li .col .assess .col_content {
-    margin-left: 9px;
+    margin-left: 27px;
     line-height: normal;
 }
 .stepBox.fill_box .writeContent .writeInformation4 .writeInput li .col .assess .col_content > div,
@@ -1475,7 +1476,7 @@
 }
 .stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col b {
     line-height: normal;
-    margin-left: 9px;
+    margin-left: 27px;
 }
 .stepBox.fill_box .writeContent .writeInformation5 .writeInput .lnvoiceField .col label input {
     display: block;

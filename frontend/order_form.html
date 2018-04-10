@@ -228,9 +228,9 @@
 							<ul class="writeInput part3">
 								<li>
 									<h4>折扣碼</h4>
-									<div class="amount_input error">
+									<div class="amount_input">
 										<i></i>
-										<input type="text">
+										<input type="text" onblur="checkcode(this)" onkeyup="checkcode1(this)">
 									</div>
 								</li>
 							</ul>
@@ -802,6 +802,22 @@
 					$(this).children('.lnvoiceField').show();
 				}
 			});
+		</script>
+		<script>
+			function checkcode(obj) {
+				if (obj.value != "" && obj.value.length < 5) {
+					$('.part3>li>.amount_input').addClass('error');
+					setTimeout(function(){ alert("警告：優惠碼無效、過期或超過使用期限！"); }, 300);
+				} else {
+					$('.part3>li>.amount_input').removeClass('error');
+				}
+			}
+			
+			function checkcode1(obj) {
+				if (obj.value == "") {
+					$('.part3>li>.amount_input').removeClass('error');
+				}
+			}
 		</script>
 	</body>
 </html>

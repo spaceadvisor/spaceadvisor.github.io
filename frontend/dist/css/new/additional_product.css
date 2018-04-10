@@ -601,7 +601,7 @@
 }
 .additional_product_form .pay_part .writeInput li .col .assess .col_content,
 .additional_product_form .invoice_part .writeInput li .col .assess .col_content {
-    margin-left: 9px;
+    margin-left: 27px;
     line-height: normal;
 }
 .additional_product_form .pay_part .writeInput li .col .assess .col_content > div,
@@ -691,7 +691,7 @@
 }
 .additional_product_form .invoice_part .writeInput .lnvoiceField .col b {
     line-height: normal;
-    margin-left: 9px;
+    margin-left: 27px;
 }
 .additional_product_form .invoice_part .writeInput .lnvoiceField .col label input {
     display: block;
@@ -772,7 +772,7 @@
 }
 .additional_product_form .writeInput.part4 .staging .instalment,
 .additional_product_form .writeInput.part5 .staging .instalment {
-    margin-left: 9px;
+    margin-left: 27px;
 }
 .additional_product_form .part_item input,
 .additional_product_form .part_item select {

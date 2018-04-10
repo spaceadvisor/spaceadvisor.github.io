@@ -136,6 +136,10 @@
 .member .mbr_photo>.flexbox .mbr-photo {
     width: 207px;
 }
+.member .mbr_photo>.flexbox .mbr-photo img {
+    width: 153px;
+	height: 153px;
+}
 @media (max-width: 640px) {
     .member .mbr_photo>.flexbox .mbr-photo {
         width: 100%;
@@ -804,4 +808,7 @@
         margin-bottom: 3px;
         width: 100%;
     }
+	.mbr_information .optional-fill .main-content ul li._address ._address2 {
+		margin-top: 9px;
+	}
 }
