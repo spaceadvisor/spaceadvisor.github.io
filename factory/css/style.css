@@ -62,7 +62,7 @@ header {
 	width: 100%;
 	background: url(../images/bg-header.png) no-repeat top center;
 	background-size: cover;
-	padding-top: 17%;
+	padding-top: 12%;
 	position: absolute;
 	z-index: -1;
 }
@@ -75,7 +75,6 @@ header h2 {
 	font-size: 40px;
 	font-weight: bold;
 	line-height: 60px;
-	margin-top: 4%;
 }
 header h2 strong {
 	color: #ed3019;
@@ -83,14 +82,14 @@ header h2 strong {
 	margin-right: 18px;
 }
 header .btn.btn-join {
-	margin-top: 18%;
+	margin-top: 10%;
 }
 
 /****** About ******/
 .about {
 	float: left;
 	width: 100%;
-	margin-top: 72.7%;
+	margin-top: 55.7%;
 }
 .about article {
 	background: url(../images/bg-about.png) no-repeat;
@@ -691,6 +690,9 @@ footer .info-rules ul li a {
 .navbar.navbar-shrink {
 	background-color: #212529;
 }
+header h2 {
+	margin-top: 4%;
+}
 .contrast .arborescence-1, .contrast .arborescence-2, .contrast .arborescence-4, .contrast .arborescence-5, .contrast .arborescence-6 {
 	height: 230px;
 	position: relative;
@@ -721,6 +723,9 @@ footer .info-email {
 @media (max-width: 991.98px) {
 .hide-lg {
 	display: none !important;
+}
+header {
+    margin-top: 59px;
 }
 .contrast h2 span:last-of-type {
 	width: 100%;
@@ -764,7 +769,7 @@ footer {
 	display: none !important;
 }
 header {
-	padding-top: 20.6%;
+	padding-top: 12.6%;
 }
 header h1 {
 	width: 85%;

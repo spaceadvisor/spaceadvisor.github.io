@@ -25,7 +25,7 @@
 
 $(document).ready(function(){
 	HeaderWidth = $('header').width();
-	$('header').height( HeaderWidth * 1481/1280 );
+	$('header').height( HeaderWidth * 1481/1920 );
 	VideoWidth = $('.video iframe').width();
 	$('.video iframe').height( VideoWidth * 482/856 );
 	EbookWidth = $('.e-book iframe').width();
@@ -33,7 +33,7 @@ $(document).ready(function(){
 			
 	$(window).resize(function(){
 		HeaderWidth = $('header').width();
-		$('header').height( HeaderWidth * 1481/1280 );
+		$('header').height( HeaderWidth * 1481/1920 );
 		VideoWidth = $('.video iframe').width();
 		$('.video iframe').height( VideoWidth * 482/856 );
 		EbookWidth = $('.e-book iframe').width();
