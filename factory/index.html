@@ -35,7 +35,7 @@
     <h1 class="hide-lg"><img class="img-fluid" src="images/logo-red.png" alt="SpaceAdvisor場地家 logo"></h1>
     <h2>場地主強力募集中！<br>
       <strong>星級飯店</strong>4月底前免費加入</h2>
-    <div class="text-center"><a class="btn btn-join" href="#">立即加入</a></div>
+    <div class="text-center"><a class="btn btn-join" href="#join-form-modal" data-toggle="modal">立即加入</a></div>
   </div>
 </header>
 
@@ -226,7 +226,7 @@
       都可在場地家挑選下訂最合宜的場地，精準媒合機制！<br>
       <br>
       <strong>加入場地家，你就是贏家！</strong></p>
-    <a class="btn btn-join" href="#">立即加入</a> <img class="img-fluid" src="images/img-procedure.png" alt="申請流程"></div>
+    <a class="btn btn-join" href="#join-form-modal" data-toggle="modal">立即加入</a> <img class="img-fluid" src="images/img-procedure.png" alt="申請流程"></div>
 </section>
 
 <!-- E-book -->
@@ -244,89 +244,217 @@
   </div>
 </footer>
 
+<!-- Join Form -->
+<div id="join-form-modal" class="join-form-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="container">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="space" class="col-md-2 col-form-label">場地類型</label>
+              <div class="col-md-10">
+                <select id="space" class="form-control">
+                  <option>請選擇</option>
+                  <option>飯店(要選星等)</option>
+                  <option>會議中心</option>
+                  <option>婚宴會館</option>
+                  <option>其他</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="company" class="col-md-2 col-form-label">公司名稱</label>
+              <div class="col-md-10">
+                <input id="company" class="form-control" type="text" placeholder="焦點會議科技有限公司">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="vat" class="col-md-2 col-form-label">統一編號</label>
+              <div class="col-md-10">
+                <input id="vat" class="form-control" type="text" placeholder="52818279">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="brand" class="col-md-2 col-form-label">品牌名稱</label>
+              <div class="col-md-10">
+                <input id="brand" class="form-control" type="text" placeholder="場地家">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="address" class="col-md-2 col-form-label">所在地址</label>
+              <div class="col-md-10">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <select id="address" class="form-control">
+                      <option value="">縣市</option>
+                      <option value="基隆市">基隆市</option>
+                      <option value="臺北市">臺北市</option>
+                      <option value="新北市">新北市</option>
+                      <option value="宜蘭縣">宜蘭縣</option>
+                      <option value="新竹市">新竹市</option>
+                      <option value="新竹縣">新竹縣</option>
+                      <option value="桃園市">桃園市</option>
+                      <option value="苗栗縣">苗栗縣</option>
+                      <option value="臺中市">臺中市</option>
+                      <option value="彰化縣">彰化縣</option>
+                      <option value="南投縣">南投縣</option>
+                      <option value="嘉義市">嘉義市</option>
+                      <option value="嘉義縣">嘉義縣</option>
+                      <option value="雲林縣">雲林縣</option>
+                      <option value="臺南市">臺南市</option>
+                      <option value="高雄市">高雄市</option>
+                      <option value="屏東縣">屏東縣</option>
+                      <option value="臺東縣">臺東縣</option>
+                      <option value="花蓮縣">花蓮縣</option>
+                      <option value="金門縣">金門縣</option>
+                      <option value="連江縣">連江縣</option>
+                      <option value="澎湖縣">澎湖縣</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <select class="form-control">
+                      <option value="">鄉鎮市區</option>
+                    </select>
+                  </div>
+                </div>
+                <input class="form-control" type="text" placeholder="路(街)名或鄉里名稱">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="name" class="col-md-2 col-form-label">聯絡人</label>
+              <div class="col-md-10">
+                <input id="name" class="form-control" type="text" placeholder="張艾倫">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="phone" class="col-md-2 col-form-label">聯絡人電話</label>
+              <div class="col-md-10">
+                <input id="phone" class="form-control" type="tel" placeholder="0281010858">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-md-2 col-form-label">聯絡人Email</label>
+              <div class="col-md-10">
+                <input id="email" class="form-control" type="email" placeholder="info@spaceadvisor.com">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                <textarea id="message" class="form-control" rows="4" placeholder="若貴公司有希望進一步了解，或想特別說明的部份，請於此備註欄位輸入內容。"></textarea>
+              </div>
+            </div>
+            <div class="text-center">
+              <div class="col-lg-6 row ml-auto mr-auto">
+                <label for="code" class="col-lg-5 col-md-4 col-form-label">請輸入驗證碼</label>
+                <div class="col-lg-4 col-md-4">
+                  <input id="code" class="form-control" type="text">
+                </div>
+                <div class="col-lg-3 col-md-3 text-center code">R5OW&nbsp;<img src="images/icon-reload.png" alt="重新產生驗證碼"></div>
+              </div>
+              <button class="btn btn-primary btn-xl" type="submit">送出</button>
+              <div class="col privacy-check">
+                <input id="accept" class="form-check-input" type="checkbox" checked>
+                <label class="form-check-label" for="accept">我同意接受場地家的<a href="#privacy-modal" data-toggle="modal">隱私權聲明</a></label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Privacy -->
 <div id="privacy-modal" class="privacy-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"></div>
+    <div class="container">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
         </div>
-      </div>
-      <div class="modal-body">
-        <h2 class="text-center">隱私權聲明</h2>
-        <h4>第1條&nbsp;&nbsp;隱私權政策</h4>
-        <ul>
-          <li>1.1&nbsp;&nbsp;本網站重視使用者之隱私權並致力於保護使用者之個人資料，當使用者使用本網站所提供之資訊、產品及/或服務時，即表示使用者同意本網站依據本條蒐集、處理及利用使用者之個人資料。若使用者不同意本條款之全部或一部內容，請立即停止使用本網站。</li>
-          <li>1.2&nbsp;&nbsp;本網站得隨時因中華民國法規之變更、本網站個人資料收集與使用政策之改變、本網站功能之異動或技術之更新修改本條之內容。該等變動之內容將於本網站發佈，使用者應隨時留意並詳閱之。若使用者不同意本條之任何變更或修改，請立即停止使用本網站。</li>
-          <li>1.3&nbsp;&nbsp;本網站蒐集使用者個人資料之目的與範圍<br>
-            為提供使用者預定場地之服務、建立會員資料、調查、統計或分析使用者資料、廣告、行銷等相關目的，本網站將於使用者註冊/登錄會員及提交預定場地訂單時蒐集使用者之個人資料，包括但不限於使用者之姓名、住/居所地址、電子郵件信箱、電話、出生年月日、性別、身份證統一編號、信用卡資訊（包括但不限於卡號、驗證碼及到期日）、金融機構帳戶資訊及其他任何得以直接或間接方式識別個人之資料等。</li>
-          <li>1.4&nbsp;&nbsp;本網站利用使用者資料之期間與地區<br>
-            本網站僅在中華民國境內利用使用者之個人資料。除本網站另有公告或第11條另有變更情事，本網站將永久保存使用者提供之個人資料。</li>
-          <li>1.5&nbsp;&nbsp;本網站利用使用者資料之對象<br>
-            為提供使用者預定場地之服務，本網站將與其合作廠商（包括但不限於場地提供者）及/或相關協力廠商（包括但不限於本網站關係企業、餐飲供應商、場地布置廠商、金流服務提供廠商、金融機構等）分享使用者之個人資料。除此之外，非經使用者同意，或經公務機關循合法程序要求本網站提供使用者個人資料，本網站不與任何第三人分享或公開使用者之個人資料。</li>
-          <li>1.6&nbsp;&nbsp;Cookies之運用<br>
-            Cookies為資訊系統識別使用者而記錄於使用者硬碟之簡短資訊。使用者得於瀏覽器操作說明中瞭解如何設定接受或拒絕Cookies。若使用者拒絕，本網站之部分服務項目可能無法提供。本網站將於下列情況寫入及讀取Cookies：
-            <ul>
-              <li>1.6.1&nbsp;&nbsp;為統計本網站之瀏覽人數、分析使用者瀏覽模式及瀏覽之網頁以做為本網站改善、更新服務之參考。</li>
-              <li>1.6.2&nbsp;&nbsp;為便利使用者使用本網站中全部或一部服務項目而需記錄相關資訊。</li>
-            </ul>
-          </li>
-          <li>1.7&nbsp;&nbsp;使用者之權利
-            <ul>
-              <li>1.7.1&nbsp;&nbsp;使用者得請求查詢、閱覽個人資訊之一部或全部或就個人資訊之一部或全部製給複製本。</li>
-              <li>1.7.2&nbsp;&nbsp;使用者得請求補充或更正、停止蒐集、處理、利用或刪除使用者個人資訊之一部或全部。</li>
-              <li>1.7.3&nbsp;&nbsp;若使用者提出11.7.1條及11.7.2條之請求，本網站得要求核對使用者之身份證明文件，以確保使用者之個人資訊安全。</li>
-            </ul>
-          </li>
-          <li>1.8&nbsp;&nbsp;本網站對於使用者資料之保護<br>
-            本網站全程採用網際網路資料加密保護標準Secure Socket Layer (SSL)協定保護使用者之個人資料，並使用https://安全加密模式，可確保使用者資料傳輸之安全性。</li>
-          <li>1.9&nbsp;&nbsp;使用者若選擇不提供全部或部分個人資料時，將無法使用本網站之全部或部份之服務。</li>
-        </ul>
-        <br>
-        <h4>第2條&nbsp;&nbsp;會員資料使用</h4>
-        <ul>
-          <li>2.1&nbsp;&nbsp;會員個人資料適用於本網站的隱私權保護政策。加入本網站會員時填寫的個人資料，依本服務條款，由本網站資料管理者為會員建立個人檔案資料管理及利用。</li>
-          <li>2.2&nbsp;&nbsp;權益及網路交易安全，一旦檢警機關及法院為犯罪追訴、審判目的，本網站將依照法律規定及法院裁判，配合提供會員個人資料。</li>
-          <li>2.3&nbsp;&nbsp;會員對為維護會員本網站個人資料管理有疑議時，經提出書面申訴，本網站將依規定予以處理。</li>
-          <li>2.4&nbsp;&nbsp;會員同意當其與本網站終止契約，或會員因違規行為被本站停止會員資格後，本網站得保存會員個人及交易資料，並依法處理及利用。</li>
-        </ul>
-        <br>
-        <h4>第3條&nbsp;&nbsp;會員個人資料之蒐集、處理及利用</h4>
-        <ul>
-          <li>3.1&nbsp;&nbsp;關於您的會員註冊以及其他特定資料依本網站「隱私權聲明」受到保護與規範。您了解當您使用本服務時，您同意本網站依據「隱私權聲明」進行您個人資料的蒐集、處理與利用，包括跨國(境)間的國際傳輸與儲存及本網站及其關係企業內部之利用。本網站「隱私權聲明」之訂定均係依中華民國「個人資料保護法」為準則依據。</li>
-        </ul>
-        <br>
-        <h4>第4條&nbsp;&nbsp;免責聲明</h4>
-        <p> 當您成為本網站的用戶後，即表示你已詳細閱讀及明確瞭解本網站之服務條款、隱私權聲明，並同意在下列情況時本網站毋需承擔任何責任：</p>
-        <ul>
-          <li>4.1&nbsp;&nbsp;您使用本站服務之風險由您個人負擔。用戶同意使用 本網站 各項服務系基於用戶的個人意願，並同意自負任何風險，包括因為自 本網站 下載資料或圖片，或自 本網站 服務中獲得之資料導致發生任何資源流失等結果。</li>
-          <li>4.2&nbsp;&nbsp;本網站 就各項服務，不負任何明示或默示之擔保責任。本網站 不保證各項服務之穩定、安全、無誤、及不中斷；用戶明示承擔使用本服務之所有風險及可能發生之任何損害。</li>
-          <li>4.3&nbsp;&nbsp;用戶在 本網站 網站上填寫物件資訊、上傳圖片等行為，純屬用戶個人行為，本網站 不負有任何責任。</li>
-          <li>4.4&nbsp;&nbsp;對於透過 本網站 刊登之資料，本網站 對其聯繫過程及客戶會員資料本身，均不負任何擔保責任。用戶瞭解您透過 本網站 所提供之場地相關服務及店家資訊，完全由資訊提供人負全責，若有任何瑕疵或擔保責任，均與 本網站 無關。</li>
-          <li>4.5&nbsp;&nbsp;「本網站」僅收取刊登場地會員之金流與維運服務費為用戶使用本站服務平台及本站客服在有限的範圍內協調交易等費用，不包含任何擔保費用。</li>
-          <li>4.6&nbsp;&nbsp;任何由於駭客攻擊、電腦病毒侵入或發作、因政府管制而造成的暫時性關閉等影響網路正常經營之不可抗力而造成的資料洩露、丟失、被盜用或被竄改等與 本網站 無關。</li>
-          <li>4.7&nbsp;&nbsp;由於與本網站連結的其他網站所造成之個人資料洩露及由此而導致的任何法律爭議和後果均與 本網站 無關。</li>
-          <li>4.8&nbsp;&nbsp;本網站上刊登的個人廣告、商業廣告及各種商品的促銷資訊，除非屬於本站所自行出售，其內容均係由該個人、廣告商或商品、服務提供人所為，因此產生的糾紛本網站概不負責，本網站僅係提供刊登的媒介。</li>
-          <li>4.9&nbsp;&nbsp;對於用戶透過 本網站 刊登虛假資訊、及欺騙、敲詐行為者，純屬用戶個人行為，本網站 對因此而產生的經濟糾紛不負有任何責任！特此申明！</li>
-          <li>4.10&nbsp;&nbsp;本網站僅提供資訊交流參考平台，並不涉入其中任何諮詢、交易。本網站對各企業及其他相關資訊亦不做任何實質或形式上之審查。就本網站所載一切企業資料、產品資料等資訊、文字、照片、圖形、產權、廣告內容或其他資料(以下簡稱『內容』) 無論其為公開張貼或私下傳送，若有不實或違法情事，均為『內容』提供者之責任，本站概不負責也不承擔任何法律責任。</li>
-          <li>4.11&nbsp;&nbsp;本網站不就場地提供者之場地租用契約及/或使用規範及/或任何因場地提供者之場地租用契約及/或使用規範所生之爭議負擔任何責任。</li>
-          <li>4.12&nbsp;&nbsp;本網站不就因通訊服務業者暫停、中斷或終止通訊服務所造成之損害負擔任何責任。</li>
-          <li>4.13&nbsp;&nbsp;本網站就不可歸責於本網站之事由或不可抗力所造成服務停止或中斷所致之損害，不負擔任何責任。</li>
-          <li>4.14&nbsp;&nbsp;本網站不就使用者與場地提供者間之任何口頭或書面協議內容負擔任何責任。</li>
-          <li>4.15&nbsp;&nbsp;使用者滿意度為使用者之個人主觀體驗，本網站不就使用者之滿意度負擔任何保證責任。</li>
-          <li>4.16&nbsp;&nbsp;本網站乃根據場地提供者提供之資訊提供服務。本網站不保證相關服務資訊完整性、真實性和時效性。</li>
-          <li>4.17&nbsp;&nbsp;本網站無實際交貨、遞送及付款方式，實際的付款、遞送、交貨為買賣雙方間為履行權利及義務所生的行為，本網站並無介入其中。</li>
-          <li>4.18&nbsp;&nbsp;本網站僅提供平台，不涉入會員與交易相對人間之實際交易或其他協定內容，對雙方衍生之糾紛致生之損害賠償，本網站概不負責。</li>
-          <li>4.19&nbsp;&nbsp;關於以下事由，本網站概不負責：
-            <ul>
-              <li>4.19.1&nbsp;&nbsp;戰爭、事變、天災地變等，國家非常事態，不可抗力的狀況。</li>
-              <li>4.19.2&nbsp;&nbsp;會員或使用者故意或過失所造成損害賠償。</li>
-              <li>4.19.3&nbsp;&nbsp;因通信服務提供業者方面造成之通信障礙。</li>
-              <li>4.19.4&nbsp;&nbsp;為了進行補修工作，不得不停止服務時。</li>
-            </ul>
-          </li>
-        </ul>
+        <div class="modal-body">
+          <h2 class="text-center">隱私權聲明</h2>
+          <h4>第1條&nbsp;&nbsp;隱私權政策</h4>
+          <ul>
+            <li>1.1&nbsp;&nbsp;本網站重視使用者之隱私權並致力於保護使用者之個人資料，當使用者使用本網站所提供之資訊、產品及/或服務時，即表示使用者同意本網站依據本條蒐集、處理及利用使用者之個人資料。若使用者不同意本條款之全部或一部內容，請立即停止使用本網站。</li>
+            <li>1.2&nbsp;&nbsp;本網站得隨時因中華民國法規之變更、本網站個人資料收集與使用政策之改變、本網站功能之異動或技術之更新修改本條之內容。該等變動之內容將於本網站發佈，使用者應隨時留意並詳閱之。若使用者不同意本條之任何變更或修改，請立即停止使用本網站。</li>
+            <li>1.3&nbsp;&nbsp;本網站蒐集使用者個人資料之目的與範圍<br>
+              為提供使用者預定場地之服務、建立會員資料、調查、統計或分析使用者資料、廣告、行銷等相關目的，本網站將於使用者註冊/登錄會員及提交預定場地訂單時蒐集使用者之個人資料，包括但不限於使用者之姓名、住/居所地址、電子郵件信箱、電話、出生年月日、性別、身份證統一編號、信用卡資訊（包括但不限於卡號、驗證碼及到期日）、金融機構帳戶資訊及其他任何得以直接或間接方式識別個人之資料等。</li>
+            <li>1.4&nbsp;&nbsp;本網站利用使用者資料之期間與地區<br>
+              本網站僅在中華民國境內利用使用者之個人資料。除本網站另有公告或第11條另有變更情事，本網站將永久保存使用者提供之個人資料。</li>
+            <li>1.5&nbsp;&nbsp;本網站利用使用者資料之對象<br>
+              為提供使用者預定場地之服務，本網站將與其合作廠商（包括但不限於場地提供者）及/或相關協力廠商（包括但不限於本網站關係企業、餐飲供應商、場地布置廠商、金流服務提供廠商、金融機構等）分享使用者之個人資料。除此之外，非經使用者同意，或經公務機關循合法程序要求本網站提供使用者個人資料，本網站不與任何第三人分享或公開使用者之個人資料。</li>
+            <li>1.6&nbsp;&nbsp;Cookies之運用<br>
+              Cookies為資訊系統識別使用者而記錄於使用者硬碟之簡短資訊。使用者得於瀏覽器操作說明中瞭解如何設定接受或拒絕Cookies。若使用者拒絕，本網站之部分服務項目可能無法提供。本網站將於下列情況寫入及讀取Cookies：
+              <ul>
+                <li>1.6.1&nbsp;&nbsp;為統計本網站之瀏覽人數、分析使用者瀏覽模式及瀏覽之網頁以做為本網站改善、更新服務之參考。</li>
+                <li>1.6.2&nbsp;&nbsp;為便利使用者使用本網站中全部或一部服務項目而需記錄相關資訊。</li>
+              </ul>
+            </li>
+            <li>1.7&nbsp;&nbsp;使用者之權利
+              <ul>
+                <li>1.7.1&nbsp;&nbsp;使用者得請求查詢、閱覽個人資訊之一部或全部或就個人資訊之一部或全部製給複製本。</li>
+                <li>1.7.2&nbsp;&nbsp;使用者得請求補充或更正、停止蒐集、處理、利用或刪除使用者個人資訊之一部或全部。</li>
+                <li>1.7.3&nbsp;&nbsp;若使用者提出11.7.1條及11.7.2條之請求，本網站得要求核對使用者之身份證明文件，以確保使用者之個人資訊安全。</li>
+              </ul>
+            </li>
+            <li>1.8&nbsp;&nbsp;本網站對於使用者資料之保護<br>
+              本網站全程採用網際網路資料加密保護標準Secure Socket Layer (SSL)協定保護使用者之個人資料，並使用https://安全加密模式，可確保使用者資料傳輸之安全性。</li>
+            <li>1.9&nbsp;&nbsp;使用者若選擇不提供全部或部分個人資料時，將無法使用本網站之全部或部份之服務。</li>
+          </ul>
+          <br>
+          <h4>第2條&nbsp;&nbsp;會員資料使用</h4>
+          <ul>
+            <li>2.1&nbsp;&nbsp;會員個人資料適用於本網站的隱私權保護政策。加入本網站會員時填寫的個人資料，依本服務條款，由本網站資料管理者為會員建立個人檔案資料管理及利用。</li>
+            <li>2.2&nbsp;&nbsp;權益及網路交易安全，一旦檢警機關及法院為犯罪追訴、審判目的，本網站將依照法律規定及法院裁判，配合提供會員個人資料。</li>
+            <li>2.3&nbsp;&nbsp;會員對為維護會員本網站個人資料管理有疑議時，經提出書面申訴，本網站將依規定予以處理。</li>
+            <li>2.4&nbsp;&nbsp;會員同意當其與本網站終止契約，或會員因違規行為被本站停止會員資格後，本網站得保存會員個人及交易資料，並依法處理及利用。</li>
+          </ul>
+          <br>
+          <h4>第3條&nbsp;&nbsp;會員個人資料之蒐集、處理及利用</h4>
+          <ul>
+            <li>3.1&nbsp;&nbsp;關於您的會員註冊以及其他特定資料依本網站「隱私權聲明」受到保護與規範。您了解當您使用本服務時，您同意本網站依據「隱私權聲明」進行您個人資料的蒐集、處理與利用，包括跨國(境)間的國際傳輸與儲存及本網站及其關係企業內部之利用。本網站「隱私權聲明」之訂定均係依中華民國「個人資料保護法」為準則依據。</li>
+          </ul>
+          <br>
+          <h4>第4條&nbsp;&nbsp;免責聲明</h4>
+          <p> 當您成為本網站的用戶後，即表示你已詳細閱讀及明確瞭解本網站之服務條款、隱私權聲明，並同意在下列情況時本網站毋需承擔任何責任：</p>
+          <ul>
+            <li>4.1&nbsp;&nbsp;您使用本站服務之風險由您個人負擔。用戶同意使用 本網站 各項服務系基於用戶的個人意願，並同意自負任何風險，包括因為自 本網站 下載資料或圖片，或自 本網站 服務中獲得之資料導致發生任何資源流失等結果。</li>
+            <li>4.2&nbsp;&nbsp;本網站 就各項服務，不負任何明示或默示之擔保責任。本網站 不保證各項服務之穩定、安全、無誤、及不中斷；用戶明示承擔使用本服務之所有風險及可能發生之任何損害。</li>
+            <li>4.3&nbsp;&nbsp;用戶在 本網站 網站上填寫物件資訊、上傳圖片等行為，純屬用戶個人行為，本網站 不負有任何責任。</li>
+            <li>4.4&nbsp;&nbsp;對於透過 本網站 刊登之資料，本網站 對其聯繫過程及客戶會員資料本身，均不負任何擔保責任。用戶瞭解您透過 本網站 所提供之場地相關服務及店家資訊，完全由資訊提供人負全責，若有任何瑕疵或擔保責任，均與 本網站 無關。</li>
+            <li>4.5&nbsp;&nbsp;「本網站」僅收取刊登場地會員之金流與維運服務費為用戶使用本站服務平台及本站客服在有限的範圍內協調交易等費用，不包含任何擔保費用。</li>
+            <li>4.6&nbsp;&nbsp;任何由於駭客攻擊、電腦病毒侵入或發作、因政府管制而造成的暫時性關閉等影響網路正常經營之不可抗力而造成的資料洩露、丟失、被盜用或被竄改等與 本網站 無關。</li>
+            <li>4.7&nbsp;&nbsp;由於與本網站連結的其他網站所造成之個人資料洩露及由此而導致的任何法律爭議和後果均與 本網站 無關。</li>
+            <li>4.8&nbsp;&nbsp;本網站上刊登的個人廣告、商業廣告及各種商品的促銷資訊，除非屬於本站所自行出售，其內容均係由該個人、廣告商或商品、服務提供人所為，因此產生的糾紛本網站概不負責，本網站僅係提供刊登的媒介。</li>
+            <li>4.9&nbsp;&nbsp;對於用戶透過 本網站 刊登虛假資訊、及欺騙、敲詐行為者，純屬用戶個人行為，本網站 對因此而產生的經濟糾紛不負有任何責任！特此申明！</li>
+            <li>4.10&nbsp;&nbsp;本網站僅提供資訊交流參考平台，並不涉入其中任何諮詢、交易。本網站對各企業及其他相關資訊亦不做任何實質或形式上之審查。就本網站所載一切企業資料、產品資料等資訊、文字、照片、圖形、產權、廣告內容或其他資料(以下簡稱『內容』) 無論其為公開張貼或私下傳送，若有不實或違法情事，均為『內容』提供者之責任，本站概不負責也不承擔任何法律責任。</li>
+            <li>4.11&nbsp;&nbsp;本網站不就場地提供者之場地租用契約及/或使用規範及/或任何因場地提供者之場地租用契約及/或使用規範所生之爭議負擔任何責任。</li>
+            <li>4.12&nbsp;&nbsp;本網站不就因通訊服務業者暫停、中斷或終止通訊服務所造成之損害負擔任何責任。</li>
+            <li>4.13&nbsp;&nbsp;本網站就不可歸責於本網站之事由或不可抗力所造成服務停止或中斷所致之損害，不負擔任何責任。</li>
+            <li>4.14&nbsp;&nbsp;本網站不就使用者與場地提供者間之任何口頭或書面協議內容負擔任何責任。</li>
+            <li>4.15&nbsp;&nbsp;使用者滿意度為使用者之個人主觀體驗，本網站不就使用者之滿意度負擔任何保證責任。</li>
+            <li>4.16&nbsp;&nbsp;本網站乃根據場地提供者提供之資訊提供服務。本網站不保證相關服務資訊完整性、真實性和時效性。</li>
+            <li>4.17&nbsp;&nbsp;本網站無實際交貨、遞送及付款方式，實際的付款、遞送、交貨為買賣雙方間為履行權利及義務所生的行為，本網站並無介入其中。</li>
+            <li>4.18&nbsp;&nbsp;本網站僅提供平台，不涉入會員與交易相對人間之實際交易或其他協定內容，對雙方衍生之糾紛致生之損害賠償，本網站概不負責。</li>
+            <li>4.19&nbsp;&nbsp;關於以下事由，本網站概不負責：
+              <ul>
+                <li>4.19.1&nbsp;&nbsp;戰爭、事變、天災地變等，國家非常事態，不可抗力的狀況。</li>
+                <li>4.19.2&nbsp;&nbsp;會員或使用者故意或過失所造成損害賠償。</li>
+                <li>4.19.3&nbsp;&nbsp;因通信服務提供業者方面造成之通信障礙。</li>
+                <li>4.19.4&nbsp;&nbsp;為了進行補修工作，不得不停止服務時。</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
