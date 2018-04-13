@@ -1126,9 +1126,9 @@
     font-size: 21px;
     color: #4f6ea2;
     border-bottom: 1px solid #4f6ea2;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
-    padding: 5px 9px;
+    padding: 10px 9px;
     margin: 0 0 20px 0;
     text-align: left;
 }
@@ -1137,7 +1137,6 @@
 }
 .stepBox.fill_box .writeContent .writeContainer h2 i {
     margin-right: 9px;
-    font-size: 17px;
 }
 .stepBox.fill_box .writeContent .writeInformation1,
 .stepBox.fill_box .writeContent .writeInformation2,
