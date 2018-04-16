@@ -80,17 +80,14 @@
     letter-spacing: 0;
     color: #4f6ea2;
     border-bottom: 1px solid #4f6ea2;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
-    padding: 5px 9px;
+    padding: 10px 9px;
     margin: 0 0 20px 0;
     text-align: left;
-    font-weight: normal;
-    line-height: normal;
 }
 .additional_product .part_item h2 i {
     margin-right: 9px;
-    font-size: 17px;
 }
 .additional_product .custodyBtn > a {
     background: transparent;
@@ -958,8 +955,8 @@
 
 /** BEGIN additional_product_history **/
 .additional_product_history ._content._boxStyle {
-    padding-top: 44px;
-    margin-top: 40px;
+    padding-top: 40px;
+    margin-top: 44px;
 }
 .additional_product_history h2 {
     text-align: left;

@@ -1501,9 +1501,6 @@
 }
 
 /** BEGIN paper **/
-.writeContent .writeInput li .col.paper {
-    display: none !important;
-}
 .writeContent .writeInput li .col.paper .assess {
     flex-direction: column;
 }
@@ -2347,6 +2344,9 @@
         width: 100%;
         margin-bottom: 5px;
     }
+	.writeContent .writeInput li .col.paper .exact_input input:last-child {
+		margin-right: 0;
+	}
     .writeContent .writeInput li .col.paper .add_input {
         margin-left: 0;
     }
