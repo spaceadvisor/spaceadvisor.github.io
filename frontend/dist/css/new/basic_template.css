@@ -972,9 +972,6 @@
     background: #ccc;
     color: #4e5059;
 }
-.site_food-main ul li a:hover {
-    background: #efeff0;
-}
 .site_food-main ul li a ._left {
 
 }
@@ -1630,6 +1627,11 @@
     img[src$=".svg"] {
         width: 100%
     }
+}
+@media (min-width: 981px) {
+	.site_food-main ul li a:hover {
+		background-color: #efeff0;
+	}
 }
 @media only screen and (max-width: 980px) {
     /** BEGIN navigation_bar **/

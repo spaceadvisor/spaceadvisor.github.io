@@ -1,447 +1,417 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="keywords" content=" " />
-		<meta name="description" content=" ">
-		<meta name="author" content="SpaceAdvisor">
-		<meta name="copyright" content="本網頁著作SpaceAdvisor所有">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-		<link href="dist/images/icon.ico" type="image/x-icon" rel="shortcut icon"/>
-		<title>訂單-取消訂單</title>
-		<link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/jquery.mmenu.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/jquery-ui.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/bootstrap_bear.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/main.css" rel="stylesheet" type="text/css" media=""/>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content=" " />
+<meta name="description" content=" ">
+<meta name="author" content="SpaceAdvisor">
+<meta name="copyright" content="本網頁著作SpaceAdvisor所有">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="dist/images/icon.ico" type="image/x-icon" rel="shortcut icon"/>
+<title>訂單-取消訂單</title>
+<link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/jquery.mmenu.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/jquery-ui.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/bootstrap_bear.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/main.css" rel="stylesheet" type="text/css" media=""/>
 
-		<!-- STYLES -->
-		<link href="dist/css/new/basic.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/new/basic_orders.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/new/basic_template.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/new/orders_cancel.css" rel="stylesheet" type="text/css" media=""/>
-	</head>
+<!-- STYLES -->
+<link href="dist/css/new/basic.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/new/basic_orders.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/new/basic_template.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/new/orders_cancel.css" rel="stylesheet" type="text/css" media=""/>
+</head>
 
-	<body>
-		<div id="wrapper" class="orders_cancel">
-			<header class="cf">
-				<div class="content cf">
-					<a href="home.html" class="logo">
-						<img src="dist/svg/logo.svg">
-					</a>
-					<section class="__pc">
-						<a href="" class="activity">找活動</a>
-						<section class="_notLogin ">
-							<div class="login_info">
-								<a class="signup" href="signup.html">註冊</a>/<a class="signin" href="signin.html">登入</a>
-							</div>
-						</section>
-						<section class="_isLogin">
-							<div class="memberClick">
-								<a href="" class="member" style="background-image:url(dist/images/avator.jpg)"></a>
-								<div class="memberMenu">
-									<ul>
-										<li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
-										<li class="collect"><a href="javascript:;">收藏清單</a></li>
-										<li class="compare"><a href="javascript:;">比較清單<b>2</b></a></li>
-										<li class="orders"><a href="javascript:;">訂單管理</a></li>
-										<li class="points"><a href="javascript:;">點數管理</a></li>
-										<li class="faq"><a href="faq.html">常見問題</a></li>
-										<li class="logout"><a href="javascript:;">登出</a></li>
-									</ul>
-								</div>
-							</div>
-							<a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>收件夾<b>1</b></a>
-							<a href="" class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>購物車(<b>0</b>)</a>
-						</section>
-						<nav>
-							<ul>
-								<li class="about_us"><a href="about_us.html">關於我們</a></li>
-								<li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
-								<li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
-							</ul>
-						</nav>
-						<select name="select" id="select">
-							<option>中文</option>
-							<option>English</option>
-						</select>
-					</section>
-					<section class="__mb">
-						<a href="#menu" data-ajax="false" class="menu-mobile"><i class="fa fa-bars" aria-hidden="true"></i></a>
-						<div class="search">
-							<i id="search" class="fa fa-search" aria-hidden="true"></i>
-							<div class="search-box"><input type="text" name="textfield" id="textfield" placeholder="請輸入關鍵字" /><a href="javscript:;"><span class="btn btn-c-3 btn-sm">搜尋</span></a></div>
-						</div>
-					</section>
-				</div>
-				<section class="__mb">
-					<nav id="menu">
-						<ul>
-							<section class="_notLogin">
-								<li class="member">
-									<a class="signup" href="signup.html">註冊</a><a class="signin" href="signin.html">登入</a>
-								</li>
-								<li class="faq"><a href="faq.html">常見問題</a></li>
-								<li class="about_us"><a href="about_us.html">關於我們</a></li>
-								<li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
-								<li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
-								<li class="language">
-									<select name="select" id="select">
-										<option>中文</option>
-										<option>English</option>
-									</select>
-								</li>
-								<li class="activity"><a href="">找活動</a></li>
-							</section>
-							<section class="_isLogin">
-								<li class="member">
-									<a href="" class="pic" style="background-image:url(dist/images/avator.jpg)"></a><p>Hyun</p>
-									<a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i><b>1</b></a>
-								</li>
-								<li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
-								<li class="collect"><a href="javascript:;">收藏清單</a></li>
-								<li class="compare"><a href="javascript:;">比較清單 <b>2</b></a></li>
-								<li class="orders"><a href="javascript:;">訂單管理</a></li>
-								<li class="points"><a href="javascript:;">點數管理</a></li>
-								<li class="faq"><a href="faq.html">常見問題</a></li>
-								<li class="about_us"><a href="about_us.html">關於我們</a></li>
-								<li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
-								<li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
-								<li class="logout"><a href="">登出</a></li>
-								<li class="language">
-									<select name="select" id="select">
-										<option>中文</option>
-										<option>English</option>
-									</select>
-								</li>
-								<li class="activity"><a href="">找活動</a></li>
-							</section>
-						</ul>
-					</nav>
-				</section>
-			</header>
-
-
-			<!--main-->
-			<main class="order">
-				<!-- navlist -->
-				<div class="navigation_bar">
-					<ul>
-						<li><a href="javascript:;">會員資料</a></li>
-						<li ><a href="javascript:;">收件匣</a></li>
-						<li><a href="javascript:;">收藏清單</a></li>
-						<li><a href="javascript:;">比較清單</a></li>
-						<li class="active"><a href="javascript:;">訂單管理</a></li>
-						<li><a href="javascript:;">點數管理</a></li>
-					</ul>
-				</div>
-
-				<!--
+<body>
+<div id="wrapper" class="orders_cancel">
+  <header class="cf">
+    <div class="content cf"> <a href="home.html" class="logo"> <img src="dist/svg/logo.svg"> </a>
+      <section class="__pc"> <a href="" class="activity">找活動</a>
+        <section class="_notLogin ">
+          <div class="login_info"> <a class="signup" href="signup.html">註冊</a>/<a class="signin" href="signin.html">登入</a> </div>
+        </section>
+        <section class="_isLogin">
+          <div class="memberClick"> <a href="" class="member" style="background-image:url(dist/images/avator.jpg)"></a>
+            <div class="memberMenu">
+              <ul>
+                <li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
+                <li class="collect"><a href="javascript:;">收藏清單</a></li>
+                <li class="compare"><a href="javascript:;">比較清單<b>2</b></a></li>
+                <li class="orders"><a href="javascript:;">訂單管理</a></li>
+                <li class="points"><a href="javascript:;">點數管理</a></li>
+                <li class="faq"><a href="faq.html">常見問題</a></li>
+                <li class="logout"><a href="javascript:;">登出</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>收件夾<b>1</b></a> <a href="" class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>購物車(<b>0</b>)</a> </section>
+        <nav>
+          <ul>
+            <li class="about_us"><a href="about_us.html">關於我們</a></li>
+            <li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+            <li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+          </ul>
+        </nav>
+        <select name="select" id="select">
+          <option>中文</option>
+          <option>English</option>
+        </select>
+      </section>
+      <section class="__mb"> <a href="#menu" data-ajax="false" class="menu-mobile"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <div class="search"> <i id="search" class="fa fa-search" aria-hidden="true"></i>
+          <div class="search-box">
+            <input type="text" name="textfield" id="textfield" placeholder="請輸入關鍵字" />
+            <a href="javscript:;"><span class="btn btn-c-3 btn-sm">搜尋</span></a></div>
+        </div>
+      </section>
+    </div>
+    <section class="__mb">
+      <nav id="menu">
+        <ul>
+          <section class="_notLogin">
+            <li class="member"> <a class="signup" href="signup.html">註冊</a><a class="signin" href="signin.html">登入</a> </li>
+            <li class="faq"><a href="faq.html">常見問題</a></li>
+            <li class="about_us"><a href="about_us.html">關於我們</a></li>
+            <li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+            <li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+            <li class="language">
+              <select name="select" id="select">
+                <option>中文</option>
+                <option>English</option>
+              </select>
+            </li>
+            <li class="activity"><a href="">找活動</a></li>
+          </section>
+          <section class="_isLogin">
+            <li class="member"> <a href="" class="pic" style="background-image:url(dist/images/avator.jpg)"></a>
+              <p>Hyun</p>
+              <a href="" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i><b>1</b></a> </li>
+            <li class="mgmt"><a href="javascript:;">會員資料管理</a></li>
+            <li class="collect"><a href="javascript:;">收藏清單</a></li>
+            <li class="compare"><a href="javascript:;">比較清單 <b>2</b></a></li>
+            <li class="orders"><a href="javascript:;">訂單管理</a></li>
+            <li class="points"><a href="javascript:;">點數管理</a></li>
+            <li class="faq"><a href="faq.html">常見問題</a></li>
+            <li class="about_us"><a href="about_us.html">關於我們</a></li>
+            <li class="why_spaceadvisor"><a href="why_spaceadvisor.html">平台優勢</a></li>
+            <li class="space_signup"><a href="space_signup_readme.html">成為場地主</a></li>
+            <li class="logout"><a href="">登出</a></li>
+            <li class="language">
+              <select name="select" id="select">
+                <option>中文</option>
+                <option>English</option>
+              </select>
+            </li>
+            <li class="activity"><a href="">找活動</a></li>
+          </section>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  
+  <!--main-->
+  <main class="order"> 
+    <!-- navlist -->
+    <div class="navigation_bar">
+      <ul>
+        <li><a href="javascript:;">會員資料</a></li>
+        <li ><a href="javascript:;">收件匣</a></li>
+        <li><a href="javascript:;">收藏清單</a></li>
+        <li><a href="javascript:;">比較清單</a></li>
+        <li class="active"><a href="javascript:;">訂單管理</a></li>
+        <li><a href="javascript:;">點數管理</a></li>
+      </ul>
+    </div>
+    
+    <!--
 					三種狀態
 					data-type為"0"或未輸入, alert取消成功
 					data-type為"1", 跳付款頁
 					data-type為"2", alert, 請與客服聯繫 support@spaceadvisor.com
 				-->
-				<div class="site-management _boxStyle" data-type="2">
-					<!-- 取消訂單 -->
-					<div class="site-cancel-title"><h2><i class="fa fa-calendar-check-o" aria-hidden="true"></i>取消訂單</h2></div>
-					<!-- 一筆場地 -->
-					<div class="site">
-						<div class="site-cancel-contect">準備取消此訂單前，請您再次確認已詳細閱讀<a href="javascript:;">場地取消條款</a>。</div>
-						<!-- 訂單的一筆資料 -->
-						<div class="bookList _style1" data-id="1" data-stat="paid">
-							<div class="bookTitle">
-								<div class="_left">
-									<div class="recno">訂單編號<span>113504103</span></div>
-									<div class="recstate"><span>已付款</span></div>
-								</div>
-								<div class="_right">
-									<div class="recdate">下單日期<span>2017年04月12日</span></div>
-								</div>
-							</div>
-							<div class="detailTable">
-								<div class="detailTable-left">
-									<div class="detailTable-inner">
-										<div class="detailTable-row detailTable-heading">
-											<div class="detailTable-cell">場地</div>
-										</div>
-										<div class="detailTable-row">
-											<div class="detailTable-cell" data-title="場地">
-												<div class="tablePhoto sitePhoto">
-													<div class="sitePhoto-pic">
-														<div class="sitePo">
-															<img src="dist/images/step_photo_pc.jpg">
-														</div>
-													</div>
-												</div>
-												<div class="tableTxt siteName">
-													<div>
-														<div class="siteTxt">台北文藝推廣中心</div>
-														<div class="siteTxt">三樓會議室(一)</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="detailTable-mid">
-									<div class="detailTable-inner">
-										<div class="detailTable-row detailTable-heading">
-											<div class="detailTable-cell">時間</div>
-											<div class="detailTable-cell">方案/桌數</div>
-											<div class="detailTable-cell">價位</div>
-											<div class="detailTable-cell">操作</div>
-										</div>
-										<!-- 有人數或桌數的變更，class加上 _havePartChange 會顯示 -->
-										<div class="detailTable-row detailTable-content _havePartChange">
-											<div class="detailTable-cell" data-title="時間">
-												<h4>時間</h4>
-												<div class="tableTxt">
-													<span>2017年04月09日</span>
-													<span>13:00～17:00PM</span>
-												</div>
-											</div>
-											<div class="detailTable-cell" data-title="方案/桌數">
-												<h4>方案/桌數</h4>
-												<div class="tableTxt">
-													<span>半天會議室方案30桌</span>
-												</div>
-											</div>
-											<div class="detailTable-cell" data-title="價位">
-												<h4>價位</h4>
-												<div class="tableTxt">
-													<div class="sarebate">7折</div>
-													<div class="_price">
-														<div class="original">
-															<span class="currency">TWD</span>
-															<span>21,000</span>
-														</div>
-														<div class="special">
-															<span class="currency">TWD</span>
-															<span>21,000</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="detailTable-cell" data-title="操作">
-												<div class="tableTxt buyIcon">
-													<div class="_whole">
-														<input type="checkbox" name="_del_radio_0" id="_del_whole_0"><label for="_del_whole_0" data-text="整筆取消"></label>
-													</div>
-													<div class="_part">
-														<input type="checkbox" name="_del_radio_0" id="_del_part_1"><label for="_del_part_1" data-text="桌數變更"><input type="number" name="del_part_detail" min="0" value="30"></label>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="detailTable-row detailTable-content _haveDiscount">
-											<div class="detailTable-cell" data-title="時間">
-												<h4>時間</h4>
-												<div class="tableTxt">
-													<span>2017年04月09日</span>
-													<span>13:00～17:00PM</span>
-												</div>
-											</div>
-											<div class="detailTable-cell" data-title="方案/桌數">
-												<h4>方案/桌數</h4>
-												<div class="tableTxt">
-													<span>半天會議室方案</span>
-												</div>
-											</div>
-											<div class="detailTable-cell" data-title="價位">
-												<h4>價位</h4>
-												<div class="tableTxt">
-													<div class="sarebate">7折</div>
-													<div class="_price">
-														<div class="original">
-															<span class="currency">TWD</span>
-															<span>21,000</span>
-														</div>
-														<div class="special">
-															<span class="currency">TWD</span>
-															<span>21,000</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="detailTable-cell" data-title="連結">
-												<div class="tableTxt buyIcon">
-													<div class="_whole">
-														<input type="checkbox" name="_del_radio_1" id="_del_whole_1"><label for="_del_whole_1">整筆取消</label>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- 取消訂單 end -->
-					<!-- 備註 -->
-					<div class="site_remark">
-						<div class="site_remark-description">
-							<i class="fa fa-exclamation-circle" aria-hidden="true"></i><span>超值加購採<b>『單一退換服務』</b>如您發現加購內容需要修改，或是其他因素欲取消加購，請取消加購訂單再重新下標。</span>
-						</div>
-						<!-- wording1 // 當7日內, 尚在免費取消期間 -->
-						<div class="site_remark-main">
-							<p>訂單編號:00000000</p>
-							<p>可於2017年01月01日前免費取消不需支付任何手續費。</p>
-							<p>超過免費取消日期之後取消訂單，將依據取消條款中的比例核算。取消金比例請參閱場地取消條款。</p>
-							<br>
-							<p>您是否確認要取消？</p>
-						</div>
-						<!-- wording2 // 當超過7日, 已不在免費取消期間，無折扣代碼問題 -->
-						<div class="site_remark-main">
-							<p>訂單編號:00000000</p>
-							<p>若今日取消此筆訂單，您將須支付<b>TWD 12,000元</b>作為取消金。如欲取消，扣除取消金費用後將退回<b>TWD 28,000元</b>至您的帳戶或信用卡。</p>
-							<br>
-							<p>【取消說明】</p>
-							<p>取消金計算是依據取消條款中的比例核算： “距活動日30-60天前取消,應負擔訂單金額30%,作為取消金。”</p>
-							<p>請先了解以上取消金額依據不同取消日期，會有不同的計算結果，以上金額為<span>今日取消</span>的金額，其他日期取消比例請參閱場地取消條款。</p>
-							<p>當您超過時間取消預訂或無法依預定使用場地，將不會給予任何退款。</p>
-							<p>※ 提醒您每筆訂單每日僅可變動一次。</p>
-							<br>
-							<p>【金額計算】</p>
-							<p>原價40,000元 – 取消金 12000元 (距活動日30-60天前取消,應負擔訂單金額30%,作為取消金) = 實際退還TWD 28,000元</p>
-							<br>
-							<p>【退費流程】</p>
-							<p>如您為信用卡支付，金額將於退款流程申請完畢後，退還於原刷信用卡；如您為ATM支付，金額將於退款流程申請完畢後，退還於原銀行帳戶。</p>
-							<p>請於申請流程完畢後次月核對您的信用卡或銀行帳單。</p>
-							<br>
-							<p>您是否確認要取消？</p>
-						</div>
-						<!-- wording3 // 當超過7日, 已不在免費取消期間，有折扣代碼問題 -->
-						<div class="site_remark-main">
-							<p>訂單編號:00000000</p>
-							<p>若今日取消此筆訂單，您將須支付<b>TWD 12,000元</b>作為取消金，並返還折扣金額<b>TWD 3000元</b>。如欲取消，扣除取消金費用後將退回<b>TWD 25,000元</b>至您的帳戶或信用卡。</p>
-							<br>
-							<p>【取消說明】</p>
-							<p>取消金計算是依據取消條款中的比例核算： “距活動日30-60天前取消,應負擔訂單金額30%,作為取消金。”</p>
-							<p>請先了解以上取消金額依據不同取消日期，會有不同的計算結果，以上金額為<span>今日取消</span>的金額，其他日期取消比例請參閱場地取消條款。</p>
-							<p>當您超過時間取消預訂或無法依預定使用場地，將不會給予任何退款。</p>
-							<p>※ 提醒您每筆訂單每日僅可變動一次。</p>
-							<br>
-							<p>【金額計算】</p>
-							<p>您於此訂單中使用折扣代碼 (SALE001)，因取消後剩餘訂單金額未達折扣代碼使用門檻，須退回折扣金額TWD 3000元。</p>
-							<p>原價40,000元 – 取消金 12000元 (距活動日30-60天前取消,應負擔訂單金額30%,作為取消金) – 返還折扣金額 3000元  = 實際退還TWD 25,000元</p>
-							<p>※ 提醒您，折扣碼僅能使用一次，在此訂單退款單後，即不能再使用。</p>
-							<br>
-							<p>【退費流程】</p>
-							<p>如您為信用卡支付，金額將於退款流程申請完畢後，退還於原刷信用卡；如您為ATM支付，金額將於退款流程申請完畢後，退還於原銀行帳戶。</p>
-							<p>請於申請流程完畢後次月核對您的信用卡或銀行帳單。</p>
-							<br>
-							<p>您是否確認要取消？</p>
-						</div>
-						<!-- wording4 // 當超過7日, 已不在免費取消期間，有折扣代碼問題，取消後須另行補支付費用。 -->
-						<div class="site_remark-main">
-							<p>訂單編號:00000000</p>
-							<p>若今日取消此筆訂單，您將須支付<b>TWD 1,200元</b>作為取消金，並返還折扣金額<b>TWD 3,000元</b>。如欲取消，您將需要再支付<b>TWD 200元。</b></p>
-							<br>
-							<p>【取消說明】</p>
-							<p>取消金計算是依據取消條款中的比例核算： “距活動日30-60天前取消,應負擔訂單金額30%,作為取消金。”</p>
-							<p>請先了解以上取消金額依據不同取消日期，會有不同的計算結果，以上金額為<span>今日取消</span>的金額，其他日期取消比例請參閱場地取消條款。</p>
-							<p>當您超過時間取消預訂或無法依預定使用場地，將不會給予任何退款。</p>
-							<p>※ 提醒您每筆訂單每日僅可變動一次。</p>
-							<br>
-							<p>【金額計算】</p>
-							<p>您於此訂單中使用折扣代碼 (SALE001)，因取消後剩餘訂單金額未達折扣代碼使用門檻，須退回折扣金額 TWD 3000元。</p>
-							<p>原價4,000元 – 取消金 1200元 (距活動日30-60天前取消,應負擔訂單金額30%,作為取消金) – 返還折扣金額 3000元  = 您尚須支付TWD 200元</p>
-							<p>※ 提醒您，折扣碼僅能使用一次，在此訂單退款單後，即不能再使用。</p>
-							<br>
-							<p>【退費流程】</p>
-							<p>此訂單取消將不會退回任何費用。您需要再支付 TWD 200 元。</p>
-							<br>
-							<p>您是否確認要取消？</p>
-						</div>
-					</div>
-					<div class="site_confirm"><label><input type="checkbox"><span>我已詳細閱讀，並且完全接受取消條款之內容</span></label></div>
-					<!-- 按鈕 -->
-					<div class="site_button clearfix">
-						<a class="disable" href="javascript:;"><span class="btn btn-c-3 btn-l">確認取消</a>
-					</div>
-					<!-- 按鈕 end -->
-				</div>
-			</main>
-			<!--/main-->
+    <div class="site-management _boxStyle" data-type="2"> 
+      <!-- 取消訂單 -->
+      <div class="site-cancel-title">
+        <h2><i class="fa fa-calendar-check-o" aria-hidden="true"></i>取消訂單</h2>
+      </div>
+      <!-- 一筆場地 -->
+      <div class="site">
+        <div class="site-cancel-contect">準備取消此訂單前，請您再次確認已詳細閱讀<a href="javascript:;">場地取消條款</a>。</div>
+        <!-- 訂單的一筆資料 -->
+        <div class="bookList _style1" data-id="1" data-stat="paid">
+          <div class="bookTitle">
+            <div class="_left">
+              <div class="recno">訂單編號<span>113504103</span></div>
+              <div class="recstate"><span>已付款</span></div>
+            </div>
+            <div class="_right">
+              <div class="recdate">下單日期<span>2017年04月12日</span></div>
+            </div>
+          </div>
+          <div class="detailTable">
+            <div class="detailTable-left">
+              <div class="detailTable-inner">
+                <div class="detailTable-row detailTable-heading">
+                  <div class="detailTable-cell">場地</div>
+                </div>
+                <div class="detailTable-row">
+                  <div class="detailTable-cell" data-title="場地">
+                    <div class="tablePhoto sitePhoto">
+                      <div class="sitePhoto-pic">
+                        <div class="sitePo"> <img src="dist/images/step_photo_pc.jpg"> </div>
+                      </div>
+                    </div>
+                    <div class="tableTxt siteName">
+                      <div>
+                        <div class="siteTxt">台北文藝推廣中心</div>
+                        <div class="siteTxt">三樓會議室(一)</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detailTable-mid">
+              <div class="detailTable-inner">
+                <div class="detailTable-row detailTable-heading">
+                  <div class="detailTable-cell">時間</div>
+                  <div class="detailTable-cell">方案/桌數</div>
+                  <div class="detailTable-cell">價位</div>
+                  <div class="detailTable-cell">操作</div>
+                </div>
+                <!-- 有人數或桌數的變更，class加上 _havePartChange 會顯示 -->
+                <div class="detailTable-row detailTable-content _havePartChange">
+                  <div class="detailTable-cell" data-title="時間">
+                    <h4>時間</h4>
+                    <div class="tableTxt"> <span>2017年04月09日</span> <span>13:00～17:00PM</span> </div>
+                  </div>
+                  <div class="detailTable-cell" data-title="方案/桌數">
+                    <h4>方案/桌數</h4>
+                    <div class="tableTxt"> <span>半天會議室方案30桌</span> </div>
+                  </div>
+                  <div class="detailTable-cell" data-title="價位">
+                    <h4>價位</h4>
+                    <div class="tableTxt">
+                      <div class="sarebate">7折</div>
+                      <div class="_price">
+                        <div class="original"> <span class="currency">TWD</span> <span>21,000</span> </div>
+                        <div class="special"> <span class="currency">TWD</span> <span>21,000</span> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="detailTable-cell" data-title="操作">
+                    <div class="tableTxt buyIcon">
+                      <div class="_whole">
+                        <input type="checkbox" name="_del_radio_0" id="_del_whole_0">
+                        <label for="_del_whole_0" data-text="整筆取消"></label>
+                      </div>
+                      <div class="_part">
+                        <input type="checkbox" name="_del_radio_0" id="_del_part_1">
+                        <label for="_del_part_1" data-text="桌數變更">
+                          <select name="del_part_detail">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detailTable-row detailTable-content _haveDiscount">
+                  <div class="detailTable-cell" data-title="時間">
+                    <h4>時間</h4>
+                    <div class="tableTxt"> <span>2017年04月09日</span> <span>13:00～17:00PM</span> </div>
+                  </div>
+                  <div class="detailTable-cell" data-title="方案/桌數">
+                    <h4>方案/桌數</h4>
+                    <div class="tableTxt"> <span>半天會議室方案</span> </div>
+                  </div>
+                  <div class="detailTable-cell" data-title="價位">
+                    <h4>價位</h4>
+                    <div class="tableTxt">
+                      <div class="sarebate">7折</div>
+                      <div class="_price">
+                        <div class="original"> <span class="currency">TWD</span> <span>21,000</span> </div>
+                        <div class="special"> <span class="currency">TWD</span> <span>21,000</span> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="detailTable-cell" data-title="連結">
+                    <div class="tableTxt buyIcon">
+                      <div class="_whole">
+                        <input type="checkbox" name="_del_radio_1" id="_del_whole_1">
+                        <label for="_del_whole_1">整筆取消</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="submit text-center"><a class="disable" href="#confirm-modal" data-toggle="modal"><span class="btn btn-c-3 btn-m">確認</span></a></div>
+      </div>
+      <!-- 取消訂單 end -->
+      
+      <div id="confirm-modal" class="confirm-modal modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body"> 
+              <!-- 備註 -->
+              <div class="site_remark"> 
+                <!-- wording1 // 當7日內, 尚在免費取消期間 -->
+                <div class="site_remark-main">
+                  <p>訂單編號:00000000</p>
+                  <p>可於2017年01月01日前免費取消不需支付任何手續費。</p>
+                  <p>超過免費取消日期之後取消訂單，將依據取消條款中的比例核算。取消金比例請參閱場地取消條款。</p>
+                  <br>
+                  <p>您是否確認要取消？</p>
+                </div>
+                <!-- wording2 // 當超過7日, 已不在免費取消期間，無折扣代碼問題 -->
+                <div class="site_remark-main">
+                  <p>訂單編號:00000000</p>
+                  <p>若今日取消此筆訂單，您將須支付<b>TWD 12,000元</b>作為取消金。如欲取消，扣除取消金費用後將退回<b>TWD 28,000元</b>至您的帳戶或信用卡。</p>
+                  <br>
+                  <p>【取消說明】</p>
+                  <p>取消金計算是依據取消條款中的比例核算： “距活動日30-60天前取消,應負擔訂單金額30%,作為取消金。”</p>
+                  <p>請先了解以上取消金額依據不同取消日期，會有不同的計算結果，以上金額為<span>今日取消</span>的金額，其他日期取消比例請參閱場地取消條款。</p>
+                  <p>當您超過時間取消預訂或無法依預定使用場地，將不會給予任何退款。</p>
+                  <p>※ 提醒您每筆訂單每日僅可變動一次。</p>
+                  <br>
+                  <p>【金額計算】</p>
+                  <p>原價40,000元 – 取消金 12000元 (距活動日30-60天前取消,應負擔訂單金額30%,作為取消金) = 實際退還TWD 28,000元</p>
+                  <br>
+                  <p>【退費流程】</p>
+                  <p>如您為信用卡支付，金額將於退款流程申請完畢後，退還於原刷信用卡；如您為ATM支付，金額將於退款流程申請完畢後，退還於原銀行帳戶。</p>
+                  <p>請於申請流程完畢後次月核對您的信用卡或銀行帳單。</p>
+                  <br>
+                  <p>您是否確認要取消？</p>
+                </div>
+                <!-- wording3 // 當超過7日, 已不在免費取消期間，有折扣代碼問題 -->
+                <div class="site_remark-main">
+                  <p>訂單編號:00000000</p>
+                  <p>若今日取消此筆訂單，您將須支付<b>TWD 12,000元</b>作為取消金，並返還折扣金額<b>TWD 3000元</b>。如欲取消，扣除取消金費用後將退回<b>TWD 25,000元</b>至您的帳戶或信用卡。</p>
+                  <br>
+                  <p>【取消說明】</p>
+                  <p>取消金計算是依據取消條款中的比例核算： “距活動日30-60天前取消,應負擔訂單金額30%,作為取消金。”</p>
+                  <p>請先了解以上取消金額依據不同取消日期，會有不同的計算結果，以上金額為<span>今日取消</span>的金額，其他日期取消比例請參閱場地取消條款。</p>
+                  <p>當您超過時間取消預訂或無法依預定使用場地，將不會給予任何退款。</p>
+                  <p>※ 提醒您每筆訂單每日僅可變動一次。</p>
+                  <br>
+                  <p>【金額計算】</p>
+                  <p>您於此訂單中使用折扣代碼 (SALE001)，因取消後剩餘訂單金額未達折扣代碼使用門檻，須退回折扣金額TWD 3000元。</p>
+                  <p>原價40,000元 – 取消金 12000元 (距活動日30-60天前取消,應負擔訂單金額30%,作為取消金) – 返還折扣金額 3000元  = 實際退還TWD 25,000元</p>
+                  <p>※ 提醒您，折扣碼僅能使用一次，在此訂單退款單後，即不能再使用。</p>
+                  <br>
+                  <p>【退費流程】</p>
+                  <p>如您為信用卡支付，金額將於退款流程申請完畢後，退還於原刷信用卡；如您為ATM支付，金額將於退款流程申請完畢後，退還於原銀行帳戶。</p>
+                  <p>請於申請流程完畢後次月核對您的信用卡或銀行帳單。</p>
+                  <br>
+                  <p>您是否確認要取消？</p>
+                </div>
+                <!-- wording4 // 當超過7日, 已不在免費取消期間，有折扣代碼問題，取消後須另行補支付費用。 -->
+                <div class="site_remark-main">
+                  <p>訂單編號:00000000</p>
+                  <p>若今日取消此筆訂單，您將須支付<b>TWD 1,200元</b>作為取消金，並返還折扣金額<b>TWD 3,000元</b>。如欲取消，您將需要再支付<b>TWD 200元。</b></p>
+                  <br>
+                  <p>【取消說明】</p>
+                  <p>取消金計算是依據取消條款中的比例核算： “距活動日30-60天前取消,應負擔訂單金額30%,作為取消金。”</p>
+                  <p>請先了解以上取消金額依據不同取消日期，會有不同的計算結果，以上金額為<span>今日取消</span>的金額，其他日期取消比例請參閱場地取消條款。</p>
+                  <p>當您超過時間取消預訂或無法依預定使用場地，將不會給予任何退款。</p>
+                  <p>※ 提醒您每筆訂單每日僅可變動一次。</p>
+                  <br>
+                  <p>【金額計算】</p>
+                  <p>您於此訂單中使用折扣代碼 (SALE001)，因取消後剩餘訂單金額未達折扣代碼使用門檻，須退回折扣金額 TWD 3000元。</p>
+                  <p>原價4,000元 – 取消金 1200元 (距活動日30-60天前取消,應負擔訂單金額30%,作為取消金) – 返還折扣金額 3000元  = 您尚須支付TWD 200元</p>
+                  <p>※ 提醒您，折扣碼僅能使用一次，在此訂單退款單後，即不能再使用。</p>
+                  <br>
+                  <p>【退費流程】</p>
+                  <p>此訂單取消將不會退回任何費用。您需要再支付 TWD 200 元。</p>
+                  <br>
+                  <p>您是否確認要取消？</p>
+                </div>
+              </div>
+              <div class="site_confirm">
+                <label>
+                  <input type="checkbox">
+                  <span>我已詳細閱讀，並且完全接受取消條款之內容</span></label>
+              </div>
+              <!-- 按鈕 -->
+              <div class="site_button clearfix"> <a class="disable" href="javascript:;"><span class="btn btn-c-3 btn-l">確認取消</a> </div>
+              <!-- 按鈕 end --> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--/main--> 
+  
+  <!-- top --> 
+  <a href="javascript:;" class="gotop"></a>
+  <footer class="cf search-mobile-hide">
+    <div class="top desk">
+      <ul>
+        <li>
+          <p>SpaceAdvisor</p>
+          <a href="">關於我們</a> <a href="">平台優勢</a> <a href="">使用說明</a> <a href="">人才招募</a> </li>
+        <li>
+          <p>客服中心</p>
+          <a href="">常見問題</a> <a href="">聯絡我們</a> <a href="">服務政策</a> <a href="">隱私權條款</a> </li>
+        <li>
+          <p>活動類型</p>
+          <a href="">企業培訓</a> <a href="">記者會 發表會</a> <a href="">商務宴客</a> <a href="">企業聚餐</a> <a href="">主題派對</a> <a href="">婚禮 春酒 晚會</a> </li>
+        <li>
+          <p>場地類型</p>
+          <a href="">星級飯店</a> <a href="">藝文場地</a> <a href="">會議中心</a> <a href="">展覽中心</a> <a href="">餐飲空間</a> <a href="">公家機構</a> <a href="">戶外場地</a> </li>
+        <li>
+          <p>合作夥伴</p>
+          <a href="">合作優勢</a> <a href="">立即刊登場地</a> <a href="">企業合作</a> <a href="">經銷商計畫</a> </li>
+      </ul>
+    </div>
+    <div class="bottom">
+      <ul>
+        <li>
+          <p>台北市信義區信義路5段7號24F D1 (101大樓)</p>
+          <p>© SpaceAdvisor 2017 All Rights Reserved</p>
+        </li>
+        <li> <a href="" target="_blank"><img src="dist/images/icon_fb.png" alt="" title=""></a> <a href="" target="_blank"><img src="dist/images/icon_line.png" alt="" title=""></a> </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+<!-- /#wrapper --> 
 
-
-			<!-- top -->
-			<a href="javascript:;" class="gotop"></a>
-			<footer class="cf search-mobile-hide">
-				<div class="top desk">
-					<ul>
-						<li>
-							<p>SpaceAdvisor</p>
-							<a href="">關於我們</a>
-							<a href="">平台優勢</a>
-							<a href="">使用說明</a>
-							<a href="">人才招募</a>
-						</li>
-						<li>
-							<p>客服中心</p>
-							<a href="">常見問題</a>
-							<a href="">聯絡我們</a>
-							<a href="">服務政策</a>
-							<a href="">隱私權條款</a>
-						</li>
-						<li>
-							<p>活動類型</p>
-							<a href="">企業培訓</a>
-							<a href="">記者會 發表會</a>
-							<a href="">商務宴客</a>
-							<a href="">企業聚餐</a>
-							<a href="">主題派對</a>
-							<a href="">婚禮 春酒 晚會</a>
-						</li>
-						<li>
-							<p>場地類型</p>
-							<a href="">星級飯店</a>
-							<a href="">藝文場地</a>
-							<a href="">會議中心</a>
-							<a href="">展覽中心</a>
-							<a href="">餐飲空間</a>
-							<a href="">公家機構</a>
-							<a href="">戶外場地</a>
-						</li>
-						<li>
-							<p>合作夥伴</p>
-							<a href="">合作優勢</a>
-							<a href="">立即刊登場地</a>
-							<a href="">企業合作</a>
-							<a href="">經銷商計畫</a>
-						</li>
-					</ul>
-				</div>
-				<div class="bottom">
-					<ul>
-						<li>
-							<p>台北市信義區信義路5段7號24F D1 (101大樓)</p>
-							<p>© SpaceAdvisor 2017 All Rights Reserved</p>
-						</li>
-						<li>
-							<a href="" target="_blank"><img src="dist/images/icon_fb.png" alt="" title=""></a>
-							<a href="" target="_blank"><img src="dist/images/icon_line.png" alt="" title=""></a>
-						</li>
-					</ul>
-				</div>
-			</footer>
-		</div>
-		<!-- /#wrapper -->
-
-
-		<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="dist/js/jquery-ui.js"></script>
-		<script type="text/javascript" src="dist/js/bootstrap_bear.js"></script>
-		<script type="text/javascript" src="dist/js/main.js"></script>
-		<script type="text/javascript" src="dist/js/jquery.mmenu.min.js"></script>
-		<script type="text/javascript">
+<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="dist/js/jquery-ui.js"></script> 
+<script type="text/javascript" src="dist/js/bootstrap_bear.js"></script> 
+<script type="text/javascript" src="dist/js/main.js"></script> 
+<script type="text/javascript" src="dist/js/jquery.mmenu.min.js"></script> 
+<script type="text/javascript">
 			$(document).ready(function() {
 				$('.site_confirm input').on('change', function(){
 					if ($(this).is(':checked')) {
 			            $('.site_button a').removeClass('disable');
 			        } else {
 			        	$('.site_button a').addClass('disable');
+			        }
+				});
+				$('.buyIcon input').on('change', function(){
+					if ($(this).is(':checked')) {
+			            $('.submit a').removeClass('disable');
+			        } else {
+			        	$('.submit a').addClass('disable');
 			        }
 				});
 				$('.site_button a').on('click', function(){
@@ -495,5 +465,5 @@
 				})
 			});
 		</script>
-	</body>
+</body>
 </html>

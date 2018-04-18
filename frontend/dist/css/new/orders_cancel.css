@@ -126,19 +126,32 @@
 .bookList .detailTable-content._doDelete .detailTable-cell .tableTxt.buyIcon input[type="checkbox"]:checked + label {
 	color: #d65f4f;
 }
-.bookList .detailTable-cell .tableTxt.buyIcon ._part label input[type="number"] {
+.bookList .detailTable-cell .tableTxt.buyIcon ._part label select[name=del_part_detail] {
 	display: none;
-	height: 30px;
+    height: 30px;
     margin-top: 3px;
-    padding: 3px 9px;
     width: 60px;
     line-height: normal;
     border: 1px solid #ccc;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #ffffff url(../../images/selce_arrw02.png) no-repeat center right 8px;
 }
-.bookList .detailTable-cell .tableTxt.buyIcon ._part input[type="checkbox"]:checked + label input[type="number"] {
+.bookList .detailTable-cell .tableTxt.buyIcon ._part input[type="checkbox"]:checked + label select[name=del_part_detail] {
 	display: block;
 }
 /** END booklist **/
+
+.orders_cancel .confirm-modal .modal-header {
+	border-bottom: none;
+}
+.orders_cancel .confirm-modal .modal-body {
+	padding-top: 0;
+}
+.orders_cancel .confirm-modal .modal-body .site_remark-main {
+	margin-top: 0;
+}
 
 @media screen and (max-width:980px) {
 	.site-management._boxStyle {
