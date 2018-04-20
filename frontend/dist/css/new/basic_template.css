@@ -1762,6 +1762,7 @@
         width: 100%;
         padding-left: 40px;
         font-size: 15px;
+		padding: 0 25px;
     }
     .bookList .detailTable-left .detailTable-cell.recipBox .tableTxt {
         margin: 0;
