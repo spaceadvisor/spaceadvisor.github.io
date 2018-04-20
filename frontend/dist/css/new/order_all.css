@@ -132,21 +132,22 @@
     font-weight: normal;
 }
 .orderstep .stepPhotoInside {
-    width: 30%;
+	width: 30%;
     max-width: 270px;
-    display: inline-flex;
-    align-items: center;
-    max-height: 51px;
+    max-height: 52px;
     border-radius: 5px;
     overflow: hidden;
     background: #b81814;
     padding: 0 9px;
     margin-right: 3px;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 52px;
+    text-align: center;
 }
-.orderstep .stepPhotoInside img {
-    width: 100%;
-    border-radius: 5px;
-    overflow: hidden;
+.orderstep .stepPhotoInside span {
+    font-size: 39px;
+    vertical-align: top;
 }
 .orderstep ul {
     display: flex;
@@ -215,7 +216,6 @@
 }
 .order_time .orderContainer h2 {
     text-align: left;
-    font-weight: normal;
     margin: 0 0 20px 0;
     border-bottom: 1px solid #d76050;
     font-size: 21px;
@@ -223,7 +223,7 @@
     border-bottom-color: #d76050;
     display: flex;
     align-items: center;
-    padding: 5px 9px;
+    padding: 10px 9px;
     background: unset;
 }
 .order_time .orderContainer h2:before {
@@ -232,7 +232,7 @@
     font: normal normal normal 14px/1 FontAwesome;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    margin-right: 5px;
+    margin-right: 9px;
     text-align: center;
     font-size: 21px;
 }
@@ -294,6 +294,7 @@
 }
 .order_time .orderContainer .calendar ul.day {
     display: inline-block;
+	width: 100%;
     overflow: hidden;
     border: 1px solid gray;
     border-radius: 0 0 5px 5px;
@@ -527,7 +528,7 @@
     align-items: center;
 }
 .order_time .equipment .col .assess i {
-    margin: 0 9px;
+    margin: 0 6px;
     display: inline-flex;
 }
 .order_time .orderInformation3 .equipment .box .add {
@@ -587,7 +588,6 @@
 #wrapper.order_time .orderInformation5 textarea {
     padding: 10px 8px;
     background: #f3f3f3;
-    font-size: 1rem;
     color: #4e5059;
     width: 100%;
     height: 67px;
@@ -769,7 +769,6 @@
     align-items: center;
     background-color: #f3f3f3;
     margin: 0 4px 5px 0;
-    padding: 0 9px;
     width: calc((100% - 15px) / 4);
     height: 58px;
     font-size: 15px;
@@ -1076,9 +1075,8 @@
 }
 .buyContent .title h2 {
     text-align: left;
-    font-weight: normal;
     margin: 0 0 9px 0;
-    padding: 5px 9px;
+    padding: 10px 9px;
     font-size: 21px;
     color: #4e5059;
     border-bottom: 1px solid #ddd;
@@ -2010,7 +2008,7 @@
 
     .orderstep ul li {
         font-size: 13px;
-        padding: 9px 5px;
+        padding: 9px 0;
         border-bottom: 0;
         text-align: center;
     }
@@ -2041,12 +2039,17 @@
         flex-direction: column;
     }
     .orderstep .stepPhotoInside {
-        width: 100%;
-        max-width: unset;
-        padding: 5px 80px;
-        margin-right: 0;
-        margin-bottom: 3px;
+		width: 100%;
+		max-width: unset;
+		max-height: 35px;
+		margin-right: 0;
+		margin-bottom: 3px;
+		font-size: 15px;
+		line-height: 35px;
     }
+	.orderstep .stepPhotoInside span {
+		font-size: 26px;
+	}
 
     /** BEGIN calendar **/
     .order_time .orderContainer {
@@ -2054,7 +2057,7 @@
         max-width: 100%
     }
     .order_time .orderContainer .calendar ul.day li {
-        height: 70px;
+        height: 55px;
         padding: 3px;
     }
     .order_time .orderContainer .calendar ul.day li.fold span {
@@ -2232,9 +2235,15 @@
         flex-direction: column;
     }
     .order_time_period .caseSelect .flexbox .caseList{width:100%;}
-    .order_time_period .caseSelect .flexbox .caseRem{width:calc(100%); margin-left:0;}
+    .order_time_period .caseSelect .flexbox .caseRem {
+		width:calc(100%);
+		margin-left:0;
+		height: auto;
+    	font-size: 13px;
+	}
     .order_time_period .caseSelect .flexbox .caseList ul li {
         font-size: 13px;
+		height: 48px;
     }
     .order_time.order_time_period .order_timeList li {
         display: none;
