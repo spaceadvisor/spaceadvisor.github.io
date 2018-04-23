@@ -631,12 +631,6 @@
     align-items: center;
     justify-content: flex-start;
 }
-.order_time .order_timeList.ord_mo li {
-    margin-right: 3px;
-}
-.order_time .order_timeList.ord_mo li:last-child {
-    margin-right: 0;
-}
 .order_time .orderInformation2._none .order_timeList li,
 .order_time .orderInformation2._none .order_tiemBox {
     display: none;
@@ -649,9 +643,16 @@
     float: left;
     width: 100%;
     font-size: 15px;
+	margin-right: 20px;
 }
 .order_time .order_timeList li a {
     color: #4e5059;
+}
+.order_time .order_timeList.ord_mo li {
+    margin-right: 3px;
+}
+.order_time .order_timeList li:last-child, .order_time .order_timeList.ord_mo li:last-child {
+    margin-right: 0;
 }
 .order_time .order_tiemBox .order_timeContent li {
     border-bottom: 1px solid #ddd;
