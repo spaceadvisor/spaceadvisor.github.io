@@ -199,7 +199,7 @@
     height: auto;
 }
 .site-list .site._noFlag .flag {
-    display: none !important;
+     display: none !important; 
 }
 .site-list .site .text .info_1 {
     display: flex;
