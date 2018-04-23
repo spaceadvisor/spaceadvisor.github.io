@@ -1762,6 +1762,7 @@
         width: 100%;
         padding-left: 40px;
         font-size: 15px;
+		padding: 0 25px;
     }
     .bookList .detailTable-left .detailTable-cell.recipBox .tableTxt {
         margin: 0;
@@ -1846,6 +1847,7 @@
     .buyBox .bookList .detailTable-row.detailTable-content .detailTable-cell:last-child a span,
     .bookList .detailTable-right .detailTable-row .detailTable-cell .tableTxt.buyIcon a span {
         padding-left: 0;
+		padding: 0;
         font-size: 13px;
     }
     .bookList .stepBox .price {
