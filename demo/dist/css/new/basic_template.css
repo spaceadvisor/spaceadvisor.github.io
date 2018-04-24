@@ -14,7 +14,7 @@
     overflow-x: auto !important;
     overflow-y: hidden !important;
     height: 44px;
-    width: 80%;
+    width: 97%;
     padding: 0;
     margin: 0 auto;
     max-width: 1100px;
@@ -113,10 +113,10 @@
     opacity: 1;
 }
 .site-list .site-box .slick-prev {
-    left: 0;
+    left: -5%;
 }
 .site-list .site-box .slick-next {
-    right: 0;
+    right: -5%;
     background-position: right top;
 }
 .site-list .site-box .slick-dots {
@@ -164,8 +164,6 @@
 .site-list .site .all {
     position: relative;
     max-width: 350px;
-	/* 20180327 */
-	margin: 0 auto;
 }
 .site-list .site span.pic {
     display: block;
@@ -199,7 +197,7 @@
     height: auto;
 }
 .site-list .site._noFlag .flag {
-     display: none !important; 
+    display: none !important;
 }
 .site-list .site .text .info_1 {
     display: flex;
@@ -974,9 +972,6 @@
     background: #ccc;
     color: #4e5059;
 }
-.site_food-main ul li a:hover {
-    background: #efeff0;
-}
 .site_food-main ul li a ._left {
 
 }
@@ -1327,7 +1322,7 @@
     border-bottom: 0;
 }
 #wrapper .pricePlan > ul > li .priTitle:after {
-    content: "\f078";
+    content: "\f077";
     display: inline-block;
     font-family: FontAwesome;
     text-rendering: auto;
@@ -1337,7 +1332,7 @@
     position: absolute;
 }
 #wrapper .pricePlan > ul > li.open .priTitle:after {
-    content: "\f077";
+    content: "\f078";
 }
 #wrapper .pricePlan > ul > li .priContent {
     left: 0;
@@ -1633,6 +1628,11 @@
         width: 100%
     }
 }
+@media (min-width: 981px) {
+	.site_food-main ul li a:hover {
+		background-color: #efeff0;
+	}
+}
 @media only screen and (max-width: 980px) {
     /** BEGIN navigation_bar **/
     .navigation_bar ul {
@@ -1656,10 +1656,10 @@
     /* END Nav tabs */
 
     /** BEGIN site-list **/
-    /*.site-list .site-box {
+    .site-list .site-box {
         width: 90%;
         margin: 0 auto;
-    }*/
+    }
     .site-list .site a {
         width: 90%;
     }
@@ -1762,6 +1762,7 @@
         width: 100%;
         padding-left: 40px;
         font-size: 15px;
+		padding: 0 25px;
     }
     .bookList .detailTable-left .detailTable-cell.recipBox .tableTxt {
         margin: 0;
@@ -1846,6 +1847,7 @@
     .buyBox .bookList .detailTable-row.detailTable-content .detailTable-cell:last-child a span,
     .bookList .detailTable-right .detailTable-row .detailTable-cell .tableTxt.buyIcon a span {
         padding-left: 0;
+		padding: 0;
         font-size: 13px;
     }
     .bookList .stepBox .price {
@@ -2324,8 +2326,4 @@
     .detailTable-mid {
         height: 100%
     }
-}
-.site-list .slick-list, .brand-list .slick-list {
-	width: 92%;
-	margin: 0 auto;
 }
