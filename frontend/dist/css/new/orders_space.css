@@ -13,14 +13,15 @@
 	font-size: 21px;
 	color: #4f6ea2;
 	border-bottom: 1px #4e6da1 solid;
-	padding: 9px;
+	padding: 7px 9px;
 	margin: 40px 0 20px;
+	line-height: 1.3;
 }
 .site-title:first-child {
 	margin-top: 0;
 }
 .site-title i {
-	margin-right: 5px;
+	margin-right: 9px;
 }
 .bookList {
 	margin-bottom: 9px;
@@ -894,7 +895,7 @@
 	content: "收合";
 }
 .site-value-add.additional_product .pricePlan ._switch ._have span:after {
-    content: "\f106";
+    content: "\f107";
     display: inline-block;
     font-family: FontAwesome;
     font-size: inherit;
@@ -905,7 +906,7 @@
     font-weight: bold;
 }
 .site-value-add.additional_product .pricePlan._show ._switch ._have span:after {
-	content: "\f107";
+	content: "\f106";
 }
 .site-value-add.additional_product .pricePlan ._switch ._have:hover,
 .site-value-add.additional_product .pricePlan ._switch ._none a:hover {
@@ -929,7 +930,7 @@
 		padding-top: 20px;
 	}
 	.bookList .detailTable-row.detailTable-content .detailTable-cell .tableTxt.buyIcon span {
-		padding-left: 0;
+		padding: 0;
 		text-align: center;
 	}
 	.site_form-main {
@@ -1030,7 +1031,6 @@
 
 	/** BEGIN period **/
 	.site-period .site_nav-tabs {
-	    margin: 20px auto 0;
     	width: 100%;
     	justify-content: space-between;
 	}
@@ -1077,5 +1077,8 @@
 	}
 	.site_table-menu ul li {
 		min-width: 90px;
+	}
+	.site_activity-left {
+		padding: 0;
 	}
 }

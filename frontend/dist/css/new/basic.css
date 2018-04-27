@@ -132,8 +132,8 @@ q:after {
     zoom: 1;
 }
 .content {
-    width: 90%;
-    max-width: 1040px;
+    width: 97%;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -475,7 +475,7 @@ body:not(.isLogin) ._isLogin {
 }
 #wrapper > header .content {
     width: 97%;
-    max-width: 1100px;
+    max-width: 1140px;
     height: 44px;
     margin: 0 auto;
 }
@@ -492,15 +492,17 @@ body:not(.isLogin) ._isLogin {
 }
 #wrapper > header nav {
     display: block;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin-top: 14px;
     float: right;
+	position: relative;
 }
-#wrapper > header nav li {
+#wrapper > header nav > ul > li {
     display: inline-block;
     margin-right: 9px;
+	padding-bottom: 11px;
 }
-#wrapper > header nav li a {
+#wrapper > header nav > ul > li > a {
     display: inline-block;
     font-size: 18px;
     font-weight: normal;
@@ -509,13 +511,12 @@ body:not(.isLogin) ._isLogin {
     text-decoration: none;
     cursor: pointer;
 }
-#wrapper > header nav li a:hover {
+#wrapper > header nav > ul > li > a:hover {
     font-weight: bold;
     color: #d65f4f;
     text-decoration: underline;
 }
-
-#wrapper > header nav li a,
+#wrapper > header nav > ul > li > a,
 #wrapper > header a.cart,
 #wrapper > header a.mail,
 #wrapper > header .login_info a {
@@ -677,15 +678,36 @@ body:not(.isLogin) ._isLogin {
     border-radius: 5px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 10px rgba(0, 0, 0, .35);
 }
-#wrapper > header .memberClick:hover .memberMenu {
+#wrapper > header .space_signup .spaceSignupMenu {
+    transition: .5s;
+    display: none;
+    /*z-index: -1;*/
+    width: 154px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #FFF;
+    padding: 9px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 10px rgba(0, 0, 0, .35);
+}
+#wrapper > header .memberClick:hover .memberMenu, #wrapper > header .space_signup:hover .spaceSignupMenu {
     display: block;
     z-index: 1;
     transition: .5s;
 }
-#wrapper > header .memberClick .memberMenu li:last-child a {
+#wrapper > header .memberClick .memberMenu li:last-child a, #wrapper > header .space_signup .spaceSignupMenu li:last-child a {
     border: none;
 }
 #wrapper > header .memberClick .memberMenu a {
+    width: 100%;
+    display: block;
+    padding: 13px 0;
+    font-size: 15px;
+    color: #4e5059;
+    border-bottom: 1px solid #f3f3f3;
+}
+#wrapper > header .space_signup .spaceSignupMenu a {
     width: 100%;
     display: block;
     padding: 13px 0;
@@ -742,7 +764,7 @@ h2 {
 }
 .breadcrumb ul {
 	width: 97%;
-    max-width: 1100px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .breadcrumb li {
@@ -775,6 +797,7 @@ main {
     margin-bottom: 0;
     overflow: hidden;
     display: block;
+	min-height: 465px;
 }
 
 
@@ -859,7 +882,7 @@ main {
     width: 97%;
     margin: 0 auto;
     border-radius: 5px;
-    max-width: 1100px;
+    max-width: 1140px;
 }
 .qaLink a {
 	font-size: 15px;
@@ -898,7 +921,7 @@ main {
     font-weight: bold;
     color: #4e5059;
     bottom: 10%;
-    right: 5%;
+    right: 1.5%;
     opacity: .8;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
@@ -932,7 +955,7 @@ footer .top {
 }
 footer .top ul {
 	width: 97%;
-    max-width: 1100px;
+    max-width: 1140px;
     overflow: hidden;
     margin: 0 auto;
     padding: 40px 0 20px;
@@ -977,7 +1000,7 @@ footer .bottom {
 }
 footer .bottom ul {
 	width: 97%;
-    max-width: 1100px;
+    max-width: 1140px;
     min-height: 44px;
     overflow: hidden;
     margin: 0 auto;

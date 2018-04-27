@@ -17,7 +17,7 @@
     width: 97%;
     padding: 0;
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 1140px;
     display: flex;
     align-items: center;
 }
@@ -349,8 +349,8 @@
     line-height: normal;
 }
 .bookList .sitePhoto-pic {
-    width: 121px;
-    height: 100%;
+    /*width: 121px;
+    height: 100%;*/
     background: #f3f3f3;
     -webkit-display: table;
     display: table;
@@ -513,6 +513,8 @@
     display: block;
     border-radius: 5px;
     border: 1px solid #f3f3f3;
+	width: 112px;
+    height: 112px;
 }
 .bookList .detailTable-row {
     display: table-row;
@@ -986,7 +988,8 @@
     border-radius: 5px;
 }
 .site_food-main ul li .food-images img {
-    width: 100%;
+	width: 230px;
+    height: 142px;
 }
 .site_food-main ul li .food-title {
     /*display: inline-block;
@@ -1694,13 +1697,20 @@
         border: 1px solid #ddd;
     }
     .bookList .sitePhoto-pic {
-        width: 100%;
-        height: auto !important;
-        max-width: 285px;
+        /*width: 100%;
+        height: auto !important;*/
+        max-width: 286px;
         margin: 0 auto;
         display: block;
         background: none;
     }
+	.bookList .sitePhoto-pic .sitePo {
+		padding: 9px;
+	}
+	.bookList .sitePhoto-pic .sitePo img {
+		width: 268px;
+		height: 268px;
+	}
     .bookList .detailTable {
         border: 0;
         border-radius: 0;
@@ -1732,8 +1742,7 @@
     }
     .bookList .detailTable-left .siteName {
         border-bottom: 4px solid #efeff0;
-        margin-bottom: 9px;
-        padding-bottom: 20px;
+        padding-bottom: 9px;
     }
     .bookList .detailTable-heading {
         display: none;
@@ -1756,7 +1765,6 @@
         padding: 9px 0;
     }
     .bookList .detailTable-left .detailTable-cell.recipBox .tableTxt,
-    .bookList .detailTable-cell .tableTxt span,
     .bookList .detailTable-cell .tableTxt span,
     .bookList .detailTable-row.detailTable-content .detailTable-cell:nth-child(3) span {
         width: 100%;
@@ -1846,7 +1854,6 @@
     }
     .buyBox .bookList .detailTable-row.detailTable-content .detailTable-cell:last-child a span,
     .bookList .detailTable-right .detailTable-row .detailTable-cell .tableTxt.buyIcon a span {
-        padding-left: 0;
 		padding: 0;
         font-size: 13px;
     }
@@ -1933,7 +1940,6 @@
     }
     .bookList._style1 .detailTable-cell .tableTxt.siteName {
         border-bottom-width: 1px;
-        margin-top: 20px;
     }
     .order_complete .bookList .detailTable-heading .detailTable-cell,
     .additional_product_history .bookList .detailTable-heading .detailTable-cell {
@@ -1976,12 +1982,12 @@
     .site_food-main ul li a {
         flex-direction: column;
     }
-    .site_food-main ul li .food-images {
+    /*.site_food-main ul li .food-images {
         width: 90%;
         height: auto;
         max-height: 200px;
         margin: 0 auto;
-    }
+    }*/
     .site_food-main ul li a ._right {
         margin-left: 0;
         margin-top: 9px;

@@ -68,8 +68,8 @@
 }
 
 .writeContent .writeContainer {
-    width: 68%;
-    max-width: 693px;
+    width: calc(100% - 310px - 40px);
+    /*max-width: 693px;*/
     float: left;
 }
 /** END writeContent **/
@@ -78,7 +78,7 @@
 .appointment_Result {
     float: right;
     width: 100%;
-    max-width: 295px;
+    max-width: 310px;
 }
 .appointment_Result .demand h4,
 .appointment_Result .demand .deTxt,
@@ -210,8 +210,8 @@
 
 /** BEGIN order_time **/
 .order_time .orderContainer {
-    width: 68%;
-    max-width: 693px;
+    width: calc(100% - 310px - 40px);
+    /*max-width: 693px;*/
     float: left;
 }
 .order_time .orderContainer h2 {
@@ -223,7 +223,7 @@
     border-bottom-color: #d76050;
     display: flex;
     align-items: center;
-    padding: 10px 9px;
+    padding: 7px 9px;
     background: unset;
 }
 .order_time .orderContainer h2:before {
@@ -1077,7 +1077,7 @@
 .buyContent .title h2 {
     text-align: left;
     margin: 0 0 9px 0;
-    padding: 10px 9px;
+    padding: 7px 9px;
     font-size: 21px;
     color: #4e5059;
     border-bottom: 1px solid #ddd;
@@ -1127,7 +1127,7 @@
     border-bottom: 1px solid #4f6ea2;
     /*display: flex;*/
     align-items: center;
-    padding: 10px 9px;
+    padding: 7px 9px;
     margin: 0 0 20px 0;
     text-align: left;
 }
@@ -1980,7 +1980,7 @@
     display: none;
 }
 ._isAdditional .part_item.cart_part {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 /** END order_cancel **/
 

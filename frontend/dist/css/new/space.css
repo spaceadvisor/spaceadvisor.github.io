@@ -497,7 +497,7 @@
     background-image: url(../../images/icon_line03.png);
 }
 .meeting .content-720 .title-box {
-    width: 20%;
+    width: 16%;
     font-size: 15px;
     overflow: hidden;
     font-weight: bold;
@@ -513,7 +513,7 @@
     color: #4e5059;
     text-decoration: none;
     float: right;
-    width: 80%;
+    width: 84%;
     padding: 0 0 5px 20px;
     font-size: 15px;
     line-height: normal;
