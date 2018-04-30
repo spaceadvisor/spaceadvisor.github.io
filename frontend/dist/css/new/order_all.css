@@ -1614,14 +1614,15 @@
 .appointment_Content .appointment_photo .app_pic {
     margin-right: 9px;
     width: 38%;
-    max-width: 90px;
+    max-width: 74px;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1px;
 }
 .appointment_Content .appointment_photo .app_pic img {
     display: block;
-    width: 100%;
+	width: 70px;
+    height: 70px;
     border-radius: 5px;
 }
 .appointment_Content .appointment_photo .app_text {
@@ -1979,9 +1980,9 @@
 #wrapper:not(._isAdditional) .part_item.cart_part {
     display: none;
 }
-._isAdditional .part_item.cart_part {
-    margin-top: 40px;
-}
+/*._isAdditional .part_item.cart_part {
+    margin-top: 20px;
+}*/
 /** END order_cancel **/
 
 .order_complete_rfp .recstate {
@@ -2274,6 +2275,9 @@
     .buyContent .title {
         margin-top: 0;
     }
+	.buyBox .bookList {
+		margin-bottom: 40px;
+	}
     .buyBox .bookList .detailTable,
     .buyBox .bookList .demand,
     .buyBox .bookList .custodyBtn {
@@ -2553,7 +2557,7 @@
     }
     .stepContainer .stepConTxt {
         flex-direction: column;
-        margin-bottom: 40px;
+        /*margin-bottom: 40px;*/
     }
     .stepContainer .stepConTxt i {
         font-size: 80px;

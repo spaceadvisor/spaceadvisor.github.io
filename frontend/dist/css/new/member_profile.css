@@ -116,13 +116,13 @@
 
 /* 會員資料 */
 .member {
-    margin-top: 44PX;
+    margin-top: 88PX;
     font-size: 15px;
     line-height: normal;
     color: #4e5059;
 }
 .member .mbr_photo {
-    margin: 40px 0;
+	margin-bottom: 40px;
 }
 .member .mbr_photo .subject-title {
     padding-left: 61px;

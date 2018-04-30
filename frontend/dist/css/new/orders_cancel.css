@@ -6,6 +6,9 @@
     border-bottom: 1px #d65f4f solid;
 	margin-bottom: 9px;
 }
+.orders_cancel._isAdditional .site-cancel-title {
+	margin-bottom: 20px;
+}
 .site-cancel-title h2 {
 	color: #d65f4f;
 	margin-bottom: 5px;
@@ -65,7 +68,7 @@
 	text-decoration: underline;
 }
 .site_confirm {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 15px;
 }
 .site_confirm label {

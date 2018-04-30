@@ -72,9 +72,13 @@
 	color: #fff;
 	margin-left: 5px;
 }
-/*.additional_product .part_item {
-	margin-top: 40px;
-}*/
+.additional_product .part_item {
+	margin-bottom: 20px;
+}
+.additional_product.additional_product_form .part_item,
+.additional_product.additional_product_complete .part_item.payInfo_part {
+    margin-top: 40px;
+}
 .additional_product .part_item h2 {
     font-size: 21px;
     letter-spacing: 0;
@@ -954,10 +958,6 @@
 
 
 /** BEGIN additional_product_history **/
-.additional_product_history ._content._boxStyle {
-    padding-top: 40px;
-    margin-top: 44px;
-}
 .additional_product_history h2 {
     text-align: left;
     margin: 0;
