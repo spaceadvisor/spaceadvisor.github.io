@@ -1635,6 +1635,9 @@
 	.site_food-main ul li a:hover {
 		background-color: #efeff0;
 	}
+	#wrapper .comment .star ul {
+		display: block !important;
+	}
 }
 @media only screen and (max-width: 980px) {
     /** BEGIN navigation_bar **/
@@ -2034,7 +2037,7 @@
         margin-bottom: 9px;
     }
     #wrapper .comment .star li {
-        width: 100%;
+        width: 50%;
         text-align: left;
     }
     #wrapper .comment .star li:last-child {

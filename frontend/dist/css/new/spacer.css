@@ -392,7 +392,7 @@ font-size: 13px;
 }
 .spacer .comment .star {
     overflow: hidden;
-	border-bottom: 1px solid #ddd;
+	/*border-bottom: 1px solid #ddd;*/
 }
 .spacer .comment .star > p {
     font-weight: bold;
@@ -412,7 +412,7 @@ font-size: 13px;
 }
 .spacer .comment .star li p {
     display: inline-block;
-    width: 29%;
+    width: 110px;
     font-weight: normal;
     color: #4e5059;
     line-height: normal;
@@ -706,4 +706,10 @@ font-size: 13px;
     	border-left: 0;
     	padding-left: 0;
     }
+}
+
+@media only screen and (max-width: 480px) {
+	.spacer .comment .star li p {
+		width: 70px;
+	}
 }
