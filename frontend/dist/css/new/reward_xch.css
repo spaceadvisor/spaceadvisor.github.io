@@ -78,6 +78,7 @@ main {
 	.lightbox._success .content .txt {
 		text-align: left;
         font-size: 17px;
+		margin: 20px 0;
 	}
 	.lightbox._fail div.content {
 		text-align: left;
@@ -85,8 +86,8 @@ main {
         font-size: 17px;
 	}
 	.lightbox._success .content .exchange-info .item ._title {
-		width: 130px;
-		min-width: 130px;
+		width: 120px;
+		min-width: 120px;
 	}
     .lightbox._success .content .exchange-info .item {
         font-size: 15px;

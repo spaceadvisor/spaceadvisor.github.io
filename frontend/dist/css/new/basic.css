@@ -132,7 +132,8 @@ q:after {
     zoom: 1;
 }
 .content {
-    width: 97%;
+    /*width: 97%;*/
+	width: 92%;
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -237,7 +238,8 @@ q:after {
 }
 .btn.btn-sm {
     font-size: 15px !important;
-    padding: 3px 13px !important;
+    /*padding: 3px 13px !important;*/
+	padding: 3px 8px !important;
 }
 .btn.btn-m {
     font-size: 17px !important;

@@ -160,7 +160,7 @@
 .verify .veri-buttons button {
     background-color: #fff;
     width: 100%;
-    padding: 9px 0;
+    padding: 5px 0;
     border-radius: 5px;
     font-size: 21px;
     line-height: normal;
@@ -190,18 +190,18 @@
     width: calc(100% - 55px);
 }
 .verify .veri-buttons .veri-input i {
-    width: 20px;
+	font-size: 20px;
+	margin: 0 9px 0 0;
+}
+.verify .veri-buttons .veri-input i:before {
+	position: relative;
+    top: calc(50% - 10px);
 }
 .verify .veri-buttons .veri-input i.fa.fa-check-circle {
-    font-size: 20px;
-    line-height: 40px;
     color: #4dbe83;
 }
 .verify .veri-buttons .veri-input i.fa.fa-times-circle {
-    font-size: 20px;
-    line-height: 40px;
     color: #ed1b2e;
-    margin: 0 10px 0 5px;
 }
 .verify .veri-ok button {
     width: 100%;

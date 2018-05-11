@@ -139,21 +139,16 @@
 }
 .reward_cmt .section01 .comment-left .logo {
     margin-right: 0;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid #ddd;
 }
 .reward_cmt .section01 .comment-left .logo img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
+	width: 118px;
+    height: 118px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
 }
 .reward_cmt .section01 .comment-left .title {
     display: inline-flex;
-    width: 300px;
+	width: calc(100% - 118px - 50px);
     flex-wrap: wrap;
     align-content: center;
     margin-left: 20px;
@@ -180,15 +175,15 @@
     border-radius: 5px;
 }
 .reward_cmt .section01 .comment-right .photo-img {
-    width: auto;
-    max-width: 120px;
     margin-right: 20px;
 }
 .reward_cmt .section01 .comment-right img {
+	width: 102px;
+    height: 102px;
     border-radius: 5px;
 }
 .reward_cmt .section01 .comment-right .place-name {
-	width: calc(100% - 195px);
+	width: calc(100% - 122px);
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -197,7 +192,7 @@
     color: #4e5059;
 }
 .reward_cmt .section02 {
-    padding: 40px 0;
+    padding: 40px 0 10px;
     border-bottom: 1px solid #ddd;
 }
 .reward_cmt .section02>div {
@@ -313,14 +308,10 @@ main {
     background-color: #4f6ea1;
 }
 .section02 div span.pic {
-	display: block;
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
+	float: left;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
-    background-image: url(../../images/avator.jpg);
-    float: left;
-    background-size: contain;
 }
 #wrapper .comment .comment-list {
 	margin-bottom: 0;
@@ -479,17 +470,17 @@ main {
 		justify-content: center;
 	}
 	.reward_cmt .section01 .comment-right .photo-img {
-	    width: 140px;
 	    margin-right: 0;
+		margin-bottom: 9px;
 	}
 	.reward_cmt .section01 .comment-right img {
-	    margin-right: 15px;
-	    margin-bottom: 9px;
+	    
 	}
 	.reward_cmt .section01 .comment-right .place-name {
 	    width: 100%;
 	    font-size: 15px;
 	    align-items: center;
+		text-align: center;
 	}
     .reward_cmt .section02 .words {
 	    padding-left: 0;
@@ -506,5 +497,12 @@ main {
 	}
 	.bookList .bookTitle ._right .cancel a {
 		padding-left: 0;
+	}
+	.section02 div span.pic {
+		width: 50px;
+		height: 50px;
+	}
+	.content._boxStyle {
+		padding: 25px 0;
 	}
 }

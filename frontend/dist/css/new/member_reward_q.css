@@ -117,6 +117,8 @@
 .bonus-quest {
     max-width: 980px;
     margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .bonus-quest .section01 {
     /*margin: 0 0 20px 30px;*/
@@ -160,7 +162,7 @@
     flex-wrap: wrap;
 }
 .bonus-quest .section02 ._multiSelect .wd_form label {
-    width: 150px;
+    width: 152px;
     /*height: 22px;*/
     margin-bottom: 9px;
     cursor: pointer;
@@ -582,9 +584,9 @@
 .mbr_information .optional-fill .main-content ul li._howToKnowUs h4 {
 
 }
-.mbr_information .optional-fill .main-content ul li._imHost section {
+/*.mbr_information .optional-fill .main-content ul li._imHost section {
 	padding-left: 9px;
-}
+}*/
 
 
 ._checkVerify {

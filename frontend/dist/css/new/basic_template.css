@@ -1123,12 +1123,12 @@
     margin-bottom: 0;
 }
 #wrapper .comment .comment-list li .other {
-    width: calc(100% - 80px);
+    width: calc(100% - 75px);
     overflow: hidden;
     float: right;
     display: flex;
     align-items: flex-end;
-    margin-top: 9px;
+    margin-top: 8.5px;
 }
 #wrapper .comment .comment-list li .other span.star {
     width: 50%;
@@ -1161,8 +1161,8 @@
     color: gray;
 }
 #wrapper .comment .comment-list li p.text {
-    margin-left: 80px;
-    width: calc(100% - 80px);
+    margin-left: 75px;
+    width: calc(100% - 75px);
     padding: 0;
     display: inline-block;
     text-align: justify;
@@ -1176,17 +1176,15 @@
 }
 #wrapper .comment .comment-list li span.pic {
     display: block;
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    border-radius: 50%;
     float: left;
-    background-image: url(../../images/avator.jpg);
-    background-size: contain;
+	width: 55px;
+    height: 55px;
+	border-radius: 50%;
+    overflow: hidden;
 }
 #wrapper .comment .comment-list li span.pic img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 /** END Comment **/
 
@@ -2048,6 +2046,8 @@
     }
     #wrapper .comment .comment-list li .other {
         border-bottom: 0;
+		width: calc(100% - 66px);
+		margin-top: 6px;
     }
     #wrapper .comment .comment-list li p.text {
         width: 100%;

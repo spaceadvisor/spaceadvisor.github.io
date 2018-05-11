@@ -19,7 +19,7 @@
 .event_item2 h2,
 .event_item3 h2,
 .event_item4 h2 {
-    padding-top: 9px;
+    padding-top: 12px;
     font-weight: bold;
     color: #fff;
     display: block;
@@ -64,7 +64,7 @@
     width: 100%;
     color: #4e5059;
     line-height: normal;
-    text-align: left;
+    /*text-align: left;*/
     font-size: 20px;
 }
 .event_item2 .custodyBtn,
@@ -87,11 +87,12 @@
 	margin: 0;
 	top: 0;
     transform: rotate(0);
+	font-size: 21px !important;
 }
 .event_item1 p,
 .event_item5 li {
 	line-height: normal;
-	margin-bottom: 9px;
+	margin-bottom: 19px;
 }
 .event_item2 li:nth-child(1) .itemIconTxt,
 .event_item3 li:nth-child(1) .itemIconTxt {
@@ -99,7 +100,8 @@
 }
 .event_item1 {
     letter-spacing: 1px;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
+	padding: 30px 0 40px;
     background: #f3f3f3;
 }
 .event_item1 .eventContent {
@@ -118,7 +120,7 @@
     margin-bottom: 40px;
 }
 .event_item1 p {
-    text-align: left;
+    /*text-align: left;*/
     font-weight: 600;
     color: #4e5059;
     font-size: 20px;
@@ -177,12 +179,19 @@ footer {
 	margin-top: 0;
 }
 
+@media only screen and (min-width: 981px) {
+	.event_item2 .custodyBtn a span, .event_item3 .custodyBtn a span, .event_item4 .custodyBtn a span {
+		padding: 11px 25px !important;
+	}
+}
+
 @media only screen and (max-width: 980px) {
 	.event_item2 h2,
 	.event_item3 h2,
 	.event_item4 h2 {
-	    padding-top: 7px;
-	    font-size: 19px;
+		padding-top: 8px;
+		font-size: 21px;
+		max-width: 383px;
 	}
 	.event_item2 span,
     .event_item3 span,
@@ -212,48 +221,50 @@ footer {
 	    margin-bottom: 20px;
 	}
 	.event_item1 img {
-		width: 80%;
+		/*width: 80%;*/
 	}
-}
-@media screen and (max-width:480px) and (max-width:375px) {
-    .event_item2 h2,
-    .event_item3 h2,
-    .event_item4 h2 {
-        padding-top: 4px;
+	.event_item2 ul,
+    .event_item3 ul,
+    .event_item4 ul {
+        padding-top: 0;
     }
 }
 @media screen and (max-width:480px) {
-    .event_item1 h2 {
-        font-size: 1.5rem;
-    }
     .event_item1 p {
         font-size: 1em;
     }
     .event_item1 img {
         width: 86%
     }
-    .event_item2 ul,
-    .event_item3 ul,
-    .event_item4 ul {
-        padding-top: 0;
-    }
     .event_item2 li .itemIconTxt,
     .event_item3 li .itemIconTxt,
     .event_item4 li .itemIconTxt {
         font-size: 1.1rem;
     }
-    .event_item2 h2,
-    .event_item3 h2,
-    .event_item4 h2 {
-        padding-top: 6px;
-        font-size: 21px;
+	.event_item2 .custodyBtn a span, .event_item3 .custodyBtn a span, .event_item4 .custodyBtn a span {
+		font-size: 1.1rem !important;
+	}
+}
+@media screen and (max-width: 375px) {
+	.event_item1 {
+		padding-top: 20px;
+	}
+	.event_item2, .event_item3, .event_item4, .event_item5 {
+		padding: 60px 0;
+	}
+	.event_item1 h2 {
+        font-size: 16px;
     }
+	.event_item2 h2, .event_item3 h2, .event_item4 h2 {
+		padding-top: 5px;
+    	font-size: 18px;
+		max-width: 288px;
+	}
+	.event_item5 h2 {
+		font-size: 21px;
+	}
 }
 @media screen and (max-width:360px) {
-    .event_item4 h2 {
-        padding-top: 4px;
-        font-size: 19px;
-    }
     .event_item2 .custodyBtn a,
     .event_item3 .custodyBtn a,
     .event_item4 .custodyBtn a {

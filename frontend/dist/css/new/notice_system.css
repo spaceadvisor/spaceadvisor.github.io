@@ -3,19 +3,16 @@
 	margin-top: 44px;
 }
 .notice_system .systemContent > h2 {
-    color: #4f6ea2;
-    text-align: left;
-    font-weight: normal;
-    border-bottom: 1px solid #4e6da1;
+	color: #4f6ea2;
     font-size: 21px;
-    line-height: normal;
-    padding: 9px 0;
-    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 1px solid #4f6ea2;
+    padding: 7px 9px;
+    margin: 0 0 20px 0;
 }
 .notice_system .systemContent > h2 > i {
-	margin-right: 5px;
+	margin-right: 9px;
 }
-
 .notice_system .author {
 	display: flex;
 	align-items: center;
@@ -23,11 +20,12 @@
 	margin-bottom: 40px;
 }
 .notice_system .author .authorImg {
-	width: 65px;
-    height: 62px;
+	
 }
 .notice_system .author .authorImg img {
-	width: 100%;
+	width: 73px;
+    height: 73px;
+    border-radius: 50%;
 }
 .notice_system .author .authorTxt {
     width: 180px;
@@ -74,13 +72,13 @@
 .authorContent .system_editor a:hover {
     text-decoration: none;
 }
-.notice_system .systemContent {
-	margin-top: 20px;
-}
 
 @media only screen and (max-width: 980px) {
 	.notice_system .author .authorTxt {
 	    width: 130px;
 	    margin-left: 9px;
+	}
+	.notice_system .systemContent._boxStyle {
+		padding: 20px 0;
 	}
 }

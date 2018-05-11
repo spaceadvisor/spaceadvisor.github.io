@@ -117,18 +117,19 @@
 
 /* 場地管理 */
 .site-title {
-	font-weight: bold;
-	font-size: 21px;
 	color: #4f6ea2;
-	border-bottom: 1px #4e6da1 solid;
-	padding: 9px;
-	margin: 40px 0 20px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3;
+    border-bottom: 1px solid #4f6ea2;
+    padding: 7px 9px;
+    margin: 40px 0 20px;
 }
 .site-title:first-child {
 	margin-top: 0;
 }
 .site-title i {
-	margin-right: 5px;
+	margin-right: 9px;
 }
 .bookList {
 	margin-bottom: 9px;
@@ -196,8 +197,8 @@
     align-items: center;
 }
 .site-owner-reminder .s-photo img {
-    width: 70px;
-    height: 70px;
+	width: 73px;
+    height: 73px;
     border-radius: 50%;
 }
 .site-owner-reminder .s-info .info-01 {
@@ -227,29 +228,10 @@
     display: inline-block;
     white-space: nowrap;
 }
-@media (max-width: 960px) {
-    .site-owner-reminder {
-        flex-wrap: wrap;
-    }
-    .site-owner-reminder .s-info {
-        margin-right: 0;
-        width: calc(100% - 105px);
-    }
-    .site-owner-reminder .s-info .info-01, .site-owner-reminder .s-info .info-02 {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    .site-owner-reminder .s-suggest {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-
 /* end-問答記錄 */
-
 /* 問答記錄-發送訊息 */
 .send-message {
-    margin: 40px 97px 100px;
+	margin: 40px 96px 100px 0;
     line-height: normal;
     color: #4e5059;
 }
@@ -258,38 +240,56 @@
 	font-size: 17px;
 	margin-bottom: 9px;
 }
+.message-list {
+	margin: 40px 96px 100px 0;
+}
 .dialog {
     position: relative;
-    margin-bottom: 40px;
+	margin: 0 0 60px 0;
+}
+.dialog.question {
+    margin: 0 0 40px 0;
 }
 .dialog .d-photo {
+	position: absolute;
+    right: -96px;
     top: -20px;
     display: block;
-    width: 65px;
-    height: 65px;
 }
 .dialog .d-photo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 33px;
+	width: 65px;
+    height: 65px;
+    border-radius: 50%;
 }
 .dialog .d-box {
-    position: relative;
-    padding: 9px;
+	position: relative;
+    padding: 13px 15px;
     border: 1px solid gray;
+    border-radius: 5px 0 5px 5px;
     font-size: 15px;
     line-height: normal;
 }
 .dialog.question .d-box {
     border-radius: 5px 0 5px 5px;
 }
-.dialog.answer .d-box {
+/*.dialog.answer .d-box {
     border-radius: 0 5px 5px 5px;
+}*/
+.dialog.question .d-box textarea {
+	width: 100%;
+    height: 100px;
+    padding: 0;
 }
-.dialog .d-box textarea {
-    width: 100%;
-    height: 108px;
-    padding-left: 0;
+.dialog .d-box .send-message textarea {
+	width: calc(100% - 125px);
+    padding: 9px;
+    border-radius: 5px;
+}
+.dialog .d-box .send-message ._sendMsg {
+	position: absolute;
+    right: 0;
+    top: calc(50% - 19px);
+	display: block;
 }
 .dialog .d-box .head {
 	padding: 9px 0;
@@ -310,10 +310,12 @@
     line-height: normal;
     color: #4e5059;
 }
-.message-list {
-    margin: 0;
+.dialog .d-box .message.message-respond .head,
+.dialog .d-box .message.message-respond .body,
+.dialog .d-box .message.message-respond .datetime {
+    color: #4f6ea2;
 }
-.message-list .dialog.question {
+/*.message-list .dialog.question {
 	margin: 0 96px 25px;
 }
 .message-list .dialog.answer {
@@ -321,11 +323,13 @@
 }
 .dialog.question .d-photo {
     position: absolute;
+	left: auto;
     right: -96px;
-}
-.dialog.question .d-box:before {
+}*/
+.dialog .d-box:before {
     content: "";
     position: absolute;
+	left: auto;
     right: -20px;
     top: -1px;
     width: 0;
@@ -334,9 +338,10 @@
     border-width: 20px 20px 0 0;
     border-color: gray transparent transparent transparent;
 }
-.dialog.question .d-box:after {
+.dialog .d-box:after {
     content: "";
     position: absolute;
+	left: auto;
     right: -18px;
     top: 0;
     width: 0;
@@ -345,31 +350,7 @@
     border-width: 20px 20px 0 0;
     border-color: #fff transparent transparent transparent;
 }
-@media (max-width: 640px) {
-    .dialog.question .d-box:before {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: -1px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 10px 0 0;
-    border-color: #5f6169 transparent transparent transparent;
-}
-.dialog.question .d-box:after {
-    content: "";
-    position: absolute;
-    right: -8px;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 10px 0 0;
-    border-color: #fff transparent transparent transparent;
-}
-}
-.dialog.answer .d-photo {
+/*.dialog.answer .d-photo {
     position: absolute;
     left: -96px;
 }
@@ -394,48 +375,46 @@
     border-style: solid;
     border-width: 0 20px 20px 0;
     border-color: transparent #fff transparent transparent;
-}
-@media (max-width: 640px) {
-    .dialog.answer .d-box:before {
-    content: "";
+}*/
+.dialog .d-box:before {
+	content: "";
     position: absolute;
-    left: -10px;
+    right: -20px;
     top: -1px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 10px 10px 0;
-    border-color: transparent #5f6169 transparent transparent;
+    border-width: 20px 20px 0 0;
+    border-color: gray transparent transparent transparent;
 }
-.dialog.answer .d-box:after {
-    content: "";
+.dialog .d-box:after {
+	content: "";
     position: absolute;
-    left: -8px;
-    top: 0;
+    right: -18px;
+    top: -0px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 10px 10px 0;
-    border-color: transparent #fff transparent transparent;
-}
+    border-width: 20px 20px 0 0;
+    border-color: #fff transparent transparent transparent;
 }
 .send-message .text-right {
     margin: 20px 0;
 }
+
 @media (max-width:980px) {
-    .send-message {
+	/*.send-message {
 	    margin: 40px 60px 40px 0;
 	}
-	.dialog .d-photo {
-	    width: 50px;
-	    height: 50px;
+	.dialog {
+		margin: 0 0 60px 88px;
 	}
+	.dialog .d-photo {
+	    left: -88px;
+	}*/
 	.inbox-fill._boxStyle {
 		padding-top: 20px;
 		padding-bottom: 0;
-	}
-	.message-list {
-	    /*margin: 0 60px 118px;*/
 	}
 	.message-list .dialog.question {
 		margin-right: 60px;
@@ -448,9 +427,9 @@
     .message-list .message_item:last-child .dialog.answer {
         margin-bottom: 0;
     }
-	.dialog.question .d-photo {
+	/*.dialog.question .d-photo {
 	    right: -60px;
-	}
+	}*/
 	.dialog.answer .d-photo {
 	    left: -60px;
 	}
@@ -459,22 +438,70 @@
 	}
 }
 
-/* end-問答記錄-發送訊息 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 980px) {
-
+@media (max-width: 960px) {
+    .site-owner-reminder {
+        flex-wrap: wrap;
+    }
+    .site-owner-reminder .s-info {
+        margin-right: 0;
+        width: calc(100% - 93px);
+    }
+    .site-owner-reminder .s-info .info-01, .site-owner-reminder .s-info .info-02 {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .site-owner-reminder .s-suggest {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
+
+@media (max-width: 767px) {
+	.dialog .d-box {
+		padding: 10px 13px;
+	}
+	.dialog .d-box .send-message textarea {
+		width: 100%;
+	}
+	.dialog .d-box .send-message ._sendMsg {
+		position: relative;
+		margin-top: 10px;
+		text-align: right;
+	}
+}
+
+@media (max-width: 640px) {
+	.send-message, .message-list {
+		margin: 40px 66px 100px 0;
+	}
+	.dialog .d-photo {
+		right: -66px;
+	}
+	.dialog .d-photo img {
+		width: 50px;
+		height: 50px;
+	}
+	.dialog .d-box:before {
+		content: "";
+		position: absolute;
+		right: -10px;
+		top: -1px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 10px 0 0;
+		border-color: #5f6169 transparent transparent transparent;
+	}
+	.dialog .d-box:after {
+		content: "";
+		position: absolute;
+		right: -8px;
+		top: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 10px 0 0;
+		border-color: #fff transparent transparent transparent;
+	}
+}
+/* end-問答記錄-發送訊息 */
