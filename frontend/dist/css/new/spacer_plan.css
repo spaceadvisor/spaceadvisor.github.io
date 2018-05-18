@@ -189,8 +189,8 @@
 
 .spacer_plan .package .packImg {
 	margin-right: 20px;
-    width: 22%;
-    max-width: 222px;
+    width: 100%;
+    max-width: 244px;
 }
 .spacer_plan .package .packImg img {
 	width: 100%;
@@ -282,13 +282,12 @@
     width: 100%;
 }
 .spacer_plan .collectItem8 .coPhoto li {
-    float: unset;
+	float: unset;
     width: calc(100% / 3);
-    margin-right: 0;
-    margin-bottom: 11px;
-    padding-right: 11px;
-	max-width: 400px;
-	overflow: hidden;
+    margin: 12px 0;
+    padding: 0 15px;
+    max-width: 360px;
+    overflow: hidden;
 }
 .spacer_plan .collectItem8 .coPhoto li img {
 	border-radius: 5px;
@@ -301,10 +300,9 @@
 	/*margin-bottom: 0;*/
 }
 .spacer_plan .collectItem9 .content {
-	padding-bottom: 0;
 	padding: 0;
-    width: 100%;
-    max-width: 100%
+    /*width: 100%;
+    max-width: 100%*/
 }
 /** END collectItem9 **/
 
@@ -332,7 +330,7 @@
 
 /** BEGIN collectItem10 & collectItem11 **/
 .collectItem10 .collectTxt {
-	overflow: scroll;
+	overflow: auto;
 }
 .collectItem10 .pTable,
 .collectItem11 .pTable {
@@ -434,13 +432,17 @@
 /** END collectItem12 **/
 
 /** BEGIN plan-list-box **/
-.plan-list-box .plan-list {
+/*.plan-list-box .plan-list {
 	display: inline-block;
 }
 .plan-list-box .plan-list .plan-list-item {
 	width: auto;
     display: flex;
     padding: 0 17px;
+}*/
+.plan-list-box .plan-list .plan-list-item .all {
+	max-width: 332px;
+    margin: 0 auto;
 }
 .plan-list-box .plan-list .plan-list-item .pli-pic {
  	border-radius: 0;
@@ -454,7 +456,12 @@
     letter-spacing: 0;
 }
 /** END plan-list-box **/
-
+.site-list .site-box .slick-prev {
+	left: -2%;
+}
+.site-list .site-box .slick-next {
+	right: -2%;
+}
 
 @media only screen and (max-width: 980px) {
 	.spacer_plan .collect_banner .colImg img {
@@ -508,7 +515,6 @@
 	}
 	.spacer_plan .package .packImg {
 		margin: 0;
-        width: 100%;
         max-width: 100%;
     }
 	.spacer_plan .package .packImg img {
@@ -539,13 +545,14 @@
 	/** END collectItem7 **/
 
 	/** BEGIN collectItem8 **/
-	.spacer_plan .collectItem8 {
+	/*.spacer_plan .collectItem8 {
 		padding: 9px;
-	}
+	}*/
 	.spacer_plan .collectItem8 .coPhoto li {
 		width: calc(100% / 2);
-	    margin-bottom: 5px;
-	    padding-right: 5px;
+		margin: 5px 0;
+		padding: 0 5px;
+		max-width: 100%;
 	}
 	/** END collectItem8 **/
 
@@ -572,5 +579,18 @@
 
 	.spacer_plan .collectIContent .pricePlan h2 {
 		margin: 0 0 3px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.site-list .site-box {
+        width: 92%;
+        margin: 0 auto;
+    }
+	.site-list .site-box .slick-prev {
+		left: -12%;
+	}
+	.site-list .site-box .slick-next {
+		right: -12%;
 	}
 }

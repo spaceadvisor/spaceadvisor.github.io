@@ -21,7 +21,6 @@
 }
 .theme_list .sequence .content._boxStyle {
 	padding: 0;
-	max-width: 1100px;
 }
 .theme_list .sequence .content h3 {
 	font-size: 15px;
@@ -66,7 +65,7 @@
 	float: right;
     position: relative;
     top: 14px;
-    right: 0;
+    right: 4px;
     width: 28px;
     display: inline-block;
     background: url(../../images/search_arrw.png) no-repeat scroll right center transparent;
@@ -89,9 +88,8 @@
     overflow: hidden;
 }
 .theme_list .sequence-select .search_item_area.address span {
-    width: calc(100% / 7);
-    margin-bottom: 5px;
-    padding-right: 9px;
+	width: calc(100% / 7);
+    margin: 2.5px 0;
     font-size: 15px;
     font-weight: normal;
     color: #4e5059;
@@ -107,16 +105,16 @@
 }
 .theme_list .sequence-select .search_item_detail {
 	display: none;
-    min-width: 660px;
+    min-width: 600px;
     height: 94px;
-    padding: 10px 15px 15px;
+    padding: 10px 9px;
     border: 1px #4e6e9d solid;
     position: absolute;
     top: 32px;
     left: -1px;
     z-index: 6;
-	background: #fff;
-	border-radius: 0 5px 5px 5px;
+    background: #fff;
+    border-radius: 0 5px 5px 5px;
 }
 .theme_list .sequence-select .search_item_detail.open {
 	display: block;
@@ -173,8 +171,8 @@
 .theme_list .site-box ._theme_item .hotelImg {
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 120px;
-    height: 120px;
+    width: 118px;
+    height: 118px;
     text-align: center;
     border: 1px solid #dedfdd;
     overflow: hidden;
@@ -195,7 +193,7 @@
     width: 25%;
     margin-bottom: 40px;
     margin-right: 0;
-    padding: 9px 20px;
+    padding: 9px 11px;
     border: 1px solid transparent;
     text-align: center;
     display: inline-block;
@@ -241,11 +239,6 @@
 .theme_list .site-box ._theme_item .region {
 	font-size: 15px;
 }
-.theme_list .hotelList .hotelImg {
-	margin-bottom: 9px;
-	width: 120px;
-	height: 120px;
-}
 .theme_list .hotelList .region {
 	display: flex;
 	align-items: center;
@@ -273,6 +266,8 @@
     max-width: 99px;
     display: initial;
     margin-right: -3px;
+	width: 99px;
+    height: 67px;
 }
 .theme_list .hotelList .hotelPhoto img:first-child,
 .theme_list .site-box ._theme_item .hotelPhoto img:first-child {
@@ -294,6 +289,9 @@
     padding: 0;
     font-size: 13px;
     text-align: center;
+}
+.theme_list .site-list._boxStyle, .theme_list .hotelList._boxStyle {
+    width: 90%;
 }
 
 @media only screen and (max-width: 980px) {
@@ -335,14 +333,14 @@
 		font-size: 17px;
 	}
 	.theme_list .hotelList li {
-		width: 100%;
-    	padding: 0;
-    	margin-bottom: 50px;
-	}
-	.theme_list .hotelList .hotelImg {
-		margin-bottom: 9px;
+		width: 50%;
 	}
 }
 
-
-
+@media only screen and (max-width: 567px) {
+	.theme_list .hotelList li {
+		width: 100%;
+		padding: 0;
+    	margin-bottom: 50px;
+	}
+}

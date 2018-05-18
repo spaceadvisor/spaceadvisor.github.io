@@ -4,14 +4,9 @@
 	margin-bottom: 20px;
 }
 .spacer .banner .hotelImg {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    padding: 9px;
     width: 150px;
     height: 150px;
 }
-
 .spacer .description h2,
 .spacer .pricePlan h2,
 .spacer .synthesis h2 {
@@ -50,7 +45,7 @@
 }
 .spacer .vanueContenter .add {
 	font-size: 15px;
-    height: 65px;
+    height: 60px;
     overflow: hidden;
 }
 .spacer .vanueContenter .description {
@@ -92,6 +87,8 @@
     margin-right: -3px;
     opacity: .8;
     vertical-align: middle;
+	width: 99px;
+    height: 66px;
 }
 .spacer .vanueHeader .hotelPhoto img:hover {
     opacity: 1;
@@ -149,14 +146,17 @@
     display: block;
 }
 .spacer .vanueTag._media .site-album {
-    width: calc(100% / 3);
-    padding: 0 9px;
+	width: calc(100% / 3);
+    padding: 0 15px;
+    text-align: center;
 }
 .spacer .vanueTag._media .site-album .media {
-    border-radius: 5px;
+	border-radius: 5px;
     overflow: hidden;
     display: inline-flex;
     width: 100%;
+    max-width: 330px;
+	min-height: 260px;
 }
 .spacer .vanueTag._media .site-album .media iframe,
 .spacer .vanueTag._media .site-album .media a,
@@ -202,7 +202,7 @@
 }
 .spacer .placeBox .site-list .site {
     margin-bottom: 20px;
-    padding-right: 9px;
+	padding: 0 15px;
     width: calc(100% / 3);
 }
 .spacer .placeBox .site-list .site:last-child {
@@ -319,7 +319,7 @@
 .spacer .synthesis {
 	margin: 40px 0;
     border-radius: 5px;
-    padding: 20px;
+    padding: 11px 20px 20px;
 }
 .spacer .synthesis h3 {
 	font-size: 15px;
@@ -379,10 +379,10 @@ font-size: 13px;
     padding-left: 9px;
 }
 .spacer .syn_item1 .add {
-    height: 125px;
+    height: 140px;
 }
 .spacer .syn_item2 .add {
-    height: 115px;
+    height: 87px;
 }
 
 /** BEGIN comment **/
@@ -488,7 +488,7 @@ font-size: 13px;
 	overflow: hidden;
 }
 .spacer .position .add {
-	height: 165px;
+	height: 80px;
 }
 /** END position **/
 
@@ -496,8 +496,8 @@ font-size: 13px;
 .spacer .moreSpacer .site-list .site-box ._theme_item .hotelImg {
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 120px;
-    height: 120px;
+    width: 118px;
+    height: 118px;
     text-align: center;
     border: 1px solid #dedfdd;
     overflow: hidden;
@@ -542,6 +542,8 @@ font-size: 13px;
     max-width: 99px;
     display: initial;
     margin-right: -3px;
+	width: 99px;
+    height: 67px;
 }
 .spacer .moreSpacer .site-list .site-box ._theme_item .hotelPhoto img:first-child {
 	border-radius: 5px 0 0 5px;
@@ -567,10 +569,12 @@ font-size: 13px;
     bottom: -85px;
     border: 1px solid #dedfdd;
     overflow: hidden;
-    -webkit-border-radius: 99em;
-    -moz-border-radius: 99em;
-    border-radius: 99em;
+    border-radius: 50%;
 }
+/*.spacer .pc_banner {
+	width: 100%;
+	height: calc(100vw * 312 / 1280);	
+}*/
 .spacer .placeBox {
     width: 100%
 }
@@ -585,7 +589,24 @@ font-size: 13px;
 	margin-top: 20px;
 	display: inline-block;
 }
-
+.inline_content img {
+    width: 800px;
+    height: 530px;
+	max-width: calc(100vw - 40px);
+    max-height: calc((100vw - 40px) * 530 / 800);
+}
+.plan-list-box .plan-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.plan-list-box .plan-list .plan-list-item {
+    margin-bottom: 20px;
+    padding: 0 15px;
+    width: calc(100% / 3);
+    display: inline-flex;
+}
 
 @media only screen and (max-width: 980px) {
     .hotelOveh {
@@ -618,13 +639,13 @@ font-size: 13px;
 	.spacer .vanueTag._media .site-album {
 		width: 100%;
 		margin-bottom: 40px;
+		padding: 0;
+	}
+	.spacer .vanueTag._media .site-album .media {
+		max-width: 100%;
 	}
 	.spacer .vanueTag._media .site-album:last-child {
 		margin-bottom: 0;
-	}
-
-	.spacer .vanueTag .vanueBox {
-		padding: 20px 9px;
 	}
 	.spacer .placeBox .site-list .site {
 		width: 100%;
@@ -642,10 +663,7 @@ font-size: 13px;
     	margin: 0;
 	}
 	.spacer .synthesis {
-		padding: 0 9px;
-	}
-	.spacer .syn_item1 .add {
-	    height: 190px;
+		padding: 11px 20px;
 	}
 	.spacer .vanueList,
 	.spacer .priTitle {
@@ -671,9 +689,9 @@ font-size: 13px;
     /** END comment **/
 
     /** BEGIN position **/
-    .spacer .position {
+    /*.spacer .position {
     	padding: 20px 9px;
-    }
+    }*/
     .spacer .position .box {
     	margin-bottom: 9px;
     }
@@ -706,6 +724,16 @@ font-size: 13px;
     	border-left: 0;
     	padding-left: 0;
     }
+	.site-list .site .all {
+		max-width: 100%;
+	}
+	.plan-list-box .plan-list {
+        flex-direction: column;
+    }
+	.plan-list-box .plan-list .plan-list-item {
+		width: 100%;
+    	padding: 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -713,3 +741,9 @@ font-size: 13px;
 		width: 70px;
 	}
 }
+
+/*@media only screen and (max-width: 340px) {
+	.spacer .vanueTag .vanueBox {
+		padding: 20px 5px;
+	}
+}*/

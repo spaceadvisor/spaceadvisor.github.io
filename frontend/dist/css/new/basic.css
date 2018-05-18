@@ -869,14 +869,6 @@ main {
     transition: all .4s;
     padding: 0;
 }
-
-
-
-
-
-
-
-
 /** END Main **/
 
 ._boxStyle {
@@ -900,10 +892,10 @@ main {
 }
 .app_stepItem5 .col .assess input[type=radio]+label:after,
 .app_stepItem5 .col .assess input[type=checkbox]+label:after {
-    width: 10px;
-    height: 10px;
+	width: 12px;
+    height: 12px;
     top: 10px;
-    left: 4px;
+    left: 3px;
 }
 
 /** BEGIN footer **/

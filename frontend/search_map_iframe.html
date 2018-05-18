@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content=" " />
+		<meta name="description" content=" ">
+		<meta name="author" content="SpaceAdvisor">
+		<meta name="copyright" content="本網頁著作SpaceAdvisor所有">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link href="dist/images/icon.ico" type="image/x-icon" rel="shortcut icon"/>
+		<title>地圖搜尋</title>
+		<link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/main.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/jquery.mmenu.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/slick.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/slick-theme.css" rel="stylesheet" type="text/css" media=""/>
+
+		<!-- money bar -->
+	 	<link rel="stylesheet" href="dist/css/jslider.css" type="text/css">
+	 	<link rel="stylesheet" href="dist/css/jslider.round.plastic.css" type="text/css">
+
+		<!-- STYLES -->
+		<link href="dist/css/new/basic.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/new/basic_template.css" rel="stylesheet" type="text/css" media=""/>
+		<link href="dist/css/new/search.css" rel="stylesheet" type="text/css" media=""/>
+    </head>
+    
+    <style>
+            /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+    </style>
+
+	<body>
+
+
+
+
+<script>
+
+    function initMap() 
+    {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            //預設的經緯度
+            center: new google.maps.LatLng(-33.863276, 151.207977),
+            //zoomControl : false,
+            //scaleControl: false,
+            scrollwheel: true,
+            //disableDoubleClickZoom: true,
+            zoom: 13
+        });
+
+        var infoWindow = new google.maps.InfoWindow;
+
+        $.getJSON( "search_map.json", function( data ) {
+
+            var items = [];
+            $.each( data, function( key, markerElem ) {
+
+                console.log(key + markerElem);
+
+                var name = markerElem.name;
+                var address = markerElem.address;
+                var area = markerElem.area;
+                var currency = markerElem.currency;
+                var cost = markerElem.cost;
+                var paytype = markerElem.paytype;
+                var people = markerElem.people;
+                var category = markerElem.category;
+                var star = markerElem.star;
+                var comments = markerElem.comments;
+                var img_src = markerElem.img;
+                var icon = markerElem.icon;
+                var type = markerElem.type;
+                var point = new google.maps.LatLng(
+                    parseFloat(markerElem.lat),
+                    parseFloat(markerElem.lng)
+                );
+
+                //創建Div區塊
+                var infowincontent = document.createElement('div');
+
+
+                //image
+                var img = document.createElement('img');
+                img.src = img_src;
+                img.width = '200';
+                infowincontent.appendChild(img);
+                infowincontent.appendChild(document.createElement('br'));
+
+                //title
+                var strong = document.createElement('strong');
+                strong.textContent = name;
+                infowincontent.appendChild(strong);
+                infowincontent.appendChild(document.createElement('br'));
+
+                //人數
+                var span_people = document.createElement('span');
+                span_people.textContent = people+' '; //'<i class="fa fa-user" aria-hidden="true"></i> ' + people;
+                infowincontent.appendChild(span_people);
+
+                //地區
+                var span_area = document.createElement('span');
+                span_area.textContent = area+' ';
+                infowincontent.appendChild(span_area);
+
+
+                //分類
+                var span_category = document.createElement('span');
+                span_category.textContent = category+' ';
+                infowincontent.appendChild(span_category);
+                infowincontent.appendChild(document.createElement('br'));   
+
+
+                //star
+                var span_star = document.createElement('span');
+                span_star.setAttribute("class", "_star _star_3h");
+                span_star.textContent = ' ';
+                infowincontent.appendChild(span_star);
+
+
+                //comments
+                var span_comments = document.createElement('span');
+                span_comments.textContent = comments+' ';
+                infowincontent.appendChild(span_comments);
+
+
+                //cost
+                var span_cost = document.createElement('span');
+                span_cost.textContent = currency+' '+cost;
+                infowincontent.appendChild(span_cost);
+
+                //
+                infowincontent.appendChild(document.createElement('br'));
+                
+
+                var text = document.createElement('text');
+                text.textContent = address
+                infowincontent.appendChild(text);
+                
+                
+                
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: point,
+                    icon: icon,
+                });
+
+                marker.addListener('click', function() {
+                    infoWindow.setContent(infowincontent);
+                    infoWindow.open(map, marker);
+                });
+            });
+        });
+    }
+
+
+
+    function downloadUrl(url, callback) {
+    var request = window.ActiveXObject ?
+        new ActiveXObject('Microsoft.XMLHTTP') :
+        new XMLHttpRequest;
+
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+        request.onreadystatechange = doNothing;
+        callback(request, request.status);
+        }
+    };
+
+    request.open('GET', url, true);
+    request.send(null);
+    }
+
+    function doNothing() {}
+</script>
+
+
+
+
+
+
+<div id="map"></div>
+
+</body>
+</html>
+<!-- Replace the value of the key parameter with your own API key. -->
+<!-- js -->
+<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYY528E72YixSQad68A7WtOP3II1r5oo8&callback=initMap"></script>

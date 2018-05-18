@@ -113,10 +113,10 @@
     opacity: 1;
 }
 .site-list .site-box .slick-prev {
-    left: -5%;
+    left: -4%;
 }
 .site-list .site-box .slick-next {
-    right: -5%;
+    right: -4%;
     background-position: right top;
 }
 .site-list .site-box .slick-dots {
@@ -127,7 +127,7 @@
 }
 .site-list._titleLeft > h2 {
     text-align: left;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 }
 .site-list .site i.heart,
 .site-list .site i.add {
@@ -160,10 +160,12 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
+	width: 100%;
 }
 .site-list .site .all {
     position: relative;
-    max-width: 350px;
+	max-width: 332px;
+    margin: 0 auto;
 }
 .site-list .site span.pic {
     display: block;
@@ -272,7 +274,7 @@
 
 #wrapper i.heart,
 #wrapper i.add {
-    right: 25px;
+    right: 15px;
     cursor: pointer;
     background-color: transparent;
     display: flex;
@@ -292,10 +294,10 @@
 }
 
 #wrapper i.heart {
-    top: 9px;
+    top: 10px;
 }
 #wrapper i.add {
-    top: 47px;
+    top: 48px;
     font-size: 17px;
 }
 #wrapper i.heart:before,
@@ -981,15 +983,12 @@
     margin-left: 20px;
 }
 .site_food-main ul li .food-images {
-    width: 230px;
-    height: auto;
-    max-height: 145px;
-    overflow: hidden;
-    border-radius: 5px;
+	
 }
 .site_food-main ul li .food-images img {
 	width: 230px;
     height: 142px;
+	border-radius: 5px;
 }
 .site_food-main ul li .food-title {
     /*display: inline-block;
@@ -1116,7 +1115,7 @@
 #wrapper .comment .comment-list li {
     overflow: hidden;
     margin: 20px 9px;
-    padding: 0 0 30px 0;
+    padding: 0 0 20px 0;
 }
 #wrapper .comment .comment-list li:last-child {
     border-bottom: 0;
@@ -1197,18 +1196,18 @@
 }
 #wrapper .sequence .sequence-select li select {
     width: 100%;
+	height: 35px;
     background: none;
     font-weight: normal;
     color: #4e6e9d;
+	font-size: 15px;
+    line-height: normal;
     text-decoration: none;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    background: url(../../images/search_arrw.png) no-repeat scroll right center transparent;
-    font-size: 15px;
-    line-height: normal;
-    height: 35px;
-    background-size: 10%;
+    background: url(../../images/search_arrw.png) no-repeat center right 4px;
+    background-size: auto 7px;
 }
 #wrapper .sequence .sequence-click {
     /*padding: 1px;*/
@@ -1323,7 +1322,7 @@
     border-bottom: 0;
 }
 #wrapper .pricePlan > ul > li .priTitle:after {
-    content: "\f077";
+    content: "\f078";
     display: inline-block;
     font-family: FontAwesome;
     text-rendering: auto;
@@ -1333,7 +1332,7 @@
     position: absolute;
 }
 #wrapper .pricePlan > ul > li.open .priTitle:after {
-    content: "\f078";
+    content: "\f077";
 }
 #wrapper .pricePlan > ul > li .priContent {
     left: 0;
@@ -1343,7 +1342,7 @@
 /** END 展開內容的樣式 spacer.html & spacer_plan_basic.html **/
 
 /** BEGIN plan-list-item **/
-.plan-list-box .plan-list {
+/*.plan-list-box .plan-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1351,17 +1350,19 @@
 }
 .plan-list-box .plan-list .plan-list-item {
     margin-bottom: 20px;
-    padding-right: 9px;
+    padding: 0 15px;
     width: calc(100% / 3);
     display: inline-flex;
-}
+}*/
 .plan-list-box .plan-list .plan-list-item a {
-    display: inline-block;
+	display: inline-block;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
     width: 100%;
     position: relative;
+    max-width: 332px;
+    margin: 0 auto;
 }
 .plan-list-box .plan-list .plan-list-item .pli-pic {
     overflow: hidden;
@@ -1416,6 +1417,7 @@
     width: 100%;
     height: 100%;
     font-size: 21px;
+	text-align: center;
 }
 .plan-list-box .plan-list .plan-list-item .pli-info .pli-label {
     margin-bottom: 5px;
@@ -1660,13 +1662,16 @@
     /* END Nav tabs */
 
     /** BEGIN site-list **/
-    .site-list .site-box {
+    /*.site-list .site-box {
         width: 90%;
         margin: 0 auto;
     }
+	.site-list .site .all {
+		max-width: 100%;
+	}
     .site-list .site a {
         width: 90%;
-    }
+    }*/
     .site-list .site span.pic {
         width: 100%;
     }
@@ -2018,9 +2023,6 @@
     #wrapper .bonus li {
         width: 100%;
     }
-    #wrapper .bonus li:last-child {
-        margin-bottom: 0;
-    }
     #wrapper .bonus span {
         width: 100%;
     }
@@ -2075,7 +2077,7 @@
     }
     #wrapper .search-mobile .search_menu a {
         padding: 9px;
-        margin: 0 9px;
+        /*margin: 0 9px;*/
         border-bottom: 0;
         width: 50%;
         overflow: hidden;
@@ -2265,10 +2267,11 @@
         margin: 9px 0;
         line-height: normal;
         font-size: 15px;
-        background-image: url(../../images/selce_arrw02.png);
-        background-repeat: no-repeat;
+		appearance: none;
+    	-moz-appearance: none;
+    	-webkit-appearance: none;
+        background: url(../../images/selce_arrw02.png) no-repeat center right 8px;
         background-size: 10px auto;
-        background-position: center right 8px;
         text-decoration: none;
     }
     #wrapper .search-send {
@@ -2299,12 +2302,16 @@
     /** END Search menu **/
 
     /** BEGIN plan-list-item **/
-    .plan-list-box .plan-list {
+    /*.plan-list-box .plan-list {
         flex-direction: column;
     }
     .plan-list-box .plan-list .plan-list-item {
-        width: 100%;
-    }
+		width: 100%;
+    	padding: 0;
+	}*/
+	.plan-list-box .plan-list .plan-list-item a {
+		max-width: 100%;
+	}
     /** END plan-list-item **/
 
     /** BEGIN ma_banner **/

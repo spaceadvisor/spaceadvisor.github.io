@@ -183,7 +183,7 @@ $(function(){
 
 //meeting 價格方案 點選打開
 $(function(){
-	$('.price-plan > .content > .content-720 > .box > ul > li > div > p.program, .price-plan > .content > .content-720 > .box > ul > li > div > p.price').click(function(){ // allen
+	$('.price-plan.content > .content-720 > .box > ul > li > div > p.program, .price-plan.content > .content-720 > .box > ul > li > div > p.price').click(function(){ // allen
 		$(this).parent().siblings().toggle();
 	});
 	$('.box a.more').click(function(){ // allen

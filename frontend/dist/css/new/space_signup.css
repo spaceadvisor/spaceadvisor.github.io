@@ -2,9 +2,7 @@
 /** BEGIN space_signup **/
 .applicationStep {
     letter-spacing: 1px;
-    width: 80%;
-    margin: 40px auto 0;
-    max-width: unset;
+    /*margin: 40px auto 0;*/
     padding-bottom: 20px;
 }
 .applicationStep ul {
@@ -220,11 +218,10 @@
     background-position: center right 8px;
 }
 .app_stepBox h2 {
-    color: #4f6ea2;
+	color: #4f6ea2;
     text-align: left;
-    font-weight: normal;
     margin-bottom: 20px;
-    padding-bottom: 3px;
+    padding: 7px 9px;
     border-bottom: 1px solid #4f6ea2;
 }
 .app_stepBox .warning_error input,
