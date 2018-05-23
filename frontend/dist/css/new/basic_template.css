@@ -1465,9 +1465,8 @@
 }
 .qaBox ul > li {
     cursor: pointer;
-    padding: 10px 0;
+	padding: 21px 0 20px;
     border-bottom: 1px solid #d8d9d7;
-    margin-bottom: 20px;
 }
 .qaBox .sumber {
     width: 100%;
@@ -1526,10 +1525,11 @@
 }
 .qaBox .sumber > li .sumTitle span,
 .qaBox .sumber > li .sumContent span {
-    width: 87%;
+	width: calc(100% - 37px - 41px);
     display: inline-block;
     vertical-align: top;
     line-height: 20px;
+	text-align: justify;
 }
 .qaBox .sumber > li .sumTitle {
     background: url(../../images/top/top_arrw_1.png) right 7px no-repeat;
@@ -2025,6 +2025,7 @@
     }
     #wrapper .bonus span {
         width: 100%;
+		max-width: 100%;
     }
     /** END Bonus display **/
 
@@ -2328,11 +2329,6 @@
     /** END ma_banner **/
 
     /** BEGIN qaBox **/
-    .qaBox .sumber > li .sumTitle span,
-    .qaBox .sumber > li .sumContent span {
-        width: 76%;
-        text-align: justify;
-    }
     /** END qaBox **/
 
     /** BEGIN staging **/

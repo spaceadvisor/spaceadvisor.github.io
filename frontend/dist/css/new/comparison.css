@@ -192,7 +192,7 @@
 .compare .cs-list .main {
     flex-wrap: nowrap;
     width: calc(100% - 240px);
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
 }
 .compare .cs-list .main .cs-rec .cs-body > div {

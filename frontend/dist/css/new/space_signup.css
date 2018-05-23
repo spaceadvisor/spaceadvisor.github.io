@@ -121,26 +121,26 @@
 }
 .addvaBrand .addvaBrandList {
     text-align: center;
-    width: 90%;
+    width: 97%;
 	margin: 0 auto;
 }
 .addvaBrand .addvaBrandList ul {
-	display: flex;
+	/*display: flex;*/
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .addvaBrand .addvaBrandList li {
     display: inline-block;
     vertical-align: top;
-    margin: 20px 4%;
+    margin: 20px 4.5%;
     padding: 20px 0;
 }
 .addvaBrand .addvaBrandList li img {
 	width: 100%;
 }
-.addvaBrand .addvaBrandList li:nth-child(5n) {
+/*.addvaBrand .addvaBrandList li:nth-child(5n) {
     margin-right: 0;
-}
+}*/
 .appSynopsis {
     height: 180px;
     position: relative;
@@ -165,10 +165,10 @@
 	font-size: 17px;
 	line-height: normal;
 }
-.sumber > li .sumTitle span,
+/*.sumber > li .sumTitle span,
 .sumber > li .sumContent span {
 	font-weight: normal;
-}
+}*/
 .applicationBox main h2 {
     font-size: 21px;
     line-height: normal;

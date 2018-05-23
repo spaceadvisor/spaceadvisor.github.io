@@ -57,13 +57,13 @@ $(function(){
 $(function(){
 	$('.search_item').click(function(){
 		if($(this).siblings().hasClass('open')){
-			 $(this).siblings().removeClass('open');
-			 $(this).find('i').attr("class", "fa fa-angle-down");
+			$(this).siblings().removeClass('open');
+			//$(this).find('i').attr("class", "fa fa-angle-down");
 		}else{
-			 $('.search_item_detail').removeClass('open');
-			$('.search_item').find('i').attr("class", "fa fa-angle-down");
+			$('.search_item_detail').removeClass('open');
+			//$('.search_item').find('i').attr("class", "fa fa-angle-down");
 			$(this).siblings().toggleClass('open');
-			$(this).find('i').attr("class", "fa fa-angle-up");
+			//$(this).find('i').attr("class", "fa fa-angle-up");
 		}
 	});//搜尋bar縮合
 
@@ -294,13 +294,13 @@ $(document).ready(function() {
 			$('.search-box.searchPopup').addClass('on');
 			$('body,html').css({'overflow':'hidden'});
 			$('.search-box.searchPopup').fadeIn();
-			$(this).find('i').attr("class", "fa fa-angle-up");
+			//$(this).find('i').attr("class", "fa fa-angle-up");
 			}else{
 			$('body,html').css({'overflow':''});
 			$('.search-box.searchPopup').removeClass('on');
 			$('.search_item_detail').removeClass('open');
 			$('.search-box.searchPopup').fadeOut();
-			$(this).find('i').attr("class", "fa fa-angle-down");
+			//$(this).find('i').attr("class", "fa fa-angle-down");
 		}
 	});
 

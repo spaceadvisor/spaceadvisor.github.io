@@ -229,7 +229,7 @@
     font-size: 15px;
     width: 50%;
     margin-bottom: 5px;
-    padding-right: 9px;
+    padding-right: 8px;
     font-weight: normal;
     line-height: normal;
     text-decoration: none;
@@ -353,6 +353,9 @@
     text-decoration: none;
     float: left;
 }
+.search main > .search-box .search_bar > .content > ul > li select#select-room {
+    width: 130px;
+}
 .search main > .search-box .search_bar > .content > ul > li select._select.have {
     background-color: #ccc;
     border-color: #fff;
@@ -395,11 +398,11 @@
     width: 660px;
 }
 .search.mapBox .search-box.searchPopup .content > ul > li .search_item_detail#search_place span {
-    width: 100%
+    /*width: 100%*/
 }
 .search.mapBox .search-box.searchPopup .content > ul > li .search_item_detail#search_facility {
     left: -87px;
-    width: 660px;
+    width: 600px;
 }
 .search.mapBox .search-box.searchPopup .content > ul > li .search_item_detail#search_facility .search_item_open {
     left: 260px;
@@ -428,7 +431,12 @@
     left: 174px;
 }
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail#search_plan {
-    left: 288px;
+    left: 144px;
+	width: 380px;
+}
+.search main > .search-box .search_bar > .content > ul > li .search_item_detail#search_plan > .search_item_open.short {
+    left: 143px;
+	width: 105px;
 }
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail#search_place {
     left: -201px;
@@ -436,7 +444,6 @@
     border-radius: 5px;
 }
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail#search_place .search_item_area span {
-    width: 25%;
     padding-right: 0;
 }
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail#search_place .search_item_open,
@@ -445,14 +452,13 @@
 }
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail#search_facility {
     left: -92px;
-    width: 660px;
+    width: 600px;
     border-radius: 5px;
 }
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail#search_facility .search_item_open {
     left: 265px;
 }
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail#search_facility .search_item_area span {
-    width: 25%;
     padding-right: 0;
 }
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail#search_star {
@@ -687,6 +693,7 @@
     float: right;
 }
 .search .search-list li .place .text span.price b {
+	display: inline-block;
     color: #d65f4f;
 }
 .search .search-list li .place .text span.price b b {
@@ -703,6 +710,10 @@
     line-height: normal;
     padding: 0 5px;
     opacity: .8;
+}
+.search .search-list li .place .text span.price .original-price {
+    display: inline-block;
+    text-decoration: line-through;
 }
 .search .search-list li .place .text i.plan {
     padding-left: 9px;
@@ -973,7 +984,7 @@
 /** BEGIN mapSearch **/
 .search.mapBox .search-box {
     width: 61%;
-    padding: 9px 10%;
+    padding: 9px 1.5%;
 }
 .search.mapBox .search-box .search_bar {
     width: 100%
@@ -999,12 +1010,12 @@
     margin-top: 35px;
 }
 .search.mapBox .search-box.searchPopup {
-    display: none;
+	display: none;
     position: fixed;
     height: 100vh;
     z-index: 999;
     background: rgba(255, 255, 255, .85);
-    padding: 0 0 0 10%;
+    padding: 0 0 0 1.5%;
     top: 134px;
     width: 65%;
     border-radius: 0;
@@ -1101,7 +1112,7 @@
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 110px 0 20px 10%;
+    padding: 110px 0 20px 1.5%;
 }
 .mapBox .breadcrumb {
     width: 100%;
@@ -1112,12 +1123,12 @@
     text-align: center;
 }
 .mapBox .placeBox {
-    width: 60%;
+    width: 64.5%;
     overflow: hidden;
 }
 .mapBox .placeBox > ul > li {
     width: calc(100% / 2);
-    padding-right: 9px;
+    padding-right: 2.5%;
     float: left;
 }
 .contclose {

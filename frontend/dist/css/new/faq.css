@@ -3,7 +3,7 @@
 .topBox .qaBox {
 	border-top: 0;
 	width: 60%;
-	margin: 20px auto 0;
+	margin: 0 auto;
 }
 .topBox .qaBox ul > li .qaTitle {
     color: #4f6ea2;
@@ -19,6 +19,7 @@
     font-size: 17px;
     margin-right: 15px;
     font-weight: normal;
+	width: 16px;
 }
 .topBox .qaBox ul > li .qaTitle span {
     width: 92%;
@@ -32,8 +33,8 @@
 	content: "-";
 }
 .topBox .qaBox .sumber {
-    width: 93%;
-    margin: 20px auto 0 auto;
+	margin: 20px auto 0;
+    padding-left: 33px;
 }
 
 @media only screen and (max-width: 980px) {
