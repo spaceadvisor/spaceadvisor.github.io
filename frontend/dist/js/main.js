@@ -1,12 +1,21 @@
 $(function(){
 	// gotop
+	$(document).scroll(function () {
+		var pos = $(window).scrollTop();
+
+		if (pos >= 450) {
+			$('.gotop').fadeIn(700);
+		} else {
+			$('.gotop').fadeOut(700);
+		}
+	});
 	if ($(".gotop").length > 0) {
 		$(".gotop").click(function() {
 			$("html,body").animate({ scrollTop: 0 }, 1000);
 			return false;
 		});
 	}
-
+	
 	// mb 漢堡選單內容
 	if ($(".__mb #menu").length > 0) {
 		$(".__mb #menu").mmenu({
@@ -76,7 +85,7 @@ $(function(){
 			$(this).parent().siblings('.down').slideToggle();
 		});
 		$('.search-list > ul > li > .place > .showbox-all > .showbox').click(function(){
-			$(this).parent().siblings('.down').slideToggle();
+			//$(this).parent().siblings('.down').slideToggle();
 		});
 	});//點擊價格方案/圖片 打開下方區塊
 

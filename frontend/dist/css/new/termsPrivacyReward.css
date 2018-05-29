@@ -54,17 +54,17 @@
 
 @media only screen and (max-width: 980px) {
 	.termsLink {
-		margin: 40px auto 0;
+		margin: 20px auto 0;
 		width: 90%;
 		padding: 0;
 	}
 	.termsLink a {
 		width: 33%;
-		padding: 5px 9px;
+		padding: 5px 8px;
     	font-size: 15px;
 	}
 	.tremsContent {
-		margin: 40px auto 20px auto;
+		margin: 20px auto;
 		padding: 0;
 	}
 }

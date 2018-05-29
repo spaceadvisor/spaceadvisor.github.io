@@ -1219,6 +1219,12 @@
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
+.placeList .text p.title.sub-title {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .placeList .text .info_1 {
     padding: 0;
     display: flex;

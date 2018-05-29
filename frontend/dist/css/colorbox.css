@@ -25,14 +25,21 @@
 /*avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating)*/ 
 #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0; outline:none;}
 
-#cboxClose{
-	width:67px;
+#cboxClose {
+	/*width:67px;
 	height:25px;
 	position:absolute;
 	background-image:url(../images/lightbox_close.png);
 	bottom:0;
-	right:0;
-	}
+	right:0;*/
+	width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url(../images/fancybox_sprite.png) no-repeat;
+    border: none;
+}
 
 /*  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
   when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.

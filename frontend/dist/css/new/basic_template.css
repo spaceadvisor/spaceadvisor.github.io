@@ -155,6 +155,12 @@
     margin-bottom: 5px;
     line-height: unset;
 }
+.site-list .site .text p.title.sub-title {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .site-list .site a {
     display: inline-block;
     border: 1px solid #ddd;
@@ -351,8 +357,8 @@
     line-height: normal;
 }
 .bookList .sitePhoto-pic {
-    /*width: 121px;
-    height: 100%;*/
+    /*width: 121px;*/
+    height: 100%;
     background: #f3f3f3;
     -webkit-display: table;
     display: table;
@@ -818,6 +824,7 @@
 }
 .bookList .detailTable-left .detailTable-row:last-child .detailTable-cell {
     display: table-cell;
+	height: 100%;
 }
 .order_complete .bookList .detailTable-left .detailTable-row:last-child .detailTable-cell,
 .additional_product_history .bookList .detailTable-left .detailTable-row:last-child .detailTable-cell {

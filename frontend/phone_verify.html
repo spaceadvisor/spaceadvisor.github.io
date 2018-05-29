@@ -1,97 +1,93 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="keywords" content=" " />
-		<meta name="description" content=" ">
-		<meta name="author" content="SpaceAdvisor">
-		<meta name="copyright" content="本網頁著作SpaceAdvisor所有">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-		<link href="dist/images/icon.ico" type="image/x-icon" rel="shortcut icon" />
-		<title>手機驗證</title>
-		<link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/jquery-ui.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/bootstrap_bear.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/main.css" rel="stylesheet" type="text/css" media=""/>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content=" " />
+<meta name="description" content=" ">
+<meta name="author" content="SpaceAdvisor">
+<meta name="copyright" content="本網頁著作SpaceAdvisor所有">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="dist/images/icon.ico" type="image/x-icon" rel="shortcut icon" />
+<title>手機驗證</title>
+<link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/jquery-ui.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/bootstrap_bear.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/main.css" rel="stylesheet" type="text/css" media=""/>
 
-		<!-- STYLES -->
-		<link href="dist/css/new/basic.css" rel="stylesheet" type="text/css" media=""/>
-		<link href="dist/css/new/intlTelInput.css" rel="stylesheet" type="text/css" media="" />
-		<link href="dist/css/new/phone_verify.css" rel="stylesheet" type="text/css" media="" />
-	</head>
-	<body>
-		<div id="wrapper" class="phone_verify">
-			<!--main-->
-			<main class="verify">
-				<div class="_content">
-					<div class="veri-logo"><img src="dist/svg/logo.svg" alt="" /></div>
-					<h1>SpaceAdvisor手機驗證</h1>
-					<div class="veri-input">
-						<ul><!-- 錯誤時請加上 warning_error -->
-							<li class="_occupation warning_error">
-								<i></i>
-								<select>
-									<option value="0">請選擇產業別</option>
-									<option>金融/保險/傳銷</option>
-									<option>娛樂/出版/服務</option>
-									<option>流通/百貨零售</option>
-									<option>製造/供應商/貿易</option>
-									<option>建築/營造/房地產</option>
-									<option>交通/運輸</option>
-									<option>旅遊/餐飲</option>
-									<option>傳播/公共關係/廣告/行銷</option>
-									<option>醫療/保健</option>
-									<option>政府機關/軍公教</option>
-									<option>宗教/非營利組織</option>
-									<option>藝術人文/設計</option>
-									<option>漁農牧</option>
-									<option>教育/教師</option>
-									<option>資訊科技</option>
-									<option>學生</option>
-									<option>部落客/YouTuber/網紅</option>
-									<option>其他</option>
-								</select>
-							</li>
-						</ul>
-					</div>
-					<div class="veri-mobile flexbox">
-						<!-- 手機號碼 -->
-						<span class="flexbox country_code">
-							<form>
-								<input id="phone" type="tel">
-							</form>
-							<input type="text" value="" id="tnum">
-						</span>
-						<span class="phone-number warning_error"><i></i><input type="text" placeholder="手機號碼" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"></span>
-						<!-- /手機號碼 -->
-					</div>
-					<div class="veri-buttons">
-						<!-- 發送驗證碼按鈕 -->
-						<button class="_send">發送驗證碼</button>
-						<button class="countdown">重新發送(<span id="countdown"></span>秒)</button>
-						<!-- /發送驗證碼按鈕 -->
-						<div class="flexbox veri-input">
-							<input type="text" maxlength="4" placeholder="請輸入4位數驗證碼" onkeyup="this.value=this.value.replace(/\D/g,'');checkcode(this);" onchange="checkcode(this)">
-							<i class="fa fa-times-circle" aria-hidden="true" checkicon></i>
-						</div>
-					</div>
-					<div class="veri-ok">
-						<button class="btn btn-c-3 btn-m btn-c-disable">確認</button>
-					</div>
-					<div class="veri-tips"><p>如有使用上任何問題<br>請參考<a href="#">常見問題</a>或至<a href="#">客服中心</a>聯絡我們</p></div>
-				</div>
-			</main>
-			<!--/main-->
-		</div>
+<!-- STYLES -->
+<link href="dist/css/new/basic.css" rel="stylesheet" type="text/css" media=""/>
+<link href="dist/css/new/intlTelInput.css" rel="stylesheet" type="text/css" media="" />
+<link href="dist/css/new/phone_verify.css" rel="stylesheet" type="text/css" media="" />
+</head>
+<body>
+<div id="wrapper" class="phone_verify"> 
+  <!--main-->
+  <main class="verify">
+    <div class="_content">
+      <div class="veri-logo"><img src="dist/svg/logo.svg" alt="" /></div>
+      <h1>SpaceAdvisor手機驗證</h1>
+      <div class="veri-input">
+        <ul>
+          <!-- 錯誤時請加上 warning_error -->
+          <li class="_occupation warning_error"> <i></i>
+            <select>
+              <option value="0">請選擇職業</option>
+              <option>金融/保險/傳銷</option>
+              <option>娛樂/出版/服務</option>
+              <option>流通/百貨零售</option>
+              <option>製造/供應商/貿易</option>
+              <option>建築/營造/房地產</option>
+              <option>交通/運輸</option>
+              <option>旅遊/餐飲</option>
+              <option>傳播/公共關係/廣告/行銷</option>
+              <option>醫療/保健</option>
+              <option>政府機關/軍公教</option>
+              <option>宗教/非營利組織</option>
+              <option>藝術人文/設計</option>
+              <option>漁農牧</option>
+              <option>教育/教師</option>
+              <option>資訊科技</option>
+              <option>學生</option>
+              <option>部落客/YouTuber/網紅</option>
+              <option>其他</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <div class="veri-mobile flexbox"> 
+        <!-- 手機號碼 --> 
+        <span class="phone-number warning_error"><i></i><input type="text" placeholder="手機號碼" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+        </span> 
+        <!-- /手機號碼 --> 
+      </div>
+      <div class="veri-buttons"> 
+        <!-- 發送驗證碼按鈕 -->
+        <button class="_send">發送驗證碼</button>
+        <button class="countdown">重新發送(<span id="countdown"></span>秒)</button>
+        <!-- /發送驗證碼按鈕 -->
+        <div class="flexbox veri-input">
+          <input type="text" maxlength="4" placeholder="請輸入4位數驗證碼" onkeyup="this.value=this.value.replace(/\D/g,'');checkcode(this);" onchange="checkcode(this)">
+          <i class="fa fa-times-circle" aria-hidden="true" checkicon></i> </div>
+      </div>
+      <div class="veri-ok">
+        <button class="btn btn-c-3 btn-m btn-c-disable">確認</button>
+      </div>
+      <div class="veri-tips">
+        <p>如有使用上任何問題<br>
+          請參考<a href="#">常見問題</a>或至<a href="#">客服中心</a>聯絡我們</p>
+      </div>
+    </div>
+  </main>
+  <!--/main--> 
+</div>
 
-
-		<!-- /#wrapper -->
-		<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="dist/js/jquery-ui.js"></script>
-		<script type="text/javascript" src="dist/js/bootstrap_bear.js"></script>
-		<script type="text/javascript" src="dist/js/main.js"></script>
-		<script src="dist/js/intlTelInput.js"></script>
-		<script>
+<!-- /#wrapper --> 
+<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="dist/js/jquery-ui.js"></script> 
+<script type="text/javascript" src="dist/js/bootstrap_bear.js"></script> 
+<script type="text/javascript" src="dist/js/main.js"></script> 
+<script src="dist/js/intlTelInput.js"></script> 
+<script>
 			$("#phone").intlTelInput({
 				// allowDropdown: false,
 				// autoHideDialCode: false,
@@ -114,13 +110,13 @@
 				// separateDialCode: true,
 				//utilsScript: "dist/js/utils.js"
 			});
-		</script>
-		<script>
+		</script> 
+<script>
 			$("#phone").on("countrychange", function(e, countryData) {
 				$('input#tnum').val("+" + countryData.dialCode);
 			});
-		</script>
-		<script>
+		</script> 
+<script>
 			//設定倒數秒數
 			var t = 60;
 			//顯示倒數秒數
@@ -139,8 +135,8 @@
 				//執行showTime()
 				showTime();
 			});
-		</script>
-		<script>
+		</script> 
+<script>
 			function checkcode(obj) {
 				if (obj.value.length >= 4) {
 					$('.veri-ok button').removeClass('btn-c-disable');
@@ -151,5 +147,5 @@
 				}
 			}
 		</script>
-	</body>
+</body>
 </html>

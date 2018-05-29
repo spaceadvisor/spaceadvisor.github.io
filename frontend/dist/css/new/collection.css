@@ -7,11 +7,7 @@
 	right: 15px;
 }
 .collectionBox .placeBox._boxStyle {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1100px;
     margin-top: 44px;
-    padding-top: 40px;
 }
 .collectionBox .placeBox > ul {
     display: flex;
@@ -23,18 +19,15 @@
 	padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
 }
 .collectionBox .placeBox .site-list .site {
-	margin-bottom: 20px;
-	padding-right: 9px;
-	width: calc(100% / 3);
+	margin: 0 15px 20px;
+    width: calc(100% / 3 - 30px);
 }
 .collectionBox .placeBox .site-list .site a {
 	width: 100%;
 }
-
 .collectionBox .pageList {
 	margin-top: 20px;
 }
@@ -51,14 +44,20 @@
 	    width: 90%;
 	    padding-top: 20px;
 	}
-	.collectionBox .placeBox .site-list {
+	/*.collectionBox .placeBox .site-list {
 		flex-direction: column;
-	}
+	}*/
 	.collectionBox .placeBox .site-list .site {
-		width: 100%;
-		padding-right: 0;
+		width: calc(100% / 2 - 30px);
 	}
 	#wrapper .nav-tabs > li a {
 		font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.collectionBox .placeBox .site-list .site {
+		width: 100%;
+    	margin: 0 0 20px;
 	}
 }

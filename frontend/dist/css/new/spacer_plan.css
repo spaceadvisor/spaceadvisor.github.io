@@ -131,6 +131,7 @@
 	margin-bottom: 5px;
     line-height: normal;
     font-size: 15px;
+	word-wrap: break-word;
 }
 .spacer_plan .collectItem1 .illustrate > div {
 	margin-bottom: 9px;
@@ -159,7 +160,8 @@
 
 /** BEGIN collectItem2 **/
 .spacer_plan .collectItem2 .collectTxt {
-    width: 100%
+    width: 100%;
+	word-wrap: break-word;
 }
 .spacer_plan .collectItem2 ol,
 .spacer_plan .collectItem2 ul {
@@ -206,6 +208,7 @@
     line-height: normal;
     margin-bottom: 5px;
     font-weight: bold;
+	word-wrap: break-word;
 }
 .spacer_plan .package .packTxt p {
     line-height: normal;
@@ -216,6 +219,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+	word-wrap: break-word;
 }
 /** END collectItem3 **/
 
@@ -254,6 +258,7 @@
 .spacer_plan .collectItem6 .heedContent {
 	font-size: 15px;
 	line-height: normal;
+	word-wrap: break-word;
 }
 /** END collectItem6 **/
 
@@ -278,15 +283,13 @@
 .spacer_plan .collectItem8 .coPhoto ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
 }
 .spacer_plan .collectItem8 .coPhoto li {
 	float: unset;
     width: calc(100% / 3);
     margin: 12px 0;
-    padding: 0 15px;
-    max-width: 360px;
+    padding: 0 18.33px;
     overflow: hidden;
 }
 .spacer_plan .collectItem8 .coPhoto li img {
@@ -552,7 +555,6 @@
 		width: calc(100% / 2);
 		margin: 5px 0;
 		padding: 0 5px;
-		max-width: 100%;
 	}
 	/** END collectItem8 **/
 

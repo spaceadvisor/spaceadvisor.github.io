@@ -530,8 +530,7 @@
     overflow: hidden;
 }
 .meeting .device li {
-    margin-bottom: 9px;
-    padding-left: 30px;
+	margin-bottom: 9px;
     font-size: 15px;
     font-weight: normal;
     color: #4e5059;
@@ -543,10 +542,10 @@
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    background-image: url(../../images/icon_device.png);
-    background-repeat: no-repeat;
-    background-position: center left;
-    float: left;
+	float: left;
+}
+.meeting .device li img {
+	margin-right: 9px;
 }
 .meeting .device .content-720 .box span {
     display: block;

@@ -77,8 +77,7 @@
 /** BEGIN appointment_Result **/
 .appointment_Result {
     float: right;
-    width: 100%;
-    max-width: 310px;
+    width: 310px;
 }
 .appointment_Result .demand h4,
 .appointment_Result .demand .deTxt,

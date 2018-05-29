@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:360});
 	$(".vimeo").colorbox({iframe:true, innerWidth:640, innerHeight:360});
 	$(".iframe").colorbox({iframe:true, width:"640", height:"360"});
-	$(".inline").colorbox({inline:true, /*width:"100%", height:"80%"*/});
+	$(".inline").colorbox({inline:true, closeButton:true/*width:"100%", height:"80%"*/});
 	$(".inline02").colorbox({inline:true, width:"700" });
 	$(".callbacks").colorbox({
 		onOpen:function(){ alert('onOpen: colorbox is about to open'); },

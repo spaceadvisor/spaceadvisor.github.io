@@ -74,10 +74,12 @@
     width: 100%;
     margin-bottom: 9px;
 }
-.meberInput .warning_error {
+.meberInput .warning_error,
+.meber_registered .forget_password .warning_error{
 	display: inline-block;
 }
-.meberInput .warning_error:before {
+.meberInput .warning_error:before,
+.meber_registered .forget_password .warning_error:before {
     color: #d76050;
     content: "\f06a";
     display: inline-block;
@@ -176,7 +178,7 @@
 .signup .forget_password .col {
 }
 .signup .forget_password .col label p {
-    width: 90%;
+    width: 89%;
     top: 0;
     font-size: 13px;
     color: #4e5059;
@@ -301,7 +303,8 @@
 	.meberInput input {
 		font-size: 15px;
 	}
-	.meberInput .warning_error:before {
+	.meberInput .warning_error:before,
+	.meber_registered .forget_password .warning_error:before {
 		margin-left: 0;
 		margin-right: 9px;
 	}
