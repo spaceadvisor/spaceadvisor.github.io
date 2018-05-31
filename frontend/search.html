@@ -252,7 +252,7 @@
                 <ul>
                   <li> 
                     <!-- <p>日期</p> -->
-                    <input type="text" class="layui-input" id="test7" placeholder="日期" lay-key="8" readonly>
+                    <input type="text" class="layui-input" id="test7" placeholder="日期區間" lay-key="8" readonly>
                   </li>
                   <li>
                     <p>時段</p>
@@ -1369,7 +1369,7 @@
               <p>時間</p>
               <div class="search_off">
                 <div class="search_item day">
-                  <input type="text" class="layui-input" id="test6"  placeholder="日期" lay-key="7" readonly>
+                  <input type="text" class="layui-input" id="test6"  placeholder="日期區間" lay-key="7" readonly>
                 </div>
               </div>
               <div class="search_off">
@@ -3248,13 +3248,15 @@
 <script type="text/javascript">
 			lay('#version').html('-v'+ laydate.v);
 
-			//日歷
+			//日曆
 			laydate.render({
 				elem: '#test6'
 				,range: true
 				,trigger: 'click'
-				,done: function(value, date, endDate){
+				,btns: ['clear']
+				,change: function(value, date, endDate){
 					if (value != "") {
+						lay('.layui-input').val(value);
 						$(".day").addClass("have");
 					} else {
 						$(".day").removeClass('have');
@@ -3266,6 +3268,14 @@
 						,value: value
 					});
 				}
+				,done: function(value, date, endDate){
+					if (value != "") {
+						$(".day").addClass("have");
+					} else {
+						$(".day").removeClass('have');
+						lay('.layui-input').val('');
+					}
+				}
 			});
 			laydate.render({
 				elem: '#test7'
@@ -3276,6 +3286,7 @@
 						$(".day").addClass("have");
 					} else {
 						$(".day").removeClass('have');
+						lay('.layui-input').val('');
 					}
 					laydate.render({
 						elem: '#test6'

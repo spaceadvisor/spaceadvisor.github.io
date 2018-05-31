@@ -224,6 +224,11 @@
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail > .search_item_area {
     overflow: hidden;
     line-height: normal;
+	max-height: 300px;
+    overflow-y: auto;
+}
+.search main > .search-box .search_bar > .content > ul > li .search_item_detail > .search_item_area.money {
+    overflow: hidden;
 }
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail > .search_item_area span {
     font-size: 15px;

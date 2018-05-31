@@ -709,6 +709,17 @@
 <script type="text/javascript" src="dist/js/tip/jquery.poshytip.js"></script> 
 <script type="text/javascript">
 			$(function(){
+        $('.option-field:checkbox').click(function() {
+          //$(this).closest('ul').find(("input[type=checkbox]")).each( function( i, obj ) {
+            if($(this).is(":checked")){
+              $(this).closest('li').find('select').removeAttr('disabled');
+            }
+            else{
+              $(this).closest('li').find('select').attr('disabled','disabled');
+            }
+          //});
+        });
+        
 				$('.option-field:checkbox').each(function(idx,obj){
 					$(obj).parentsUntil('ul').last().find('select').attr('disabled','disabled');
 					$(obj).on('click',function(event){
