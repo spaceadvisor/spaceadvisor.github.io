@@ -360,7 +360,7 @@
 .meeting .content-720 {
 	width: calc(100% - 350px);
     max-width: 100%;
-    padding: 20px 0;
+    /*padding: 20px 0;*/
     border-bottom: 1px solid #ddd;
     overflow: hidden;
 }
@@ -498,6 +498,7 @@
     line-height: normal;
     text-decoration: none;
     float: left;
+	padding: 20px 0;
 }
 
 .meeting .content-720 .box {
@@ -507,9 +508,11 @@
     text-decoration: none;
     float: right;
     width: 84%;
-    padding: 0 0 5px 20px;
     font-size: 15px;
     line-height: normal;
+	padding: 20px 0 20px 20px;
+    background-color: #ffffff;
+    border-left: 1px solid #ddd;
 }
 .meeting .content-720 .box .add {
     height: 60px;
@@ -569,10 +572,6 @@
 .meeting .clause .title-box i {
     display: none;
 }
-
-
-
-
 .meeting .price-plan ul {
     overflow: hidden;
 }
@@ -676,9 +675,9 @@
 .meeting .array {
     overflow: hidden;
 }
-.meeting .array .content-720 {
+/*.meeting .array .content-720 {
     padding-bottom: 20px;
-}
+}*/
 .meeting .array ul li {
     width: calc(100% / 4);
     padding: 15px 0;
@@ -714,6 +713,7 @@
 }
 .meeting .comment.content .content-720 {
     border-bottom: 0;
+	padding: 20px 0;
 }
 .meeting .comment .star {
     overflow: hidden;
@@ -880,6 +880,21 @@
 	padding: 0;
 }
 
+.meeting .outline .content-720 {
+	padding: 20px 0;	
+}
+.meeting .about .content-720,
+.meeting .device .content-720,
+.meeting .price-plan .content-720,
+.meeting .array .content-720,
+.meeting .clause .content-720 {
+    background-color: #ddf5dd;
+}
+.meeting .device .content-720 .box ul {
+	height: 60px;
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 980px) {
     .meeting .outline.content,
     .meeting .about.content,
@@ -1018,6 +1033,7 @@
     .meeting .content-720 .title-box {
         width: 100%;
         margin-bottom: 9px;
+		padding: 0;
     }
     .meeting .content-720 .box a.more {
         margin-top: 9px;
@@ -1281,6 +1297,14 @@
     .meeting .banner .banner-box .pic .picBg .picBox .slider-nav {
         display: none;
     }
+	.meeting .about .content-720,
+	.meeting .device .content-720,
+	.meeting .price-plan .content-720,
+	.meeting .array .content-720,
+	.meeting .clause .content-720 {
+		padding: 20px 0;
+		background-color: #ffffff;
+	}
 }
 
 @media only screen and (max-width: 480px) {

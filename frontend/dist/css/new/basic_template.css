@@ -1041,7 +1041,7 @@
 /** END 未分類 **/
 
 /** BEGIN Box open **/
-.box.open .add {
+.box.open .add, .box.open ul {
     height: auto !important;
     display: block !important;
 }
