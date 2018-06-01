@@ -151,12 +151,12 @@
     color: #4e5059;
     width: 100%;
     padding: 3px 0;
-    font-size: 19px;
+    font-size: 13px;
     margin-bottom: 5px;
     line-height: unset;
 }
 .site-list .site .text p.title.sub-title {
-    font-size: 13px;
+    font-size: 19px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

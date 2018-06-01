@@ -1216,7 +1216,7 @@
     -webkit-line-clamp: unset;
 }
 .placeList .text p.title {
-    font-size: 21px;
+    font-size: 13px;
     font-weight: normal;
     color: #4e5059;
     text-decoration: none;
@@ -1225,7 +1225,7 @@
     -webkit-box-orient: vertical;
 }
 .placeList .text p.title.sub-title {
-    font-size: 13px;
+    font-size: 21px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1533,9 +1533,9 @@
         flex-direction: column;
         height: unset;
     }
-    .placeList .text p.title {
+    /*.placeList .text p.title {
         line-height: normal;
-    }
+    }*/
     .placeList .text .info_1 span,
     .placeList .text .info_2 span.star,
     .placeList .text .info_2 span.price {
