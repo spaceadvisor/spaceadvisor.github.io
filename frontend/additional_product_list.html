@@ -141,7 +141,7 @@
       <div class="value-add-list">
         <div class="accordion"> 
           <!-- 方案加價購 -->
-          <dl data-fee-percent="5">
+          <dl data-fee-percent="5" id="additional_project">
             <!-- data-fee-percent 服務費百分比 -->
             <dt class="purchase_value-add-list-title"> <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">方案加價購</a> </dt>
             <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
@@ -154,7 +154,7 @@
                     <div class="purchase_program-title003">一生一世方案 (TWD 10,000/桌)</div>
                   </div>
                   <div class="purchase_program-right wd_form">
-                    <select class="quantity-field" data-price="10000" data-name="一生一世方案 (TWD 10,000/桌)">
+                    <select class="quantity-field" id="equip_1_1" data-price="10000" data-name="一生一世方案 (TWD 10,000/桌)">
                       <option value="0">加購桌數</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -175,7 +175,7 @@
           </dl>
           <!-- 方案加價購 end --> 
           <!-- 時間加價購 -->
-          <dl data-fee-percent="10">
+          <dl data-fee-percent="10" id="additional_time">
             <dt class="purchase_value-add-list-title"> <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">時間加價購</a> </dt>
             <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
               <div class="purchase_value-add-wrapper purchase_program-main"> 
@@ -186,14 +186,14 @@
                     <div class="purchase_program-title002">2017年03月25日&nbsp;&nbsp;08:00～12:00</div>
                   </div>
                   <div class="purchase_time-right wd_form">
-                    <select class="quantity-field _time" data-select data-name="08:00 ~ 12:00 - 提前/延後時間 (TWD 1,800/時)">
+                    <select class="quantity-field _time" id="equip_2_1" data-select data-name="08:00 ~ 12:00 - 提前/延後時間 (TWD 1,800/時)">
                       <option value="0" vname="">請選擇提前時間</option>
                       <option value="1800" vname="2017年03月25日 08:00～12:00">提前時間 07:00-08:00 (TWD 1,800/時)</option>
                       <option value="1700" vname="2017年03月25日 13:00～17:00">提前時間 13:00-17:00 (TWD 1,700/時)</option>
                     </select>
                   </div>
                   <div class="purchase_time-right wd_form">
-                    <select class="quantity-field _time" data-select data-name="08:00 ~ 12:00 - 提前/延後時間 (TWD 1,800/時)">
+                    <select class="quantity-field _time" id="equip_2_2" data-select data-name="08:00 ~ 12:00 - 提前/延後時間 (TWD 1,800/時)">
                       <option value="0" vname="">請選擇延後時間</option>
                       <option value="1800" vname="2017年03月25日 12:30">延後時間 07:00-08:00 (TWD 1,800/時)</option>
                       <option value="1700" vname="2017年03月25日 18:00">延後時間 13:00-17:00 (TWD 1,700/時)</option>
@@ -208,14 +208,14 @@
                     <div class="purchase_program-title002">2017年03月25日&nbsp;&nbsp;08:00～12:00</div>
                   </div>
                   <div class="purchase_time-right wd_form">
-                    <select class="quantity-field _time" data-select data-name="08:00 ~ 12:00 - 提前/延後時間 (TWD 1,800/時)">
+                    <select class="quantity-field _time" id="equip_2_3" data-select data-name="08:00 ~ 12:00 - 提前/延後時間 (TWD 1,800/時)">
                       <option value="0" vname="">請選擇提前時間</option>
                       <option value="1800" vname="2017年03月25日 08:00～12:00">提前時間 07:00-08:00 (TWD 1,800/時)</option>
                       <option value="1700" vname="2017年03月25日 13:00～17:00">提前時間 13:00-17:00 (TWD 1,700/時)</option>
                     </select>
                   </div>
                   <div class="purchase_time-right wd_form">
-                    <select class="quantity-field _time" data-select data-name="08:00 ~ 12:00 - 提前/延後時間 (TWD 1,800/時)">
+                    <select class="quantity-field _time" id="equip_2_4" data-select data-name="08:00 ~ 12:00 - 提前/延後時間 (TWD 1,800/時)">
                       <option value="0" vname="">請選擇延後時間</option>
                       <option value="1800" vname="2017年03月25日 12:30">延後時間 07:00-08:00 (TWD 1,800/時)</option>
                       <option value="1700" vname="2017年03月25日 18:00">延後時間 13:00-17:00 (TWD 1,700/時)</option>
@@ -227,10 +227,10 @@
                 <div class="purchase_program">
                   <div class="purchase_program-left">
                     <div class="purchase_program-title001">台北文華東方-比翼廳</div>
-                    <div class="purchase_program-title002">2017年03月25日&nbsp;&nbsp;08:00～12:00</div>
+                    <div cl   ass="purchase_program-title002">2017年03月25日&nbsp;&nbsp;08:00～12:00</div>
                   </div>
                   <div class="purchase_time-right wd_form disabled">
-                    <select class="quantity-field _time" data-select data-name disabled>
+                    <select class="quantity-field _time" id="equip_2_5" data-select data-name disabled>
                       <option value="">無法加購提前準備/緩衝時間</option>
                     </select>
                   </div>
@@ -248,33 +248,33 @@
                 <ul>
                   <li>
                     <div class="option">
-                      <input type="checkbox" id="equip_0_1" class="option-field">
+                      <input type="checkbox" id="equip_0_1_c" class="option-field">
                     </div>
                     <div class="optionsBox-title">
-                      <label for="equip_0_1">08:00 ~ 12:00</label>
+                      <label for="equip_0_1_c">08:00 ~ 12:00</label>
                     </div>
                   </li>
                 </ul>
               </div>
               <div class="collapse"> 
                 <!-- 設備加價購 -->
-                <dl data-fee-percent="15">
+                <dl data-fee-percent="15" id="additional_facility_0" period="08:00 ~ 12:00">
                   <dt class="purchase_value-add-list-title"> <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">設備加價購</a> </dt>
                   <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
                     <div class="site_equipment site_optionsBox purchase_program-main purchase_value-add-wrapper">
-                      <ul class="site_optionsBox-background">
+                      <ul class="site_optionsBox-background" >
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_1_1" class="option-field">
+                            <input type="checkbox" id="equip_3_1_c" class="option-field">
                           </div>
                           <div class="optionsBox-icon">
-                            <label for="equip_1_1"><img src="dist/images/equipment-icon001.png" alt=""/></label>
+                            <label for="equip_3_1_c"><img src="dist/images/equipment-icon001.png" alt=""/></label>
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_1_1">投影機與螢幕 - 液晶投影機 (TWD 1,000/組)</label>
+                            <label for="equip_3_1_c">投影機與螢幕 - 液晶投影機 (TWD 1,000/組)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="1000" data-name="08:00 ~ 12:00 - 投影機與螢幕 - 液晶投影機 (TWD 1,000/組)">
+                            <select class="quantity-field" id="equip_3_1" data-price="1000" data-name="08:00 ~ 12:00 - 投影機與螢幕 - 液晶投影機 (TWD 1,000/組)">
                               <option>1</option>
                               <option>2</option>
                             </select>
@@ -282,48 +282,48 @@
                         </li>
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_1_2" class="option-field">
+                            <input type="checkbox" id="equip_3_2_c" class="option-field">
                           </div>
                           <div class="optionsBox-icon">
-                            <label for="equip_1_2"><img src="dist/images/equipment-icon001.png" alt=""/></label>
+                            <label for="equip_3_2_c"><img src="dist/images/equipment-icon001.png" alt=""/></label>
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_1_2">投影機與螢幕 - 高階展演投影機 (TWD 1,000/組)</label>
+                            <label for="equip_3_2_c">投影機與螢幕 - 高階展演投影機 (TWD 1,000/組)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="1000" data-name="08:00 ~ 12:00 - 投影機與螢幕 - 高階展演投影機 (TWD 1,000/組)">
+                            <select class="quantity-field" id="equip_3_2" data-price="1000" data-name="08:00 ~ 12:00 - 投影機與螢幕 - 高階展演投影機 (TWD 1,000/組)">
                               <option>1</option>
                             </select>
                           </div>
                         </li>
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_1_3" class="option-field">
+                            <input type="checkbox" id="equip_3_3_c" class="option-field">
                           </div>
                           <div class="optionsBox-icon">
-                            <label for="equip_1_3"><img src="dist/images/equipment-icon002.png" alt=""/></label>
+                            <label for="equip_3_3_c"><img src="dist/images/equipment-icon002.png" alt=""/></label>
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_1_3">麥克風 - 無線式 (TWD 500/支)</label>
+                            <label for="equip_3_3_c">麥克風 - 無線式 (TWD 500/支)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="500" data-name="08:00 ~ 12:00 - 麥克風 - 無線式 (TWD 500/支)">
+                            <select class="quantity-field" id="equip_3_3" data-price="500" data-name="08:00 ~ 12:00 - 麥克風 - 無線式 (TWD 500/支)">
                               <option>1</option>
                             </select>
                           </div>
                         </li>
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_1_4" class="option-field">
+                            <input type="checkbox" id="equip_3_4_c" class="option-field">
                           </div>
                           <div class="optionsBox-icon">
-                            <label for="equip_1_4"><img src="dist/images/equipment-icon002.png" alt=""/></label>
+                            <label for="equip_3_4_c"><img src="dist/images/equipment-icon002.png" alt=""/></label>
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_1_4">麥克風 - 有線式 (TWD 500/支)</label>
+                            <label for="equip_3_4_c">麥克風 - 有線式 (TWD 500/支)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="500" data-name="08:00 ~ 12:00 - 麥克風 - 有線式 (TWD 500/支)">
+                            <select class="quantity-field" id="equip_3_4" data-price="500" data-name="08:00 ~ 12:00 - 麥克風 - 有線式 (TWD 500/支)">
                               <option>1</option>
                             </select>
                           </div>
@@ -334,7 +334,7 @@
                 </dl>
                 <!-- 設備加價購 end --> 
                 <!-- 餐飲加價購 -->
-                <dl data-fee-percent="20">
+                <dl data-fee-percent="20" id="additional_food_0" period="08:00 ~ 12:00">
                   <dt class="purchase_value-add-list-title"> <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">餐飲加價購</a> </dt>
                   <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
                     <div class="site_food purchase_program-main">
@@ -350,7 +350,7 @@
                             </div>
                             </a>
                             <div class="site_food-participate purchase_food"><span>加購餐點數量：</span>
-                              <input type="number" onclick="return false;" class="site_participate-field02" min="0" data-price="300" data-name="08:00 ~ 12:00 - 低卡路里套餐A (TWD 300/套)">
+                              <input type="number" onclick="return false;" id="equip_4_1" class="site_participate-field02" min="0" data-price="300" data-name="08:00 ~ 12:00 - 低卡路里套餐A (TWD 300/套)">
                               <a href="javascript:;" class="meal_icon1">查看菜單</a>
                             </div>
                           </li>
@@ -364,7 +364,7 @@
                             </div>
                             </a>
                             <div class="site_food-participate purchase_food"><span>加購餐點數量：</span>
-                              <input type="number" onclick="return false;" class="site_participate-field02" min="0" data-price="400" data-name="08:00 ~ 12:00 - 低卡路里套餐B (TWD 400/套)">
+                              <input type="number" onclick="return false;" id="equip_4_2" class="site_participate-field02" min="0" data-price="400" data-name="08:00 ~ 12:00 - 低卡路里套餐B (TWD 400/套)">
                               <a href="javascript:;" class="meal_icon1">查看菜單</a>
                             </div>
                           </li>
@@ -378,7 +378,7 @@
                             </div>
                             </a>
                             <div class="site_food-participate purchase_food"><span>加購餐點數量：</span>
-                              <input type="number" onclick="return false;" class="site_participate-field02" min="0" data-price="500" data-name="08:00 ~ 12:00 - 低卡路里套餐C (TWD 500/套)">
+                              <input type="number" onclick="return false;" id="equip_4_3" class="site_participate-field02" min="0" data-price="500" data-name="08:00 ~ 12:00 - 低卡路里套餐C (TWD 500/套)">
                               <a href="javascript:;" class="meal_icon1">查看菜單</a>
                             </div>
                           </li>
@@ -389,7 +389,7 @@
                 </dl>
                 <!-- 餐飲加價購 end --> 
                 <!-- 其他加價購 -->
-                <dl data-fee-percent="25">
+                <dl data-fee-percent="25" id="additional_other_0" period="08:00 ~ 12:00">
                   <dt class="purchase_value-add-list-title"> <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">其他加價購</a> </dt>
                   <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true"> 
                     <!-- 其他加價購設備 -->
@@ -397,13 +397,13 @@
                       <ul class="site_optionsBox-background">
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_2_1" class="option-field">
+                            <input type="checkbox" id="equip_5_1_c" class="option-field">
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_2_1">加車 (TWD 1,000/輛)</label>
+                            <label for="equip_5_1_c">加車 (TWD 1,000/輛)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="1000" data-name="08:00 ~ 12:00 - 加車 (TWD 1,000/輛)">
+                            <select class="quantity-field" id="equip_5_1" data-price="1000" data-name="08:00 ~ 12:00 - 加車 (TWD 1,000/輛)">
                               <option>1</option>
                               <option>2</option>
                             </select>
@@ -411,13 +411,13 @@
                         </li>
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_2_2" class="option-field">
+                            <input type="checkbox" id="equip_5_2_c" class="option-field">
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_2_2">停車位 (TWD 500/個)</label>
+                            <label for="equip_5_2_c">停車位 (TWD 500/個)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="500" data-name="08:00 ~ 12:00 - 停車位 (TWD 500/個)">
+                            <select class="quantity-field" id="equip_5_2" data-price="500" data-name="08:00 ~ 12:00 - 停車位 (TWD 500/個)">
                               <option>1</option>
                               <option>2</option>
                             </select>
@@ -434,33 +434,33 @@
                 <ul>
                   <li>
                     <div class="option">
-                      <input type="checkbox" id="equip_0_2" class="option-field">
+                      <input type="checkbox" id="equip_0_2_c" class="option-field">
                     </div>
                     <div class="optionsBox-title">
-                      <label for="equip_0_2">14:00 ~ 17:00</label>
+                      <label for="equip_0_2_c">14:00 ~ 17:00</label>
                     </div>
                   </li>
                 </ul>
               </div>
               <div class="collapse"> 
                 <!-- 設備加價購 -->
-                <dl data-fee-percent="15">
+                <dl data-fee-percent="15" id="additional_facility_1" period="14:00 ~ 17:00">
                   <dt class="purchase_value-add-list-title"> <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">設備加價購</a> </dt>
                   <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
                     <div class="site_equipment site_optionsBox purchase_program-main purchase_value-add-wrapper">
                       <ul class="site_optionsBox-background">
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_3_1" class="option-field">
+                            <input type="checkbox" id="equip_6_1_c" class="option-field">
                           </div>
                           <div class="optionsBox-icon">
-                            <label for="equip_3_1"><img src="dist/images/equipment-icon001.png" alt=""/></label>
+                            <label for="equip_6_1_c"><img src="dist/images/equipment-icon001.png" alt=""/></label>
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_3_1">投影機與螢幕 - 液晶投影機 (TWD 1,000/組)</label>
+                            <label for="equip_6_1_c">投影機與螢幕 - 液晶投影機 (TWD 1,000/組)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="1000" data-name="14:00 ~ 17:00 - 投影機與螢幕 - 液晶投影機 (TWD 1,000/組)">
+                            <select class="quantity-field" id="equip_6_1" data-price="1000" data-name="14:00 ~ 17:00 - 投影機與螢幕 - 液晶投影機 (TWD 1,000/組)">
                               <option>1</option>
                               <option>2</option>
                             </select>
@@ -468,48 +468,48 @@
                         </li>
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_3_2" class="option-field">
+                            <input type="checkbox" id="equip_6_2_c" class="option-field">
                           </div>
                           <div class="optionsBox-icon">
-                            <label for="equip_3_2"><img src="dist/images/equipment-icon001.png" alt=""/></label>
+                            <label for="equip_6_2_c"><img src="dist/images/equipment-icon001.png" alt=""/></label>
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_3_2">投影機與螢幕 - 高階展演投影機 (TWD 1,000/組)</label>
+                            <label for="equip_6_2_c">投影機與螢幕 - 高階展演投影機 (TWD 1,000/組)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="1000" data-name="14:00 ~ 17:00 - 投影機與螢幕 - 高階展演投影機 (TWD 1,000/組)">
+                            <select class="quantity-field" id="equip_6_2" data-price="1000" data-name="14:00 ~ 17:00 - 投影機與螢幕 - 高階展演投影機 (TWD 1,000/組)">
                               <option>1</option>
                             </select>
                           </div>
                         </li>
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_3_3" class="option-field">
+                            <input type="checkbox" id="equip_6_3_c" class="option-field">
                           </div>
                           <div class="optionsBox-icon">
-                            <label for="equip_3_3"><img src="dist/images/equipment-icon002.png" alt=""/></label>
+                            <label for="equip_6_3_c"><img src="dist/images/equipment-icon002.png" alt=""/></label>
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_3_3">麥克風 - 無線式 (TWD 500/支)</label>
+                            <label for="equip_6_3_c">麥克風 - 無線式 (TWD 500/支)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="500" data-name="14:00 ~ 17:00 - 麥克風 - 無線式 (TWD 500/支)">
+                            <select class="quantity-field" id="equip_6_3" data-price="500" data-name="14:00 ~ 17:00 - 麥克風 - 無線式 (TWD 500/支)">
                               <option>1</option>
                             </select>
                           </div>
                         </li>
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_3_4" class="option-field">
+                            <input type="checkbox" id="equip_6_4_c" class="option-field">
                           </div>
                           <div class="optionsBox-icon">
-                            <label for="equip_3_4"><img src="dist/images/equipment-icon002.png" alt=""/></label>
+                            <label for="equip_6_4_c"><img src="dist/images/equipment-icon002.png" alt=""/></label>
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_3_4">麥克風 - 有線式 (TWD 500/支)</label>
+                            <label for="equip_6_4_c">麥克風 - 有線式 (TWD 500/支)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="500" data-name="14:00 ~ 17:00 - 麥克風 - 有線式 (TWD 500/支)">
+                            <select class="quantity-field" id="equip_6_4" data-price="500" data-name="14:00 ~ 17:00 - 麥克風 - 有線式 (TWD 500/支)">
                               <option>1</option>
                             </select>
                           </div>
@@ -520,7 +520,7 @@
                 </dl>
                 <!-- 設備加價購 end --> 
                 <!-- 餐飲加價購 -->
-                <dl data-fee-percent="20">
+                <dl data-fee-percent="20" id="additional_food_1" period="14:00 ~ 17:00">
                   <dt class="purchase_value-add-list-title"> <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">餐飲加價購</a> </dt>
                   <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
                     <div class="site_food purchase_program-main">
@@ -536,7 +536,7 @@
                             </div>
                             </a>
                             <div class="site_food-participate purchase_food"><span>加購餐點數量：</span>
-                              <input type="number" onclick="return false;" class="site_participate-field02" min="0" data-price="300" data-name="14:00 ~ 17:00 - 低卡路里套餐A (TWD 300/套)">
+                              <input type="number" onclick="return false;" id="equip_7_1" class="site_participate-field02" min="0" data-price="300" data-name="14:00 ~ 17:00 - 低卡路里套餐A (TWD 300/套)">
                               <a href="javascript:;" class="meal_icon1">查看菜單</a>
                             </div>
                           </li>
@@ -550,7 +550,7 @@
                             </div>
                             </a>
                             <div class="site_food-participate purchase_food"><span>加購餐點數量：</span>
-                              <input type="number" onclick="return false;" class="site_participate-field02" min="0" data-price="400" data-name="14:00 ~ 17:00 - 低卡路里套餐B (TWD 400/套)">
+                              <input type="number" onclick="return false;" id="equip_7_2" class="site_participate-field02" min="0" data-price="400" data-name="14:00 ~ 17:00 - 低卡路里套餐B (TWD 400/套)">
                               <a href="javascript:;" class="meal_icon1">查看菜單</a>
                             </div>
                           </li>
@@ -564,7 +564,7 @@
                             </div>
                             </a>
                             <div class="site_food-participate purchase_food"><span>加購餐點數量：</span>
-                              <input type="number" onclick="return false;" class="site_participate-field02" min="0" data-price="500" data-name="14:00 ~ 17:00 - 低卡路里套餐C (TWD 500/套)">
+                              <input type="number" onclick="return false;" id="equip_7_3" class="site_participate-field02" min="0" data-price="500" data-name="14:00 ~ 17:00 - 低卡路里套餐C (TWD 500/套)">
                               <a href="javascript:;" class="meal_icon1">查看菜單</a>
                             </div>
                           </li>
@@ -575,7 +575,7 @@
                 </dl>
                 <!-- 餐飲加價購 end --> 
                 <!-- 其他加價購 -->
-                <dl data-fee-percent="25">
+                <dl data-fee-percent="25" id="additional_other_1" period="14:00 ~ 17:00">
                   <dt class="purchase_value-add-list-title"> <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">其他加價購</a> </dt>
                   <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true"> 
                     <!-- 其他加價購設備 -->
@@ -583,13 +583,13 @@
                       <ul class="site_optionsBox-background">
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_4_1" class="option-field">
+                            <input type="checkbox" id="equip_8_1_c" class="option-field">
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_4_1">加車 (TWD 1,000/輛)</label>
+                            <label for="equip_8_1_c">加車 (TWD 1,000/輛)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="1000" data-name="14:00 ~ 17:00 - 加車 (TWD 1,000/輛)">
+                            <select class="quantity-field" id="equip_8_1" data-price="1000" data-name="14:00 ~ 17:00 - 加車 (TWD 1,000/輛)">
                               <option>1</option>
                               <option>2</option>
                             </select>
@@ -597,13 +597,13 @@
                         </li>
                         <li>
                           <div class="option">
-                            <input type="checkbox" id="equip_4_2" class="option-field">
+                            <input type="checkbox" id="equip_8_2_c" class="option-field">
                           </div>
                           <div class="optionsBox-title">
-                            <label for="equip_4_2">停車位 (TWD 500/個)</label>
+                            <label for="equip_8_2_c">停車位 (TWD 500/個)</label>
                           </div>
                           <div class="quantity wd_form">
-                            <select class="quantity-field" data-price="500" data-name="14:00 ~ 17:00 - 停車位 (TWD 500/個)">
+                            <select class="quantity-field" id="equip_8_2" data-price="500" data-name="14:00 ~ 17:00 - 停車位 (TWD 500/個)">
                               <option>1</option>
                               <option>2</option>
                             </select>
@@ -634,11 +634,25 @@
               <div class="price">金額</div>
             </div>
           </div>
-          <div class="valist">
+          <div class="valist" id="additional_list">
             <h3>台北文華東方-比翼廳&nbsp;&nbsp;<span>2017年03月25日</span></h3>
-            <ul class="purchase_value-add-wrapper" total>
-            </ul>
+            <ul class="purchase_value-add-wrapper" id="add_no-additional"><li>尚未加入任何加購</li></ul>
           </div>
+          <!-- <div class="purchase_vasum" style="display:none">
+            <div class="wrapper fee">
+                <div class="thead">服務費總計</div>
+                <div class="tamount">TWD
+                    <mn feeprice=""></mn> 
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="thead">加購總金額</div>
+                <div class="tamount">TWD
+                    <mn totalprice=""></mn>
+                </div>
+            </div>
+          </div> -->
+          
           <!-- 加購總金額 -->
           <div class="purchase_vasum">
             <div class="wrapper fee">
@@ -709,18 +723,10 @@
 <script type="text/javascript" src="dist/js/tip/jquery.poshytip.js"></script> 
 <script type="text/javascript">
 			$(function(){
-        $('.option-field:checkbox').click(function() {
-          //$(this).closest('ul').find(("input[type=checkbox]")).each( function( i, obj ) {
-            if($(this).is(":checked")){
-              $(this).closest('li').find('select').removeAttr('disabled');
-            }
-            else{
-              $(this).closest('li').find('select').attr('disabled','disabled');
-            }
-          //});
-        });
-        
-				$('.option-field:checkbox').each(function(idx,obj){
+
+                
+
+                $('.option-field:checkbox').each(function(idx,obj){
 					$(obj).parentsUntil('ul').last().find('select').attr('disabled','disabled');
 					$(obj).on('click',function(event){
 						if ($(event.target)[0].checked==true){
@@ -741,6 +747,7 @@
 					});
 				});
 				
+
 				$('.site_food-main li a[class=clearfix]').each(function(idx,obj){
 					$(obj).on('click',function(event){
 						_rr = event.target;
@@ -748,53 +755,220 @@
 					});
 				});
 
-				var apn = '[data-name][data-price],[data-name][data-select]';
-				function adtext(name, price, count, feePercent){
+
+                //checkbox  
+                $('.option-field:checkbox').click(function() {
+                    if($(this).is(":checked")){
+                        $(this).closest('li').find('select').removeAttr('disabled');
+                        $(this).closest('li').find('select').trigger('change');
+                    }
+                    //checkbox 取消選擇
+                    else{
+                        //var ul_id = $(this).closest('dl').attr('id');
+                        //var elem_id = $(this).attr('id'); 
+                        $(this).closest('li').find('select').attr('disabled','disabled');
+                        //deltext(elem_id);
+                    }
+
+                    $(this).closest('li').find('select').trigger('change');
+                    
+                });
+
+                //select
+                $('select.quantity-field').change(function(){
+                    selectAddText($(this));
+                });
+                //餐飲選擇
+                $('.site_participate-field02').change(function(){
+                    $(this).blur();
+                });
+                $('.site_participate-field02').blur(function(){
+                    selectAddText($(this));
+                });
+
+                function selectAddText(elem){
+
+                    var obj = elem[0];
+
+                    var ul_id = obj.closest('dl').id;
+                    var elem_id = obj.id; 
+
+                    if(obj.getAttribute("disabled")=='disabled'){
+                        deltext(elem_id);
+                    }
+                    else if(obj.value>0)
+                    {
+                        var name = obj.getAttribute('data-name');
+                        if(obj.className.indexOf("_time") > 1 ){
+                            var price = cal_price(obj.value, 1); 
+                            var count = '';
+                        }
+                        else{
+                            var price = cal_price(obj.getAttribute('data-price'), obj.value); 
+                            var count = obj.value;
+                        }
+                        
+                        var feePercent = obj.closest('dl').getAttribute('data-fee-percent');
+                        //尚未存在
+                        if($("#" + elem_id+'_txt').length == 0) {
+                            adtext(ul_id, elem_id, name, price, count, feePercent);
+                        }
+                        //已經存在
+                        else{
+                            var price = cal_price( obj.getAttribute('data-price'), obj.value ); 
+                            //設定數量
+                            $('#'+elem_id+'_txt').find('div.amount').text(obj.value);
+                            //設定價錢
+                            $('#'+elem_id+'_txt').find('div.price').html('<span>TWD</span><span class="c_price">'+price+'</span>');
+                            cal_fee_total();
+                        }
+                    }
+                    else{
+                        deltext(elem_id);
+                    }
+                }
+
+
+                /*新增所有區塊ul到加購區*/
+                $('div.accordion dl').each(function(idx,obj){
+                    var html;
+                    var li_title;
+                    if(typeof $(this).attr('id') !== "undefined")
+                    {
+                        //時段下的 設備/餐飲/其他
+                        if(typeof $(this).attr('period') == "undefined"){
+                            li_title = $(this).find('dt').find('a').text();
+                        }else{
+                            li_title = $(this).find('dt').find('a').text() + '(' + $(this).attr('period') + ')';
+                        }
+                        
+                        html = '<ul class="purchase_value-add-wrapper" id="add_'+$(this).attr('id')+'" style="display:none">';
+                        html+= '<li><b>'+li_title+'</b></li>'; 
+                        html+= '</ul>'; 
+
+                        $('#additional_list').append(html);
+                    }
+				});
+
+                
+
+                function cal_price(price,number)
+                {
+                    return formatNumber(parseInt(price) * parseInt(number));
+                }
+        
+				
+
+				// var apn = '[data-name][data-price],[data-name][data-select]';
+				function adtext(ul_id, elem_id, name, price, count, feePercent)
+                {
 					var elem = '';
 					if ($.isNumeric(count)) {
-						elem = '<li><div class="ia-wrapper"><div class="item">'+name+'</div><div class="amount">'+count+'</div><div class="fee-percent">服務費 '+feePercent+'%</div></div><div class="price"><span>TWD</span><span>'+formatNumber(price)+'</span></div></li>';
+						elem = '<li id="'+elem_id+'_txt"><div class="ia-wrapper"><div class="item">'+name+'</div><div class="amount">'+count+'</div><div class="fee-percent">服務費 <span class="c_fee">'+feePercent+'</span>%</div></div><div class="price"><span>TWD</span><span class="c_price">'+formatNumber(price)+'</span></div></li>';
 					} else {
-						elem = '<li><div class="ia-wrapper"><div class="item">'+name+'</div><div class="amount _notCount">'+count+'</div><div class="fee-percent">服務費 '+feePercent+'%</div></div><div class="price"><span>TWD</span><span>'+formatNumber(price)+'</span></div></li>';
+						elem = '<li id="'+elem_id+'_txt"><div class="ia-wrapper"><div class="item">'+name+'</div><div class="amount _notCount">'+count+'</div><div class="fee-percent">服務費 <span class="c_fee">'+feePercent+'</span>%</div></div><div class="price"><span>TWD</span><span class="c_price">'+formatNumber(price)+'</span></div></li>';
 					}
-					$('.purchase_value-add-wrapper[total]').append(elem);
-				}
-				function selecttour(){
-					var _total = 0;
-					var _fee = 0;
-					$('.purchase_value-add-wrapper[total]').html('');
-					$(apn).each(function(idx, obj){
-						var feePercent = $(obj).parents('dl').attr('data-fee-percent');
-						if ($(obj).attr('data-select') != null && $(obj).attr('disabled') == null && $(obj).val()*1 > 0){
-							_fee += $(obj).val()*1*feePercent/100;
-							_total += $(obj).val()*1;
-							adtext($(obj).attr('data-name'), $(obj).val(), '', feePercent);
-						} else if ($(obj).attr('data-price') != null && $(obj).filter(':visible').length > 0 && $(obj).attr('disabled') == null && $(obj).val()*1 > 0){
-							_fee += $(obj).attr('data-price')*$(obj).val()*feePercent/100;
-							_total += $(obj).attr('data-price')*$(obj).val();
-							adtext($(obj).attr('data-name'), $(obj).attr('data-price')*$(obj).val(), $(obj).val(), feePercent);
-						}
-					});
-					$('[feeprice]').html(formatNumber(_fee));
-					$('[totalprice]').html(formatNumber(_total + _fee));
-
-					if (_total == 0) {
-						$('.value-add-cart').removeClass('_have');
-					} else {
-						$('.value-add-cart').addClass('_have');
-					}
-				}
-				function doApn(){
-					$(apn).each(function(idx, obj){
-						$(obj).on('change',function(){
-							selecttour();
-						});
-						$('.option-field:checkbox').on('click',function(){
-							selecttour();
-						});
-					});
+                    $('#add_'+ul_id+'').show();
+					$('#add_'+ul_id+'').append(elem);
+                    cal_fee_total();
 				}
 
-				doApn();
+                function deltext(elem_id)
+                {
+                    $('li#'+elem_id+'_txt').remove();
+                    cal_fee_total();
+				}
+
+
+                //計算服務費與總計
+                function cal_fee_total()
+                {
+                    $('.purchase_value-add-wrapper#add_no-additional').show();
+                    
+                    var _total_price = 0;
+                    var _total_fee = 0;
+                    var the_price;
+                    var the_fee;
+
+                    $('[feeprice]').html(formatNumber(_total_fee));
+                    $('[totalprice]').html(formatNumber(_total_price));
+                    $('.purchase_vasum').hide();
+
+                    $('ul.purchase_value-add-wrapper li').each(function(idx, obj){
+
+                        $(this).closest('ul').hide();
+                        // console.log($(this).closest('ul').attr('id'));
+                        //if(typeof $(this).attr('id') == "undefined")
+                        {
+                            the_price = $(this).find('span.c_price').text().replace(/,/g, "");
+                            the_fee = $(this).find('span.c_fee').text().replace(/,/g, "");
+                            //the_price = the_price;
+                            //console.log("the_price=" + the_price);
+                            if(the_price!='')
+                            {
+                                _total_fee = parseInt(the_price) * (parseInt(the_fee)/100);
+                                _total_price = parseInt(_total_price) + parseInt(the_price) +  parseInt(_total_fee);
+
+                                //purchase_vasum feeprice totalprice
+                                $('[feeprice]').html(formatNumber(_total_fee));
+                                $('[totalprice]').html(formatNumber(_total_price));
+
+                                if(_total_price > 0){
+                                    $('.purchase_vasum').show();
+                                    $(this).closest('ul').show();
+                                }
+                                $('.purchase_value-add-wrapper#add_no-additional').hide();
+                            }
+                        }
+                    });
+                }
+
+                
+				// function selecttour()
+                // {
+				// 	var _total = 0;
+				// 	var _fee = 0;
+				// 	$('.purchase_value-add-wrapper[total]').html('');
+                    
+				// 	$(apn).each(function(idx, obj){
+				// 		var feePercent = $(obj).parents('dl').attr('data-fee-percent');
+				// 		if ($(obj).attr('data-select') != null && $(obj).attr('disabled') == null && $(obj).val()*1 > 0)
+                //         {
+				// 			_fee += $(obj).val()*1*feePercent/100;
+				// 			_total += $(obj).val()*1;
+				// 			adtext($(obj).attr('data-name'), $(obj).val(), '', feePercent);
+				// 		} 
+                //         else if ($(obj).attr('data-price') != null && $(obj).filter(':visible').length > 0 && $(obj).attr('disabled') == null && $(obj).val()*1 > 0)
+                //         {
+				// 			_fee += $(obj).attr('data-price')*$(obj).val()*feePercent/100;
+				// 			_total += $(obj).attr('data-price')*$(obj).val();
+				// 			adtext($(obj).attr('data-name'), $(obj).attr('data-price')*$(obj).val(), $(obj).val(), feePercent);
+				// 		}
+				// 	});
+				// 	$('[feeprice]').html(formatNumber(_fee));
+				// 	$('[totalprice]').html(formatNumber(_total + _fee));
+
+				// 	if (_total == 0) 
+                //     {
+				// 		$('.value-add-cart').removeClass('_have');
+				// 	} 
+                //     else 
+                //     {
+				// 		$('.value-add-cart').addClass('_have');
+				// 	}
+				// }
+				// function doApn(){
+				// 	$(apn).each(function(idx, obj){
+				// 		$(obj).on('change',function(){
+				// 			selecttour();
+				// 		});
+				// 		$('.option-field:checkbox').on('click',function(){
+				// 			selecttour();
+				// 		});
+				// 	});
+				// }
+
+				// doApn();
 			});
 		</script>
 </body>

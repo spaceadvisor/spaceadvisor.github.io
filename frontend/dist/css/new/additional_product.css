@@ -447,7 +447,7 @@
     font-size: 15px;
 }
 .value-add-cart:not(._have) .valist ul:before {
-	content: '尚未加入任何加購';
+	/* content: '尚未加入任何加購'; */
 	display: block;
 	padding: 5px 0;
 }

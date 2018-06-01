@@ -539,13 +539,14 @@
     color: #4e5059;
     text-decoration: none;
     width: calc(100% / 4);
-    height: 21px;
+    /*height: 21px;*/
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 	float: left;
+	padding-right: 12px;
 }
 .meeting .device li img {
 	margin-right: 9px;
