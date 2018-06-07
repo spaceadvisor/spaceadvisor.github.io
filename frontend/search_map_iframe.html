@@ -43,124 +43,415 @@
 
 
 
-
+            <script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script> 
 <script>
 
-    function initMap() 
+    $(document).delegate('.next', 'click', function() {
+        $(this).closest('div.block').hide();
+        $(this).closest('div.block').next().show();
+    });
+
+    $(document).delegate('.prev', 'click', function() {
+        $(this).closest('div.block').hide();
+        $(this).closest('div.block').prev().show();
+    });
+
+    function map_tamplate(data)
     {
-        var map = new google.maps.Map(document.getElementById('map'), {
-            //預設的經緯度
-            center: new google.maps.LatLng(-33.863276, 151.207977),
-            //zoomControl : false,
-            //scaleControl: false,
-            scrollwheel: true,
-            //disableDoubleClickZoom: true,
-            zoom: 13
+        var block_display;
+        var html = '<div class="">'; //
+
+        $.each(data, function(i, item) {
+            console.log(i);
+            if(i==0){
+                block_display = '';
+            }
+            else{
+                block_display = 'display:none';
+            }
+
+            html +=    '<div class="block" style="'+block_display+'">';
+            html +=    '    <div class="pic slider">';
+            html +=    '       <a href="'+item.url+'" title="'+item.spacer+' - '+item.name+'" target="_blank"><img src="'+item.img+'"></a>';
+            html +=    '    </div>';
+            html +=    '        <div class="text">';
+            html +=    '            <p class="title">'+item.spacer+'</p>';
+            html +=    '            <p class="title sub-title">'+item.name+'</p>';
+            html +=    '            <div class="info_1">';
+            html +=    '                <span><i class="fa fa-user" aria-hidden="true"></i>'+item.people+'</span>';
+            html +=    '                <span><i class="fa fa-map-marker" aria-hidden="true"></i>'+item.area+'</span>';
+            html +=    '                <span><i class="fa fa-comment" aria-hidden="true"></i>'+item.category+'</span>';
+            html +=    '            </div>';
+            html +=    '            <div class="info_2">';
+            html +=    '                <span class="star"><span class="_star _star_3h"></span><b>'+item.comments+'</b></span> <span class="price">'+item.currency+' <b>'+item.cost+'</b></span>';                               
+            html +=    '            </div>';
+            html +=    '        </div>';
+
+            //上一筆資料
+            if(i>0){
+                html +=    '       <a class="prev" href="javascript:void(0)"> 上一筆 </a>';
+            }
+            else{
+                html +=    '       <a class=""> 上一筆 </a>';
+            }
+            
+            //資料數
+            if(Object.keys(data).length > 0){
+                html +=     '共有'+Object.keys(data).length+'筆資料';
+            }
+
+            //下一筆資料
+            if(i+1<Object.keys(data).length){
+                html +=    '       <a class="next" href="javascript:void(0)"> 下一筆 </a>';
+            }
+            else{
+                html +=    '       <a class=""> 下一筆 </a>';
+            }
+
+
+            html +=    '</div>';  
         });
 
-        var infoWindow = new google.maps.InfoWindow;
-
-        $.getJSON( "search_map.json", function( data ) {
-
-            var items = [];
-            $.each( data, function( key, markerElem ) {
-
-                console.log(key + markerElem);
-
-                var name = markerElem.name;
-                var address = markerElem.address;
-                var area = markerElem.area;
-                var currency = markerElem.currency;
-                var cost = markerElem.cost;
-                var paytype = markerElem.paytype;
-                var people = markerElem.people;
-                var category = markerElem.category;
-                var star = markerElem.star;
-                var comments = markerElem.comments;
-                var img_src = markerElem.img;
-                var icon = markerElem.icon;
-                var type = markerElem.type;
-                var point = new google.maps.LatLng(
-                    parseFloat(markerElem.lat),
-                    parseFloat(markerElem.lng)
-                );
-
-                //創建Div區塊
-                var infowincontent = document.createElement('div');
-
-
-                //image
-                var img = document.createElement('img');
-                img.src = img_src;
-                img.width = '200';
-                infowincontent.appendChild(img);
-                infowincontent.appendChild(document.createElement('br'));
-
-                //title
-                var strong = document.createElement('strong');
-                strong.textContent = name;
-                infowincontent.appendChild(strong);
-                infowincontent.appendChild(document.createElement('br'));
-
-                //人數
-                var span_people = document.createElement('span');
-                span_people.textContent = people+' '; //'<i class="fa fa-user" aria-hidden="true"></i> ' + people;
-                infowincontent.appendChild(span_people);
-
-                //地區
-                var span_area = document.createElement('span');
-                span_area.textContent = area+' ';
-                infowincontent.appendChild(span_area);
-
-
-                //分類
-                var span_category = document.createElement('span');
-                span_category.textContent = category+' ';
-                infowincontent.appendChild(span_category);
-                infowincontent.appendChild(document.createElement('br'));   
-
-
-                //star
-                var span_star = document.createElement('span');
-                span_star.setAttribute("class", "_star _star_3h");
-                span_star.textContent = ' ';
-                infowincontent.appendChild(span_star);
-
-
-                //comments
-                var span_comments = document.createElement('span');
-                span_comments.textContent = comments+' ';
-                infowincontent.appendChild(span_comments);
-
-
-                //cost
-                var span_cost = document.createElement('span');
-                span_cost.textContent = currency+' '+cost;
-                infowincontent.appendChild(span_cost);
-
-                //
-                infowincontent.appendChild(document.createElement('br'));
-                
-
-                var text = document.createElement('text');
-                text.textContent = address
-                infowincontent.appendChild(text);
-                
-                
-                
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: point,
-                    icon: icon,
-                });
-
-                marker.addListener('click', function() {
-                    infoWindow.setContent(infowincontent);
-                    infoWindow.open(map, marker);
-                });
-            });
-        });
+        html +=    '</div>';
+        return html
     }
+
+    var locations_data_1 = new Array();
+
+    var valueToPush = { };
+    valueToPush.id = 1;
+    valueToPush.spacer = '場地主1';
+    valueToPush.name = '場地1';
+    valueToPush.address = '台北市信義區信義路1段';
+    valueToPush.url = 'https://www.spaceadvisor.com/ACTWN00011';
+    valueToPush.area = '台北市信義區';
+    valueToPush.people = '8,000人';
+    valueToPush.category = '政府機關';
+    valueToPush.cost = '30,000起/小時';
+    valueToPush.currency = 'TWD';
+    valueToPush.star = '3.5';
+    valueToPush.comments = '150則評價';
+    valueToPush.img = 'https://www.spaceadvisor.com/image/timthumb.php?src=https://www.spaceadvisor.com/image/upload/space_000005/product_img/9lrAIZMlw7k8siWzMfvCo5jthOJhXujP.png&amp;h=180&amp;w=300&amp;zc=1';
+    locations_data_1.push(valueToPush);
+
+    valueToPush = { };
+    valueToPush.id = 2;
+    valueToPush.spacer = '場地主1';
+    valueToPush.name = '場地2';
+    valueToPush.address = '台北市信義區信義路1段';
+    valueToPush.url = 'https://www.spaceadvisor.com/ACTWN00011';
+    valueToPush.area = '台北市信義區';
+    valueToPush.people = '4,000人';
+    valueToPush.category = '政府機關';
+    valueToPush.cost = '35,000起/小時';
+    valueToPush.currency = 'TWD';
+    valueToPush.star = '3.5';
+    valueToPush.comments = '150則評價';
+    valueToPush.img = 'https://www.spaceadvisor.com/image/timthumb.php?src=https://www.spaceadvisor.com/image/upload/space_000005/product_img/9lrAIZMlw7k8siWzMfvCo5jthOJhXujP.png&amp;h=180&amp;w=300&amp;zc=1';
+    locations_data_1.push(valueToPush);
+
+    valueToPush = { };
+    valueToPush.id = 3;
+    valueToPush.spacer = '場地主1';
+    valueToPush.name = '場地3';
+    valueToPush.address = '台北市信義區信義路1段';
+    valueToPush.url = 'https://www.spaceadvisor.com/ACTWN00011';
+    valueToPush.area = '台北市信義區';
+    valueToPush.people = '4,000人';
+    valueToPush.category = '政府機關';
+    valueToPush.cost = '35,000起/小時';
+    valueToPush.currency = 'TWD';
+    valueToPush.star = '3.5';
+    valueToPush.comments = '150則評價';
+    valueToPush.img = 'https://www.spaceadvisor.com/image/timthumb.php?src=https://www.spaceadvisor.com/image/upload/space_000005/product_img/9lrAIZMlw7k8siWzMfvCo5jthOJhXujP.png&amp;h=180&amp;w=300&amp;zc=1';
+    locations_data_1.push(valueToPush);
+
+    console.log(locations_data_1);
+
+
+    var locations_data_2 = new Array();
+
+    var valueToPush = { };
+    valueToPush.id = 4;
+    valueToPush.spacer = '場地主2';
+    valueToPush.name = '場地3';
+    valueToPush.address = '台北市信義區信義路1段';
+    valueToPush.url = 'https://www.spaceadvisor.com/ACTWN00011';
+    valueToPush.area = '台北市信義區';
+    valueToPush.people = '8,000人';
+    valueToPush.category = '政府機關';
+    valueToPush.cost = '30,000起/小時';
+    valueToPush.currency = 'TWD';
+    valueToPush.star = '3.5';
+    valueToPush.comments = '150則評價';
+    valueToPush.img = 'https://www.spaceadvisor.com/image/timthumb.php?src=https://www.spaceadvisor.com/image/upload/space_000005/product_img/9lrAIZMlw7k8siWzMfvCo5jthOJhXujP.png&amp;h=180&amp;w=300&amp;zc=1';
+    locations_data_2.push(valueToPush);
+
+    
+
+    var locations = [
+            [
+                map_tamplate(locations_data_1),
+                "25.0765969",
+                "121.5735621",
+                "0"
+            ],
+            [
+                map_tamplate(locations_data_2),
+                "25.0339639",
+                "121.5644722",
+                "1"
+            ]
+    ];
+
+    function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: new google.maps.LatLng(locations[0][1], locations[0][2]),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+
+        var marker, i;
+        var markers = [];
+
+        for (i = 0; i < locations.length; i++) {
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                content: locations[i][0],
+                map: map,
+                icon: 'dist/logo_v.png'
+            });
+            markers.push(marker);
+
+            google.maps.event.addListener(marker, 'click', function (event) {
+                infowindow.setContent(this.content);
+                infowindow.open(map, this);
+            }.bind(marker));
+        }
+    }
+
+//     function initMap() 
+//     {
+//         var map = new google.maps.Map(document.getElementById('map'), {
+//             //預設的經緯度
+//             center: new google.maps.LatLng(-33.863276, 151.207977),
+//             //zoomControl : false,
+//             //scaleControl: false,
+//             scrollwheel: true,
+//             //disableDoubleClickZoom: true,
+//             zoom: 13
+//         });
+
+//         var infoWindow = new google.maps.InfoWindow;
+
+//         $.getJSON( "search_map.json", function( data ) {
+
+//             var items = [];
+//             $.each( data, function( key, markerElem ) {
+
+//                 console.log(key + markerElem);
+
+//                 var name = markerElem.name;
+//                 var address = markerElem.address;
+//                 var area = markerElem.area;
+//                 var currency = markerElem.currency;
+//                 var cost = markerElem.cost;
+//                 var paytype = markerElem.paytype;
+//                 var people = markerElem.people;
+//                 var category = markerElem.category;
+//                 var star = markerElem.star;
+//                 var comments = markerElem.comments;
+//                 var img_src = markerElem.img;
+//                 var icon = markerElem.icon;
+//                 var type = markerElem.type;
+//                 var point = new google.maps.LatLng(
+//                     parseFloat(markerElem.lat),
+//                     parseFloat(markerElem.lng)
+//                 );
+
+//                 //創建Div區塊
+//                 var infowincontent = document.createElement('div');
+
+
+//                 //span
+//                 var span1 = document.createElement('span');
+//                 span1.className = "block";
+//                 span1.id = "block_1";
+//                 infowincontent.appendChild(span1);
+
+
+//                 //image
+//                 var img = document.createElement('img');
+//                 img.src = img_src;
+//                 img.width = '200';
+//                 span1.appendChild(img);
+//                 span1.appendChild(document.createElement('br'));
+
+//                 //title
+//                 var strong = document.createElement('strong');
+//                 strong.textContent = name;
+//                 span1.appendChild(strong);
+//                 span1.appendChild(document.createElement('br'));
+
+//                 //人數
+//                 var span_people = document.createElement('span');
+//                 span_people.textContent = people+' '; //'<i class="fa fa-user" aria-hidden="true"></i> ' + people;
+//                 span1.appendChild(span_people);
+
+//                 //地區
+//                 var span_area = document.createElement('span');
+//                 span_area.textContent = area+' ';
+//                 span1.appendChild(span_area);
+
+
+//                 //分類
+//                 var span_category = document.createElement('span');
+//                 span_category.textContent = category+' ';
+//                 span1.appendChild(span_category);
+//                 span1.appendChild(document.createElement('br'));   
+
+
+//                 //star
+//                 var span_star = document.createElement('span');
+//                 span_star.setAttribute("class", "_star _star_3h");
+//                 span_star.textContent = '  ';
+//                 span1.appendChild(span_star);
+
+
+//                 //comments
+//                 var span_comments = document.createElement('span');
+//                 span_comments.textContent = comments+'   ';
+//                 span1.appendChild(span_comments);
+
+
+//                 //cost
+//                 var span_cost = document.createElement('span');
+//                 span_cost.textContent = currency+' '+cost;
+//                 span1.appendChild(span_cost);
+//                 span1.appendChild(document.createElement('br'));
+                
+
+//                 var text = document.createElement('text');
+//                 text.textContent = address
+//                 span1.appendChild(text);
+//                 span1.appendChild(document.createElement('br'));
+
+
+//                 var left_a = document.createElement('a');
+//                 var linkText = document.createTextNode("<");
+//                 left_a.appendChild(linkText);
+//                 left_a.setAttribute('href',"javascript:prev(0)");
+//                 span1.appendChild(left_a);
+
+//                 //count
+//                 var span_count = document.createElement('span');
+//                 span_count.textContent = ' 3個場地 ';
+//                 span1.appendChild(span_count); 
+
+//                 var right_a = document.createElement('a');
+//                 var linkText = document.createTextNode(">");
+//                 right_a.appendChild(linkText);
+//                 right_a.setAttribute('href',"javascript:next(2)");
+//                 span1.appendChild(right_a);
+
+
+//                 //span
+//                 var span1 = document.createElement('span');
+//                 span1.style.cssText = 'display:none';
+//                 infowincontent.appendChild(span1);
+
+
+//                 //image
+//                 var img = document.createElement('img');
+//                 img.src = img_src;
+//                 img.width = '200';
+//                 span1.appendChild(img);
+//                 span1.appendChild(document.createElement('br'));
+
+//                 //title
+//                 var strong = document.createElement('strong');
+//                 strong.textContent = name;
+//                 span1.appendChild(strong);
+//                 span1.appendChild(document.createElement('br'));
+
+//                 //人數
+//                 var span_people = document.createElement('span');
+//                 span_people.textContent = people+' '; //'<i class="fa fa-user" aria-hidden="true"></i> ' + people;
+//                 span1.appendChild(span_people);
+
+//                 //地區
+//                 var span_area = document.createElement('span');
+//                 span_area.textContent = area+' ';
+//                 span1.appendChild(span_area);
+
+
+//                 //分類
+//                 var span_category = document.createElement('span');
+//                 span_category.textContent = category+' ';
+//                 span1.appendChild(span_category);
+//                 span1.appendChild(document.createElement('br'));   
+
+
+//                 //star
+//                 var span_star = document.createElement('span');
+//                 span_star.setAttribute("class", "_star _star_3h");
+//                 span_star.textContent = '  ';
+//                 span1.appendChild(span_star);
+
+
+//                 //comments
+//                 var span_comments = document.createElement('span');
+//                 span_comments.textContent = comments+'   ';
+//                 span1.appendChild(span_comments);
+
+
+//                 //cost
+//                 var span_cost = document.createElement('span');
+//                 span_cost.textContent = currency+' '+cost;
+//                 span1.appendChild(span_cost);
+//                 span1.appendChild(document.createElement('br'));
+                
+
+//                 var text = document.createElement('text');
+//                 text.textContent = address
+//                 span1.appendChild(text);
+//                 span1.appendChild(document.createElement('br'));
+
+
+//                 var left_a = document.createElement('a');
+//                 var linkText = document.createTextNode("<");
+//                 left_a.appendChild(linkText);
+//                 left_a.setAttribute('href',"javascript:prev(0)");
+//                 span1.appendChild(left_a);
+
+//                 //count
+//                 var span_count = document.createElement('span');
+//                 span_count.textContent = ' 3個場地 ';
+//                 span1.appendChild(span_count); 
+
+//                 var right_a = document.createElement('a');
+//                 var linkText = document.createTextNode(">");
+//                 right_a.appendChild(linkText);
+//                 right_a.setAttribute('href',"javascript:next(1)");
+//                 span1.appendChild(right_a);
+                
+                
+//                 var marker = new google.maps.Marker({
+//                     map: map,
+//                     position: point,
+//                     icon: icon,
+//                 });
+
+//                 marker.addListener('click', function() {
+//                     infoWindow.setContent(infowincontent);
+//                     infoWindow.open(map, marker);
+//                 });
+//             });
+//         });
+//     }
 
 
 
@@ -181,6 +472,7 @@
     }
 
     function doNothing() {}
+
 </script>
 
 
