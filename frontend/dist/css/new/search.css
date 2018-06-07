@@ -1204,8 +1204,17 @@
     background-color: #fff;
     text-align: left;
 }
+#map .text {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #fff;
+    text-align: left;
+}
 .placeList .text p.title,
-.placeList .text .info_1 {
+.placeList .text .info_1,
+#map .text p.title,
+#map .text .info_1 {
     padding: 3px 0;
     margin-bottom: 9px;
     line-height: unset;
@@ -1215,7 +1224,7 @@
     display: block;
     -webkit-line-clamp: unset;
 }
-.placeList .text p.title {
+.placeList .text p.title, #map .text p.title {
     font-size: 13px;
     font-weight: normal;
     color: #4e5059;
@@ -1224,70 +1233,72 @@
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
-.placeList .text p.title.sub-title {
+.placeList .text p.title.sub-title, #map .text p.title.sub-title {
     font-size: 21px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.placeList .text .info_1 {
+.placeList .text .info_1, #map .text .info_1 {
     padding: 0;
     display: flex;
     justify-content: flex-start;
     align-content: center;
     margin-bottom: 5px;
 }
-.placeList .text .info_1 span {
+.placeList .text .info_1 span, #map .text .info_1 span {
     display: inline-block;
     overflow: hidden;
     padding-right: 9px;
     font-size: 13px;
     color: #4e5059;
 }
-.placeList .text .info_1 span:last-child {
+.placeList .text .info_1 span:last-child, #map .text .info_1 span:last-child {
     padding-right: 0;
 }
-.placeList .text .info_1 span i {
+.placeList .text .info_1 span i, #map .text .info_1 span i {
     margin-right: 5px;
 }
-.placeList .text .info_2 {
+.placeList .text .info_2, #map .text .info_2 {
     display: inline-flex;
     width: 100%;
     height: 30px;
     align-items: center;
 }
 .placeList .text .info_2 span.star,
-.placeList .text .info_2 span.price {
+.placeList .text .info_2 span.price,
+#map .text .info_2 span.star,
+#map .text .info_2 span.price {
     line-height: normal;
     height: auto;
     width: 50%;
     letter-spacing: 0;
     font-size: 13px;
 }
-.placeList .text span.star {
+.placeList .text span.star, #map .text span.star {
     display: inline-block;
     overflow: hidden;
     font-weight: normal;
     color: #d5d6d4;
     text-decoration: none;
 }
-.placeList .text span.star b {
+.placeList .text span.star b, #map .text span.star b {
     margin-left: 5px;
     color: #4e5059;
     font-weight: normal;
     letter-spacing: normal;
 }
-.placeList .text .info_2 span.price {
+.placeList .text .info_2 span.price, #map .text .info_2 span.price {
     text-align: right;
 }
-.placeList .text span.price {
+.placeList .text span.price, #map .text span.price {
     display: inline-block;
     overflow: hidden;
     font-weight: normal;
     color: #4e5059;
     text-decoration: none;
 }
-.placeList .text span.price b {
+.placeList .text span.price b, #map .text span.price b {
     font-size: 17px;
 }
 

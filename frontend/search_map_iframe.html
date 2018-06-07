@@ -37,6 +37,18 @@
           margin: 0;
           padding: 0;
         }
+		#map .gm-style {
+			font: inherit;
+		}
+		#map .block {
+			width: 300px;
+			overflow: hidden;
+		}
+		#map .multi-select {
+			text-align: center;
+			padding-top: 10px;
+			border-top: 1px solid #e2e2e2;
+		}
     </style>
 
 	<body>
@@ -89,23 +101,23 @@
 
             //上一筆資料
             if(i>0){
-                html +=    '       <a class="prev" href="javascript:void(0)"> 上一筆 </a>';
+                html +=    '<div class="multi-select"><a class="prev" href="javascript:void(0)"><i class="fa fa-angle-left"></i></a>';
             }
             else{
-                html +=    '       <a class=""> 上一筆 </a>';
+                html +=    '<div class="multi-select"><a class=""><i class="fa fa-angle-left"></i></a>';
             }
             
             //資料數
             if(Object.keys(data).length > 0){
-                html +=     '共有'+Object.keys(data).length+'筆資料';
+                html +=     '&nbsp;&nbsp;共有'+Object.keys(data).length+'筆資料&nbsp;&nbsp;';
             }
 
             //下一筆資料
             if(i+1<Object.keys(data).length){
-                html +=    '       <a class="next" href="javascript:void(0)"> 下一筆 </a>';
+                html +=    '<a class="next" href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></div>';
             }
             else{
-                html +=    '       <a class=""> 下一筆 </a>';
+                html +=    '<a class=""><i class="fa fa-angle-right"></i></a></div>';
             }
 
 
