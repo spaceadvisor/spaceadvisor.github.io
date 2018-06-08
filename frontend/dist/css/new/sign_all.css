@@ -89,7 +89,8 @@
     font-size: 15px;
     margin-left: -24px;
 }
-.meberInput .warning_error+input {
+.meberInput .warning_error+input,
+.meberInput .warning_error+input+input {
     display: inline-block;
     vertical-align: middle;
     width: 100%;

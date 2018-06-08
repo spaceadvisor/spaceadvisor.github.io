@@ -164,7 +164,7 @@
 .compare .cs-list .cs-rec .cs-head p {
     margin: 0;
     font-size: 15px;
-    padding: 20px 15px;
+    padding: 12px 15px;
 }
 .compare .cs-list .cs-rec>div>div {
     display: block;
@@ -181,6 +181,9 @@
     margin: 10px 0 0;
     padding: 0;
     border-top: 1px solid #ddd;
+}
+.compare .cs-list .cs-rec>div.cs-head>div .btn {
+	margin-bottom: 15px;
 }
 .compare .cs-list .aside .cs-rec > div.cs-head>div {
 	border-left: 1px solid #ddd;

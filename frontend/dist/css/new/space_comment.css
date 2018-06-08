@@ -349,13 +349,13 @@
     .bonus-comment ._content .section05 ul li>div:nth-child(1) {
         letter-spacing: 0;
     }
-     .bonus-comment ._content .section05 ul li>div:nth-child(2) {
+	/*.bonus-comment ._content .section05 ul li>div:nth-child(2) {
         width: 105px;
-    }
-     .bonus-comment ._content .section05 ul li>div:nth-child(2) i {
+    }*/
+    .bonus-comment ._content .section05 ul li>div:nth-child(2) i {
         margin-right: 3px;
     }
-     .bonus-comment ._content .section05 ul li>div:nth-child(3) {
+    .bonus-comment ._content .section05 ul li>div:nth-child(3) {
         letter-spacing: 0;
     }
 }
@@ -369,7 +369,7 @@
     font-weight: normal;
     font-size: 15px;
     line-height: normal;
-    width: calc(100% - 21px);
+    width: calc(100% - 22px);
     margin-left: 4px;
 }
 .bonus-comment ._content .section06 b a:hover {
