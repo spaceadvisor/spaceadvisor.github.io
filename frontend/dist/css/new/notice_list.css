@@ -147,8 +147,11 @@
 .inbox-list ul li a div.ib-photo {
     width: 73px;
 }
-
-
+.inbox-list ul li a div.ib-photo img {
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+}
 .inbox-list ul li a div.ib-logo-date {
     width: 150px;
     color: #4e5059;
@@ -171,13 +174,11 @@
 .inbox-list ul li a div.ib-logo-date img {
     width: 100%;
 }
-
-
 .inbox-list ul li a div.ib-title {
     font-size: 15px;
     line-height: normal;
     color: #4e5059;
-    width: calc(100% - 396px);
+    width: calc(100% - 346px);
     flex-direction: column;
     justify-content: center;
 }
@@ -204,7 +205,7 @@
     /*letter-spacing: 1px;*/
 }
 .inbox-list ul li a div.ib-status {
-    width: 138px;
+    width: 88px;
     font-size: 15px;
     opacity: .7;
     color: #4e5059;

@@ -199,7 +199,7 @@
 .membership .membershipList ul {
     display: inline-block;
     vertical-align: top;
-    margin-right: 10%
+    margin-right: 18%
 }
 .membership .membershipList ul:nth-child(3) {
     margin-right: 0;
@@ -227,7 +227,12 @@
         font-size: 30px;
     }
     .membership .membershipList ul {
-        margin-bottom: 0;
+		width: 100%;
+    	margin-right: 0;
+    	margin-bottom: 15px;
+    }
+	.membership .membershipList > ul:last-of-type {
+    	margin-bottom: 0;
     }
     .membership .membershipList ul li,
     .membership .membershipList ul li:last-child {
@@ -254,7 +259,7 @@
         display: block;
     }
     .create li {
-        height: 180px;
+		height: auto;
         padding: 20px 9px;
         margin-right: 0;
         margin-bottom: 20px;
