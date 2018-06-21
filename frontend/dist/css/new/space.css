@@ -1043,7 +1043,7 @@
         font-size: 15px;
         line-height: normal;
         width: calc(100% / 3);
-        height: 22px;
+        /*height: 22px;*/
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
