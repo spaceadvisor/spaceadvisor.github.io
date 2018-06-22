@@ -1652,6 +1652,7 @@
     margin-bottom: 0;
     display: flex;
     align-items: center;
+	position: relative;
 }
 .appointment_detail .appointment_deta i {
     margin-right: 9px;

@@ -419,7 +419,7 @@
 }
 .value-add-cart .price {
     display: inline-flex;
-    width: 17%;
+    width: 18%;
 }
 .value-add-cart .valist {
     /*line-height: normal;*/
@@ -466,7 +466,7 @@
 }
 .value-add-cart .valist ul li div.ia-wrapper {
     display: flex;
-    width: 83%;
+    width: 82%;
 }
 .value-add-cart .valist ul li div.ia-wrapper .item {
 	line-height: normal;
@@ -1155,6 +1155,7 @@
 	}
 	.value-add-cart .valist ul li div span:nth-child(2) {
 		text-align: left;
+		width: 100%;
 	}
 	.value-add-cart .amount, .value-add-cart .fee-percent {
 		width: 100%;

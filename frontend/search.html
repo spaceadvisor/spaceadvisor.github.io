@@ -1577,8 +1577,12 @@
                 <div id="search_area" class="search_item_detail">
                   <div class="search_item_open short"></div>
                   <div class="search_item_area">
+                    <label>可複選區域</label>
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="desk">
-                      <tr>
+                       <tr>
+                      	<td>請先選擇縣市，才可勾選區域。</td>
+                       </tr>
+                       <tr>
                         <td valign="top"><span>
                           <label>
                             <input type="checkbox" name="region[]" value="1"/>
@@ -1587,7 +1591,8 @@
                           <label>
                             <input type="checkbox" name="region[]" value="2"/>
                             2</label>
-                          </span></td>
+                          </span>
+                          <button class="btn btn-clear">清除所有條件</button></td>
                       </tr>
                     </table>
                   </div>

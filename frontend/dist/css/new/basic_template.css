@@ -601,6 +601,21 @@
 .bookList .detailTable-right .detailTable-row .detailTable-cell .tableTxt.buyIcon a:hover {
     background: #fff;
 }
+.order_time a.detailBtn {
+	font-size: 12px;
+    background: #f3f3f3;
+    color: #4e5059;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 3px 9px;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    right: 9px;
+}
+.order_time a.detailBtn:hover {
+	background: #fff;
+}
 .buyBox .bookList .detailTable-right .detailTable-row .detailTable-cell .tableTxt.buyIcon a span,
 .bookList .detailTable-right .detailTable-row .detailTable-cell .tableTxt.buyIcon a span {
     /*margin-left: 3px;*/

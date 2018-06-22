@@ -227,6 +227,11 @@
 	max-height: 300px;
     overflow-y: auto;
 }
+.search main > .search-box .search_bar > .content > ul > li .search_item_detail > .search_item_area > label {
+	display: block;
+    margin-bottom: 5px;
+    color: #00a651;
+}
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail > .search_item_area.money {
     overflow: hidden;
 }
@@ -244,6 +249,12 @@
     display: inline-block;
     height: auto;
 }
+.search main > .search-box .search_bar > .content > ul > li .search_item_detail > .search_item_area .btn-clear {
+	padding: 5px 8px;
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #666;
+} 
 .search main > .search-box .search_bar > .content > ul > li .search_item_detail > .search_item_area.address span {
     width: calc(100% / 7);
 }
