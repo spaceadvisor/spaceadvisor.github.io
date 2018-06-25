@@ -208,24 +208,44 @@ $(function(){
 //meeting banner切換用
 $('.banner > .banner-box > .panorama').css({'opacity':1,'zIndex':1});
 $(function(){
+	var value = true;
+	$('body').click(function(){
+		if ($('.banner > .banner-nav > div > a.pic').hasClass('this')){
+			if (value) {
+				$('.banner > .banner-box > .pic > .picBg > .picBox').css({'opacity':0,'zIndex':-1});
+				$('.banner > .banner-nav > div > a.pic').removeClass('this');
+			}
+			value = true;
+		}
+	});
+	$('.banner > .banner-box').click(function(){
+		if ($('.banner > .banner-nav > div > a.pic').hasClass('this')){
+			value = false;
+		}
+	});
+
 	$('.banner > .banner-nav > div > a.panorama').click(function(){
 		$(this).addClass('this').siblings().removeClass('this');
 		$('.banner > .banner-box > .panorama').css({'opacity':1,'zIndex':1});
 		$('.banner > .banner-box > .pic').css({'opacity':0,'zIndex':-1});
 		$('.banner > .banner-box > .video').css({'opacity':0,'zIndex':-1});
+		value = false;
 	});
 	$('.banner > .banner-nav > div > a.pic').click(function(){
+		$('.banner > .banner-box > .pic > .picBg > .picBox').css({'opacity':1,'zIndex':1});
 		$(this).addClass('this').siblings().removeClass('this');
 		$('.banner > .banner-box > .panorama').css({'opacity':0,'zIndex':-1});
 		$('.banner > .banner-box > .pic').css({'opacity':1,'zIndex':1});
 		$('.banner > .banner-box > .video').css({'opacity':0,'zIndex':-1});
-	});
+		value = false;
+	});	
 	$('.banner > .banner-nav > div > a.video').click(function(){
 		$(this).addClass('this').siblings().removeClass('this');
 		$('.banner > .banner-box > .panorama').css({'opacity':0,'zIndex':-1});
 		$('.banner > .banner-box > .pic').css({'opacity':0,'zIndex':-1});
 		$('.banner > .banner-box > .video').css({'opacity':1,'zIndex':1});
-	});
+		value = false;
+	});	
 });
 //meeting 加入收藏 比較場地
 $(function(){

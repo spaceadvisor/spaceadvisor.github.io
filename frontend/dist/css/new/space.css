@@ -608,6 +608,11 @@
     line-height: normal;
     float: left;
 }
+.meeting .price-plan ul li div p.program > span {
+    display: block;
+	float: left;
+    width: calc(100% - 15px);
+}
 .meeting .price-plan ul li div p.program i {
     margin-left: 5px;
     color: #d65f4f;
