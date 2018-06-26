@@ -1993,6 +1993,16 @@
     color: #d76050;
     padding: 2.4px 5px;
 }
+.buyBox .bookList .demand .deTxt {
+    margin-bottom: 8px;
+}
+.buyBox .bookList .demand .deTxt:last-of-type {
+    margin-bottom: 0;
+}
+.buyBox .bookList .demand .deTxt span {
+	display: block;
+	color: #4e5059;
+}
 
 @media only screen and (max-width: 980px) {
     .writeContent .writeContainer {
@@ -2007,7 +2017,6 @@
         font-size: 15px;
         margin-bottom: 9px;
     }
-
     .orderstep ul li {
         font-size: 13px;
         padding: 9px 0;
@@ -2380,8 +2389,6 @@
     .stepBox.fill_box .writeContent .custodyBtn a {
         display: none;
     }
-
-
     .mobile-plan-stecla {
         width: 100%;
         position: fixed;
