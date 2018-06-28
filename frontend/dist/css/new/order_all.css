@@ -335,7 +335,7 @@
     font-weight: normal;
 }
 .order_time .orderContainer .calendar ul.day li.fold .money {
-    color: #d76050;
+    /*color: #d76050;*/
 }
 .order_time .orderContainer .calendar ul.day li.fold span {
     position: absolute;

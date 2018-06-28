@@ -81,10 +81,10 @@ $(function(){
 	});//其他
 
 	$(function(){
-		$('.search-list > ul > li > .place > .text > i.plan').click(function(){
+            $(document).delegate('.search-list > ul > li > .place > .text > i.plan', 'click', function (e) {
 			$(this).parent().siblings('.down').slideToggle();
 		});
-		$('.search-list > ul > li > .place > .showbox-all > .showbox').click(function(){
+            $(document).delegate('.search-list > ul > li > .place > .showbox-all > .showbox', 'click', function (e) {
 			//$(this).parent().siblings('.down').slideToggle();
 		});
 	});//點擊價格方案/圖片 打開下方區塊

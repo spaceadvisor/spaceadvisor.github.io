@@ -1095,6 +1095,7 @@
     width: 35%;
     position: fixed;
     z-index: 10;
+    height: calc(100% - 80px);
 }
 .mapBox .map iframe {
     width: 100%;
