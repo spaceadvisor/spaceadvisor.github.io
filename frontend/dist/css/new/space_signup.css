@@ -339,7 +339,7 @@
 .app_stepItem5 a:hover {
     text-decoration: underline;
 }
-.app_stepItem5 .col {
+.app_stepItem5 .col, .app_stepItem2 .col {
     display: inline-block;
     vertical-align: middle;
     margin: 0 20px 0 0;
