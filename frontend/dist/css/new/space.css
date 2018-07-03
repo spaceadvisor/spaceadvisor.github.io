@@ -538,13 +538,13 @@
     font-weight: normal;
     color: #4e5059;
     text-decoration: none;
-    width: calc(100% / 4);
-    /*height: 21px;*/
+    width: calc(100% / 3);
+    /*height: 21px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;*/
 	float: left;
 	padding-right: 12px;
 }
@@ -899,6 +899,13 @@
 .meeting .device .content-720 .box ul {
 	height: 60px;
     overflow: hidden;
+	display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+}
+.meeting .device .content-720 .box.open ul {
+    display: flex !important;
 }
 
 @media only screen and (max-width: 980px) {
@@ -1048,12 +1055,12 @@
         font-size: 15px;
         line-height: normal;
         width: calc(100% / 3);
-        /*height: 22px;*/
+        /*height: 22px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: vertical;*/
     }
 
     /** END position **/

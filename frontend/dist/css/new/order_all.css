@@ -439,6 +439,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+	position: relative;
 }
 #wrapper.order_time .order_tiemBox .assess input[type=checkbox] {
     display: inline-block;
@@ -494,7 +495,14 @@
 .order_time .equipment .col {
     margin-top: 0;
 }
-.order_time .equipment .col .assess .number select {
+.order_time .equipment .col .assess .number {
+	position: absolute;
+    right: 0;
+    width: 90px;
+    height: 30px;
+    z-index: 1;
+}
+.order_time .equipment .col .assess select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -509,9 +517,9 @@
     font-size: 15px;
     height: 30px;
     width: 90px;
-    padding: 0 30px 0 10px;
+    padding: 0 30px 0 13px;
 }
-.order_time .equipment .col .assess .number select[disabled] {
+.order_time .equipment .col .assess select[disabled] {
     border-color: #ddd;
     background-color: #ddd;
     cursor: default;
@@ -2135,11 +2143,9 @@
 
     /** BEGIN equipment **/
     .order_time .equipment .col .assess .number,
-    .order_time .equipment .col .assess .number select {
+    .order_time .equipment .col .assess select {
         width: 100%;
-    }
-    .order_time .equipment .col .assess .number {
-        margin: 3px 0 9px;
+		margin: 3px 0 9px;
     }
     .order_time .orderInformation3 .equipment .box .add {
         height: calc(68px * 6);
@@ -2623,5 +2629,14 @@
         max-width: 200px;
         line-height: normal;
     }
+	#wrapper.order_time .bonus .assess label {
+		display: block;
+	}
+	.order_time .equipment .col .assess i {
+		margin: 0 2px;
+	}
+	#wrapper.order_time .bonus span {
+		vertical-align: baseline;
+	}
 }
 /** END all_order **/
