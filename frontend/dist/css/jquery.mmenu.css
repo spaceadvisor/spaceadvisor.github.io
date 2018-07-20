@@ -28,7 +28,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 1000; }
+  z-index: 0; }
   .mm-menu > .mm-panel {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -46,7 +46,7 @@
     position: absolute;
     top: 0;
     right: 100%;
-    /*z-index: 0;*/ }
+    z-index: 0; }
     .mm-menu > .mm-panel.mm-opened {
       right: 0%;
       padding: 0 15px;
@@ -426,7 +426,7 @@ html.mm-blocking #mm-blocker {
   position: fixed; }
 .mm-menu.mm-current {
   display: block;
-/*  z-index: 9999;*/
+  z-index: 9999;
 }
 
 html.mm-opening .mm-page,
