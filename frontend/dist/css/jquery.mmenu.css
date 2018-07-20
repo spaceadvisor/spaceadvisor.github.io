@@ -50,7 +50,6 @@
     .mm-menu > .mm-panel.mm-opened {
       right: 0%;
       padding: 0 15px;
-	  z-index: 1000;
     }
     .mm-menu > .mm-panel.mm-subopened {
       right: -40%; }
@@ -427,7 +426,7 @@ html.mm-blocking #mm-blocker {
   position: fixed; }
 .mm-menu.mm-current {
   display: block;
-/*  z-index: 9999;*/
+  z-index: 9999;
 }
 
 html.mm-opening .mm-page,
