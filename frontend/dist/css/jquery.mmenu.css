@@ -46,7 +46,7 @@
     position: absolute;
     top: 0;
     right: 100%;
-    z-index: 0; }
+    /*z-index: 0;*/ }
     .mm-menu > .mm-panel.mm-opened {
       right: 0%;
       padding: 0 15px;
