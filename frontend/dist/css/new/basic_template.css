@@ -2347,7 +2347,8 @@
         padding: 20px 5%;
         box-shadow: none;
         border-top: 1px solid #ddd;
-		margin-top: calc(100vh - 44px);
+		margin-top: -webkit-calc(100vh - 44px - 77px);
+		margin-top: -moz-calc(100vh - 44px - 77px);
     }
     #wrapper .search-send .search-send-group {
         display: flex;
