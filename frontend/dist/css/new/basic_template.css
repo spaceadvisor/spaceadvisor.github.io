@@ -2342,12 +2342,13 @@
         overflow: hidden;
         background-color: #fff;
         position: fixed;
-        /*bottom: 0;*/
+        bottom: 0;
         z-index: 99;
         padding: 20px 5%;
         box-shadow: none;
         border-top: 1px solid #ddd;
-		margin-top: 100%;
+		margin-top: calc(100vh - 44px - 77px);
+    	top: auto;
     }
     #wrapper .search-send .search-send-group {
         display: flex;
