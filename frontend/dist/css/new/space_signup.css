@@ -117,7 +117,7 @@
     text-decoration: underline;
 }
 .addvaBrand {
-    background: #f3f3f3;
+    /*background: #f3f3f3;*/
 }
 .addvaBrand .addvaBrandList {
     text-align: center;
@@ -132,8 +132,7 @@
 .addvaBrand .addvaBrandList li {
     display: inline-block;
     vertical-align: top;
-    margin: 20px 4.5%;
-    padding: 20px 0;
+    margin: 10px 3.25%;
 }
 .addvaBrand .addvaBrandList li img {
 	width: 100%;

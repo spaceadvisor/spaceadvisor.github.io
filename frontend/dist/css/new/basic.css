@@ -475,6 +475,7 @@ body:not(.isLogin) ._isLogin {
     position: fixed;
     border-bottom: 1px solid #eee;
     z-index: 10;
+	top: 0;
 }
 #wrapper > header .content {
     width: 97%;
