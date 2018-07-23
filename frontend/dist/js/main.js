@@ -570,7 +570,7 @@ function scrollToElemFront(elem, additional, speed, wrap) {
 }
 
 $(function(){
-	if (navigator.userAgent.indexOf('Safari') != -1) {
+	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
         $('.search-send').addClass('safari');
     }
 });
