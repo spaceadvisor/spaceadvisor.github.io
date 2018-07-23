@@ -568,3 +568,9 @@ function scrollToElemFront(elem, additional, speed, wrap) {
         easing: 'linear'
     });
 }
+
+$(function(){
+	if (navigator.userAgent.indexOf('Safari') != -1) {
+        $('.search-send').addClass('safari');
+    }
+});
