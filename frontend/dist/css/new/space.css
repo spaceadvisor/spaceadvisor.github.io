@@ -907,6 +907,10 @@
 .meeting .device .content-720 .box.open ul {
     display: flex !important;
 }
+html.mm-opening .meeting .anchor.anchor-mobile,
+html.mm-opening .meeting .mobile-plan {
+    z-index: -1;
+}
 
 @media only screen and (max-width: 980px) {
     .meeting .outline.content,

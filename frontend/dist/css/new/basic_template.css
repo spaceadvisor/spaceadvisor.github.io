@@ -5,7 +5,7 @@
     background: #4e5059;
     overflow-y: hidden;
     position: fixed;
-    top: 44px;
+    /*top: 44px;*/
     z-index: 9;
 }
 .navigation_bar ul {
@@ -2349,8 +2349,7 @@
         border-top: 1px solid #ddd;
     }
 	html.mm-opening #wrapper .search-send {
-		z-index: -1 !important;
-		position: absolute;
+		z-index: -1;
 	}
 	#wrapper .search-send.safari {
 		margin-top: 100%;

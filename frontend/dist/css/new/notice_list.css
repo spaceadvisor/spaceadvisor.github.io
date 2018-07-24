@@ -116,7 +116,7 @@
 
 /* 收件匣 */
 .inbox {
-    margin-top: 89px;
+    /*margin-top: 89px;*/
 }
 .inbox-list .no-record {
     margin-bottom: 165px;
@@ -259,7 +259,9 @@
     font-size: 21px;
     text-align: center;
 }
-
+.notice_list ._boxStyle {
+    margin-top: 44px;
+}
 
 @media only screen and (max-width: 980px) {
     #wrapper .nav-tabs > li {

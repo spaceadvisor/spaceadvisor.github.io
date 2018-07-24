@@ -180,6 +180,9 @@
 .paymentInformation a:hover {
     text-decoration: underline;
 }
+.order-management._boxStyle {
+    margin-top: 44px;
+}
 
 @media only screen and (max-width: 980px) {
     .order-management._boxStyle {

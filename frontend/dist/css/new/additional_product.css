@@ -1052,10 +1052,20 @@
 }
 /*** END 查看菜單 ***/
 
+.additional_product ._boxStyle {
+	margin-top: 44px;
+}
+
 @media (max-width:980px) {
 	.purchase_value-add._boxStyle,
 	.writeContent._boxStyle {
 		padding: 20px 0 0;
+	}
+	.additional_product_form .writeContent._boxStyle {
+		margin-top: 24px;
+	}
+	.additional_product_history ._boxStyle {
+		margin-top: 24px;
 	}
 	/*.additional_product .purchase_value-add h1 {
 		padding: 15px 9px;
@@ -1211,6 +1221,7 @@
 
 	.value-add._boxStyle {
 		padding-bottom: 0;
+		margin-top: 24px;
 	}
     .additional_product .pricePlan .bookList {
         border: 0;
