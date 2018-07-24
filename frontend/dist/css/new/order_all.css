@@ -2401,6 +2401,9 @@
         bottom: 0;
         z-index: 12;
     }
+	html.mm-opening .mobile-plan-stecla {
+        z-index: -1;
+    }
     .mobile-plan-stecla .plan-box {
         display: none;
         width: 100%;
