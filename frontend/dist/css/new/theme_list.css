@@ -308,7 +308,7 @@
 		width: 100%;
 		overflow: hidden;
 		position: fixed;
-		top: 44px;
+		/*top: 44px;*/
 		background-color: #fff;
 		cursor: pointer;
 		z-index: 99;
