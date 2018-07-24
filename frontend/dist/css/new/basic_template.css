@@ -2349,8 +2349,8 @@
         border-top: 1px solid #ddd;
     }
 	html.mm-opening #wrapper .search-send {
-        display: none !important;
 		z-index: -1 !important;
+		position: absolute;
 	}
 	#wrapper .search-send.safari {
 		margin-top: 100%;
