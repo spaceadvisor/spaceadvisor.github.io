@@ -2347,8 +2347,11 @@
         padding: 20px 5%;
         box-shadow: none;
         border-top: 1px solid #ddd;
-		/*margin-top: calc(100vh - 44px - 77px);*/
     }
+	html.mm-opening #wrapper .search-send {
+        display: none !important;
+		z-index: -1 !important;
+	}
 	#wrapper .search-send.safari {
 		margin-top: 100%;
     }
