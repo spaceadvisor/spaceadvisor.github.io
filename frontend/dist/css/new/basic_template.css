@@ -2351,9 +2351,6 @@
 	html.mm-opening #wrapper .search-send {
 		z-index: -1;
 	}
-	#wrapper .search-send.safari {
-		margin-top: 100%;
-    }
     #wrapper .search-send .search-send-group {
         display: flex;
         justify-content: space-between;
