@@ -915,7 +915,7 @@ main {
     font-size: 21px;
     font-weight: bold;
     color: #4e5059;
-    bottom: 10%;
+	bottom: 103px;
     right: 1.5%;
     opacity: .8;
     /*-webkit-transition: all .4s;
@@ -1101,7 +1101,7 @@ footer .bottom li:last-child a:last-child:hover img {
         width: 90%;
     }
     .gotop {
-        bottom: 16%;
+        /*bottom: 16%;*/
     }
     .breadcrumb {
         padding: 9px 5%;

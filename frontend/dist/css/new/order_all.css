@@ -713,6 +713,16 @@
     -webkit-font-smoothing: antialiased;
     margin-right: 5px;
 }
+.order_time .order_tiemBox .order_timeContent li._ask time:before {
+    content: "\f02b";
+    color: #7DC6FB;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 15px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
 .order_time .order_tiemBox .order_timeContent li .order_money {
     font-size: 15px;
     margin-top: 5px;

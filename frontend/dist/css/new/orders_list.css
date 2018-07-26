@@ -214,7 +214,7 @@
         width: 100%;
     }
     .bookList .buttons .comment > span,
-    .bookList .buttons .payment > span,
+    .bookList .buttons .payment span,
     .bookList .buttons .contact > a span {
         width: 100%;
     }

@@ -293,6 +293,7 @@
     height: 16px;
 	color: #9a9a9a;
     text-align: center;
+	top: 14px;
 }
 
 @media only screen and (max-width: 980px) {
