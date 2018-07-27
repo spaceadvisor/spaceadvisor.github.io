@@ -667,9 +667,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 25px;
-    justify-content: left;
-
+	padding: 0 25px;
+	justify-content: left;
 }
 .bookList .detailTable-row.detailTable-content .detailTable-cell:nth-child(3) .sarebate {
     position: relative;
