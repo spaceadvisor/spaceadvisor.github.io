@@ -240,7 +240,7 @@
     .paymentInformation .list_info {
         width: 100%;
     }
-	.paymentInformation section .list_info {
+	.paymentInformation section .list_info ul {
 		width: 100%;
 	}
     .paymentInformation section .list_cancel {
