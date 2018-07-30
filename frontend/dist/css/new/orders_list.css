@@ -213,7 +213,7 @@
     .bookList .buttons .contact {
         width: 100%;
     }
-    .bookList .buttons .comment > span,
+    .bookList .buttons .comment span,
     .bookList .buttons .payment span,
     .bookList .buttons .contact > a span {
         width: 100%;
@@ -240,7 +240,7 @@
     .paymentInformation .list_info {
         width: 100%;
     }
-	.paymentInformation section .list_info ul {
+	.paymentInformation section .list_info {
 		width: 100%;
 	}
     .paymentInformation section .list_cancel {
@@ -274,7 +274,7 @@
     }
     .paymentInformation section > div ul li h4 {
         width: 30%;
-        padding: 15px 0;
+        /*padding: 15px 0;*/
     }
     .paymentInformation section > div ul li p {
         width: 90%;
