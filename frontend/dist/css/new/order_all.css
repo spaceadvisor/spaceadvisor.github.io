@@ -2290,7 +2290,6 @@
     }
     #wrapper.order_time .order_tiemBox .assess input[type=checkbox] {
         margin: 0 -15px 0 20px;
-		z-index: 12;
     }
     /** BEGIN order_time **/
 
